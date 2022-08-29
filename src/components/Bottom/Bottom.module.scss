@@ -1,0 +1,155 @@
+@use '@styles/index.scss' as *;
+
+.bottom {
+  visibility: var(--bottom-Bg-visibility);
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  height: var(--bottom-Bg-height);
+  @include respond-to('medium') {
+    margin-top: -13vw;
+  }
+
+  &-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+  }
+  @include respond-to('xlarge') {
+    &-mobileAnimation {
+      display: none;
+    }
+  }
+  &-desktopAnimation {
+    display: none;
+    @include respond-to('xlarge') {
+      display: block;
+    }
+  }
+
+  .rocks-front-container {
+    position: absolute;
+    bottom: 0;
+    z-index: 70;
+    overflow: hidden;
+    width: 100%;
+  }
+  .turtle-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  .turtle-body {
+    position: relative;
+    width: 100%;
+    z-index: 20;
+  }
+  .turtle-container {
+    position: absolute;
+    width: 27%;
+    right: 0;
+    bottom: 10vw;
+  }
+
+  .rock-back-left {
+    position: absolute;
+    left: 0;
+    width: 25%;
+    bottom: 14vw;
+  }
+
+  .rock-back-right {
+    position: absolute;
+    right: 0;
+    width: 25%;
+    bottom: 14vw;
+  }
+
+  .turtle-head {
+    position: absolute;
+    width: 35%;
+    left: 1%;
+    bottom: 6vw;
+    z-index: 10;
+    transform-origin: 90% 50%;
+  }
+  .water {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 40;
+  }
+  .iguana-container {
+    position: absolute;
+    z-index: 50;
+    width: 22%;
+    left: 0.5%;
+    bottom: 6.5vw;
+    z-index: 40;
+  }
+  .iguana-body {
+    position: relative;
+    width: 100%;
+  }
+  .iguana-head {
+    position: absolute;
+    width: 60%;
+    left: 25%;
+    top: 3vw;
+    transform-origin: 50% 40%;
+  }
+
+  .crocodile-container {
+    position: absolute;
+    width: 30%;
+    left: 52%;
+    bottom: 2vw;
+    transform: translateX(-50%);
+    z-index: 60;
+  }
+  .crocodile-body {
+    position: relative;
+    width: 100%;
+  }
+  .crocodile-image {
+    width: 100%;
+  }
+
+  .crocodile-water {
+    position: absolute;
+    bottom: 2.5vw;
+    left: 0;
+    width: 100%;
+  }
+
+  .rocks-front {
+    width: 102vw;
+    left: -1vw;
+    filter: blur(4px);
+    max-width: none;
+    position: relative;
+  }
+}
+
+.video--autoplay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-frog {
+  position: absolute;
+  z-index: 20;
+  right: 16vw;
+  width: 5vw;
+  bottom: 8vw;
+}
+.rocks-front {
+  width: 102vw;
+  left: -1vw;
+  filter: blur(4px);
+  max-width: none;
+  position: relative;
+}

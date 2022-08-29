@@ -1,0 +1,57 @@
+.wrapper {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.media-wrapper {
+  max-width: 110px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.media {
+  height: 110px;
+  width: 110px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  padding-top: 29px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.action {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  a {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.icon-wallet {
+  circle {
+    fill: var(--icon-wallet-Circle-Fill);
+  }
+  path {
+    fill: var(--icon-wallet-Path-Fill);
+  }
+}
+
+.icon-wallet {
+  circle {
+    fill: var(--icon-wallet-Circle-Fill);
+  }
+  path {
+    fill: var(--icon-wallet-Path-Fill);
+  }
+}

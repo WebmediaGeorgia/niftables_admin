@@ -1,0 +1,39 @@
+@use '@styles/index.scss' as *;
+
+.title {
+	font-weight: var(--modal-title-FontWeight);
+	font-size: var(--modal-title-FontSize);
+	line-height: var(--modal-title-LineHeight);
+	color: var(--modal-title-ColorText);
+	text-align: center;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	color: var(--modal-text-ColorText);
+	margin-top: 60px;
+	@media only screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+	.col {
+		width: 100%;
+		text-align: center;
+		.text {
+			font-size: var(--modal-text-secondary-FontSize);
+			line-height: var(--modal-text-secondary-LineHeight);
+			color: var(--modal-text-ColorText);
+		}
+		.button {
+			margin-top: 60px;
+			color: var(--modal-text-ColorText);
+		}
+	}
+	.separator {
+		flex-shrink: 0;
+		margin: 25px 20px 0;
+		text-transform: uppercase;
+		@media only screen and (max-width: 768px) {
+			margin: 20px auto;
+		}
+	}
+}

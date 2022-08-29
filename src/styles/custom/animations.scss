@@ -1,0 +1,253 @@
+
+@use '@styles/index.scss' as *;
+
+.left-illustrations {
+  top: 12rem;
+  width: 30%;
+  max-width: 32rem;
+  visibility: var(--left-illustrations-visibility);
+  display: var(--left-illustrations-display);
+  z-index: 2;
+
+  @media (min-width: 768px) {
+    width: 30%;
+  }
+}
+
+.right-illustrations {
+  top: 12rem;
+  width: 40%;
+  max-width: 35rem;
+  visibility: var(--left-illustrations-visibility);
+  display: var(--left-illustrations-display);
+
+  @media (min-width: 768px) {
+    width: 40%;
+    z-index: 2;
+  } 
+}
+.home {
+  .left-illustrations,
+  .right-illustrations {
+    top: 0;
+  }
+}
+
+
+
+#leaf-header-top-left {
+  width: 28%;
+}
+
+#right-snake-top {
+  width: 20%;
+  left: -5%;
+  z-index: -1;
+}
+
+#leaf-header-top-left-2 {
+  width: 35%;
+  left: 10%;
+}
+
+#leaf-header-top-left-3 {
+  left: 31%;
+  width: 28%;
+}
+
+#leaf-header-top-right-3 {
+  width: 30%;
+  right: 24%;
+}
+
+#leaf-header-top-right-2 {
+  width: 25%;
+  right: 11%;
+}
+
+#leaf-header-top-right-1 {
+  width: 25%;
+}
+
+#snake-left-container {
+  top: 8.8%;  
+  left: 0; 
+  position: relative;
+}
+
+#snake-left {
+  position: absolute;
+  top: 0;
+  left: -15%;
+  width: 73%;
+  max-width: 320px;
+  padding-top: 76%;
+  background: url(/assets/img/jungle/animations/waz_niebieski.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+#leaf-left-1 {
+  width: 100%;
+  max-width: 186px;
+  top: 0;
+  left: -2%;
+  padding-top: 90%;
+  background: url(/assets/img/jungle/animations/lewa_lisc1.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+#leaf-left-2 { 
+  top: 5%;
+  width: 65%;
+  max-width: 362px;
+  left: -12%;
+  padding-top: 104%;
+  background: url(/assets/img/jungle/animations/lewa_lisc2.png) no-repeat 0 0;
+  background-size: contain;
+  
+}
+
+#leaf-left-3 {
+  left: -3%;
+  top: 9%;
+  width: 57%;
+  max-width: 307px;
+  padding-top: 82%;
+  background: url(/assets/img/jungle/animations/lewa_lisc3.png) no-repeat 0 0;
+  background-size: contain;  
+}
+#bug-w-leaf {
+  top: 19%;
+  width: 52%;
+  max-width: 245px;
+  left: -13%;
+  
+}
+
+#leaf-left-4 {
+  width: 83%;
+  top: 0;
+  left: 0;
+  max-width: 245px;
+  padding-top: 139%;
+  background: url(/assets/img/jungle/animations/lewa_lisc4.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+#bug {
+  top: 30%;
+  width: 83%;
+  left: 0;
+  max-width: 239px;
+  padding-top: 85%;
+  background: url(/assets/img/jungle/animations/robak.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+#leaf-right-1 {  
+  top: 0;
+  z-index: 10;
+  right: -5%;
+    top: 1.2%;
+  width: 52%;
+  max-width: 295px;
+  padding-top: 102%;
+  background: url(/assets/img/jungle/animations/prawa_lisc1.png) no-repeat 100% 0;
+  background-size: contain;
+}
+
+#leaf-right-2 {
+  top: 8.2%;
+  width: 75%;
+  max-width: 232px;
+  z-index: 9;
+  right: -4px;
+  padding-top: 85%;
+  background: url(/assets/img/jungle/animations/prawa_lisc2.png) no-repeat 100% 0;
+  background-size: contain; 
+}
+
+#leaf-right-3 {
+  top: 15%;
+  width: 67%;
+  max-width: 262px;
+  z-index: 10;
+  right: -3%;
+  padding-top: 70%;
+  background: url(/assets/img/jungle/animations/prawa_lisc3_kameleon.png) no-repeat 100% 0;
+  background-size: contain;
+  
+}
+
+#leaf-right-4 {
+  top: 52%;
+  right: -2%;
+  width: 36%;
+  max-width: 203px;
+  padding-top: 74%;
+  background: url(/assets/img/jungle/animations/prawa_lisc5.png) no-repeat 0 0;
+  background-size: contain;
+  
+}
+
+#right-snake {
+  top: 52%;
+  width: 74%;
+  z-index: 12;
+  right: -31%;
+  max-width:425px;
+  
+  padding-top: 66%;
+  background: url(/assets/img/jungle/animations/waz_prawy.png) no-repeat 0 0;
+  background-size: contain;
+}
+
+#butterfly {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: -3rem;
+  bottom: 15rem;
+  width: 468px;
+  height: 216px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+#butterfly-wing-1 {
+  position: relative;
+  right: -23%;
+  margin-top: 6%;
+  transform-origin: 74% 58%;
+  z-index: 20;
+}
+
+#butterfly-wing-2 {
+  left: -19%;
+  margin-top: -11%;
+  transform-origin: 38% 80%;
+  z-index: 40;
+}
+
+#butterfly-body {
+  position: relative;
+  transform-origin: 100% 100%;
+  z-index: 30;
+}
+
+#left-illustrations-2 {
+    max-width: 160px;
+    width: 8.575%;
+    position: absolute;
+    left: 0;
+    bottom: -13.75%;
+    z-index: -1;
+}
+
+#parrot-wing-left {
+  transform-origin: 100% 20%;
+}
+
+#parrot-wing-right {
+  transform-origin: 0 20%;
+}

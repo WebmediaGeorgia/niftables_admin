@@ -1,0 +1,70 @@
+@use '@styles/index.scss' as *;
+
+.carousel {
+  cursor: grab;
+  display: flex;
+  flex-direction: column-reverse;
+  @include respond-to('xmedium') {
+    > div:first-child {
+      > div:nth-child(2n + 1) {
+        margin-top: -30px;
+      }
+    }
+  }
+}
+.pagination {
+  &-bullets {
+    margin: 9px 0 85px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &-bullet {
+    position: relative;
+    cursor: pointer;
+    padding: var(--carouselTabs-bullet-Padding);
+    min-width: var(--carouselTabs-bullet-Width);
+    min-height: 8px;
+    border-radius: var(--carouselTabs-bullet-Width);
+    background-color: var(--carouselTabs-bullet-BgColor);
+    background-image: var(--carouselTabs-bullet-BgImage);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: var(--carouselTabs-bullet-BoxShadow);
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--carouselTabs-bullet-ColorText);
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    span {
+      position: relative;
+      z-index: 1;
+    }
+    &:after {
+      position: absolute;
+      z-index: 0;
+      inset: 0;
+      content: '';
+
+      border-radius: inherit;
+      opacity: 0.5;
+      @include animate(background-color);
+    }
+    &:hover {
+      color: var(--carouselTabs-bullet-ColorText-Hover);
+    }
+
+    &.isActive {
+      background-color: var(--carouselTabs-bullet-isActive-BgColor);
+      color: var(--carouselTabs-bullet-isActive-ColorText);
+      &:after {
+        background-color: var(--carouselTabs-bullet-isActive-2-BgColor);
+      }
+    }
+  }
+}

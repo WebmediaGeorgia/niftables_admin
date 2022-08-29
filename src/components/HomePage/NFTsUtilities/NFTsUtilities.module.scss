@@ -1,0 +1,47 @@
+@use '@styles/index.scss' as *;
+
+.utilities {
+  position: relative;
+  z-index: 0;
+
+  .utilities-container {
+    padding-top: var(--homePage-utilities-PaddingTop);
+    padding-bottom: var(--homePage-utilities-PaddingBottom);
+    @include respond-to('small') {
+      padding-top: var(--homePage-utilities-PaddingTop-Large);
+      padding-bottom: var(--homePage-utilities-PaddingBottom-Large);
+    }
+    @include respond-to('xlarge') {
+      padding-bottom: 417px;
+    }
+  }
+  .header {
+    margin: var(--homePage-header-buy-Margin);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+    height: var(--homePage-header-Height);
+    h2 {
+      margin: 0;
+      font-size: var(--homePage-header-FontSize);
+      line-height: var(--homePage-header-LineHeight);
+      text-align: center;
+      display: block;
+      color: var(--homePage-header-Color);
+    }
+    &-utilities {
+      max-width: 1237px;
+      width: 100%;
+      padding-top: var(--utilities-header-height);
+
+      background-image: var(--utilities-header-Bg-Image);
+
+      @include respond-to('medium') {
+        padding-top: var(--utilities-header-height-Large);
+      }
+    }
+  }
+  .carousel-wrapper {
+    margin-bottom: 30px;
+  }
+}

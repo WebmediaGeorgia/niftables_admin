@@ -1,0 +1,16 @@
+@use '@styles/index.scss' as *;
+
+.accordion-item {
+  padding: 14px 13px 14px 20px;
+
+  background: var(--accordionMain-item-Bg);
+  border: var(--accordionMain-item-BorderWidth) solid
+    var(--accordionMain-item-BorderColor);
+  backdrop-filter: blur(15px);
+  border-radius: 26px;
+
+  @include respond-to('medium') {
+    border-radius: 35px;
+    padding: 14px 13px 14px 40px;
+  }
+}

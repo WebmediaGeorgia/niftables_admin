@@ -1,0 +1,48 @@
+@use '@styles/index.scss' as *;
+
+.placeholder {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  width: var(--socialIcon-Width);
+  height: var(--socialIcon-Height);
+  width: var(--socialIcon-Width);
+  background-color: var(--socialIconWrap-BgColor);
+
+  cursor: pointer;
+  @include respond-to('medium') {
+    width: var(--socialIcon-Width-Large);
+    height: var(--socialIcon-Height-Large);
+  }
+
+  &:hover {
+    background: var(--socialIconWrap-BgColor-Hover);
+    svg {
+      left: 0;
+      bottom: 0;
+      background-color: var(--socialIconWrap-BgColor-Hover);
+    }
+  }
+  svg {
+    position: absolute;
+    inset: var(--socialIcon-Position);
+
+    background-color: var(--socialIcon-BgColor);
+    border-radius: inherit;
+    fill: #fff;
+    width: inherit;
+    height: inherit;
+    padding: var(--socialIcon-Padding);
+    transform: var(--socialIcon-Rotate);
+    @include animate(bottom left);
+
+    @include respond-to('medium') {
+      padding: var(--socialIcon-Padding-Large);
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@use '@styles/index.scss' as *;
+
+.footer {
+  width: 100%;
+  color: var(--footer-ColorText);
+
+  margin-top: auto;
+  border-top: 1px solid var(--footer-border-color);
+  &.image {
+    .container {
+      &:before {
+        content: '';
+        width: 86px;
+        padding-top: 209px;
+        padding-top: 20%;
+
+        position: absolute;
+        top: -69px;
+        right: 0;
+
+        background-position: 100% 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: var(--footer-small-Image);
+        pointer-events: none;
+
+        @include respond-to('small') {
+          right: 0;
+          width: 193px;
+        }
+        @include respond-to('medium') {
+          width: 263px;
+          padding-top: 20.85%;
+        }
+        @include respond-to('xxlarge') {
+          right: -65px;
+        }
+      }
+    }
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: var(--footer-direction);
+  gap: var(--footer-gap);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-column {
+  width: 33%;
+}
+
+.container {
+  position: relative;
+
+  padding: var(--footer-static-Padding);
+  @include respond-to('medium') {
+    padding: var(--footer-static-Padding-large);
+  }
+  z-index: 1;
+
+  &:only-child {
+    padding: var(--footer-Padding);
+
+    @include respond-to('small') {
+      padding: var(--footer-Padding-small);
+    }
+    @include respond-to('medium') {
+      padding: var(--footer-Padding-large);
+    }
+  }
+  &.footer-home {
+    padding-top: 62px;
+  }
+}

@@ -1,0 +1,224 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+  display: var(--nftHomeBackGround-display);
+  position: absolute;
+  bottom: 0;
+  max-height: 680px;
+  height: 48vw;
+  width: 100%;
+  padding-bottom: 3%;
+
+  &:before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    bottom: 10.45%;
+    left: 0;
+    max-height: 246px;
+    height: 36.18%;
+    width: 100%;
+    background: var(--nftHomeBackGround-wrapper-BgColor);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    max-height: 71px;
+    height: 10.45%;
+    width: 100%;
+    background-image: var(--nftHomeBackGround-horizontal-BgImage);
+    background-color: var(--nftHomeBackGround-horizontal-BgColor);
+    background-repeat: repeat-x;
+    background-position: 0 50%;
+
+    background-size: contain;
+  }
+  .container {
+    position: relative;
+    height: 100%;
+
+    .background {
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include respond-to('medium') {
+        animation-iteration-count: infinite;
+      }
+
+      @include animate(transform);
+    }
+
+    .animal {
+      bottom: 14px;
+      left: 0;
+      max-width: 640px;
+      width: 45vw;
+      padding-top: 420px;
+      padding-top: 29.16vw;
+
+      background-image: var(--nftHomeBackGround-animal-BgImage);
+      background-position: 100% 100%;
+
+      @include respond-to('medium') {
+        animation-duration: 10s;
+        animation-name: left-left;
+      }
+    }
+    .leaf {
+      &-left {
+        top: 0;
+        left: 0;
+        transform: translate(0, -5%);
+        max-width: 100px;
+        width: 6.95vw;
+        padding-top: 26vw;
+        background-image: var(--nftHomeBackGround-leave-left-BgImage);
+        background-position: 100% 0;
+        @include respond-to('medium') {
+          animation-duration: 5s;
+          animation-name: left-left;
+        }
+
+        &-bottom {
+          bottom: 6%;
+          left: 0;
+
+          max-width: 317px;
+          width: 22.85vw;
+
+          padding-top: 27.084vw;
+          background-image: var(--nftHomeBackGround-leave-bottom-BgImage);
+          background-position: 100% 100%;
+
+          @include respond-to('medium') {
+            animation-duration: 7s;
+            animation-name: left-bottom;
+          }
+        }
+      }
+      &-8 {
+        right: 23.5%;
+        bottom: 17.2%;
+
+        max-width: 275px;
+        width: 20vw;
+        padding-top: 175px;
+        padding-top: 12.16vw;
+        background-image: var(--nftHomeBackGround-leave-8);
+
+        background-position: 0 100%;
+
+        @include respond-to('medium') {
+          animation-duration: 7s;
+          animation-name: left-8;
+        }
+        @include respond-to('xxlarge') {
+          right: 338px;
+          bottom: 104px;
+        }
+      }
+      &-7 {
+        right: 16.65%;
+        bottom: 6.05%;
+
+        max-width: 264px;
+        width: 18.34vw;
+        padding-top: 258px;
+        padding-top: 17.915vw;
+        background-image: var(--nftHomeBackGround-leave-7);
+        background-position: 0 100%;
+
+        @include respond-to('medium') {
+          animation-duration: 7s;
+          animation-name: left-7;
+        }
+        @include respond-to('xxlarge') {
+          right: 240px;
+          bottom: 40px;
+        }
+      }
+      &-6 {
+        right: 27%;
+        bottom: 0;
+
+        max-width: 259px;
+        width: 17.98vw;
+        padding-top: 208px;
+        padding-top: 17.92vw;
+        background-image: var(--nftHomeBackGround-leave-6);
+        background-position: 0 100%;
+
+        @include respond-to('medium') {
+          animation-duration: 7s;
+          animation-name: left-6;
+        }
+        @include respond-to('xxlarge') {
+          right: 27%;
+          bottom: 12px;
+        }
+      }
+      &-5 {
+        right: 0;
+        bottom: 2%;
+
+        max-width: 203px;
+        width: 14.15vw;
+        padding-top: 177px;
+        padding-top: 12.3vw;
+        background-image: var(--nftHomeBackGround-leave-5);
+        background-position: 0 100%;
+
+        @include respond-to('medium') {
+          animation-duration: 7s;
+          animation-name: left-5;
+        }
+        @include respond-to('xxlarge') {
+          bottom: 11px;
+        }
+      }
+      &-4 {
+        bottom: 2.5%;
+        right: 14.25%;
+
+        max-width: 256px;
+        width: 18.2vw;
+        padding-top: 199px;
+        padding-top: 13.82vw;
+        background-image: var(--nftHomeBackGround-leave-4);
+        background-position: 0 100%;
+
+        @include respond-to('medium') {
+          animation-duration: 7s;
+          animation-name: left-4;
+        }
+        @include respond-to('xxlarge') {
+          right: 205px;
+          bottom: 14px;
+        }
+      }
+      &-3 {
+        right: 39.5%;
+        bottom: 2.5%;
+
+        max-width: 376px;
+        width: 26.15vw;
+        padding-top: 319px;
+        padding-top: 22.16vw;
+        background-image: var(--nftHomeBackGround-leave-3);
+        background-position: 0 100%;
+
+        @include respond-to('medium') {
+          animation-duration: 7s;
+          animation-name: left-3;
+        }
+        @include respond-to('xxlarge') {
+          right: 569px;
+          bottom: 15px;
+        }
+      }
+    }
+  }
+}

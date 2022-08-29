@@ -1,0 +1,72 @@
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.h-screen {
+  height: 100vh;
+}
+.absolute {
+  position: absolute;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
+.h-full {
+  height: 100%;
+}
+.right-0 {
+  right: 0;
+}
+.origin-top-left {
+  transform-origin: top left;
+}
+.origin-top-right {
+  transform-origin: top right;
+}
+.origin-bottom-left {
+  transform-origin: bottom left;
+}
+.-top-2 {
+  top: -0.5rem;
+}
+.-top-8 {
+  top: -2rem;
+}
+
+.-left-2 {
+  left: -0.5rem;
+}
+
+.-right-2 {
+  right: -0.5rem;
+}
+
+.particle-container {
+  position: absolute;
+}
+.particle-item {
+  position: relative;
+  border-radius: 50%;
+  height: 1px;
+  width: 1px;
+  background-color: #fff;
+}
+
+.relative {
+  position: relative;
+}
+.video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}

@@ -1,0 +1,48 @@
+@use '@styles/index.scss' as *;
+
+.header {
+  width: 100%;
+
+  &-main {
+    flex: 0 0 663px;
+    height: 663px;
+  }
+  &-signIn {
+    flex: 0 0 445px;
+    height: 445px;
+  }
+
+  > div {
+    position: absolute;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .leaves-left {
+    padding-top: 28.6%;
+    width: 50%;
+    max-width: 709px;
+    background-position: 0 0;
+    background-image: var(--jungleHeader-leaves-left);
+  }
+
+  .leaves-right {
+    right: 0;
+    padding-top: 30.4%;
+    width: 50%;
+    max-width: 502px;
+    background-position: 100% 0;
+    background-image: var(--jungleHeader-leaves-right);
+  }
+
+  .leaves-center {
+    transform: translateX(-50%);
+    left: 50%;
+    padding-top: 19.85%;
+    width: 48.685%;
+    max-width: 701px;
+    background-position: center 0;
+    background-image: var(--jungleHeader-leaves-center);
+  }
+}

@@ -1,0 +1,3 @@
+export const ACTIVATABLE = 'ACTIVATABLE'
+export const REDEEMABLE = 'REDEEMABLE'
+export const ACTIVATED = 'ACTIVATED'

@@ -1,0 +1,110 @@
+@use '@styles/index.scss' as *;
+
+.card {
+  position: relative;
+
+  height: 225px;
+  width: 253px;
+  border-radius: 30px;
+  background: var(--cardNftUtility-BgColor);
+  overflow: hidden;
+  @include respond-to('small') {
+    height: 225px;
+    width: 345px;
+  }
+  @include respond-to('medium') {
+    height: 225px;
+    width: 345px;
+  }
+
+  &:hover {
+    background-color: var(--cardNftUtility-BgColor-Hover);
+    &:before {
+      inset: -45.37% -45.24% -44.05% -45.82%;
+    }
+    .card-header {
+      inset: -100% 0 auto;
+      opacity: 0;
+    }
+
+    .card-body {
+      inset: 0;
+      opacity: 1;
+    }
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+  }
+
+  &:before {
+    inset: 0 1.44% 2.2% 0;
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+    background: var(--cardNftUtility-bgImage) no-repeat 0 0;
+    background-size: cover;
+    @include animate(inset);
+  }
+
+  &-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  &-header,
+  &-body {
+    position: absolute;
+  }
+  &-header {
+    inset: 0;
+    opacity: 1;
+
+    @include animate(top opacity);
+  }
+  &-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+
+    text-shadow: var(--cardNftUtility-title-TexShadow);
+    word-break: break-word;
+    width: 100%;
+    max-height: 132px;
+    overflow: hidden;
+
+    color: var(--cardNftUtility-title-ColorText);
+    @include respond-to('small') {
+      font-size: 38px;
+      line-height: 44px;
+    }
+  }
+  &-body {
+    display: flex;
+    align-items: center;
+
+    inset: 100% 0 0;
+    opacity: 0;
+    @include animate(top opacity);
+  }
+  &-desc {
+    padding: 0 16px;
+    max-height: 104px;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,54 @@
+@use '@styles/index.scss' as *;
+
+.main {
+  flex-grow: 1;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  padding-top: var(--header-Height);
+  @include respond-to('medium') {
+    padding-top: var(--header-Height-Large);
+  }
+}
+.main-animation {
+  position: relative;
+  width: 100%;
+}
+.scene1 {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-height: 145vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  
+  &:not(.home) {   
+    top: 38vw;
+    z-index: 0;
+    height: 100%;
+    max-height: 220vw;
+  }
+}
+
+.isParrotAndButterfly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

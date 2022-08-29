@@ -1,0 +1,47 @@
+@use '@styles/index.scss' as *;
+
+.navLink {
+  position: relative;
+  display: block;
+  font-weight: var(--header-navLink-FontWeight);
+  font-size: var(--header-navLink-FontSize);
+  line-height: var(--header-navLink-LineHeight);
+  text-decoration: none;
+  color: var(--colorText-base);
+  padding: var(--header-navLink-Padding);
+  @include respond-to('medium') {
+    padding: var(--header-navLink-Padding-Large);
+  }
+
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    height: 2px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius: 5px;
+    left: 50%;
+    width: 0;
+    transform: translate(-50%, 0);
+    @include animate(width);
+  }
+
+  &:focus,
+  &:hover {
+    color: var(--header-colorText-hover);
+    @include respond-to('medium') {
+      &:before {
+        width: 100%;
+        background: var(--header-navLink-line-BgColor);
+      }
+    }
+  }
+}
+.isActive {
+  .navLink {
+    color: var(--header-colorText-active);
+  }
+}

@@ -1,0 +1,18 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: var(--filterBlock-subHeading-BorderTop);
+	&:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+		border-bottom: none;
+	}
+	.group-title {
+		font-size: 14px;
+		line-height: 21px;
+		margin-bottom: 10px;
+		text-transform: capitalize;
+	}
+}

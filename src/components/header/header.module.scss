@@ -1,0 +1,42 @@
+@use '@styles/index.scss' as *;
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding: 10px 20px;
+  max-height: var(--header-Height);
+
+  @include respond-to('medium') {
+    padding: var(--header-Padding);
+    animation: var(--header-animation-fadeOutHeaderPadding);
+    max-height: var( --header-Height-Large);
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    opacity: var(--header-opacity);
+    background: var(--header-bg-color);
+    animation: var(--header-animation-fadeOutHeaderBg);   
+    border-bottom: var(--header-border-Width) solid var(--header-border-color);   
+  }
+}
+
+.headerScroll {
+  &:before {
+    opacity: var(--headerScroll-opacity);
+    animation: var(--headerScroll-animation);
+
+    background: var(--headerScroll-bg);
+    box-shadow: var(--header-navigation-BoxShadow);
+    border-color: var(--headerScroll-BorderColor);
+  }
+  @include respond-to('medium') {
+    padding: var(--headerScroll-Padding);
+    animation: fadeInHeaderPadding 0.8s;
+  }
+}

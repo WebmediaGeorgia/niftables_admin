@@ -1,0 +1,180 @@
+@keyframes smoke-left {
+  0% {
+    left: -2%;
+  }
+  50% {
+    left: 20%;
+  }
+  100% {
+    left: -2%;
+  }
+}
+@keyframes smoke-right {
+  from {
+    right: -4%;
+  }
+  50% {
+    right: 20%;
+  }
+  to {
+    right: -4%;
+  }
+}
+
+@keyframes animal {
+  from {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 2%);
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes left-left {
+  from {
+    transform: translate(0, -5%);
+  }
+
+  50% {
+    transform: translate(0, -2.5%);
+  }
+
+  to {
+    transform: translate(0, -5%);
+  }
+}
+
+@keyframes left-bottom {
+  from {
+    transform: translate(-5%, 0);
+  }
+
+  50% {
+    transform: translate(-5px, 10%);
+  }
+
+  to {
+    transform: translate(-5%, 0);
+  }
+}
+@keyframes left-8 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(6deg);
+  }
+
+  to {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes left-7 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(-6deg);
+  }
+
+  to {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes left-6 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(8deg);
+  }
+
+  to {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes left-5 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(5.5deg);
+  }
+
+  to {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes left-4 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(5.5deg);
+  }
+
+  to {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+@keyframes left-3 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(-8deg);
+  }
+
+  to {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes fadeInHeaderBg {
+  from {
+    opacity: 0;
+    background: var(--header-bg-color);
+  }
+  to {
+    opacity: 1;
+    background: var(--headerScroll-bg);
+  }
+}
+
+@keyframes fadeOutHeaderBg {
+  from {
+    opacity: 1;
+    background: var(--headerScroll-bg);
+  }
+  to {
+    opacity: 0;
+    background: var(--header-bg-color);
+  }
+}
+@keyframes fadeInHeaderPadding {
+  from {
+    padding: var(--header-Padding);
+  }
+  to {
+    padding: var(--headerScroll-Padding);
+  }
+}
+@keyframes fadeOutHeaderPadding {
+  from {
+    padding: var(--headerScroll-Padding);
+  }
+  to {
+    padding: var(--header-Padding);
+  }
+}

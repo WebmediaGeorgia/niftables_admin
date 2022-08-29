@@ -1,0 +1,9 @@
+@use '@styles/index.scss' as *;
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--pagination-MarginBottom);
+  margin-top: var(--pagination-MarginTop);
+}

@@ -1,0 +1,102 @@
+@use '@styles/index.scss' as *;
+
+.item {
+  -webkit-tap-highlight-color: transparent;
+  &:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  &:hover,
+  &.open {
+    .item-header {
+      color: var(--accordionMain-item-ColorText-Hover);
+      .item-button {
+        background: var(--accordionMain-item-button-BgColor-Hover);
+        .icon {
+          stroke: var(--accordionMain-item-button-icon-BgColor-Hover);
+        }
+      }
+    }
+  }
+  &.open {
+    .item-header {
+      margin: 0 0 10px;
+      .icon {
+        stroke: var(--accordionMain-item-button-icon-BgColor);
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    -webkit-appearance: button;
+    user-select: none;
+    @include animate(color margin);
+  }
+  .item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    overflow: hidden;
+    word-break: break-word;
+    @include respond-to('medium') {
+      padding: 5px 0;
+      font-size: 22px;
+    }
+  }
+  .item-button {
+    display: inline-flex;
+    margin-left: 5px;
+    margin-top: 4px;
+    width: 100%;
+    height: 20px;
+    max-width: 20px;
+    flex: 0 0 20px;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: var(--accordionMain-item-button-BoxShadow);
+    background-image: var(--accordionMain-item-button-BgImage);
+    background-color: var(--accordionMain-item-button-BgColor);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include animate(background);
+    @include respond-to('medium') {
+      margin-top: 0;
+      height: 36px;
+      max-width: 36px;
+      flex: 0 0 36px;
+      padding: 10px;
+    }
+
+    .icon {
+      margin: auto;
+      stroke: var(--accordionMain-item-button-icon-BgColor);
+      transform: rotate(0deg);
+      @include animate(transform, stroke);
+    }
+  }
+  &-content {
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+    margin: 0 0 20px;
+    @include animate(margin);
+    &.collapsed {
+      max-height: 0;
+      margin: 0;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+    }
+  }
+  &-desc {
+    font-size: 16px;
+    line-height: 24px;
+    @include respond-to('medium') {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}

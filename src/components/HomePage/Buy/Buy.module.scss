@@ -1,0 +1,76 @@
+@use '@styles/index.scss' as *;
+
+.buy-egg {
+  position: relative;
+  z-index: 0;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .buy-leaf-1{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 36%;
+    max-width: 299px;
+    width: 20.85%;
+    padding-top: 46%;
+    background-position: 0 0;
+    background-image: var(--homePage-buy-left-BgImage);
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }  
+}
+.buy-container {
+  padding-top: var(--homePage-buy-PaddingTop);
+  padding-bottom: var(--homePage-buy-PaddingBottom);
+  @include respond-to('medium') {
+    padding-top: var(--homePage-buy-PaddingTop-Large);
+    padding-bottom: var(--homePage-buy-PaddingBottom-Large);
+  }
+  .desc {
+    margin: 0 auto 46px;
+    font-weight: var(--homePage-desc-FontWeight);
+    font-size: var(--homePage-desc-FontSize);
+    line-height: var(--homePage-desc-buy-LineHeight);
+    text-align: center;
+
+    @include respond-to('medium') {
+      max-width: var(--homePage-buy-desc-width);
+      width: 100%;
+    }
+
+    @include respond-to('xxlarge') {
+      max-width: var(--homePage-buy-desc-width-Large);
+    }
+  }
+}
+.header {
+  margin: var(--homePage-header-buy-Margin);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  height: var(--homePage-header-Height);
+  h2 {
+    margin: 0;
+    font-size: var(--homePage-header-FontSize);
+    line-height: var(--homePage-header-LineHeight);
+    text-align: center;
+    display: block;
+    color: var(--homePage-header-Color);
+  }
+  &-buy {
+    max-width: 1237px;
+    width: 100%;
+    padding-top: var(--myNfts-video-height);
+
+    background-image: var(--buy-Bg-Image);
+    @include respond-to('medium') {
+      padding-top: var(--myNfts-video-height-Large);
+    }
+  }
+}

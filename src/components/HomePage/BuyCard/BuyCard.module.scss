@@ -1,0 +1,156 @@
+@use '@styles/index.scss' as *;
+
+.card {
+  .card-hover-to-leaves {
+    margin: 0 auto;
+    max-height: 364px;
+    height: 45%;
+    width: 100%;
+    max-width: 430px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translateX(-50%);
+
+    @include respond-to('xSmall') {
+      height: 59%;
+    }
+    @include respond-to('medium') {
+      &:hover {
+        + .card-wrapper {
+          .leaf {
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            &-left {
+              transform: translate(54%, 7%) scale(1) rotate(0);
+            }
+            &-right {
+              transform: translate(-52%, 10.5%) scale(1) rotate(0);
+            }
+          }
+        }
+      }
+    }
+  }
+  &-wrapper {
+    padding: 0 20px;
+    position: relative;
+    margin: 0 auto;
+    max-height: 423px;
+    max-width: 280px;
+    width: 100%;
+    @include respond-to('small') {
+      max-width: 430px;
+    }
+
+    .leaf {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include animate(transform, 1s);
+      &-left {
+        right: 100%;
+        bottom: -3%;
+        max-width: 210px;
+        width: 54.5%;
+        padding-top: 100%;
+        background-image: var(--buyCard-leaf-left-BgImage);
+        background-position: 0 0;
+        transform: translate(218px, 23px) scale(0.6) rotate(0);
+        @include respond-to('medium') {
+          transform: translate(218px, 0) scale(0.6) rotate(30deg);
+        }
+      }
+      &-right {
+        left: 100%;
+        top: -22%;
+        max-width: 296px;
+        width: 76.85%;
+        padding-top: 132%;
+        background-image: var(--buyCard-leaf-right-BgImage);
+        transform: translate(-218px, 65px) scale(0.6) rotate(-30deg);
+        background-position: 62% 0;               
+        @include respond-to('medium') {
+          background-position: 0 0;
+          transform: translate(-218px, 65px) scale(0.6) rotate(-30deg);
+        }
+      }
+    }
+
+    &:hover {
+      .leaf {
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        &-left {
+          transform: translate(54%, 7%) scale(1) rotate(0);
+        }
+        &-right {
+          transform: translate(-52%, 10.5%) scale(1) rotate(0);
+        }
+      }
+    }
+  }
+  &-media {
+    .image {
+      position: relative;
+      left: -5%;
+    }
+  }
+  &-body {
+    position: var(--buyCard-body-Position);
+    z-index: 2;
+    inset: var(--buyCard-body-Inset);
+
+    text-align: center;
+    .button {
+      min-width: var(--buyCard-button-Width);
+      margin-top: 0;
+      padding: var(--buyCard-button-Padding);
+    }
+  }
+}
+
+.card-bg {
+  position: relative;
+  padding: var(--buyCard-bg-Padding);
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:before {
+    width: var(--buyCard-wrapper-after-Width);
+    height: var(--buyCard-wrapper-after-Height);
+
+    background-position: 0 0;
+    background-image: var(--buyCard-wrapper-left-BgImage);
+    transform: translate(0, -50%);
+
+    top: 34%;
+    right: -4%;
+
+    animation-name: smoke-right;
+    animation-duration: 21s;
+    animation-iteration-count: infinite;
+  }
+  &:after {
+    width: var(--buyCard-wrapper-after-Width);
+    height: var(--buyCard-wrapper-after-Height);
+
+    background-position: 100% 0;
+    background-image: var(--buyCard-wrapper-right-BgImage);
+    transform: translate(0, -50%);
+
+    top: 44%;
+    left: -2%;
+
+    animation-name: smoke-left;
+    animation-duration: 21s;
+    animation-iteration-count: infinite;
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@services/*": ["src/common/api/*"],
+      "@shared/*": ["src/components/shared/*"],
+      "@styles/*": ["src/styles/*"],
+      "@type/*": ["src/types/*"],
+      "@static/*": ["src/static/*"],
+      "@entities/*": ["src/entities/*"],
+      "@utils/*": ["src/utils/*"],
+			"@containers/*": ["src/containers/*"],
+			"@constants/*": ["src/constants/*"],
+			"@common/*": ["src/common/*"],
+			"@commonV2/*": ["src/commonV2/*"],
+      "@componentsV2/*": ["src/componentsV2/*"],
+      "@requests/*": ["src/requests/*"]
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "svg.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/shared/styles.tsx",
+    "src/components/Carousels/..HomeCarousel.tsx",
+    "src/animations.ts"
+  ],
+  "exclude": ["node_modules", "src/stories"]
+}

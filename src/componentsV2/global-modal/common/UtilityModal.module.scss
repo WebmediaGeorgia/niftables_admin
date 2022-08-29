@@ -1,0 +1,42 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  padding: 35px;
+	text-align: center;
+	@media only screen and (max-width: 475px) {
+		padding: 0;
+	}
+	.title {
+		margin-top: 30px;
+		font-weight: var(--modal-title-FontWeight);
+		font-size: var(--modal-title-FontSize);
+		line-height: var(--modal-title-LineHeight);
+		color: var(--modal-title-ColorText);
+	}
+	:global(.timer) {
+		font-weight: var(--modal-title-FontWeight);
+		font-size: var(--modal-title-FontSize);
+		line-height: var(--modal-title-LineHeight);
+		color: var(--modal-title-ColorText);
+	}
+  .text {
+		margin-top: 15px;
+    font-size: var(--modal-text-secondary-FontSize);
+    line-height: var(--modal-text-secondary-LineHeight);
+    color: var(--modal-text-ColorText);
+		max-width: 500px;
+  }
+	.buttons-wrapper {
+		max-width: var(--card-paymentFailed-button-Width);
+		width: 100%;
+		.btn-go-profile {
+			border-width: 1px;
+			span {
+				margin-right: 5px;
+			}
+		}
+	}
+}

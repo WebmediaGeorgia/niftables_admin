@@ -1,0 +1,122 @@
+@use '@styles/index.scss' as *;
+
+.header {
+  margin: var(--homePage-header-video-Margin);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  height: var(--homePage-header-Height);
+  h2 {
+    margin: 0;
+    font-size: var(--homePage-header-FontSize);
+    line-height: var(--homePage-header-LineHeight);
+    text-align: center;
+    display: block;
+    color: var(--homePage-header-Color);
+  }
+  &-myNfts {
+    max-width: 1237px;
+    width: 100%;
+    padding-top: var(--myNfts-video-height);
+
+    background-image: var(--myNfts-Bg-Image);
+
+    @include respond-to('medium') {
+      padding-top: var(--myNfts-video-height-Large);
+    }
+  }
+}
+.video {
+  &-section {
+    position: relative;
+    padding-top: 10.15vw; 
+  }
+  &-container {
+    padding-top: var(--homePage-video-container-PaddingTop);
+    padding-bottom: var(--homePage-video-container-PaddingBottom);
+    @include respond-to('medium') {
+      padding-bottom: var(--homePage-video-container-PaddingBottom-Large);
+    }
+  }
+  &-wrapper {
+    position: relative;
+    padding-top: var(--homePage-video-Height);
+    @include respond-to('xxlarge') {
+      padding-top: var(--homePage-video-Height-large);
+    }
+
+    &:before {
+      content: '';
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: var(--video-BgImage) 0 0 no-repeat;
+      background-size: contain;
+    }
+
+    .video {
+      height: 100%;
+      width: 100%;
+      max-width: 1088px;
+    }
+  }
+  &-inner {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    width: 91%;
+    max-width: 1088px;
+    background: var(--video-Poster) 50% 50% no-repeat;
+    background-size: contain;
+  }
+}
+
+.actions {
+  opacity: 0;
+
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 95%;
+  width: 91%;
+  max-width: 1088px;
+  @include animate(opacity);
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    padding: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }  
+}

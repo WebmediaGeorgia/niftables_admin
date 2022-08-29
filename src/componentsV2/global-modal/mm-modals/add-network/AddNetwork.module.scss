@@ -1,0 +1,21 @@
+@use '@styles/index.scss' as *;
+
+.wrapper {
+	text-align: center;
+	.title {
+		font-weight: var(--modal-title-FontWeight);
+		font-size: var(--modal-title-FontSize);
+		line-height: var(--modal-title-LineHeight);
+		color: var(--modal-title-ColorText);
+	}
+	.text {
+		margin-top: 60px;
+		font-size: var(--modal-text-secondary-FontSize);
+		line-height: var(--modal-text-secondary-LineHeight);
+		color: var(--modal-text-ColorText);
+	}
+	.button {
+		width: 50%;
+		margin-top: 60px;
+	}
+}

@@ -1,0 +1,76 @@
+@use '@styles/index' as *;
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.media-wrapper {
+  max-width: 110px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.media {
+  height: 110px;
+  width: 110px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  padding-top: 29px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.action {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  Button {
+    width: 100%;
+    max-width: var(--button-connect-Width);
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  svg {
+    width: var(--button-connect-icon-Width);
+    height: var(--button-connect-icon-Height);
+    @media (pointer: fine) {
+      display: none;
+    }
+  }
+  svg + svg {
+    display: block;
+    @media (pointer: coarse) {
+      display: none;
+    }
+  }
+}
+.icon-wallet {
+  circle {
+    fill: var(--icon-wallet-Circle-Fill);
+  }
+  path {
+    fill: var(--icon-wallet-Path-Fill);
+  }
+}
+
+.metamask-text {
+  letter-spacing: 5px;
+  flex-grow: 1;
+  padding-left: 5px;
+  text-align: left;
+}
