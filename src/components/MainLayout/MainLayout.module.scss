@@ -11,9 +11,21 @@
   scroll-behavior: smooth;
 }
 
+.headingBg {
+  height: 450px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-size: 100% 100%;
+  background-image: url('/assets/img/superlotls/header-bg.png');
+}
+
 .contentWrapper {
   display: flex;
   flex-direction: column;
+  background-color: #0D4B9E;
   flex: 1;
   width: 100%;
   align-items: center;
@@ -35,8 +47,8 @@
   left: 0;
   right: 0;
   top: 0;
-  
-  &:not(.home) {   
+
+  &:not(.home) {
     top: 38vw;
     z-index: 0;
     height: 100%;

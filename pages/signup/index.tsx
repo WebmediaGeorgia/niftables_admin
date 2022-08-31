@@ -40,6 +40,7 @@ import Copyright from '@components/copyright';
 import Container from '@components/shared/Container';
 import { MainLayoutStatic } from '@components/MainLayout';
 import Loader from '@commonV2/Loader'
+import classNames from "classnames";
 
 interface ISignUpForm {
   username: string;
@@ -161,7 +162,7 @@ function SignUp(): JSX.Element {
         <ModalWrapper className={styles.content}>
           <ModalTitle
             className={styles.heading}
-            text='Create your Niftables account'
+            text={<>Create your <span className={styles.niftablesTitle}>Niftables</span> account</>}
           />
           <ModalContentWrapper>
             <FormWrapper onSubmit={handleSubmit(onSubmit)}>
@@ -223,14 +224,17 @@ function SignUp(): JSX.Element {
               </div>
               <Button
                 disabled={!isValid}
-                size='l'
+                size='m'
                 color='blue'
                 fillStyle={false}
                 fullWidth={false}
-                className={btnStyles['btn-login-primary']}
+                className={classNames(
+                  btnStyles['btn-login-primary']
+                )}
               >
                 Sign Up
               </Button>
+
               <TipsText
                 className={styles.tipsText}
                 text='Already a member? '

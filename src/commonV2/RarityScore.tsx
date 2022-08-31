@@ -21,13 +21,13 @@ const StyledWrapper = styled.div`
   & .icon {
     margin-right: 4px;
     path {
-      fill: ${({ theme }) => theme.text.primary};
+      fill: ${({ theme }) => theme.text.secondaryBlue};
     }
   }
   & .label {
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
-    color: ${({ theme }) => theme.text.primary};
+    color: ${({ theme }) => theme.text.secondaryBlue};
   }
 `

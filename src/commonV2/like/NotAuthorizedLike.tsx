@@ -24,18 +24,13 @@ const StyledWrapper = styled.div.attrs(({ colorScheme }) => {
   const config = {
     'primary': css`
       border-radius: 50%;
-      background: rgba(0, 0, 0, 0.2);
       &:hover {
-        background: rgba(0, 0, 0, 0.75);
-        .tooltip-wrapper {
-          display: block;
+        > .icon {
+          opacity: 0.52;
         }
       }
-      &:active {
-        background: rgba(0, 0, 0, 0.5);
-      }
     `,
-    'transparent': css`
+    'secondary': css`
       &:hover {
         .tooltip-wrapper {
           display: block;
@@ -54,8 +49,11 @@ const StyledWrapper = styled.div.attrs(({ colorScheme }) => {
   transition: all 0.2s;
   & .icon {
     path {
-      fill: ${({ theme }) => theme.text.primary};
+      fill: #0D4B9E;
     }
+  }
+  & .not-liked {
+    opacity: 0.12;
   }
   & .tooltip-wrapper {
     position: absolute;

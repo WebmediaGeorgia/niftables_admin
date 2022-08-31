@@ -34,11 +34,8 @@ const StyledWrapper = styled.div`
   padding: 10px 0;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 8px;
-  background: linear-gradient(
-    90deg,
-    #163929 0%,
-    rgba(0, 0, 0, 0.25) 302.2%
-  );
+  color: ${({ theme }) => theme.text.primary };
+  background: ${({ theme }) => theme.text.white };
   backdrop-filter: blur(92px);
   visibility: hidden;
   opacity: 0;

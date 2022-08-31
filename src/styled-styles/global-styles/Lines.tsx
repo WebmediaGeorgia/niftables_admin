@@ -4,7 +4,7 @@ const Lines = createGlobalStyle`
   .g-h-separator {
     width: 100%;
     height: 1px;
-    background: ${({ theme }) => theme.text.primary};
+    background: ${({ theme }) => theme.common.separatorColor};
   }
 `
 

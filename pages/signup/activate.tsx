@@ -107,10 +107,10 @@ function SignUpSuccess(): JSX.Element {
               <Button
                 size='s'
                 color='blue'
-                fillStyle={true}
+                fillStyle={false}
                 fullWidth={false}
                 onClick={handleResend}
-                className={btnStyles['btn-login-primary']}
+                className={btnStyles['btn-login-secondary']}
               >
                 Resend email
               </Button>

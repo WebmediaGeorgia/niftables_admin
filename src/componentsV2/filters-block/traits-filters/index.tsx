@@ -45,7 +45,7 @@ export default function TraitsFilters ({ collection }) {
 		<AccordionItem
 			defaultOpen
 			size='s'
-			color='default'
+			color='transparent'
 			title='Traits'
 		>
 			<TraitsList traits={collection.traits} />

@@ -6,21 +6,25 @@
   cursor: pointer;
   column-gap: 12px;
   padding: var(--option-padding);
-  font-size: var(--option-FontSize);
-  line-height: var(--option-LineHeight);
-  font-weight: var(--option-FontWeight);
   cursor: pointer;
   &:not(:last-child) {
     margin: var(--option-margin);
   }
   border-radius: var(--option-BorderRadius);
   border: var(--option-Border);
-  background: var(--option-Bg);
+  background: transparent;
   backdrop-filter: var(--option-Filter);
-  color: var(--option-ColorText);
-  @include animate(border);
+  color: white;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+
+  transition: all 0.2s;
+
   &:hover {
-    border-color: var(--option-BorderColor-Hover);
+    border: 1px solid #FF66C4;
+    color: #FF66C4;
   }
   &:empty {
     display: none;

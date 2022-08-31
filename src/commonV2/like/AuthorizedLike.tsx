@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 
 import NotLiked from 'public/other/favorite_clear.svg'
 import Liked from 'public/other/favorite.svg'
+import classnames from 'classnames'
 
 export default function AuthorizedLike ({ className, isLiked, toggleLike, colorScheme }) {
   const handleToggle = React.useCallback((e) => {
@@ -11,17 +12,9 @@ export default function AuthorizedLike ({ className, isLiked, toggleLike, colorS
   }, [toggleLike, isLiked])
 
   const parsedIcon = React.useMemo(() => {
-    if (isLiked) {
-      return (
-        <Liked
-          className='icon'
-          onClick={handleToggle}
-        />
-      )
-    }
     return (
-      <NotLiked
-        className='icon'
+      <Liked
+        className={classnames("icon",  { 'not-liked': !isLiked })}
         onClick={handleToggle}
       />
     )
@@ -41,16 +34,23 @@ const StyledWrapper = styled.div.attrs(({ colorScheme }) => {
   const config = {
     'primary': css`
       border-radius: 50%;
-      background: rgba(0, 0, 0, 0.2);
-      &:hover {
-        background: rgba(0, 0, 0, 0.75);
+      > .icon {
+        path {
+          fill: #0D4B9E;
+        }
       }
-      &:active {
-        background: rgba(0, 0, 0, 0.5);
+      &:hover {
+        > .icon {
+          opacity: 0.52;
+        }
       }
     `,
-    'transparent': css`
-
+    'secondary': css`
+      > .icon {
+        path {
+          fill: white;
+        }
+      }
     `
   }
   return { scheme: config[colorScheme] }
@@ -62,10 +62,8 @@ const StyledWrapper = styled.div.attrs(({ colorScheme }) => {
   height: 28px;
   transition: all 0.2s;
   cursor: pointer;
-  & .icon {
-    path {
-      fill: ${({ theme }) => theme.text.primary};
-    }
+  & .not-liked {
+    opacity: 0.12;
   }
   ${({ scheme }) => scheme};
 `

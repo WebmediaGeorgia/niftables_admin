@@ -61,7 +61,7 @@ const StyledWrapper = styled.div`
     min-height: 258px;
     margin: 15px 0 0;
     padding: 10px;
-    background: #579c4f;
+    background: transparent;
     border-radius: 8px;
   }
   .payment-form.hidden {

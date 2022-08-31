@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 export interface IBadge {
   children: ReactNode | string;
   size?: 's' | 'm' | 'l';
-  color?: 'primary' | 'secondary' | 'light' | 'dark' | 'white';
+  color?: 'primary' | 'secondary' | 'light' | 'dark' | 'white' | "lotls-secondary";
   uppercase?: boolean;
   rounded?: boolean;
   iconClose?: boolean;

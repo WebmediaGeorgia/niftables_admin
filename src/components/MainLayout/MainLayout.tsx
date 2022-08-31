@@ -16,40 +16,20 @@ import classNames from 'classnames';
 export const MainLayout: FC<IMainLayout> = ({
   children,
   isHero,
-  snakeOnTop,
-  isHome,
-  isParrotAndButterfly,
   className,
 }) => {
   return (
     <>
-      <ParticlesContainer />
-      <ParticlesScriptContainer />
-
-      <HeroTop snakeOnTop={snakeOnTop} />
       <Header />
+      <div className={styles.headingBg} />
       <main className={classNames(styles.main, className)}>
         <div className={styles.contentWrapper}>
-          {isHero && isHero}
           <div className={styles['main-animation']}>
-            <div
-              id='scene1'
-              className={classNames(isHome && styles[isHome], styles.scene1)}
-            >
-              <AnimationsLeft disabledOnMobile={false} />
-              <AnimationsRight
-                disabledOnMobile={false}
-                snakeOnTop={snakeOnTop}
-              />
-            </div>
-            <div className={styles.isParrotAndButterfly}>
-              {isParrotAndButterfly && isParrotAndButterfly}
-            </div>
             {children}
           </div>
         </div>
       </main>
-      <Footer isBottom={<Bottom />} />
+      <Footer />
     </>
   );
 };

@@ -2,14 +2,16 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 
 import ArrowDownIcon from 'public/other/arrowDown.svg'
+import classnames from "classnames";
 
 export default function SelectLabel ({ isOpen, toggleOptions, selectedOption }) {
   return (
     <StyledWrapper
       isOpen={isOpen}
       onClick={toggleOptions}
+      className={classnames({ 'is-open': isOpen })}
     >
-      <div className='label'>
+      <div className='label' >
         {selectedOption.label}
       </div>
       <ArrowDownIcon className='icon' />
@@ -24,14 +26,30 @@ const StyledWrapper = styled.div`
   width: 100%;
   gap: 12px;
   padding: 13px 30px 14px 20px;
-  border-radius: 50px;
+  border-radius: 6px;
+  border: 1px solid #4F83C9;
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
-  background: url(/assets/img/jungle/button_sorting.webp) no-repeat 50% 0;
-  background-position: center center;
+  background-color: transparent;
   background-size: contain;
   cursor: pointer;
+  transition: all 0.2s;
+
+  &.is-open {
+    background-color: ${({ theme }) => theme.text.white};
+    > .label {
+      color: ${({ theme }) => theme.text.primary};
+    }
+  }
+
+  &:hover {
+    > .label {
+      color: ${({ theme }) => theme.text.secondary};
+    }
+    background-color: ${({ theme }) => theme.text.white};
+  }
+
   @media only screen and (max-width: 1024px) {
     font-size: 14px;
     padding: 8px 20px 7px 30px;
@@ -40,12 +58,13 @@ const StyledWrapper = styled.div`
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    color: ${({ theme }) => theme.text.white};
   }
   .icon {
     flex: 0 0 14px;
     width: 14px;
     height: 7px;
-    fill: ${({ theme }) => theme.text.primary};
+    fill: ${({ theme }) => theme.text.secondary};
   }
   ${({ isOpen }) => isOpen && css`
     .icon {

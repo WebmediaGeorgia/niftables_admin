@@ -50,7 +50,6 @@ const StyledWrapper = styled.div`
   display: flex;
   height: 100%;
 	width: 100%;
-  background: #163929;
   border-radius: 8px;
   & .placeholder {
     width: 94px;

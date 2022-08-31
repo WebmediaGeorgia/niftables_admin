@@ -1,8 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
+import "@fontsource/oswald";
 
 const Basic = createGlobalStyle`
   * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Oswald', sans-serif;
   }
   .g-container {
     width: 100%;

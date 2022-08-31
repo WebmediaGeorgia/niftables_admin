@@ -6,19 +6,26 @@
   cursor: pointer;
   column-gap: 12px;
   padding: var(--option-padding);
-  font-size: var(--option-FontSize);
-  line-height: var(--option-LineHeight);
-  font-weight: var(--option-FontWeight);
   cursor: pointer;
   &:not(:last-child) {
     margin: var(--option-margin);
   }
+  color: white;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  background: #FF66C4;
+  border: 1px solid #FF66C4;
+  transition: all 0.2s;
+
+  &:hover {
+    background: transparent;
+    color: #FF66C4;
+  }
   border-radius: var(--option-BorderRadius);
-  border: var(--option-Border);
-  background: var(--option-Bg);
   backdrop-filter: var(--option-Filter);
-  color: var(--option-ColorText);
-  @include animate(border);
+
   &:empty {
     display: none;
   }
@@ -43,7 +50,7 @@
   width: 20px;
   height: 20px;
   &:hover {
-    fill: var(--option-icon-close-Fill-Hover);
+    fill: #FF66C4;
   }
 }
 

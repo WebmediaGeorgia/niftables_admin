@@ -4,7 +4,6 @@ import { toast } from 'react-toastify'
 import cn from 'classnames'
 
 import styles from './ChangeWallet.module.scss'
-import btnStyles from '@components/shared/Button/Button.module.scss'
 
 import { _getStore } from 'src/storage/configureStore';
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
@@ -13,7 +12,7 @@ import useClearReservation from '@hooks/modal/useClearReservation'
 import useMoveToReferrer from '@hooks/modal/useMoveToReferrer'
 
 import Modal from '@commonV2/Modal'
-import Button from '@shared/Button'
+import Button from '@commonV2/Button'
 
 import formatAddress from '@utils/metamask/formatAddress'
 import checkMMConnected from '@utils/metamask/checkMMConnected'
@@ -84,16 +83,10 @@ export default function ChangeWallet () {
 					<div className={styles['text']}>
 						in MetaMask and press button below
 					</div>
-					<Button
-						className={styles['button']}
-						size='l'
-						color='blue'
-						fillStyle
-						fullWidth
-						onClick={checkAddressMatch}
-					>
-						Try now
-					</Button>
+
+          <Button className="g-mt-20" clickHandler={checkAddressMatch}>
+            Try now
+          </Button>
 				</div>
 				<div className={cn(styles['separator'], styles['text'])}>
 					<b>or</b>
@@ -105,16 +98,10 @@ export default function ChangeWallet () {
 					<div className={styles['text']}>
 						in our system
 					</div>
-					<Button
-						className={cn(btnStyles['btn-login-primary'], styles['button'])}
-						size='l'
-						color='blue'
-						fillStyle
-						fullWidth
-						onClick={linkAddress}
-					>
-						Link account
-					</Button>
+
+          <Button className="g-mt-20" clickHandler={linkAddress}>
+            Link account
+          </Button>
 				</div>
 			</div>
 		</Modal>

@@ -3,6 +3,7 @@ import styles from './CollectionCard.styles.module.scss';
 import cn from 'classnames';
 import { ExternalImage } from '@components/shared/ExternalImage';
 import Badge from '@shared/Badge';
+import classnames from "classnames";
 
 export interface ICollectionCardProps {
   item: ICollectionCardItem;
@@ -89,6 +90,20 @@ export const CollectionCard: FC<ICollectionCardProps> = ({
               </span>
             </div>
             <div className={styles.badges}>
+              {item.status && (
+                <Badge
+                  uppercase
+                  rounded
+                  color='secondary'
+                  size={isLarge ? 'l' : 's'}
+                  className={classnames(styles.sBadge, {
+                    [styles.availableBadge]: item.status === "AVAILABLE",
+                    [styles.soldBadge]: item.status === "SOLD"
+                  })}
+                >
+                  {item.status}
+                </Badge>
+              )}
               {item.generative && (
                 <Badge
                   uppercase
@@ -98,28 +113,6 @@ export const CollectionCard: FC<ICollectionCardProps> = ({
                   className={styles.sBadge}
                 >
                   Generative
-                </Badge>
-              )}
-              {item.status && (
-                <Badge
-                  uppercase
-                  rounded
-                  color='secondary'
-                  size={isLarge ? 'l' : 's'}
-                  className={styles.sBadge}
-                >
-                  {item.status}
-                </Badge>
-              )}
-              {item.status === 'available' && (
-                <Badge
-                  uppercase
-                  rounded
-                  color='secondary'
-                  size={isLarge ? 'l' : 'm'}
-                  className={styles.sBadge}
-                >
-                  Available
                 </Badge>
               )}
             </div>

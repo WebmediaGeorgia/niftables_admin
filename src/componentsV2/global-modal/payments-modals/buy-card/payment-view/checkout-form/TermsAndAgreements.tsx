@@ -23,9 +23,9 @@ const StyledLabel = styled.span`
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
   a {
-    color: ${({ theme }) => theme.text.primary};
+    color: ${({ theme }) => theme.text.secondary};
     text-decoration: none;
     &:hover {
       text-decoration: underline;

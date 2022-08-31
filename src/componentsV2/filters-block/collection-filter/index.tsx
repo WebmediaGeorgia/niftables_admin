@@ -10,7 +10,7 @@ import CollectionOption from './collection-option'
 export default function CollectionFilter () {
 	const collections = useTypedSelector(state => state.collections.list)
 	const collectionId = useTypedSelector(state => state.filter.collectionId)
-	
+
 	const content = React.useMemo(() => {
 		if (!collections) return null
 		if (collectionId) {
@@ -32,7 +32,7 @@ export default function CollectionFilter () {
 		<AccordionItem
 			defaultOpen
 			size='s'
-			color='default'
+			color='transparent'
 			title='Collection'
 		>
 			{content}

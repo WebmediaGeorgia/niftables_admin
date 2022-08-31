@@ -19,6 +19,9 @@ export default function Description () {
 }
 
 const StyledWrapper = styled.div`
+  background-color: white;
+  color: black;
+
   .label {
     padding: 20px 30px 10px 30px;
     font-size: 16px;

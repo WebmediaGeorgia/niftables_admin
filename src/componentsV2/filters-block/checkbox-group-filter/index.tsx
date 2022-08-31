@@ -11,7 +11,7 @@ export default function CheckboxGroupFilter ({
 		<AccordionItem
 			defaultOpen
 			size='s'
-			color='default'
+			color='transparent'
 			title={title}
 		>
 			<CheckboxGroup

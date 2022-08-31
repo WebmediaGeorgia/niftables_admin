@@ -28,9 +28,6 @@ export default function Modal ({
 				className='modal'
 				onClick={(e) => e.stopPropagation()}
 			>
-				<div className='art-1' />
-				<div className='art-2' />
-				<div className='art-3' />
 				<div className='close-modal'>
 					<IconClose
 						className='icon-close'
@@ -71,48 +68,13 @@ const StyledWrapper = styled.div.attrs(({ size }) => {
 		margin: auto;
 		width: 100%;
 		max-width: ${({ maxWidth }) => maxWidth}px;
-		background-image: url(/assets/img/jungle/jungleModal-bg.webp);
+		background-image: url(/assets/img/superlotls/small-pop-up-bg.png);
 		background-position: 50% 0;
 		background-repeat: no-repeat;
-		background-color: #163929;
-    background-size: cover;
+    background-size: 100% 100%;
 		border-radius: 8px;
 		overflow: hidden;
-		.art-1,
-		.art-2 {
-			position: absolute;
-			inset: 0 -1px auto 0;
-			z-index: 0;
-			background-repeat: no-repeat;
-      height: 245px;
-      background-size: auto;
-      @media only screen and (max-width: 540px) {
-        height: 160px;
-        background-size: contain;
-      }
-		}
-		.art-1 {
-			background-position: 0 0;
-			background-image: url(/assets/img/jungle/jungleModal-top-leaves-left.webp);
-		}
-		.art-2 {
-			background-position: 100% 0;
-			background-image: url(/assets/img/jungle/jungleModal-top-leaves-right.webp);
-		}
-		.art-3 {
-			position: absolute;
-			inset: auto 0 0;
-			height: 203px;
-      background-size: auto;
-			z-index: 0;
-			background-repeat: no-repeat;
-			background-position: 0 100%;
-			background-image: url(/assets/img/jungle/jungleModal-bottom-leaves-left.webp);
-      @media only screen and (max-width: 540px) {
-        height: 150px;
-			  background-size: contain;
-      }
-		}
+
 		.close-modal {
 			position: absolute;
 			top: 10px;
@@ -126,13 +88,14 @@ const StyledWrapper = styled.div.attrs(({ size }) => {
 			}
 			&:hover {
 				.icon-close {
-					fill: ${({ theme }) => theme.text.secondary};
+          opacity: 0.5;
 				}
 			}
 		}
 		.icon-close {
 			display: block;
-			fill: ${({ theme }) => theme.text.primary};
+			fill: white;
+      opacity: 0.3;
 		}
 		.content {
 			position: relative;

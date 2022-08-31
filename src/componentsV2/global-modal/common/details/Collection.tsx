@@ -26,9 +26,9 @@ const StyledWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   & .collection {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    color: ${({ theme }) => theme.text.primary};
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
   }
 `

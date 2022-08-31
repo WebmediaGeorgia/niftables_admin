@@ -11,7 +11,7 @@ import Butterfly from '@components/ParrotAndButterfly/Butterfly';
 
 export default function MyProfilePage() {
   return (
-    <MainLayout snakeOnTop={true} isParrotAndButterfly={<Butterfly />}>
+    <MainLayout>
       <MyProfile />
     </MainLayout>
   );

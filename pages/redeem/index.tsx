@@ -14,7 +14,7 @@ import parseFilters from '@utils/filters/parseFilters'
 
 export default function RedeemPage () {
   return (
-    <MainLayout snakeOnTop={true} isParrotAndButterfly={<Butterfly />}>
+    <MainLayout>
       <Redeem />
     </MainLayout>
   )

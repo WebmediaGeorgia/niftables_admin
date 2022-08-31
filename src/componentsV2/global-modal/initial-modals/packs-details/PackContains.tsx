@@ -66,13 +66,11 @@ const StyledWrapper = styled.div`
   width: 100%;
   height: 70px;
   padding: 0 30px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.075) 0%,
-    rgba(255, 255, 255, 0.075) 100%
-  );
+  color: #0D4B9E;
+  background: #E3ECF8;
   backdrop-filter: blur(4px);
-  border-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     gap: 20px;
@@ -90,7 +88,7 @@ const StyledWrapper = styled.div`
       width: 20px;
       height: 20px;
       margin-right: 12px;
-      background: rgba(255, 255, 255, 0.1);
+      background: #0D4B9E;
       border-radius: 2px;
       .icon {
         width: 20px;

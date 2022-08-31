@@ -9,7 +9,7 @@ export default function PriceFilter () {
 		<AccordionItem
 			defaultOpen
 			size='s'
-			color='default'
+			color='transparent'
 			title='Price (USD)'
 		>
 			<RangePicker

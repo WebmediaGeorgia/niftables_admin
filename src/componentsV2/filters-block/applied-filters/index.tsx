@@ -137,7 +137,7 @@ export default function AppliedFilters ({ optionsConfig, collection }) {
         isFirst
         defaultOpen
         size='s'
-        color='default'
+        color='transparent'
       >
         <div className={styles['badges-list']}>
           {parsedBadges}

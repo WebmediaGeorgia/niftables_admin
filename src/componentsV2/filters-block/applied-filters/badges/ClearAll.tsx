@@ -14,6 +14,7 @@ export default function ClearAll () {
 		<Badge
 			iconClose
 			onCloseIconClick={clearAll}
+      color="lotls-secondary"
 		>
 			Clear all
 		</Badge>

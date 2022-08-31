@@ -51,29 +51,29 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: 1px solid rgba(229, 229, 229, 0.5);
   border-radius: 10px;
-  background: rgba(21, 50, 36, 0.75);
+  background: white;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
   transition: all 0.2s;
   cursor: pointer;
-  :hover {
-    background: rgba(99, 109, 106, 0.5);
-  }
   .body {
     flex-grow: 1;
     padding: 0 28px 12px;
     .title {
-      margin-top: 15px;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 18px;
+      color: black;
+      margin-top: 13px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
     }
     .supply {
       margin-top: 10px;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 14px;
+
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+      color: #0D4B9E;
+      opacity: 0.5;
     }
   }
 `

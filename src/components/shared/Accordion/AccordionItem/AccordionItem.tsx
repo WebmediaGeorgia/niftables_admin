@@ -33,6 +33,7 @@ const AccordionItem: FC<IAccordionItemProps> = ({
         [styles['accordion-large']]: size === 'l',
         [styles['accordion-default']]: color === 'default',
         [styles['accordion-primary']]: color === 'primary',
+        [styles['accordion-transparent']]: color === 'transparent',
       },
 			'accordion'
     );

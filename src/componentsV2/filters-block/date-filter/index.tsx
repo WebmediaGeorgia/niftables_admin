@@ -28,7 +28,7 @@ export default function DateFilter ({
 		<AccordionItem
 			defaultOpen
 			size='s'
-			color='default'
+			color='transparent'
 			title={title}
 		>
 			<DatePicker

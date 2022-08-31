@@ -39,7 +39,7 @@ const StyledWrapper = styled.div`
     line-height: 18px;
     .link {
       font-weight: 600;
-      color: ${({ theme }) => theme.text.primary};
+      color: ${({ theme }) => theme.text.white};
       text-decoration: none;
       :hover {
         text-decoration: underline;

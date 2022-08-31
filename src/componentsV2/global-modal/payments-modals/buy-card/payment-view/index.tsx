@@ -16,17 +16,21 @@ const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY as string, {
 const stripeOptions = {
   fonts: [
 		{
-      cssSrc:'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap',
-      family: 'Poppins',
+      cssSrc:'https://fonts.googleapis.com/css?family=Oswald',
+      family: 'Oswald',
     }
   ],
   appearance: {
     variables: {
-      fontFamily: 'Poppins',
-      fontSizeSm: '14px',
-      fontSizeBase: '14px',
+      fontFamily: 'Oswald',
+      fontSizeSm: '16px',
+      fontSizeBase: '16px',
       spacingUnit: '5px',
       colorDanger: '#fd7465',
+
+      colorPrimary: '#0570de',
+      colorBackground: '#4F83C9',
+      colorText: 'white',
     },
   },
 }

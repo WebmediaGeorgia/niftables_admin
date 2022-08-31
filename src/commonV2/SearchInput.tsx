@@ -73,7 +73,7 @@ const StyledWrapper = styled.div`
     .icon {
       width: 24px;
       height: 24px;
-      fill: ${({ theme }) => theme.text.primary};
+      fill: ${({ theme }) => theme.text.white};
     }
   }
   .input {
@@ -83,27 +83,26 @@ const StyledWrapper = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    color: ${({ theme }) => theme.text.primary};
+    color: ${({ theme }) => theme.text.white};
     border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 35px;
+    border-radius: 6px;
     background: linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.075) 0%,
       rgba(255, 255, 255, 0.075) 100%
     );
     transition: width 0.2s, border-radius 0.2s, padding 0.2s;
-    outline-color: ${({ theme }) => theme.text.secondary};
+    outline-color: ${({ theme }) => theme.text.secondaryBlue};
     @media only screen and (max-width: 1024px) {
       height: 36px;
     }
     ::-webkit-search-cancel-button {
       -webkit-appearance: none;
-      height: 14px;
-      width: 14px;
+      height: 20px;
+      width: 20px;
       display: block;
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAn0lEQVR42u3UMQrDMBBEUZ9WfQqDmm22EaTyjRMHAlM5K+Y7lb0wnUZPIKHlnutOa+25Z4D++MRBX98MD1V/trSppLKHqj9TTBWKcoUqffbUcbBBEhTjBOV4ja4l4OIAZThEOV6jHO8ARXD+gPPvKMABinGOrnu6gTNUawrcQKNCAQ7QeTxORzle3+sDfjJpPCqhJh7GixZq4rHcc9l5A9qZ+WeBhgEuAAAAAElFTkSuQmCC);
-      background-repeat: no-repeat;
-      background-size: 14px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
+      background-size: 20px;
       cursor: pointer;
     }
     ::placeholder {

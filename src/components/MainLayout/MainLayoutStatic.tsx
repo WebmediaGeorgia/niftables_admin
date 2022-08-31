@@ -13,16 +13,13 @@ export const MainLayoutStatic: FC<IMainLayout> = ({
 }) => {
   return (
     <>
-      <JungleTheme />
       <Header />
-
       <main className={classNames(styles.main, className)}>
         <div className={styles.contentWrapper}>
           {isHero && isHero}
           {children}
         </div>
       </main>
-
       <Footer className='image' />
     </>
   );

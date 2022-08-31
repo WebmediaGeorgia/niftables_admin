@@ -10,11 +10,13 @@
 			width: 100%;
 			flex: 1 0 90px;
 			outline: none;
-			background: var(--input-price-Bg);
-			border: var(--input-price-Border);
-			border-radius: var(--input-price-BorderRadius);
+      color: white;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #4F83C9;
+      backdrop-filter: blur(4px);
+      border-radius: 6px;
 			&::placeholder {
-				color: var(--input-price-Placeholder-ColorText);
+				color: #4F83C9;
 			}
 		}
 	}
@@ -25,6 +27,7 @@
   line-height: 18px;
   text-align: center;
   margin: 0 7px;
+  color: white;
 }
 .priceError {
   font-size: var(--error-FontSize);

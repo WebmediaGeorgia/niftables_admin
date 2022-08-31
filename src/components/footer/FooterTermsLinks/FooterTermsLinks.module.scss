@@ -21,7 +21,14 @@
   text-decoration: none;
   cursor: pointer;
   position: relative;
-  color: var(--footer-terms-links-ColorText);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.6;
 
   display: inline-flex;
   flex-direction: var(--footer-terms-links-direction);

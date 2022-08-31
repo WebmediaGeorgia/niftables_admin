@@ -26,8 +26,8 @@
   --heading-font-weight: 700;
 
   --header-bg-color: transparent;
-  --header-border-color: transparent;
-  --header-border-Width: 0;
+  --header-border-color: rgba(255, 255, 255, 0.15);
+  --header-border-Width: 1;
   --header-Padding: 39px 20px 20px;
   --header-opacity: 0;
   --header-animation-fadeOutHeaderBg: fadeOutHeaderBg 0.9s;
@@ -37,7 +37,7 @@
   --header-Height-Large: 108px;
 
   --headerScroll-bg: rgba(21, 50, 36, 0.98);
-  --headerScroll-BorderColor: transparent;
+  --headerScroll-BorderColor: rgba(255, 255, 255, 0.15);
   --headerScroll-Padding: 16.5px 20px;
   --headerScroll-opacity: 1;
   --headerScroll-animation: fadeInHeaderBg 1.1s;
@@ -296,7 +296,7 @@
   --profileSearchBlock-Padding: 33px 0 40px;
 
   --card-footer-ColorText: #ffffff;
-  --card-Bg: rgba(21, 50, 36, 0.72);
+  --card-Bg: white;
   --card-Bg-Hover: linear-gradient(
     153.9deg,
     rgba(255, 255, 255, 0.35) 0%,
@@ -304,7 +304,7 @@
   );
   --card-title-BoxShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
   --card-title-filter: blur(24px);
-  --card-title-ColorText: #ffffff;
+  --card-title-ColorText: black;
   --card-availableBlock-ColorText: #ffffff;
   --card-price-ColorText: #ffffff;
   --card-buy-value-ColorText: #fdc634;
@@ -313,13 +313,13 @@
   --card-BorderRadius: 10px;
   --card-coast-ColorText: #ffffff;
   --card-coast-FontWeight: 400;
-  --card-media-Bg: #163929;
+  --card-media-Bg: white;
   --card-media-BorderColor: transparent;
   --card-media-secondary-Bg: #fab72b;
   --card-rankInfo-ColorText: #ffffff;
   --card-media-BorderRadius: 20px;
 
-  --packCard-Bg: rgba(21, 50, 36, 0.72);
+  --packCard-Bg: white;
   --packCard-hover-Bg: linear-gradient(
     153.9deg,
     rgba(255, 255, 255, 0.35) 0%,
@@ -452,13 +452,13 @@
   --button-link-signUp-Width: 168px;
   --button-link-signUp-Padding: 10px 16px;
   --button-Width: 190px;
-  --button-BorderRadius: 50px;
+  --button-BorderRadius: 8px;
   --button-FontFamily: 'Ubuntu', sans-serif;
   --button-FontWeight: 500;
   --button-Bg-Position: 100% center;
-  --button-Bg-Image: url(/assets/img/jungle/button_large_bg.webp);
+  --button-Bg-Image: none;
   --button-BoxShadow: none;
-  --button-BoxShadow-Hover: inset 0px 4px 16px rgba(0, 0, 0, 0.25);
+  --button-BoxShadow-Hover: none;
   --button-Filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.09))
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.09));
 
@@ -468,7 +468,7 @@
   --button-disabled-Opacity: 0.2;
   --button-disabled-ColorText: #ffffff;
 
-  --button-blueFilled-BgColor: #b1a598;
+  --button-blueFilled-BgColor: #FF66C4;
   --button-blueFilled-BgColor-Hover: #b1a598;
   --button-blueFilled-BorderWidth: 0;
   --button-blueFilled-BorderColor: transparent;
@@ -490,17 +490,15 @@
   --button-whiteOutlined-BorderColor: transparent;
   --button-whiteOutlined-BorderColor-Hover: #ffffff;
 
-  --button-login-primary-Bg: linear-gradient(
-    90deg,
-    #6561d7 2.76%,
-    #80bbe6 100%
-  );
+  --button-login-primary-Bg: #FF66C4;
   --button-login-primary-ColorText: #ffffff;
   --button-login-primary-BorderColor: transparent;
 
-  --button-login-secondary-Bg: #ffffff;
-  --button-login-secondary-ColorText: #6561d7;
-  --button-login-secondary-BorderColor: transparent;
+  --button-login-secondary-Bg: transparent;
+  --button-login-secondary-Bg-hover: #FF66C4;
+  --button-login-secondary-ColorText: white;
+  --button-login-secondary-ColorText-hover: white;
+  --button-login-secondary-BorderColor: #FF66C4;
 
   --button-login-FontWeight: 500;
 
@@ -577,12 +575,12 @@
   --button-withdraw-LineHeight: 23px;
   --button-withdraw-BgColor: #163929;
 
-  --tipsText-ColorText: #fff;
+  --tipsText-ColorText: #FF66C4;
   --tipsText-FontSize: 18px;
   --tipsText-LineHeight: 27px;
   --tipsText-FontWeight: 500;
 
-  --tipsText-link-ColorText: #fff;
+  --tipsText-link-ColorText: #FF66C4;
 
   --avatar-Border: 1px solid #ffffff;
   --avatar-Border-Primary: 1px solid rgba(255, 255, 255, 0.1);
@@ -866,26 +864,22 @@
   --buttonGroup-svg-Color: #ffffff;
   --buttonGroup-svg-active-Color: #dadada;
 
-  --forgotPassLink-ColorText: #fdc634;
+  --forgotPassLink-ColorText: #FF66C4;
   --forgotPassLink-FontSize: 14px;
   --forgotPassLink-FontWeight: 400;
   --forgotPassLink-LineHeight: 16px;
-  --forgotPassLink-ColorText-Hover: #fdc634;
+  --forgotPassLink-ColorText-Hover: #FF66C4;
 
-  --input-Bg: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.075) 0%,
-    rgba(255, 255, 255, 0.075) 100%
-  );
+  --input-Bg: rgba(255, 255, 255, 0.05);
 
   --input-Padding: 10px 26px;
   --input-Padding-Large: 10px 50px 10px 30px;
   --input-label-text-Padding: 0 0 0 26px;
   --input-wrapper-Margin: 32px 0 0;
   --input-ColorText: #ffffff;
-  --input-Border: 2px solid #dadada;
-  --input-BorderRadius: 35px;
-  --input-BorderRadius-Large: 35px;
+  --input-Border: 1px solid #4F83C9;
+  --input-BorderRadius: 6px;
+  --input-BorderRadius-Large: 6px;
   --input-Placeholder-ColorText: rgba(255, 255, 255, 0.5);
   --input-AutoFill-ColorText: #ffffff;
   --input-AutoFill-BgColor: #375547;
@@ -902,7 +896,7 @@
   --input-price-Bg: transparent;
   --input-price-Border: 1px solid #fab72b;
   --input-price-BorderRadius: 6px;
-  --input-price-Placeholder-ColorText: #ffffff;
+  --input-price-Placeholder-ColorText: #4F83C9;
 
   --menubar-Padding: 23px 24px 23px 0;
   --menubar-Width: 270px;
@@ -1024,12 +1018,12 @@
   --input-datepicker-ColorText: #ffffff;
   --input-datepicker-placeholder-ColorText: #c0c9d1;
 
-  --datepicker-Bg: rgba(0, 0, 0, 0.8);
+  --datepicker-Bg: #4F83C9;
   --datepicker-ColorText: #ffffff;
   --datepicker-time-ColorText: #ffffff;
   --datepicker-navigation-icon-BorderColor: #ffffff;
   --datepicker-down-arrow-icon-BorderColor: #ffffff;
-  --datepicker-selected-Bg: #fdc634;
+  --datepicker-selected-Bg: #FF66C4;
   --datepicker-selected-ColorText: #ffffff;
 
   --datepicker-button-close-Bg: none;
@@ -1040,9 +1034,9 @@
   --datepicker-icon-close-Width: 19px;
   --datepicker-icon-close-Height: 16px;
   --datepicker-icon-close-Bg: #ffffff;
-  --datepicker-icon-close-ColorText: #fdc634;
-  --datepicker-day-in-range-Bg: #fdc634;
-  --datepicker-day-in-selecting-range-Bg: rgba(253, 198, 52, 0.5);
+  --datepicker-icon-close-ColorText: black;
+  --datepicker-day-in-range-Bg: #4F83C9;
+  --datepicker-day-in-selecting-range-Bg: #FF66C4;
   --datepicker-day-selecting: 50%;
 
   --datepicker-header-Bg: none;
@@ -1126,8 +1120,8 @@
   --accordion-small-title-BorderTop: 1px solid rgba(255, 255, 255, 0.1);
   --accordion-title-primary-BorderTop: 1px solid #dadada;
   --accordion-title-First-BorderColor: #d9e6f2;
-  --accordion-default-title-icon-BorderColor: #ffffff;
-  --accordion-primary-title-icon-BorderColor: #ffffff;
+  --accordion-default-title-icon-BorderColor: #FF66C4;
+  --accordion-primary-title-icon-BorderColor: #FF66C4;
   --accordion-height-large: 312px;
 
   --accordion-title-small-FontSize: 18px;
@@ -1147,7 +1141,7 @@
   --buySearchBlock-ColorText: #ffffff;
   --buySearchBlock-icon-Fill: #ffffff;
 
-  --table-ColorText: #ffffff;
+  --table-ColorText: black;
   --table-row-borderTop: 1px solid #e9eff4;
   --table-row-borderBottom: #e9eff4;
 
@@ -1253,10 +1247,10 @@
   --button-secondary-BgColor-Hover: transparent;
   --button-secondary-BoxShadow: none;
 
-  --button-secondary-active-ColorText: #ffffff;
-  --button-secondary-active-Bg-Image: url(/assets/img/jungle/button_large_bg.webp);
-  --button-secondary-active-BgColor: transparent;
-  --button-secondary-active-BorderColor: transparent;
+  --button-secondary-active-ColorText: #FF66C4;
+  --button-secondary-active-Bg-Image: none;
+  --button-secondary-active-BgColor: white;
+  --button-secondary-active-BorderColor: white;
 
   --button-cancel-ColorText: #ffffff;
   --button-cancel-ColorText-Hover: #ffffff;
@@ -1391,8 +1385,8 @@
   --otp-input-placeholder-ColorText: #ffffff;
   --otp-input-outline-color: #fab72b;
 
-  --error-ColorText: #f28033;
-  --error-Border: 2px solid #f28033;
+  --error-ColorText: #FD7465;
+  --error-Border: 2px solid #FD7465;
   --error-FontSize: 12px;
   --error-FonTWeight: 400;
   --error-LineHeight: 14px;
@@ -1635,7 +1629,7 @@
 
   --modal-card-BgColor: transparent;
   --modal-card-Bg: none;
-  --icon-dataPicker: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.04688 7.875H2.95312C2.73438 7.875 2.625 7.76562 2.625 7.54688V6.45312C2.625 6.23438 2.73438 6.125 2.95312 6.125H4.04688C4.26562 6.125 4.375 6.23438 4.375 6.45312V7.54688C4.375 7.76562 4.26562 7.875 4.04688 7.875ZM7 7.54688C7 7.76562 6.89062 7.875 6.67188 7.875H5.57812C5.35938 7.875 5.25 7.76562 5.25 7.54688V6.45312C5.25 6.23438 5.35938 6.125 5.57812 6.125H6.67188C6.89062 6.125 7 6.23438 7 6.45312V7.54688ZM9.625 7.54688C9.625 7.76562 9.51562 7.875 9.29688 7.875H8.20312C7.98438 7.875 7.875 7.76562 7.875 7.54688V6.45312C7.875 6.23438 7.98438 6.125 8.20312 6.125H9.29688C9.51562 6.125 9.625 6.23438 9.625 6.45312V7.54688ZM7 10.1719C7 10.3906 6.89062 10.5 6.67188 10.5H5.57812C5.35938 10.5 5.25 10.3906 5.25 10.1719V9.07812C5.25 8.85938 5.35938 8.75 5.57812 8.75H6.67188C6.89062 8.75 7 8.85938 7 9.07812V10.1719ZM4.375 10.1719C4.375 10.3906 4.26562 10.5 4.04688 10.5H2.95312C2.73438 10.5 2.625 10.3906 2.625 10.1719V9.07812C2.625 8.85938 2.73438 8.75 2.95312 8.75H4.04688C4.26562 8.75 4.375 8.85938 4.375 9.07812V10.1719ZM9.625 10.1719C9.625 10.3906 9.51562 10.5 9.29688 10.5H8.20312C7.98438 10.5 7.875 10.3906 7.875 10.1719V9.07812C7.875 8.85938 7.98438 8.75 8.20312 8.75H9.29688C9.51562 8.75 9.625 8.85938 9.625 9.07812V10.1719ZM12.25 3.0625V12.6875C12.25 13.0521 12.1224 13.362 11.8672 13.6172C11.612 13.8724 11.3021 14 10.9375 14H1.3125C0.947917 14 0.638021 13.8724 0.382812 13.6172C0.127604 13.362 0 13.0521 0 12.6875V3.0625C0 2.69792 0.127604 2.38802 0.382812 2.13281C0.638021 1.8776 0.947917 1.75 1.3125 1.75H2.625V0.328125C2.625 0.109375 2.73438 0 2.95312 0H4.04688C4.26562 0 4.375 0.109375 4.375 0.328125V1.75H7.875V0.328125C7.875 0.109375 7.98438 0 8.20312 0H9.29688C9.51562 0 9.625 0.109375 9.625 0.328125V1.75H10.9375C11.3021 1.75 11.612 1.8776 11.8672 2.13281C12.1224 2.38802 12.25 2.69792 12.25 3.0625ZM10.9375 12.5234V4.375H1.3125V12.5234C1.3125 12.6328 1.36719 12.6875 1.47656 12.6875H10.7734C10.8828 12.6875 10.9375 12.6328 10.9375 12.5234Z' fill='%23FAB72B'/%3e%3c/svg%3e ");
+  --icon-dataPicker: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 13 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4.04688 7.875H2.95312C2.73438 7.875 2.625 7.76562 2.625 7.54688V6.45312C2.625 6.23438 2.73438 6.125 2.95312 6.125H4.04688C4.26562 6.125 4.375 6.23438 4.375 6.45312V7.54688C4.375 7.76562 4.26562 7.875 4.04688 7.875ZM7 7.54688C7 7.76562 6.89062 7.875 6.67188 7.875H5.57812C5.35938 7.875 5.25 7.76562 5.25 7.54688V6.45312C5.25 6.23438 5.35938 6.125 5.57812 6.125H6.67188C6.89062 6.125 7 6.23438 7 6.45312V7.54688ZM9.625 7.54688C9.625 7.76562 9.51562 7.875 9.29688 7.875H8.20312C7.98438 7.875 7.875 7.76562 7.875 7.54688V6.45312C7.875 6.23438 7.98438 6.125 8.20312 6.125H9.29688C9.51562 6.125 9.625 6.23438 9.625 6.45312V7.54688ZM7 10.1719C7 10.3906 6.89062 10.5 6.67188 10.5H5.57812C5.35938 10.5 5.25 10.3906 5.25 10.1719V9.07812C5.25 8.85938 5.35938 8.75 5.57812 8.75H6.67188C6.89062 8.75 7 8.85938 7 9.07812V10.1719ZM4.375 10.1719C4.375 10.3906 4.26562 10.5 4.04688 10.5H2.95312C2.73438 10.5 2.625 10.3906 2.625 10.1719V9.07812C2.625 8.85938 2.73438 8.75 2.95312 8.75H4.04688C4.26562 8.75 4.375 8.85938 4.375 9.07812V10.1719ZM9.625 10.1719C9.625 10.3906 9.51562 10.5 9.29688 10.5H8.20312C7.98438 10.5 7.875 10.3906 7.875 10.1719V9.07812C7.875 8.85938 7.98438 8.75 8.20312 8.75H9.29688C9.51562 8.75 9.625 8.85938 9.625 9.07812V10.1719ZM12.25 3.0625V12.6875C12.25 13.0521 12.1224 13.362 11.8672 13.6172C11.612 13.8724 11.3021 14 10.9375 14H1.3125C0.947917 14 0.638021 13.8724 0.382812 13.6172C0.127604 13.362 0 13.0521 0 12.6875V3.0625C0 2.69792 0.127604 2.38802 0.382812 2.13281C0.638021 1.8776 0.947917 1.75 1.3125 1.75H2.625V0.328125C2.625 0.109375 2.73438 0 2.95312 0H4.04688C4.26562 0 4.375 0.109375 4.375 0.328125V1.75H7.875V0.328125C7.875 0.109375 7.98438 0 8.20312 0H9.29688C9.51562 0 9.625 0.109375 9.625 0.328125V1.75H10.9375C11.3021 1.75 11.612 1.8776 11.8672 2.13281C12.1224 2.38802 12.25 2.69792 12.25 3.0625ZM10.9375 12.5234V4.375H1.3125V12.5234C1.3125 12.6328 1.36719 12.6875 1.47656 12.6875H10.7734C10.8828 12.6875 10.9375 12.6328 10.9375 12.5234Z' fill='%23FFFFFF'/%3e%3c/svg%3e ");
 
   --card-get-Bg: none;
 
@@ -1692,7 +1686,7 @@
   --avatar-large-Width: 110px;
   --avatar-large-Height: 110px;
 
-  --tipsText-signUp-ColorText: #82c2e7;
+  --tipsText-signUp-ColorText: #FF66C4;
   --tipsText-signUp-FontWeight: 400;
   --tipsText-signUp-FontSize: 24px;
   --tipsText-signUp-LineHeight: 28px;
@@ -1935,8 +1929,8 @@
   --socialIcon-Padding: 7px;
   --socialIcon-Padding-Large: 14px;
   --socialIcon-Position: auto auto 3px 3px;
-  --socialIconWrap-BgColor: #af640c;
-  --socialIconWrap-BgColor-Hover: #af640c;
+  --socialIconWrap-BgColor: transparent;
+  --socialIconWrap-BgColor-Hover: white;
   --socialIcon-Rotate: rotate(1deg);
 
   --socialIcon-wrap-Margin: 0 -10px;

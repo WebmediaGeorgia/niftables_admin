@@ -14,6 +14,6 @@ export default React.memo(function TotalCounter ({
 })
 
 const StyledWrapper = styled.div`
-  color: ${({ theme }) => theme.text.primary};
+  color: ${({ theme }) => theme.text.white};
   white-space: nowrap;
 `

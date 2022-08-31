@@ -32,13 +32,29 @@
   }
 
   &-primary {
-    background: var(--badge-primary-BgColor);
-    color: var(--badge-primary-ColorText);
+    background: #4F83C9;
+    color: white;
+    border-radius: 2px;
+    padding: 3px 6px 3px 8px;
 
     .icon-close {
       stroke: var(--badge-primary-icon-close-Fill);
     }
   }
+
+  &-lotls-secondary {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
+    background-color: transparent;
+    color: #FF66C4;
+
+    .icon-close {
+      stroke: #FF66C4;
+    }
+  }
+
 
   &-secondary {
     background-color: var(--badge-secondary-BgColor);

@@ -19,6 +19,9 @@
   border-radius: var(--input-BorderRadius);
   width: 100%;
 
+  backdrop-filter: blur(4px);
+  /* Note: backdrop-filter has minimal browser support */
+
   outline-color: var(--input-Placeholder-ColorText);
 
   @include respond-to('medium') {
@@ -36,6 +39,7 @@
     -webkit-text-fill-color: var(--input-AutoFill-ColorText) !important;
   }
   &::placeholder {
+    opacity: 0.6;
     color: var(--input-Placeholder-ColorText);
   }
   &-small {

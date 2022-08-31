@@ -15,7 +15,7 @@ import Butterfly from '@components/ParrotAndButterfly/Butterfly';
 
 export default function CollectionNftsPage() {
   return (
-    <MainLayout isParrotAndButterfly={<Butterfly />}>
+    <MainLayout>
       <CollectionNfts />
     </MainLayout>
   );

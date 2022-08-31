@@ -1,6 +1,7 @@
 @use '@styles/index.scss' as *;
 
 .wrapper {
+  color: white;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
 	border-bottom: var(--filterBlock-subHeading-BorderTop);

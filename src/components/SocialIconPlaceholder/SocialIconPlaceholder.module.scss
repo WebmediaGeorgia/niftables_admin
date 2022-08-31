@@ -12,7 +12,6 @@
   width: var(--socialIcon-Width);
   height: var(--socialIcon-Height);
   width: var(--socialIcon-Width);
-  background-color: var(--socialIconWrap-BgColor);
 
   cursor: pointer;
   @include respond-to('medium') {
@@ -20,26 +19,17 @@
     height: var(--socialIcon-Height-Large);
   }
 
-  &:hover {
-    background: var(--socialIconWrap-BgColor-Hover);
-    svg {
-      left: 0;
-      bottom: 0;
-      background-color: var(--socialIconWrap-BgColor-Hover);
-    }
-  }
   svg {
+    background: white;
     position: absolute;
-    inset: var(--socialIcon-Position);
 
-    background-color: var(--socialIcon-BgColor);
     border-radius: inherit;
-    fill: #fff;
+    fill: #0D4B9E;
+    stroke: #0D4B9E;
     width: inherit;
     height: inherit;
     padding: var(--socialIcon-Padding);
     transform: var(--socialIcon-Rotate);
-    @include animate(bottom left);
 
     @include respond-to('medium') {
       padding: var(--socialIcon-Padding-Large);

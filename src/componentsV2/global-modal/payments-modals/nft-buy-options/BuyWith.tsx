@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function BuyWith () {
   return (
     <StyledWrapper>
-      BuyWith
+      Buy with
     </StyledWrapper>
   )
 }

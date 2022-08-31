@@ -25,9 +25,9 @@ const StyledWrapper = styled.div`
   display: flex;
   align-items: center;
   & .text {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
   }
   & .icon-person {
     margin-left: 10px;
@@ -43,6 +43,6 @@ const StyledWrapper = styled.div`
   }
   & .validated {
     margin-left: 5px;
-    fill: ${({ theme }) => theme.text.primary};
+    fill: white;
   }
 `

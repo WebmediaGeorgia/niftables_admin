@@ -26,14 +26,11 @@
   background: var(--card-Bg);
   cursor: pointer;
   overflow: hidden;
-  @include animate(background);
 
-  &:hover {
-    background: var(--card-Bg-Hover);
-    .media {
-      background: transparent !important;
-    }
+  .media {
+    background: transparent !important;
   }
+
 
   .body {
     position: relative;
@@ -53,13 +50,19 @@
       margin-bottom: 3px;
 
       font-weight: 600;
-      font-size: 12px;
-      line-height: 18px;
+      font-size: 16px;
+      line-height: 22px;
       color: var(--card-title-ColorText);
       @include ellipsis(2);
     }
 
     .distribution {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+      color: #0D4B9E;
+      opacity: 0.5;
+
       @include ellipsis(2);
       &-value {
         font-weight: 600;
@@ -77,6 +80,20 @@
 
       .sBadge {
         margin: 5px 5px 0 0;
+        padding: 0 10px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 21px;
+      }
+
+      .availableBadge {
+        background-color: #08A652;
+        color: white;
+      }
+
+      .soldBadge {
+        background-color: black;
+        color: white;
       }
     }
 

@@ -18,7 +18,10 @@ import useMoveToInitialView from '@hooks/modal/useMoveToInitialView'
 
 import Modal from '@commonV2/Modal'
 import MediaPreview from '@commonV2/media-preview'
-import Button from '@components/shared/Button';
+import Button from '@commonV2/Button'
+import styled from "styled-components";
+import BuyWith from "@componentsV2/global-modal/payments-modals/nft-buy-options/BuyWith";
+import cn from "classnames";
 
 export default function PacksBuyOptions () {
 	const dispatch = useDispatch()
@@ -53,26 +56,19 @@ export default function PacksBuyOptions () {
 						<a className={styles.link}>{pack.collection.name}</a>
 					</Link>
 				</div>
-				<Button
-					className={btnStyles['btn-buyPack']}
-					size='s'
-					color='blue'
-					fillStyle={false}
-					fullWidth={false}
-					onClick={moveToBuyCard}
-				>
-					Buy with card
-				</Button>
-				<Button
-					className={btnStyles['btn-buyPack']}
-					size='s'
-					color='blue'
-					fillStyle={false}
-					fullWidth={false}
-					onClick={moveToBuyCrypto}
-				>
-					Buy with crypto
-				</Button>
+        <BuyingContainer>
+          <Button
+            clickHandler={moveToBuyCard}
+          >
+            Buy with card
+          </Button>
+          <Button
+            clickHandler={moveToBuyCrypto}
+          >
+            Buy with crypto
+          </Button>
+        </BuyingContainer>
+
 				<div className={styles.description}>
 					{pack.description}
 				</div>
@@ -80,3 +76,8 @@ export default function PacksBuyOptions () {
 		</Modal>
 	)
 }
+
+const BuyingContainer = styled.div`
+    display: flex;
+    gap: 20px;
+`

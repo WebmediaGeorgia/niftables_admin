@@ -26,10 +26,8 @@
     top: var(--modal-close-top);
     right: var(--modal-close-right);
   }
-  &:hover {
-    .icon-close {
-      fill: var(--modal-icon-close-Fill-Hover);
-    }
+  .icon-close {
+    fill: #0D4B9E;
   }
 }
 .icon-close {
@@ -42,10 +40,7 @@
   margin: auto;
   max-width: 600px;
   width: 100%;
-  background-image: var(--modal-Bg);
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-color: var(--modal-Bg-Color);
+  background-color: white;
   box-shadow: var(--modal-boxShadow);
   border-radius: var(--modal-BorderRadius);
   border: var(--modal-Border);
@@ -71,14 +66,6 @@
       height: 245px;
       background-size: auto;
     }
-  }
-  &:before {
-    background-position: 0 0;
-    background-image: var(--modal-top-left-Bg);
-  }
-  &:after {
-    background-position: 100% 0;
-    background-image: var(--modal-top-right-Bg);
   }
 
   &-large {
@@ -120,23 +107,6 @@
 .content {
   padding: 20px 20px 20px 20px;
   width: 100%;
-
-  &:after {
-    content: '';
-    position: absolute;
-    inset: auto 0 0;
-    z-index: 0;
-    height: 150px;
-    background-size: contain;
-    @include respond-to('small') {
-      height: 203px;
-      background-size: auto;
-    }
-
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-image: var(--jungleModal-bottom-left);
-  }
 }
 
 .background-wrapper {
@@ -147,8 +117,4 @@
   width: 100%;
   border-radius: 8px 8px 0 0;
   background-color: var(--modal-card-BgColor);
-  background-image: var(--modal-card-Bg);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 91% auto;
 }

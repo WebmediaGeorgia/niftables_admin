@@ -19,17 +19,23 @@ export default function AvailableCol ({ className = '', nft }) {
 }
 
 const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
   & .label {
-    font-size: 12px;
-    color: ${({ theme }) => theme.text.primary};
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
     opacity: 0.5;
   }
   & .value {
     display: flex;
     align-items: center;
-    height: 45px;
-    font-size: 14px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text.primary};
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
   }
 `

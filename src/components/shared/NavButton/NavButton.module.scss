@@ -130,37 +130,37 @@
 
   &-login-primary {
     box-shadow: none;
-    font-weight: var(--button-login-FontWeight);
-    border-color: var(--button-login-primary-BorderColor);
-    background: var(--button-login-primary-Bg);
-    color: var(--button-login-primary-ColorText);
-    border-color: var(--button-login-primary-BorderColor);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
     &:hover {
-      background: var(--button-login-primary-Bg);
-      color: var(--button-login-primary-ColorText);
-      border-color: var(--button-login-primary-BorderColor);
+      background: white;
+      color: #FF66C4;
+      border-color: white;
     }
   }
 
   &-login-secondary {
     box-shadow: none;
-    font-weight: var(--button-login-FontWeight);
-    border-color: var(--button-login-secondary-BorderColor);
-    background: var(--button-login-secondary-Bg);
-    color: var(--button-login-secondary-ColorText);
-    border-color: var(--button-login-secondary-BorderColor);
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #FF66C4;
+
     &:hover {
-      background-color: var(--button-login-secondary-Bg);
-      color: var(--button-login-secondary-ColorText);
-      border-color: var(--button-login-secondary-BorderColor);
+      background-color: white;
+      color: #FF66C4;
+      border-color: white;
     }
-    span {
-      background: var(--button-login-inner-Bg);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-    }
+
   }
   &-width-login {
     max-width: var(--button-width-login);

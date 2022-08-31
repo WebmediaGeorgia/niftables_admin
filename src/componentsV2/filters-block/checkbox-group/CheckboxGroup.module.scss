@@ -7,10 +7,10 @@
     margin-bottom: 0;
   }
   label {
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 400;
-    color: var(--checkBoxGroup-label-ColorText);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
   }
 }
 
@@ -44,9 +44,9 @@
   .square {
     width: 24px;
     height: 24px;
-    border-radius: 6px;
+    border-radius: 4px;
     border: var(--utitlityFilter-square-Border);
-    border-color: var(--utitlityFilter-square-checked-BorderColor);
+    border-color: #FF66C4;
     margin-right: 10px;
     position: relative;
     &::before,
@@ -62,16 +62,15 @@
     &::before {
       width: var(--utitlityFilter-square-check-height);
       height: var(--utitlityFilter-square-check-Width);
-      background: var(--utitlityFilter-square-check-Bg);
+      background: #4F83C9;
     }
     &::after {
       height: var(--utitlityFilter-square-check-height);
       width: var(--utitlityFilter-square-check-Width);
-      background: var(--utitlityFilter-square-check-checked-Bg);
+      background: #FF66C4;
       opacity: 1;
     }
     &.collapsed {
-      border-color: var(--utitlityFilter-square-BorderColor);
       &::after {
         opacity: 0;
         border-color: var(--utitlityFilter-square-Border);
@@ -79,10 +78,10 @@
     }
   }
 	.squareText {
-		font-size: var(--utitlityFilter-label-FontSize);
-		font-weight: var(--utitlityFilter-label-FontWeight);
-		line-height: var(--utitlityFilter-label-lineHeight);
-		color: var(--utitlityFilter-reedeem-ColorText);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+		color: white;
 	}
 	.sub-options {
 		margin-top: 10px;

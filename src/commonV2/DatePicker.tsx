@@ -49,12 +49,12 @@ const StyledWrapper = styled.div`
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: ${({ theme }) => theme.text.primary};
-    background: rgba(0, 0, 0, 0.25);
-    border: none;
+    color: ${({ theme }) => theme.text.white};
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #4F83C9;
     border-radius: 6px;
     &::placeholder {
-      color: #c0c9d1;
+      color: #4F83C9;
     }
   }
 `

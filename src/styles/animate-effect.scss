@@ -148,14 +148,14 @@
   }
   to {
     opacity: 1;
-    background: var(--headerScroll-bg);
+    background: rgba(13, 75, 158, 0.85);;
   }
 }
 
 @keyframes fadeOutHeaderBg {
   from {
     opacity: 1;
-    background: var(--headerScroll-bg);
+    background: rgba(13, 75, 158, 0.85);;
   }
   to {
     opacity: 0;

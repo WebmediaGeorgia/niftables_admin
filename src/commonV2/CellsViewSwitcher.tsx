@@ -53,12 +53,8 @@ const StyledButton = styled.div`
   cursor: pointer;
   padding: 5px;
   border-radius: 6px;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  background:linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.075) 0%,
-    rgba(255, 255, 255, 0.075) 100%
-  );
+  border: 1px solid ${({ theme }) => theme.text.secondary};
+  background: transparent;
   height: 36px;
   &:not(:first-child) {
     margin-left: -2px;
@@ -80,17 +76,13 @@ const StyledButton = styled.div`
       border-bottom-left-radius: 5px;
     }
   }
+  svg {
+    fill: ${({ theme }) => theme.text.secondaryBlue};
+  }
   ${({ isActive }) => isActive && css`
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.3) 0%,
-      rgba(255, 255, 255, 0.15) 100%
-    );
+    background: ${({ theme }) => theme.text.secondary};
     svg {
-      fill: #dadada;
+      fill: ${({ theme }) => theme.text.white};
     }
   `}
-  svg {
-    fill: ${({ theme }) => theme.text.primary};
-  }
 `

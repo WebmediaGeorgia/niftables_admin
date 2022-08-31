@@ -11,7 +11,7 @@ import { authorize } from '@utils/server'
 
 export default function PacksPage () {
   return (
-    <MainLayout snakeOnTop={true} isParrotAndButterfly={<Butterfly />}>
+    <MainLayout>
       <Packs />
     </MainLayout>
   )

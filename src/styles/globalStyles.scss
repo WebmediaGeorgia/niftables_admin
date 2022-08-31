@@ -62,34 +62,6 @@ body {
 
   font-size: 16px;
   line-height: 24px;
-
-  &::before {
-    content: '';
-    position: absolute;
-    height: 60%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: -2;
-
-    background: var(--jungle-BgGradient);
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    z-index: -1;
-
-    background-image: var(--main-BgImage);
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-  }
 }
 
 @import './type.scss';

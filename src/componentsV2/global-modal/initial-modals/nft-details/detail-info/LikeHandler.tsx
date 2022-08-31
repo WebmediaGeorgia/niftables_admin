@@ -29,7 +29,7 @@ export default function LikeHandler () {
   return (
     <StyledWrapper>
       <Like
-        colorScheme='transparent'
+        colorScheme='secondary'
         isLiked={liked}
         toggleLike={toggleLike}
       />

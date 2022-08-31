@@ -21,14 +21,14 @@ export default function Button ({
 const StyledWrapper = styled.button.attrs(({ colorScheme, theme }) => {
   const config = {
     'primary': css`
-      color: ${theme.text.primary};
-      background: url(${bg.src}) 100% center no-repeat;
+      color: white;
       background-size: cover;
+      background: #FF66C4;
     `,
     'transparent': css`
-      color: ${theme.text.primary};
+      color: white;
       background: transparent;
-      border: solid 2px #bdad9e;
+      border: 1px solid #FF66C4;
     `
   }
   return { scheme: config[colorScheme] }
@@ -41,16 +41,18 @@ const StyledWrapper = styled.button.attrs(({ colorScheme, theme }) => {
   line-height: 42px;
   text-align: center;
   border: none;
-  border-radius: 50px;
+  border-radius: 8px;
   box-shadow: none;
   transition: all 0.2s;
+
   :hover:not([disabled]) {
-    box-shadow: inset 0px 4px 16px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+    background: #FFFFFF;
+    color: #FF66C4;
+    svg { fill: #FF66C4; }
   }
   :active:not([disabled]) {
-    box-shadow: inset 0px 4px 16px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
+    background: #FFFFFF;
+    color: #FF66C4;
   }
   :disabled {
     opacity: 0.5;

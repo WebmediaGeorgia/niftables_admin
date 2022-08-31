@@ -24,6 +24,9 @@ const Badge = ({
       [styles['sBadge-light']]: color === 'light',
       [styles['sBadge-dark']]: color === 'dark',
       [styles['sBadge-white']]: color === 'white',
+
+      [styles['sBadge-lotls-secondary']]: color === 'lotls-secondary',
+
       [styles['uppercase']]: uppercase,
       [styles['rounded-pill']]: rounded,
       iconClose,

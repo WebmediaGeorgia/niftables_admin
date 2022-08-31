@@ -21,8 +21,8 @@
     inset: 0;
     opacity: var(--header-opacity);
     background: var(--header-bg-color);
-    animation: var(--header-animation-fadeOutHeaderBg);   
-    border-bottom: var(--header-border-Width) solid var(--header-border-color);   
+    backdrop-filter: blur(20px);
+    animation: var(--header-animation-fadeOutHeaderBg);
   }
 }
 
@@ -31,9 +31,8 @@
     opacity: var(--headerScroll-opacity);
     animation: var(--headerScroll-animation);
 
-    background: var(--headerScroll-bg);
-    box-shadow: var(--header-navigation-BoxShadow);
-    border-color: var(--headerScroll-BorderColor);
+    background: rgba(13, 75, 158, 0.85);
+    border: 1px solid var(--headerScroll-BorderColor);
   }
   @include respond-to('medium') {
     padding: var(--headerScroll-Padding);

@@ -21,16 +21,18 @@ export default function PriceCol ({ className = '', item }) {
 
 const StyledWrapper = styled.div`
   & .label {
-    font-size: 12px;
-    color: ${({ theme }) => theme.text.primary};
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: white;
     opacity: 0.5;
   }
   & .value {
     display: flex;
     align-items: center;
-    height: 45px;
-    font-size: 24px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text.primary};
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
+    color: white;
   }
 `

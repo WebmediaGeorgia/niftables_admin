@@ -21,7 +21,7 @@ export default function RarityFilter ({ collection }) {
 		<AccordionItem
 			defaultOpen
 			size='s'
-			color='default'
+			color='transparent'
 			title='Rarity'
 		>
 			<CheckboxGroup

@@ -48,13 +48,13 @@ export default function UtilityFilter ({ collection }) {
 	}, [collection])
 
 	if (!collection) return null
-	if (!collection.redeemable) return null 
-		
+	if (!collection.redeemable) return null
+
 	return (
 		<AccordionItem
 			defaultOpen
 			size='s'
-			color='default'
+			color='transparent'
 			title='Utility'
 		>
 			<CheckboxGroup

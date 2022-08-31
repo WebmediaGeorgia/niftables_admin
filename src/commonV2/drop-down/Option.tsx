@@ -20,13 +20,21 @@ const StyledWrapper = styled.div`
   display: flex;
   column-gap: 5px;
   padding: 7px 10px 7px 14px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
   color: ${({ theme }) => theme.text.primary};
+
+  &:hover {
+    color: ${({ theme }) => theme.text.white};
+    background-color: ${({ theme }) => theme.text.secondary};
+    opacity: 0.5;
+  }
+
   cursor: pointer;
   ${({ isActive }) => isActive && css`
-    background: rgba(255, 255, 255, 0.5);
+    background: ${({ theme }) => theme.text.secondary};
+    color: ${({ theme }) => theme.text.white};
     cursor: default;
   `}
 `

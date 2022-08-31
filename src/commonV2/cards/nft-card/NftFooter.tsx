@@ -22,14 +22,16 @@ const StyledWrapper = styled.div`
   justify-content: space-between;
   padding: 9px 28px;
   .price {
-    font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 15px;
     line-height: 22px;
     color: ${({ theme }) => theme.text.primary};
   }
   .buy {
+    letter-spacing: 0.05em;
     font-size: 12px;
     font-weight: 600;
+    text-transform: uppercase;
     line-height: 22px;
     color: ${({ theme }) => theme.text.secondary};
   }

@@ -29,7 +29,7 @@
   -webkit-tap-highlight-color: transparent;
 
   &:disabled {
-    background: none;
+    opacity: 0.15;
     &::before {
       content: '';
       position: absolute;
@@ -90,6 +90,13 @@
     }
   }
   &-primary {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
     background-color: var(--button-blueFilled-BgColor);
     border-width: var(--button-blueFilled-BorderWidth);
     border-color: var(--button-blueFilled-BorderColor);
@@ -97,8 +104,6 @@
     color: var(--button-blueFilled-ColorText);
     &:hover {
       box-shadow: var(--button-BoxShadow-Hover);
-      background-color: var(--button-blueFilled-BgColor-Hover);
-      color: var(--button-blueFilled-ColorText-Hover);
     }
   }
   &-primary-outlined {
@@ -191,28 +196,30 @@
 
   &-login-primary {
     box-shadow: none;
-    font-weight: var(--button-login-primary-FontWeight);
-    border-color: var(--button-login-primary-BorderColor);
-    background: var(--button-login-primary-Bg);
-    color: var(--button-login-primary-ColorText);
-    border-color: var(--button-login-primary-BorderColor);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
     &:hover {
-      background: var(--button-login-primary-Bg);
-      color: var(--button-login-primary-ColorText);
-      border-color: var(--button-login-primary-BorderColor);
+      background: white;
+      color: #FF66C4;
+      border-color: white;
     }
   }
 
   &-login-secondary {
     box-shadow: none;
     font-weight: var(--button-login-FontWeight);
-    border-color: var(--button-login-secondary-BorderColor);
+    border: 1px solid var(--button-login-secondary-BorderColor);
     background: var(--button-login-secondary-Bg);
     color: var(--button-login-secondary-ColorText);
-    border-color: var(--button-login-secondary-BorderColor);
+
     &:hover {
-      background-color: var(--button-login-secondary-Bg);
-      color: var(--button-login-secondary-ColorText);
+      background-color: var(--button-login-secondary-Bg-hover);
+      color: var(--button-login-secondary-ColorText-hover);
       border-color: var(--button-login-secondary-BorderColor);
     }
     span {

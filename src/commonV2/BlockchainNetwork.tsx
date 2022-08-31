@@ -112,9 +112,9 @@ const StyledWrapper = styled.div`
     }
   }
   .label {
-    font-size: 9px;
-    font-weight: 700;
-    line-height: 14px;
-    color: ${({ theme }) => theme.text.primary};
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: white;
   }
 `

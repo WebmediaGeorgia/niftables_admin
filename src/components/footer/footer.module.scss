@@ -5,7 +5,10 @@
   color: var(--footer-ColorText);
 
   margin-top: auto;
-  border-top: 1px solid var(--footer-border-color);
+
+  background-size: 100% 100%;
+  background-image: url('/assets/img/superlotls/footer-bg.png');
+
   &.image {
     .container {
       &:before {
@@ -55,19 +58,20 @@
   position: relative;
 
   padding: var(--footer-static-Padding);
+
   @include respond-to('medium') {
     padding: var(--footer-static-Padding-large);
   }
   z-index: 1;
 
   &:only-child {
-    padding: var(--footer-Padding);
+    padding: 150px;
 
     @include respond-to('small') {
-      padding: var(--footer-Padding-small);
+      padding: 60px;
     }
     @include respond-to('medium') {
-      padding: var(--footer-Padding-large);
+      padding: 100px;
     }
   }
   &.footer-home {

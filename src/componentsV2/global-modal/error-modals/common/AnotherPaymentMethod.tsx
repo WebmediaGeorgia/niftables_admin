@@ -10,11 +10,13 @@ import btnStyles from '@components/shared/Button/Button.module.scss'
 import useMoveToBuyOptions from '@hooks/modal/useMoveToBuyOptions'
 
 import Button from '@commonV2/Button'
+import styled from "styled-components";
 
 export default function AnotherPaymentMethod () {
 	const moveToBuyOptions = useMoveToBuyOptions()
 	return (
-		<Button
+		<StyledButton
+      colorScheme='transparent'
 			className={cn(
 				btnStyles['btn-back'],
 				styles['btn-go-profile'],
@@ -26,6 +28,12 @@ export default function AnotherPaymentMethod () {
 				<ArrowLeft />
 			</span>
 			Choose another payment method
-		</Button>
+		</StyledButton>
 	)
 }
+
+const StyledButton = styled(Button)`
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+`

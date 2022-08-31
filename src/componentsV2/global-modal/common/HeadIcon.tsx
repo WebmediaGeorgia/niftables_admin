@@ -34,18 +34,13 @@ const StyledWrapper = styled.div`
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 102, 196, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
   .icon {
     path {
-      fill: ${({ theme }) => theme.text.primary};
+      fill: ${({ theme }) => theme.text.secondary};
     }
   }
 `

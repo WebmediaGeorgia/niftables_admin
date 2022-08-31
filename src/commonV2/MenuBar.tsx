@@ -101,7 +101,7 @@ const StyledDesktopHandler = styled.div`
   .icon {
     ${({ isOpen }) => isOpen && 'transform: rotate(180deg)'};
     path {
-      fill: ${({ theme }) => theme.text.primary};
+      fill: ${({ theme }) => theme.text.white};
     }
   }
   @media only screen and (max-width: 768px) {
@@ -131,7 +131,8 @@ const StyledMenu = styled.div`
   backdrop-filter: none;
   ${({ isOpen }) => !isOpen && css `overflow: hidden`};
   transition: width 0.3s linear, margin 0.3s linear, left 0.3s linear, max-width 0.3s linear;
-  z-index: ${({ isOpen }) => isOpen ? 50 : 1};
+  z-index: 0;
+
   ${({ isOpen }) => isOpen && css`
     :before {
       content: '';
@@ -139,10 +140,7 @@ const StyledMenu = styled.div`
       z-index: -1;
       inset: 0 0 0 auto;
       width: 100vw;
-      background: var(--menubar-Bg-Large);
-      box-shadow: var(--menubar-BoxShadow);
-      backdrop-filter: var(--menubar-Filter);
-      border-radius: var(--menubar-BorderRadius);
+      background-color: transparent;
     }
   `}
   @media only screen and (max-width: 1439px) {
@@ -157,6 +155,7 @@ const StyledMenu = styled.div`
     background: rgba(21, 50, 36, 0.72);
     backdrop-filter: blur(24px);
     padding: 20px 0;
+    z-index: ${({ isOpen }) => isOpen ? 50 : 1};
   }
 `
 

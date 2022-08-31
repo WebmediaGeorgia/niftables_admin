@@ -83,12 +83,8 @@ const StyledWrapper = styled.div`
     align-items: center;
     width: 50px;
     height: 50px;
-    background: linear-gradient(
-      153.9deg,
-      rgba(255, 255, 255, 0.35) 0%,
-      rgba(255, 255, 255, 0.1) 100%
-    );
-    border: 1px solid #e5e5e5;
+    background: transparent;
+    border: 1px solid white;
     border-radius: 8px;
     font-size: 18px;
     line-height: 27px;
@@ -96,10 +92,10 @@ const StyledWrapper = styled.div`
     cursor: pointer;
   }
   .option.active {
-    background: #dff2ff;
-    border-color: #dff2ff;
+    background: #FF66C4;
+    border-color: transparent;
     font-weight: 600;
-    color: #163929;
+    color: white;
   }
   .optionLabelBox {
     width: auto;

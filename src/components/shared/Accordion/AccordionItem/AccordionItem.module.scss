@@ -31,6 +31,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  color: black;
+  background-color: #E3ECF8;
+
   &.accordion-first {
     border-color: var(--accordion-title-First-BorderColor);
   }
@@ -45,6 +49,7 @@
   }
 
   &.open {
+    background-color: white;
     &::after {
       content: '';
       border-top: 0;
@@ -54,6 +59,8 @@
 }
 
 .accordion-content {
+  color: black;
+  background-color: white;
   &:empty {
     display: none;
   }
@@ -76,6 +83,29 @@
   background: var(--accordion-Bg-primary);
   .accordion-title {
     border-top: var(--accordion-title-primary-BorderTop);
+    &::after {
+      border-top: 5px solid var(--accordion-primary-title-icon-BorderColor);
+    }
+    &.open {
+      &::after {
+        border-top: 0;
+        border-bottom: 5px solid var(--accordion-primary-title-icon-BorderColor);
+      }
+    }
+  }
+}
+
+.accordion-transparent {
+  background: transparent;
+
+  .accordion-content {
+    background: transparent;
+  }
+
+  .accordion-title {
+    background: transparent;
+    color: white;
+
     &::after {
       border-top: 5px solid var(--accordion-primary-title-icon-BorderColor);
     }

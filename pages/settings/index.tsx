@@ -27,7 +27,7 @@ function Settings() {
   }
 
   return (
-    <MainLayout snakeOnTop={true} isParrotAndButterfly={<Butterfly />}>
+    <MainLayout>
       {user ? <SettingsComponent user={user} /> : null}
     </MainLayout>
   );

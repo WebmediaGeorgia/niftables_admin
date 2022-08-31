@@ -41,6 +41,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@fontsource/oswald": "^4.5.10",
     "@hookform/resolvers": "^2.8.6",
     "@reduxjs/toolkit": "^1.7.2",
     "@stripe/react-stripe-js": "^1.7.0",

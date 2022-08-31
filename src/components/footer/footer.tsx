@@ -65,7 +65,6 @@ const Footer: FC<IFooterProps> = ({ className, isBottom }) => {
             </FooterColumn>
           </div>
         </Container>
-        {isBottom && isBottom}
       </footer>
       <PopUpTerms
         onClose={handleAcceptTermsClick}

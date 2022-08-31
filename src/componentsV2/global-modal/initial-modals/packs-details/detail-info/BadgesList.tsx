@@ -30,7 +30,7 @@ const StyledWrapper = styled.div`
   .description {
     font-size: 11px;
     line-height: 20px;
-    color: ${({ theme }) => theme.text.primary};
+    color: ${({ theme }) => theme.text.white};
   }
   .badgs-wrapper {
     display: flex;

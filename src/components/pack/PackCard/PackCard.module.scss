@@ -29,11 +29,7 @@
     //z-index: var(--packCard-before-Z-Index);
   }
   &:hover {
-    background: var(--packCard-hover-Bg);
-    backdrop-filter: var(--packCard-hover-filter);
-    &::before {
-      border-color: var(--packCard-BorderColor-Hover);
-    }
+
 
     .btn-pack {
       opacity: 1;
@@ -118,6 +114,7 @@
   font-size: var(--packCard-title-FontSize);
   line-height: var(--packCard-title-LineHeight);
   font-weight: var(--packCard-title-FontWeight);
+  color: black;
 
   @include ellipsis(2);
 }
@@ -127,7 +124,7 @@
   font-weight: var(--packCard-text-FontWeight);
   font-size: var(--packCard-text-FontSize);
   line-height: var(--packCard-text-FontSize);
-
+  color: black;
   @include ellipsis(2);
 
   a {
@@ -144,6 +141,7 @@
 }
 
 .price {
+  color: black;
   font-size: var(--packCard-price-FontSize);
   line-height: var(--packCard-price-LineHeight);
   font-weight: var(--packCard-price-FontWeight);
