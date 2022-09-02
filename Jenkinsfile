@@ -7,7 +7,7 @@ pipeline {
     gitParameter branchFilter: 'origin/(.*)', defaultValue: 'develop', name: 'BRANCH', type: 'PT_BRANCH_'
   }
   environment {
-      ECR_REPO = "576236855336.dkr.ecr.eu-central-1.amazonaws.com/service/wl-frontend"
+      ECR_REPO = "576236855336.dkr.ecr.eu-central-1.amazonaws.com/service/frontend-wl-superlotl"
       AWS_DEFAULT_REGION = "eu-central-1"
       ENV = "${env.ENV}"
   }
@@ -45,7 +45,7 @@ pipeline {
       steps {
         container('kustomize') {
         dir('k8s') {}
-        sh "cd wl-frontend/kustomize/overlays/$ENV && /app/kustomize edit set image service/wl-frontend=${ECR_REPO}:${commit_hash}"
+        sh "cd frontend-wl-superlotl/kustomize/overlays/$ENV && /app/kustomize edit set image service/frontend-wl-superlotl=${ECR_REPO}:${commit_hash}"
         }
       }
     }
@@ -58,7 +58,7 @@ pipeline {
           sh('''
               git config user.name 'jenkins'
               git config user.email 'som@unicsoft.com'
-              git add wl-frontend/kustomize/overlays/$ENV/kustomization.yaml
+              git add frontend-wl-superlotl/kustomize/overlays/$ENV/kustomization.yaml
               git commit -m "[wl-frontend][$ENV] Deploy revision \$HASH"
           ''')
 
