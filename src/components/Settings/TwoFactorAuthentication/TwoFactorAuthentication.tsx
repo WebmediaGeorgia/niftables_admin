@@ -51,7 +51,7 @@ const TwoFactorAuthentication = ({ user }) => {
   };
 
   return (
-    <div className={styles.cardSettings}>
+    <div className={classNames(styles.cardSettings, { [styles['cardSettings-open']]: open })}>
       <div className={styles.cardHeader}>
         <div className={styles.cardTitle}>Two-factor authentication</div>
         <ul className={classNames(list.listIcon, styles.listIcon)}>

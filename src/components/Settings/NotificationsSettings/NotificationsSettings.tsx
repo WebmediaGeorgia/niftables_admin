@@ -16,7 +16,7 @@ const NotificationsSettings = ({ notification }: INotifications) => {
       <div className={styles.cardSettings}>
         <div className={styles.cardBody}>
           <div className={styles.cardTitle}>{title}</div>
-          <div className={styles.cardText}>{description}</div>
+          <div className={styles.cardDescription}>{description}</div>
         </div>
         <div className={styles.cardFooter}>{options}</div>
       </div>

@@ -5,6 +5,10 @@
   padding: 27px 30px;
   margin-top: 10px;
 
+  &-open {
+    background: white;
+  }
+
   .hr-line {
     margin: 30px 0 26px;
     background-color: var(--cardSettings-line-Bg);
@@ -63,6 +67,7 @@
   width: 100%;
 }
 .textHelper-heading {
+  color: black;
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -99,7 +104,14 @@
 
 .setSecret {
   margin: 24px 0;
+  input {
+    color: black;
 
+    &::placeholder {
+      color: #0D4B9E;
+      opacity: 0.2;
+    }
+  }
   &-title {
     margin-bottom: 10px;
     font-weight: var(--getAuth-title-FonWeight);
@@ -192,4 +204,8 @@
     margin-right: 6px;
     fill: var(--copy-code-icon-Fill);
   }
+}
+
+.OTIinput {
+
 }

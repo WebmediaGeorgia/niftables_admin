@@ -8,8 +8,10 @@
   border: var(--carousel-arrowWrapper-Border);
   background: var(--carousel-arrow-Bg);
   background-size: contain;
-  border-radius: 50%;
+  border-radius: 6px;
   overflow: hidden;
+  padding: 22px;
+  background-position: center;
 
   cursor: pointer;
   display: flex;

@@ -54,7 +54,7 @@ const StyledWrapper = styled.ul`
       font-size: 14px;
       font-weight: 500;
       line-height: 16px;
-      color: ${({ theme }) => theme.text.primary};
+      color: ${({ theme }) => theme.text.white};
       text-decoration: none;
       z-index: 2;
       @media only screen and (max-width: 480px) {

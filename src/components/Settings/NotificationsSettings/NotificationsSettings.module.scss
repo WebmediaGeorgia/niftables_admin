@@ -35,6 +35,18 @@
       margin: 9px 0 0;
     }
   }
+  .cardDescription {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0D4B9E;
+    opacity: 0.5;
+    margin: 5px 0 0;
+
+    @include respond-to('small') {
+      margin: 9px 0 0;
+    }
+  }
   .cardFooter {
     position: relative;
     display: grid;

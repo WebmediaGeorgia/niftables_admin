@@ -17,6 +17,7 @@ import { Secret } from './Secret';
 import { ChangeEmailForm } from './ChangeEmailForm';
 import { useRouter } from 'next/router';
 import { useNoInitialEffect } from '@hooks/useNoInitialEffect';
+import classNames from "classnames";
 
 export const ChangeEmail: FC = () => {
   const {
@@ -100,7 +101,7 @@ export const ChangeEmail: FC = () => {
 
   if (!twoFactorAuthEnabled) {
     return (
-      <div className={styles.cardSettings}>
+      <div className={classNames(styles.cardSettings, { [styles['cardSettings-open']]: open })}>
         <CardHeader handleCloseSection={handleCloseSection} />
         <Instructions />
         <ChangeEmailForm
@@ -114,7 +115,7 @@ export const ChangeEmail: FC = () => {
   }
 
   return (
-    <div className={styles.cardSettings}>
+    <div className={classNames(styles.cardSettings, { [styles['cardSettings-open']]: open })}>
       <CardHeader handleCloseSection={handleCloseSection} />
       <Instructions />
       <Secret otpHandler={otpHandler} clearError={clearError} />
