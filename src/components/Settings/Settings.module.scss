@@ -35,6 +35,9 @@
     font-weight: var(--settings-heading-FontWeight);
     font-size: var(--settings-heading-FontSize);
     line-height: var(--settings-heading-LineHeight);
+
+
+
     margin-bottom: 20px;
     @include respond-to('small') {
       margin-bottom: 30px;

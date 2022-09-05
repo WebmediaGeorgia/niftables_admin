@@ -235,23 +235,19 @@
   --counter-minute-Bg: url('/assets/img/jungle/countdown_minute.webp');
   --counter-second-Bg: url('/assets/img/jungle/countdown_second.webp');
 
-  --dropDownList-Bg: linear-gradient(
-    90deg,
-    #163929 0%,
-    rgba(0, 0, 0, 0.25) 302.2%
-  );
+  --dropDownList-Bg: white;
   --dropDownList-BoxShadow: none;
   --dropDownList-filter: blur(92px);
-  --dropDownList-BorderColor: rgba(255, 255, 255, 0.35);
+  --dropDownList-BorderColor: none;
   --dropDownList-item-Padding: 7px 10px 7px 14px;
 
-  --dropDownList-icon-Fill: #ffffff;
+  --dropDownList-icon-Fill: black;
   --dropDown-icon-arrow-Fill: #ffffff;
   --dropDown-icon-arrow-Width: 14px;
   --dropDown-icon-arrow-Height: 7px;
   --dropDownList-scrollbar-track-Bg: #ebf2f8;
   --dropDownList-scrollbar-thumb-Bg: #fdc634;
-  --dropDown-selectedOption-ColorText: #ffffff;
+  --dropDown-selectedOption-ColorText: #FF66C4;
 
   --dropDown-isSubmenu-BorderColor: #ffffff;
   --dropDown-isSubmenu-icon-Fill: #ffffff;
@@ -267,7 +263,7 @@
   --dropDownHeader-LineHeight: 21px;
   --dropDownHeader-FontWeight: 500;
 
-  --dropDown-item-ColorText: #ffffff;
+  --dropDown-item-ColorText: black;
   --dropDown-item-Bg: rgba(255, 255, 255, 0.5);
   --dropDown-item-FontSize: 14px;
   --dropDown-item-LineHeight: 16px;
@@ -297,18 +293,14 @@
 
   --card-footer-ColorText: #ffffff;
   --card-Bg: white;
-  --card-Bg-Hover: linear-gradient(
-    153.9deg,
-    rgba(255, 255, 255, 0.35) 0%,
-    rgba(255, 255, 255, 0.1) 100%
-  );
+  --card-Bg-Hover: white;
   --card-title-BoxShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
   --card-title-filter: blur(24px);
   --card-title-ColorText: black;
-  --card-availableBlock-ColorText: #ffffff;
-  --card-price-ColorText: #ffffff;
-  --card-buy-value-ColorText: #fdc634;
-  --card-line-BorderTop: 1px solid rgba(255, 255, 255, 0.1);
+  --card-availableBlock-ColorText: #0D4B9E;
+  --card-price-ColorText: black;
+  --card-buy-value-ColorText: #FF66C4;
+  --card-line-BorderTop: 1px solid #E3ECF8;
   --card-Border: 1px solid rgba(229, 229, 229, 0.5);
   --card-BorderRadius: 10px;
   --card-coast-ColorText: #ffffff;
@@ -469,26 +461,26 @@
   --button-disabled-ColorText: #ffffff;
 
   --button-blueFilled-BgColor: #FF66C4;
-  --button-blueFilled-BgColor-Hover: #b1a598;
+  --button-blueFilled-BgColor-Hover: transparent;
   --button-blueFilled-BorderWidth: 0;
   --button-blueFilled-BorderColor: transparent;
   --button-blueFilled-ColorText: #ffffff;
-  --button-blueFilled-ColorText-Hover: #ffffff;
+  --button-blueFilled-ColorText-Hover: #FF66C4;
 
-  --button-blueOutlined-BgColor: #b1a598;
-  --button-blueOutlined-BgColor-Hover: #b1a598;
+  --button-blueOutlined-BgColor: transparent;
+  --button-blueOutlined-BgColor-Hover: transparent;
   --button-blueOutlined-ColorText: #ffffff;
   --button-blueOutlined-ColorText-Hover: #ffffff;
-  --button-blueOutlined-BorderWidth: 0;
-  --button-blueOutlined-BorderColor: transparent;
-  --button-blueOutlined-BorderColor-Hover: transparent;
+  --button-blueOutlined-BorderWidth: 1px;
+  --button-blueOutlined-BorderColor: #FF66C4;
+  --button-blueOutlined-BorderColor-Hover: #FF66C4;
 
   --button-whiteOutlined-BgColor: transparent;
   --button-whiteOutlined-BgColor-Hover: transparent;
   --button-whiteOutlined-ColorText: #ffffff;
-  --button-whiteOutlined-ColorText-Hover: #ffffff;
-  --button-whiteOutlined-BorderColor: transparent;
-  --button-whiteOutlined-BorderColor-Hover: #ffffff;
+  --button-whiteOutlined-ColorText-Hover: #FF66C4;
+  --button-whiteOutlined-BorderColor: #FF66C4;
+  --button-whiteOutlined-BorderColor-Hover: #FF66C4;
 
   --button-login-primary-Bg: #FF66C4;
   --button-login-primary-ColorText: #ffffff;
@@ -628,25 +620,21 @@
   --padding-header: 16.5px 20px;
 
   --header-colorText: #ffffff;
-  --header-colorText-hover: #fdc634;
-  --header-colorText-active: #fdc634;
+  --header-colorText-hover: #FF66C4;
+  --header-colorText-active: #FF66C4;
   --header-navLink-FontSize: 20px;
   --header-navLink-FontWeight: 500;
   --header-navLink-LineHeight: 23px;
   --header-navLink-Padding: 10px 0;
   --header-navLink-Padding-Large: 12px 15px;
-  --header-navLink-line-BgColor: linear-gradient(
-    180deg,
-    #fcba30 0%,
-    #ed9622 100%
-  );
+  --header-navLink-line-BgColor: #FF66C4;
 
   --header-navUl-Margin-Large: 0 -21.5px;
 
   --header-container-justify-content: space-between;
   --header-container-justify-content-Large: flex-end;
 
-  --header-login-ColorText: #fdc634;
+  --header-login-ColorText: white;
 
   --header-navigation-Bg: #163929;
   --header-navigation-Padding: 20px 0;
@@ -872,15 +860,15 @@
 
   --input-Bg: rgba(255, 255, 255, 0.05);
 
-  --input-Padding: 10px 26px;
-  --input-Padding-Large: 10px 50px 10px 30px;
-  --input-label-text-Padding: 0 0 0 26px;
+  --input-Padding: 10px 16px;
+  --input-Padding-Large: 10px 16px 10px 30px;
+  --input-label-text-Padding: 0 0 0 0px;
   --input-wrapper-Margin: 32px 0 0;
   --input-ColorText: #ffffff;
-  --input-Border: 1px solid #4F83C9;
+  --input-Border: 1px solid #C0D2EA;
   --input-BorderRadius: 6px;
   --input-BorderRadius-Large: 6px;
-  --input-Placeholder-ColorText: rgba(255, 255, 255, 0.5);
+  --input-Placeholder-ColorText: rgba(13, 75, 158, 0.3);
   --input-AutoFill-ColorText: #ffffff;
   --input-AutoFill-BgColor: #375547;
   --input-Outline-ColorText: #ffffff;
@@ -963,7 +951,7 @@
   --see-more-ColorText: #ffffff;
 
   --checkbox-Bg: transparent;
-  --checkbox-ColorText: #ffffff;
+  --checkbox-ColorText: black;
 
   --checkbox-Border: 1px solid transparent;
 
@@ -980,7 +968,7 @@
 
   --checkbox-primary-BorderColor: rgba(255, 255, 255, 0.5);
   --checkbox-primary-Checked-BorderColor: #fab72b;
-  --checkBox-icon-primary-Checked: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 7.80007L1.2 5.00006L0.266663 5.9334L4 9.66673L12 1.66673L11.0667 0.733398L4 7.80007Z' fill='%23FAB72B'/%3e%3c/svg%3e");
+  --checkBox-icon-primary-Checked: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 7.80007L1.2 5.00006L0.266663 5.9334L4 9.66673L12 1.66673L11.0667 0.733398L4 7.80007Z' fill='%23FF66C4'/%3e%3c/svg%3e");
 
   --checkBox-default-BorderColor: rgba(255, 255, 255, 0.5);
   --checkBox-default-Checked-BorderColor: #ffffff;
@@ -998,10 +986,10 @@
   --checkBoxGroup-BorderTop: 1px solid rgba(255, 255, 255, 0.1);
 
   --radioBox-Bg: none;
-  --radioBox-Border: 2px solid #fab72b;
-  --radioBox-checked-small-Bg: #fab72b;
-  --radioBox-BorderColor: #fab72b;
-  --radioBox-checked-BorderColor: #fab72b;
+  --radioBox-Border: 2px solid #FF66C4;
+  --radioBox-checked-small-Bg: #FF66C4;
+  --radioBox-BorderColor: #FF66C4;
+  --radioBox-checked-BorderColor: #FF66C4;
   --radioBox-ColorText: #ffffff;
 
   --traitDate-title-ColorText: #ffffff;
@@ -1160,7 +1148,7 @@
   --icon-rarityScore-Fill: #ffffff;
   --icon-share-Fill: #ffffff;
   --icon-binance-Fill: #ffffff;
-  --icon-eye-Fill: rgba(255, 255, 255, 0.5);
+  --icon-eye-Fill: #0D4B9E;
   --icon-openEye-Fill: #ffffff;
   --icon-wallet-Circle-Fill: rgba(255, 255, 255, 0.5);
   --icon-wallet-Path-Fill: #ffffff;
@@ -1189,7 +1177,7 @@
   --input-icon-right-Medium: 18px;
   --input-icon-right-Large: 33px;
   --input-icon-valid-Fill: #00ec26;
-  --input-icon-error-Fill: #f28033;
+  --input-icon-error-Fill: #FD7465;
 
   --packDetail-Padding: 0 33px 40px;
   --packDetail-infoBlock-Margin: 10px 0 0 27px;
@@ -1252,11 +1240,11 @@
   --button-secondary-active-BgColor: white;
   --button-secondary-active-BorderColor: white;
 
-  --button-cancel-ColorText: #ffffff;
-  --button-cancel-ColorText-Hover: #ffffff;
+  --button-cancel-ColorText: #FF66C4;
+  --button-cancel-ColorText-Hover: #FF66C4;
   --button-cancel-BgColor: transparent;
-  --button-cancel-BorderWidth: 2px;
-  --button-cancel-BorderColor: #ffffff;
+  --button-cancel-BorderWidth: 1px;
+  --button-cancel-BorderColor: #FF66C4;
   --button-cancel-BoxShadow: none;
   --button-cancel-BgColor-Hover: transparent;
   --button-cancel-BoxShadow: none;
@@ -1293,21 +1281,13 @@
   --activatedBadge-FontWeight: 500;
   --activatedBadge-LineHeight: 22px;
 
-  --changePassword-Bg: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.075) 0%,
-    rgba(255, 255, 255, 0.075) 100%
-  );
+  --changePassword-Bg: white;
 
-  --cardSettings-Bg: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.075) 0%,
-    rgba(255, 255, 255, 0.075) 100%
-  );
-  --cardSettings-ColorText: #ffffff;
-  --cardSettings-line-Bg: rgba(255, 255, 255, 0.5);
+  --cardSettings-Bg: #E3ECF8;
+  --cardSettings-ColorText: black;
+  --cardSettings-line-Bg: #E3ECF8;
   --cardSettings-BorderLeft: 1px solid rgba(255, 255, 255, 0.5);
-  --cardSettings-title-ColorText: #ffffff;
+  --cardSettings-title-ColorText: black;
 
   --settings-navButton-width: 210px;
   --settings-navButton-Padding: 14px 16px;
@@ -1343,11 +1323,11 @@
   --settings-textHelper-heading-FontWeight: 500;
   --settings-textHelper-Margin: 20px 0 35px;
 
-  --textHelper-BorderLeft: 2px solid #dadada;
-  --textHelper-ColorText: #ffffff;
+  --textHelper-BorderLeft: 2px solid #0D4B9E;
+  --textHelper-ColorText: #4F83C9;
 
-  --listIcon-icon-Fill: #fab72b;
-  --listIcon-ColorText: #ffffff;
+  --listIcon-icon-Fill: #0D4B9E;
+  --listIcon-ColorText: black;
 
   --getAuth-Bg: linear-gradient(
     90deg,
@@ -1364,11 +1344,11 @@
   --getAuth-title-FonWeight: 500;
   --getAuth-title-LineHeight: 16px;
 
-  --setKey-box-Border: 2px solid #dadada;
-  --setKey-box-ColorText: #ffffff;
+  --setKey-box-Border: 1px solid #C0D2EA;
+  --setKey-box-ColorText: black;
 
-  --copy-code-ColorText: #ffffff;
-  --copy-code-icon-Fill: #ffffff;
+  --copy-code-ColorText: #FF66C4;
+  --copy-code-icon-Fill: #FF66C4;
 
   --otp-input-FontSize: 24px;
   --otp-input-FontWeight: 500;
@@ -1426,11 +1406,11 @@
   --userNameLabel-LineHeight: 21px;
   --userNameLabel-FontWeight: 400;
 
-  --carousel-Bg: transparent;
+  --carousel-Bg: #0A275E;
   --carousel-dots-Bg: rgba(255, 255, 255, 0.15);
   --carousel-dots-active-Bg: #ffffff;
-  --carousel-arrowWrapper-Border: none;
-  --carousel-arrow-Bg: url(/assets/img/jungle/carousel-arrow.webp) no-repeat 50%
+  --carousel-arrowWrapper-Border: 1px solid white;
+  --carousel-arrow-Bg: url(/assets/img/superlotls/arrow-right.svg) no-repeat 50%
     0;
   --carousel-arrow-ColorText: rgba(255, 255, 255, 0);
   --carousel-arrow-BorderLeft: 2px solid transparent;
@@ -1838,17 +1818,13 @@
   --payment-custom-BgColor: #579c4f;
 
   --loading-BgColor: #22292f;
-  --user-icon-BgColor: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.25) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  --user-icon-BorderColor: #3b6433;
+  --user-icon-BgColor: #fff;
+  --user-icon-BorderColor: transparent;
   --user-icon-BorderRadius: 50%;
   --user-avatar-backgroundImage: url(/assets/img/jungle/icon_user.svg);
   --user-notification-backgroundImage: url(/assets/img/jungle/icon_notificationBell.svg);
-  --user-notification-BgColor: #fab72b;
-  --user-notification-BorderColor: #fab72b;
+  --user-notification-BgColor: #FF66C4;
+  --user-notification-BorderColor: #FF66C4;
 
   --user-icon-Large-Width: 48px;
   --user-icon-Large-Height: 48px;

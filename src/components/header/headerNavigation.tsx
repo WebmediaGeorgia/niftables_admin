@@ -109,7 +109,7 @@ const HeaderNavigation = () => {
       </div>
       <div className={styles.login}>
         <Link href='/'>
-          <a>Niftable</a>
+          <a>Superlotl</a>
         </Link>
       </div>
       <div
@@ -139,16 +139,28 @@ const HeaderNavigation = () => {
         (userType === 'authorized' &&
           twoFactorAuthEnabled &&
           !twoFactorPassed)) && (
-        <NavButton
-          className={styles.navButton}
-          size='m'
-          color='blue'
-          fillStyle={true}
-          fullWidth={false}
-          to='/signin'
-        >
-          Sign In
-        </NavButton>
+        <div className={styles.navButtonContainer}>
+          <div className={styles.navButtonLineContainer} >
+            <div className={styles.navButtonLine} />
+            <div className={styles.navButtonLine} />
+            <div className={styles.navButtonLine} />
+          </div>
+          <NavButton
+            className={styles.navButton}
+            size='m'
+            color='blue'
+            fillStyle={false}
+            fullWidth={false}
+            to='/signin'
+          >
+            Sign In
+          </NavButton>
+          <div className={styles.navButtonLineContainer} >
+            <div className={styles.navButtonLine} />
+            <div className={styles.navButtonLine} />
+            <div className={styles.navButtonLine} />
+          </div>
+        </div>
       )}
 
       {_checkUserLoggedIn() && (

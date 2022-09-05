@@ -38,7 +38,7 @@ export default function UserPacksList () {
 	if (packs.length === 0) {
 		return (
 			<EmptyView
-				emoji='💩'
+				emoji='😿'
 				btnUrl='/packs'
 				btnText='Buy Pack'
 				text='No items to display'

@@ -129,6 +129,7 @@ const ChangePassword = () => {
         <div className={styles.settingsRow}>
           <div className={styles.settingsColumn}>
             <InputWithLabel
+              className={styles.input}
               labelText='Current password'
               placeholder='Enter your password'
               id='password'
@@ -150,6 +151,7 @@ const ChangePassword = () => {
         <div className={styles.settingsRow}>
           <div className={styles.settingsColumn}>
             <InputWithLabel
+              className={styles.input}
               labelText='New password'
               placeholder='Enter your password'
               id='newPassword'
@@ -161,6 +163,7 @@ const ChangePassword = () => {
               {...register(FIELD_LABELS.PASSWORD.PASSWORD)}
             />
             <InputWithLabel
+              className={styles.input}
               labelText='Repeat new password'
               placeholder='Enter your password'
               id='confirmPassword'

@@ -26,6 +26,7 @@
     left: 50%;
     width: 0;
     transform: translate(-50%, 0);
+    background-color: #FF66C4;
     @include animate(width);
   }
 

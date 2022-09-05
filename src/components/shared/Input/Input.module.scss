@@ -14,13 +14,12 @@
   padding: var(--input-Padding);
   color: var(--input-ColorText);
   border: var(--input-Border);
-  background-color: transparent;
   background: var(--input-Bg);
   border-radius: var(--input-BorderRadius);
   width: 100%;
+  border: 1px solid #C0D2EA;
 
   backdrop-filter: blur(4px);
-  /* Note: backdrop-filter has minimal browser support */
 
   outline-color: var(--input-Placeholder-ColorText);
 
@@ -39,7 +38,9 @@
     -webkit-text-fill-color: var(--input-AutoFill-ColorText) !important;
   }
   &::placeholder {
-    opacity: 0.6;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--input-Placeholder-ColorText);
   }
   &-small {
