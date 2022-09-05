@@ -1228,10 +1228,11 @@
   --button-secondary-FontWeight: 500;
   --button-secondary-Padding: 14px 10px;
   --button-secondary-ColorText: #ffffff;
-  --button-secondary-ColorText-Hover: #ffffff;
+  --button-secondary-ColorText-Hover: #FF66C4;
   --button-secondary-Bg: none;
   --button-secondary-BgColor: transparent;
   --button-secondary-BorderColor: #ffffff;
+  --button-secondary-BorderColor-Hover: #FF66C4;
   --button-secondary-BgColor-Hover: transparent;
   --button-secondary-BoxShadow: none;
 
@@ -1406,7 +1407,7 @@
   --userNameLabel-LineHeight: 21px;
   --userNameLabel-FontWeight: 400;
 
-  --carousel-Bg: #0A275E;
+  --carousel-Bg: rgba(10, 39, 94, 0.2);
   --carousel-dots-Bg: rgba(255, 255, 255, 0.15);
   --carousel-dots-active-Bg: #ffffff;
   --carousel-arrowWrapper-Border: 1px solid white;

@@ -27,8 +27,10 @@
     font-size: 100px;
     font-weight: 700;
     line-height: 1;
-    color: var(--404-page-header-ColorText);
-    text-shadow: var(--404-page-header-textShadow);
+    background: -webkit-linear-gradient(#0D4B9E, #0B4798);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: blur(10px);
 
     @include respond-to('medium') {
       font-size: 200px;
@@ -46,7 +48,6 @@
 
     display: inline-block;
     text-align: center;
-    background-image: var(--404-page-button-Bg-Image);
     @include respond-to('medium') {
       min-width: var(--404-page-button-Width);
     }

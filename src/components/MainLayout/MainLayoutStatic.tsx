@@ -14,13 +14,14 @@ export const MainLayoutStatic: FC<IMainLayout> = ({
   return (
     <>
       <Header />
+      <div className={styles.headingBg} />
       <main className={classNames(styles.main, className)}>
         <div className={styles.contentWrapper}>
           {isHero && isHero}
           {children}
         </div>
       </main>
-      <Footer className='image' />
+      <Footer />
     </>
   );
 };
