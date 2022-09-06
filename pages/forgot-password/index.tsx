@@ -99,6 +99,7 @@ function ForgotPassword(): JSX.Element {
                 labelText='Email'
                 placeholder='username@gmail.com'
                 id='restoreEmail'
+                size="m"
                 error={
                   errors.emailForRestoring ? errors.emailForRestoring : null
                 }
@@ -126,10 +127,6 @@ function ForgotPassword(): JSX.Element {
             />
           </ModalContentWrapper>
         </ModalWrapper>
-        <div className={styles['signin-bottom']}>
-          <PoweredBy className={styles.poweredBy} />
-          <Copyright />
-        </div>
       </Container>
     </MainLayoutStatic>
   );

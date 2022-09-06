@@ -26,8 +26,11 @@
 }
 
 .subTitle {
+  max-width: 360px;
+
   font-size: var(--subTitle-2fa-FontSize);
   font-weight: var(--subTitle-2fa-FontWeight);
   line-height: var(--subTitle-2fa-LineHeight);
+
   margin-bottom: 0;
 }

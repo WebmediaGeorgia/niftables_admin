@@ -13,15 +13,6 @@ import classNames from 'classnames';
 import { IFooterProps } from '@type/general';
 
 const restrictionPathnames = [
-  '/signin',
-  '/signup',
-  '/signup/activate',
-  '/forgot-password',
-  '/forgot-password/check-email',
-  '/signin/step1',
-  '/signin/2fa',
-  '/forgot-password/new-password',
-  '/forgot-password/success',
   '/maintenance-mode',
   '/email-confirmation',
   '/email-change-confirmation-sent',

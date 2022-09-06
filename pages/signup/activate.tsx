@@ -122,10 +122,6 @@ function SignUpSuccess(): JSX.Element {
             )}
           </ModalContentWrapper>
         </ModalWrapper>
-        <div className={styles['signup-bottom']}>
-          <PoweredBy className={styles.poweredBy} />
-          <Copyright />
-        </div>
       </Container>
     </MainLayoutStatic>
   );

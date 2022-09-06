@@ -244,11 +244,6 @@ function SignUp(): JSX.Element {
             </FormWrapper>
           </ModalContentWrapper>
         </ModalWrapper>
-        <div className={styles['signup-bottom']}>
-          <PoweredBy className={styles.poweredBy} />
-          <Copyright />
-        </div>
-        <PopUpTerms onClose={handleAcceptTermsClick} isShow={showModal} />
       </Container>
     </MainLayoutStatic>
   );

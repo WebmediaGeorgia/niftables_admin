@@ -445,7 +445,7 @@
   --button-link-signUp-Padding: 10px 16px;
   --button-Width: 190px;
   --button-BorderRadius: 8px;
-  --button-FontFamily: 'Ubuntu', sans-serif;
+  --button-FontFamily: 'Oswald', sans-serif;
   --button-FontWeight: 500;
   --button-Bg-Position: 100% center;
   --button-Bg-Image: none;
@@ -568,9 +568,9 @@
   --button-withdraw-BgColor: #163929;
 
   --tipsText-ColorText: #FF66C4;
-  --tipsText-FontSize: 18px;
-  --tipsText-LineHeight: 27px;
-  --tipsText-FontWeight: 500;
+  --tipsText-FontSize: 15px;
+  --tipsText-LineHeight: 22px;
+  --tipsText-FontWeight: 400;
 
   --tipsText-link-ColorText: #FF66C4;
 
@@ -721,13 +721,9 @@
 
   --modal-label-text-ColorText: rgba(255, 255, 255, 0.5);
   --modal-label-text-secondary-ColorText: #ffffff;
-  --modal-icon-placeholder-Bg: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.5) 100%
-  );
-  --modal-icon-placeholder-Border: 2px solid rgba(255, 255, 255, 0.5);
-  --modal-icon-placeholder-icon-Fill: #ffffff;
+  --modal-icon-placeholder-Bg: rgba(255, 102, 196, 0.2);
+  --modal-icon-placeholder-Border: transparent;
+  --modal-icon-placeholder-icon-Fill: #FF66C4;
   --modal-link-ColorText: #ffffff;
   --modal-line-BorderColor: #ebf2f8;
   --modal-PackPaymentSuccess-BgImage: none;
@@ -740,7 +736,7 @@
   --modal-heading-LineHeight: 26px;
   --modal-heading-LineHeight-Large: 44px;
 
-  --modal-subTitle-FontSize: 16px;
+  --modal-subTitle-FontSize: 20px;
   --modal-subTitle-FontSize-Large: 20px;
   --modal-subTitle-LineHeight: 18px;
   --modal-subTitle-LineHeight-Large: 23px;
@@ -853,9 +849,9 @@
   --buttonGroup-svg-active-Color: #dadada;
 
   --forgotPassLink-ColorText: #FF66C4;
-  --forgotPassLink-FontSize: 14px;
+  --forgotPassLink-FontSize: 15px;
   --forgotPassLink-FontWeight: 400;
-  --forgotPassLink-LineHeight: 16px;
+  --forgotPassLink-LineHeight: 22px;
   --forgotPassLink-ColorText-Hover: #FF66C4;
 
   --input-Bg: rgba(255, 255, 255, 0.05);
@@ -868,7 +864,7 @@
   --input-Border: 1px solid #C0D2EA;
   --input-BorderRadius: 6px;
   --input-BorderRadius-Large: 6px;
-  --input-Placeholder-ColorText: rgba(13, 75, 158, 0.3);
+  --input-Placeholder-ColorText: rgba(79, 131, 201, 0.6);
   --input-AutoFill-ColorText: #ffffff;
   --input-AutoFill-BgColor: #375547;
   --input-Outline-ColorText: #ffffff;
@@ -1257,8 +1253,8 @@
   --button-auction-BorderColor: #ffffff;
   --button-auction-BorderColor-Hover: #ffffff;
 
-  --button-forgot-password-Margin: 48px 0 0;
-  --button-forgot-password-Width: 280px;
+  --button-forgot-password-Margin: 30px 0 0;
+  --button-forgot-password-Width: 248px;
 
   --button-available-small-Width: 210px;
   --button-available-large-Width: 277px;
@@ -1362,9 +1358,9 @@
     rgba(255, 255, 255, 0.075) 0%,
     rgba(255, 255, 255, 0.075) 100%
   );
-  --otp-input-Border: 2px solid #dadada;
-  --otp-input-placeholder-ColorText: #ffffff;
-  --otp-input-outline-color: #fab72b;
+  --otp-input-Border: 1px solid #4F83C9;;
+  --otp-input-placeholder-ColorText: rgba(79, 131, 201, 0.5);
+  --otp-input-outline-color: #FFFFFF;
 
   --error-ColorText: #FD7465;
   --error-Border: 2px solid #FD7465;
@@ -1401,10 +1397,10 @@
   --navTab-settings-FontWeight: 500;
   --navTab-settings-LineHeight: 18px;
 
-  --userNameLabel-ColorText: #6561d7;
-  --userNameLabel-Bg: #ebf2f8;
-  --userNameLabel-fontSize: 12px;
-  --userNameLabel-LineHeight: 21px;
+  --userNameLabel-ColorText: #FF66C4;
+  --userNameLabel-Bg: rgba(255, 102, 196, 0.2);
+  --userNameLabel-fontSize: 15px;
+  --userNameLabel-LineHeight: 22px;
   --userNameLabel-FontWeight: 400;
 
   --carousel-Bg: rgba(10, 39, 94, 0.2);
@@ -1654,15 +1650,11 @@
   --heading-2fa-FontWeight: 500;
   --heading-2fa-Margin: 11px 0;
 
-  --subTitle-2fa-FontSize: 14px;
-  --subTitle-2fa-LineHeight: 21px;
-  --subTitle-2fa-FontWeight: 400;
-  --avatar-2fa-Bg: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.075) 0%,
-    rgba(255, 255, 255, 0.075) 100%
-  );
-  --avatar-2fa-Border: 2px solid #dadada;
+  --subTitle-2fa-FontSize: 20px;
+  --subTitle-2fa-LineHeight: 30px;
+  --subTitle-2fa-FontWeight: 300;
+  --avatar-2fa-Bg: #FF66C4;
+  --avatar-2fa-Border: transparent;
   --avatar-large-Padding: 0;
   --avatar-large-Width: 110px;
   --avatar-large-Height: 110px;
@@ -1677,7 +1669,7 @@
   --forgot-password-Padding: 10.6% 0 0;
   --siginup--checkBox-margin: 31.5px 0 0 26px;
 
-  --heading-checkEmail-Margin: 19px 0 45px;
+  --heading-checkEmail-Margin: 10px 0 45px;
   --heading-success-Margin: 19px 0 48px;
   --subTitle-checkEmail-FontSize: 24px;
   --subTitle-checkEmail-LineHeight: 28px;

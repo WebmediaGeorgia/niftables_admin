@@ -21,7 +21,7 @@ export const Secret: FC<ISecret> = ({ otpHandler, clearError }) => {
         <OTPInput
           className={styles['setSecret-OTIinput']}
           inputClassName={styles.OTIinput}
-          length={6}
+          length={6}11
           autoFocus={true}
           onChangeOTP={otpHandler}
           error={showError ? parseErrorMessage(userError) : null}

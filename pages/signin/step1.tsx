@@ -24,6 +24,7 @@ import Copyright from '@components/copyright';
 import Container from '@components/shared/Container';
 import { EmailVerificationError } from '@utils/parse-utils';
 import { MainLayoutStatic } from '@components/MainLayout';
+import Footer from "@components/footer";
 
 interface ISignInForm {
   username: string;
@@ -114,6 +115,7 @@ function Step({ queryError }): JSX.Element {
                 labelText='Login'
                 placeholder='email/username'
                 id='username'
+                size="m"
                 onFocus={handleFocus}
                 error={errors.username ? errors.username : null}
                 isValid={isUsernameValid}
@@ -124,6 +126,7 @@ function Step({ queryError }): JSX.Element {
                 labelText='Your Password'
                 placeholder='Enter your password'
                 id='password'
+                size="m"
                 customType='password'
                 onFocus={handleFocus}
                 hasForgotPassword={true}
@@ -155,10 +158,6 @@ function Step({ queryError }): JSX.Element {
             </FormWrapper>
           </ModalContentWrapper>
         </ModalWrapper>
-        <div className={styles['signin-bottom']}>
-          <PoweredBy className={styles.poweredBy} />
-          <Copyright />
-        </div>
       </Container>
     </MainLayoutStatic>
   );

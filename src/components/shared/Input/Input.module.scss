@@ -74,10 +74,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  transform: translate(0, -26.5px);
-  @include respond-to('medium') {
-    right: var(--input-icon-right-Large);
-  }
+  transform: translate(0, -31px);
 
   &:hover {
     text-decoration: underline;

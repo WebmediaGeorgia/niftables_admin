@@ -32,8 +32,21 @@
 }
 
 .heading-signIn {
-  margin-bottom: 55px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
 }
+
+.heading-description {
+  width: 380px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
 .signin-step1 {
   margin: 0 auto;
 
@@ -53,6 +66,7 @@
     color: var(--poweredBy-logo-signIn-ColorText);
   }
 }
+
 .subHeading {
   max-width: 419px;
   margin-left: auto;

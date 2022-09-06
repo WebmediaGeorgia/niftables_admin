@@ -88,10 +88,6 @@ const CheckEmail = ({ code }) => {
             />
           </ModalContentWrapper>
         </ModalWrapper>
-        <div className={styles['signin-bottom']}>
-          <PoweredBy className={styles.poweredBy} />
-          <Copyright />
-        </div>
       </Container>
     </MainLayoutStatic>
   );

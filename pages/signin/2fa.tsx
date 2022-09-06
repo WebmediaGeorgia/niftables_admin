@@ -73,10 +73,6 @@ function TwoFa(): JSX.Element {
             btnClickHandler={btnClickHandler}
           />
         </div>
-        <div className={styles['signin-bottom']}>
-          <PoweredBy className={styles.poweredBy} />
-          <Copyright />
-        </div>
       </Container>
     </MainLayoutStatic>
   );

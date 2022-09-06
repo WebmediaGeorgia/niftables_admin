@@ -135,9 +135,10 @@ const NewPassword = ({ queryCode }) => {
           <ModalContentWrapper>
             <FormWrapper onSubmit={handleSubmit(onSubmit)}>
               <InputWithLabel
-                labelText='Your password'
+                labelText='New password'
                 placeholder='Enter your password'
                 id='password'
+                size='m'
                 customType='password'
                 error={errors.password ? errors.password : null}
                 isValid={isPasswordValid}
@@ -145,8 +146,9 @@ const NewPassword = ({ queryCode }) => {
               />
               <InputWithLabel
                 labelText='Confirm your password'
-                placeholder='Enter your password'
+                placeholder='Confirm your password'
                 id='confirmPassword'
+                size='m'
                 customType='password'
                 error={errors.confirmPassword ? errors.confirmPassword : null}
                 isValid={isConfirmPasswordValid ? true : false}
@@ -167,10 +169,6 @@ const NewPassword = ({ queryCode }) => {
             </FormWrapper>
           </ModalContentWrapper>
         </ModalWrapper>
-        <div className={styles['signin-bottom']}>
-          <PoweredBy className={styles.poweredBy} />
-          <Copyright />
-        </div>
       </Container>
     </MainLayoutStatic>
   );
