@@ -144,6 +144,7 @@ const EmailConfirmation: FC = () => {
               labelText='Login'
               placeholder='email/username'
               id='username'
+              size='m'
               onFocus={handleFocus}
               error={errors.username ? errors.username : null}
               isValid={isUsernameValid}
@@ -154,6 +155,7 @@ const EmailConfirmation: FC = () => {
               labelText='Your Password'
               placeholder='Enter your password'
               id='password'
+              size='m'
               customType='password'
               onFocus={handleFocus}
               hasForgotPassword={true}
@@ -169,10 +171,6 @@ const EmailConfirmation: FC = () => {
           </FormWrapper>
         </ModalContentWrapper>
       </ModalWrapper>
-      <div className={styles['signin-bottom']}>
-        <PoweredBy className={styles.poweredBy} />
-        <Copyright />
-      </div>
     </Container>
   );
 };

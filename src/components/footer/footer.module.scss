@@ -65,13 +65,13 @@
   z-index: 1;
 
   &:only-child {
-    padding: 250px;
+    padding: 200px;
 
     @include respond-to('small') {
       padding: 60px;
     }
     @include respond-to('medium') {
-      padding: 200px;
+      padding: 150px;
     }
   }
   &.footer-home {

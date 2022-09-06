@@ -14,9 +14,7 @@ import { IFooterProps } from '@type/general';
 
 const restrictionPathnames = [
   '/maintenance-mode',
-  '/email-confirmation',
   '/email-change-confirmation-sent',
-  '/email-change-confirmation',
 ];
 
 const Footer: FC<IFooterProps> = ({ className, isBottom }) => {

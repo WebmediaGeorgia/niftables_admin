@@ -102,7 +102,7 @@
 
 .input-errorMsg {
   position: absolute;
-  left: 0;
+  right: 0;
   padding: var(--input-label-text-Padding);
   bottom: var(--error-Bottom);
   transform: translate(0, 100%);

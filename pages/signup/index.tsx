@@ -173,6 +173,7 @@ function SignUp(): JSX.Element {
                 labelText='Username'
                 placeholder='username'
                 id='username'
+                size="m"
                 error={errors.username ? errors.username : null}
                 isValid={isUsernameValid}
                 {...register('username')}
@@ -182,6 +183,7 @@ function SignUp(): JSX.Element {
                 labelText='Email'
                 placeholder='username@example.com'
                 id='email'
+                size="m"
                 error={errors.email ? errors.email : null}
                 isValid={isEmailValid}
                 {...register('email')}
@@ -191,6 +193,7 @@ function SignUp(): JSX.Element {
                 labelText='Your password'
                 placeholder='Enter your password'
                 id='password'
+                size="m"
                 customType='password'
                 error={errors.password ? errors.password : null}
                 isValid={isPasswordValid}
@@ -199,9 +202,10 @@ function SignUp(): JSX.Element {
               />
               <InputWithLabel
                 labelText='Confirm your password'
-                placeholder='Enter your password'
+                placeholder='Repeat your password'
                 id='confirmPassword'
                 customType='password'
+                size="m"
                 error={
                   errors.confirmedPassword ? errors.confirmedPassword : null
                 }
