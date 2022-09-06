@@ -6,8 +6,8 @@ const theme = {
     secondaryBlue: "#4F83C9"
   },
   user: {
-    fill: 'rgba(255, 255, 255, 0.1)',
-    stroke: 'rgba(255, 255, 255, 0.5)'
+    fill: '#FF66C4',
+    stroke: '#FF66C4'
   },
   badge: {
     bg: '#E3ECF8',

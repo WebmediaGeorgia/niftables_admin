@@ -25,7 +25,7 @@ const StyledWrapper = styled.div`
   align-items: center;
   width: 100%;
   gap: 12px;
-  padding: 13px 30px 14px 20px;
+  padding: 6px 14px;
   border-radius: 6px;
   border: 1px solid #4F83C9;
   font-size: 18px;
@@ -55,6 +55,9 @@ const StyledWrapper = styled.div`
     padding: 8px 20px 7px 30px;
   }
   .label {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;

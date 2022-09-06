@@ -5,7 +5,7 @@ export default function RarityRank ({ rarityRank }) {
   if (!rarityRank) return <div />
   return (
     <StyledWrapper>
-      #{rarityRank}
+      No{rarityRank}
     </StyledWrapper>
   )
 }

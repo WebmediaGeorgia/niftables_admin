@@ -13,12 +13,12 @@ import { setViewType } from '@entities/utils/actions'
 
 const buttonGroup = [
   {
-    type: GRID_SMALL,
-    Icon: IconGrid4,
-  },
-  {
     type: GRID_BIG,
     Icon: IconGrid3,
+  },
+  {
+    type: GRID_SMALL,
+    Icon: IconGrid4,
   },
 ]
 

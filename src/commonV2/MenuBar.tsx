@@ -75,7 +75,7 @@ const StyledMobileOpen = styled.div`
   }
   .icon {
     path {
-      fill: ${({ theme }) => theme.text.primary};
+      fill: ${({ theme }) => theme.text.secondaryBlue};
     }
   }
 `
@@ -101,7 +101,7 @@ const StyledDesktopHandler = styled.div`
   .icon {
     ${({ isOpen }) => isOpen && 'transform: rotate(180deg)'};
     path {
-      fill: ${({ theme }) => theme.text.white};
+      fill: ${({ theme, isOpen }) => isOpen ? theme.text.white : theme.text.secondaryBlue };
     }
   }
   @media only screen and (max-width: 768px) {
@@ -173,9 +173,9 @@ const StyledHeader = styled.div`
     padding: 0 20px 20px;
   }
   .label {
-    font-size: 20px;
     font-weight: 500;
-    line-height: 23px;
+    font-size: 24px;
+    line-height: 34px;
     opacity: ${({ isOpen }) => isOpen ? 1 : 0};
     @media only screen and (max-width: 768px) {
       opacity: 1;

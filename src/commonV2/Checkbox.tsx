@@ -40,7 +40,7 @@ const StyledWrapper = styled.div`
     height: 24px;
     margin: 0;
     background: transparent;
-    border: 1px solid #FF66C4;
+    border: 1px solid #4F83C9;
     border-radius: 4px;
     appearance: none;
     cursor: pointer;
@@ -56,6 +56,7 @@ const StyledWrapper = styled.div`
       background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 12 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M4 7.80007L1.2 5.00006L0.266663 5.9334L4 9.66673L12 1.66673L11.0667 0.733398L4 7.80007Z' fill='%23FF66C4'/%3e%3c/svg%3e");
     }
     &:checked {
+      border: 1px solid #FF66C4;
       &::before {
         transform: scale(1);
       }

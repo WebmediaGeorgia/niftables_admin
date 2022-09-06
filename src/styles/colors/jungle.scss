@@ -782,7 +782,7 @@
   --poweredBy-LineHeight: 16px;
   --poweredBy-logo-Margin: 7px 0 0;
   --poweredBy-logo-display: block;
-  --poweredBy-logo-ColorText: rgba(255, 255, 255, 0.4);
+  --poweredBy-logo-ColorText: rgba(255, 255, 255, 0.8);
   --poweredBy-logo-signIn-ColorText: #ffffff;
   --poweredBy-logo-FontWeight: 700;
   --poweredBy-logo-Width: 144px;
@@ -1030,7 +1030,7 @@
   --option-Bg: rgba(17, 40, 30, 0.72);
   --option-Filter: blur(4px);
   --option-ColorText: #ffffff;
-  --option-Border: 1px solid rgba(17, 40, 30, 0.72);
+  --option-Border: 1px solid #4F83C9;
   --option-BorderColor-Hover: rgba(229, 229, 229, 0.5);
   --option-active-BorderColor: rgba(17, 40, 30, 0.72);
   --option-icon-close-Fill: #ffffff;
@@ -1108,9 +1108,9 @@
   --accordion-primary-title-icon-BorderColor: #FF66C4;
   --accordion-height-large: 312px;
 
-  --accordion-title-small-FontSize: 18px;
+  --accordion-title-small-FontSize: 16px;
   --accordion-title-small-FontWeight: 500;
-  --accordion-title-small-LineHeight: 21px;
+  --accordion-title-small-LineHeight: 22px;
 
   --accordion-text-fontSize: 12px;
   --accordion-text-FontWeight: 400;

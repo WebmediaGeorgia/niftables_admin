@@ -22,14 +22,14 @@ export default function FiltersHeader ({ className = '', title, subTitile }) {
 }
 
 const StyledWrapper = styled.div`
-  padding: 150px 0 0;
+  padding: 50px 0 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   .title {
     margin-bottom: 15px;
   }
   .sub-title {
     max-width: 605px;
-    margin: 0 auto 100px;
+    margin: 0 auto 45px;
     padding: 0 20px;
     font-size: 20px;
     font-weight: 500;

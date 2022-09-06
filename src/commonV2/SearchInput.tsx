@@ -58,7 +58,7 @@ const StyledWrapper = styled.div`
   .search-icon {
     position: absolute;
     top: 50%;
-    left: ${({ toggleInput }) => toggleInput ? '2px' : '12px'};
+    left: ${({ toggleInput }) => toggleInput ? '2px' : '4px'};
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -78,13 +78,13 @@ const StyledWrapper = styled.div`
   }
   .input {
     width: 100%;
-    height: 50px;
-    padding: 7px 16px 7px 50px;
+    height: 36px;
+    padding: 7px 16px 7px 40px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     color: ${({ theme }) => theme.text.white};
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: transparent;
     border-radius: 6px;
     background: linear-gradient(
       90deg,
@@ -106,7 +106,11 @@ const StyledWrapper = styled.div`
       cursor: pointer;
     }
     ::placeholder {
-      color: rgba(255, 255, 255, 0.5);
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+      color: #4F83C9;
     }
     &-medium {
       font-size: 14px;

@@ -63,7 +63,7 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0 35px;
+  margin: 20px 0;
   @media only screen and (max-width: 768px) {
     flex-wrap: wrap;
     margin-bottom: 0;
@@ -99,8 +99,9 @@ const StyledWrapper = styled.div`
     white-space: nowrap;
     margin-left: 25px;
     .sort-by-title {
-      font-size: 14px;
-      font-weight: 400;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
     }
     .sort-by-drop-down {
       width: 260px;

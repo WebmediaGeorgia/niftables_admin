@@ -33,13 +33,18 @@ const StyledWrapper = styled.button.attrs(({ colorScheme, theme }) => {
   }
   return { scheme: config[colorScheme] }
 })`
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  height: 54px;
   display: block;
   min-width: 164px;
   padding: 0 15px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 42px;
-  text-align: center;
   border: none;
   border-radius: 8px;
   box-shadow: none;

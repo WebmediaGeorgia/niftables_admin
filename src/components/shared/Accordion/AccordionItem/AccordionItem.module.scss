@@ -120,18 +120,18 @@
 
 .accordion-large {
   .accordion-title {
-    padding: 15px;
+    padding: 19px 30px;
     @include respond-to('medium') {
-      padding: 15px var(--accordion-paddingX-Large);
+      padding: 19px 30px;
     }
   }
   .accordion-content {
-    padding: 0 15px 15px;
+    padding: 0 30px 19px;
     font-size: var(--accordion-text-fontSize);
     font-weight: var(--accordion-text-FontWeight);
     line-height: var(--accordion-text-LineHeight);
     @include respond-to('medium') {
-      padding: 0 var(--accordion-paddingX-Large) 15px;
+      padding: 0 30px 19px;
     }
   }
 }
