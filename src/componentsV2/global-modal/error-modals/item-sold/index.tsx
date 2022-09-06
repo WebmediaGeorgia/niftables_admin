@@ -25,10 +25,10 @@ export default function ItemSold () {
 			<div className={styles.wrapper}>
 				<HeadIcon type='lock' />
 				<div className={styles['title']}>
-					Sold!
+					Unsuccessfull!
 				</div>
 				<div className={styles['text']}>
-					All available {label}s are already sold
+          This {label} has already been purchased by another user.
 				</div>
 				<div className={styles['buttons-wrapper']}>
 					<BackToBrowse />

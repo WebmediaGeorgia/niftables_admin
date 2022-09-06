@@ -11,6 +11,8 @@ import { resetModal } from '@entities/modal/actions'
 import Modal from '@commonV2/Modal'
 import Button from '@components/shared/Button'
 import HeadIcon from '../../common/HeadIcon'
+import classNames from "classnames";
+import NavButton from "@shared/NavButton";
 
 export default function PaymentSuccess () {
 	const dispatch = useDispatch()
@@ -35,9 +37,9 @@ export default function PaymentSuccess () {
 				<HeadIcon type='success' />
 				<div className={styles['title']}>Thank you!</div>
 				<div className={styles['text']}>
-					Your payment was successful!
+          Your transaction is processing now.
 					<br />
-					NFT minting may take several minutes to appear in your wallet.
+          You will be notified once NFT is minted to your wallet.
 				</div>
 				<div className={styles['buttons-wrapper']}>
 					<Button
@@ -45,23 +47,9 @@ export default function PaymentSuccess () {
 						size='l'
 						color='blue'
 						fullWidth
-						onClick={closeHandler}
-					>
-						Back to NFT`s catalog
-					</Button>
-					<Button
-						className={cn(
-							btnStyles['btn-cancel'],
-							styles['btn-go-profile'],
-							'g-mt-20'
-						)}
-						size='l'
-						color='blue'
-						fillStyle
-						fullWidth
 						onClick={navigateToMyNfts}
 					>
-						View your NFTs
+            Go to profile
 					</Button>
 				</div>
 			</div>

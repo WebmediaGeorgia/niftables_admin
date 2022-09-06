@@ -36,7 +36,7 @@ const StyledButton = styled(Button)`
   .icon {
     margin-right: 10px;
     path {
-      fill: ${({ theme }) => theme.text.primary};
+      fill: ${({ theme }) => theme.text.white};
     }
   }
 `

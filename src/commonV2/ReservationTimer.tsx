@@ -50,11 +50,11 @@ export default function ReservationTimer ({ className = '', endDate }) {
 }
 
 const StyledWrapper = styled.div`
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: ${({ theme }) => theme.text.primary};
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: ${({ theme }) => theme.text.white};
   .timer-countdown {
-    font-weight: 700;
+    font-weight: 500;
   }
 `

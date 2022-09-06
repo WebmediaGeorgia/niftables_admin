@@ -37,7 +37,10 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   .label {
-    font-size: 12px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    opacity: 0.5
   }
   .amount {
     font-size: 22px;

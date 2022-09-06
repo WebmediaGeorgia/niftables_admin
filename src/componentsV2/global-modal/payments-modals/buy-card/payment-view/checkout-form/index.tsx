@@ -57,6 +57,11 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   height: 100%;
   font-size: 14px;
+
+  .Input {
+    background-color:  rgba(255, 255, 255, 0.05);;
+  }
+
   .payment-form {
     min-height: 258px;
     margin: 15px 0 0;

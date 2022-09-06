@@ -24,7 +24,8 @@ const StyledWrapper = styled.div`
   ::after {
     content: '';
     flex: 1;
-    border-bottom: 1px solid ${({ theme }) => theme.text.primary};
+    border-bottom: 1px solid ${({ theme }) => theme.text.white};
+    opacity: 0.15;
   }
   ::before {
     margin-right: 25px;

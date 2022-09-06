@@ -45,13 +45,15 @@ const StyledWrapper = styled.div`
   .price,
   .fee {
     .label {
-      font-size: 12px;
-      line-height: 18px;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+      opacity: 0.5;
     }
     .amount {
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 18px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
     }
   }
   .price {

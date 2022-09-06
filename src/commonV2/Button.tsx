@@ -24,11 +24,45 @@ const StyledWrapper = styled.button.attrs(({ colorScheme, theme }) => {
       color: white;
       background-size: cover;
       background: #FF66C4;
+      cursor: pointer;
+      svg {
+        path {
+          fill: white;
+        }
+      }
+
+      :hover:not([disabled]) {
+        background: #FFFFFF;
+        color: #FF66C4;
+
+        svg {
+          path {
+            fill: #FF66C4;
+          }
+        }
+      }
     `,
     'transparent': css`
       color: white;
       background: transparent;
       border: 1px solid #FF66C4;
+      cursor: pointer;
+      svg {
+        path {
+          fill: white;
+        }
+      }
+
+      :hover:not([disabled]) {
+        background: transparent;
+        color: #FF66C4;
+        border: 1px solid #FF66C4;
+        svg {
+          path {
+            fill: #FF66C4;
+          }
+        }
+      }
     `
   }
   return { scheme: config[colorScheme] }
@@ -48,13 +82,7 @@ const StyledWrapper = styled.button.attrs(({ colorScheme, theme }) => {
   border: none;
   border-radius: 8px;
   box-shadow: none;
-  transition: all 0.2s;
 
-  :hover:not([disabled]) {
-    background: #FFFFFF;
-    color: #FF66C4;
-    svg { fill: #FF66C4; }
-  }
   :active:not([disabled]) {
     background: #FFFFFF;
     color: #FF66C4;

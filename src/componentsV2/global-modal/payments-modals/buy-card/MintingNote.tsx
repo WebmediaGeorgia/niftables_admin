@@ -30,7 +30,7 @@ export default function MintingNote () {
 
 const StyledWrapper = styled.div`
   padding-left: 20px;
-  border-left: solid 2px ${({ theme }) => theme.text.primary};
+  border-left: solid 2px ${({ theme }) => theme.text.secondary};
   .title {
     font-size: 14px;
     font-weight: 700;

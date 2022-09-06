@@ -30,8 +30,14 @@ const stripeOptions = {
 
       colorPrimary: '#0570de',
       colorBackground: '#4F83C9',
+      colorTextPlaceholder: '#DEE2E6',
       colorText: 'white',
     },
+    rules: {
+      ".Input::placeholder": {
+        opacity: "0.6"
+      }
+    }
   },
 }
 

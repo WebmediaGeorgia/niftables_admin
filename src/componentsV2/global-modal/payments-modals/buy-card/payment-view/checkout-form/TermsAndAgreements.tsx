@@ -20,9 +20,9 @@ function Label () {
 }
 
 const StyledLabel = styled.span`
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
   color: white;
   a {
     color: ${({ theme }) => theme.text.secondary};

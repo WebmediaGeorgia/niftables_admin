@@ -29,6 +29,10 @@ export default function ReservationBlock () {
 
 const StyledWrapper = styled.div`
   .timer {
-    font-size: 14px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.6;
   }
 `

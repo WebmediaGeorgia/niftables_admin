@@ -15,4 +15,7 @@ const StyledWrapper = styled.div`
   max-width: 500px;
   margin: 30px 0 0 0;
   text-align: center;
+  background: rgba(7, 3, 31, 0.3);
+  border-radius: 100px;
+  padding: 10px 20px;
 `
