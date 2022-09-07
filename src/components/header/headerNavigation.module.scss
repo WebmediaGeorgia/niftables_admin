@@ -76,10 +76,15 @@
 }
 
 .navButtonContainer {
+  margin-left: 10px;
   width: 145px;
   position: relative;
   display: flex;
   align-items: center;
+
+  a {
+    width: 100%;
+  }
 
   div:last-child {
     right: 0;

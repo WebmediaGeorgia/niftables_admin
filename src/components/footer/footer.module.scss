@@ -70,6 +70,10 @@
     @include respond-to('small') {
       padding: 60px;
     }
+
+    @include respond-to('xSmall') {
+      padding: 0px;
+    }
     @include respond-to('medium') {
       padding: 150px;
     }
