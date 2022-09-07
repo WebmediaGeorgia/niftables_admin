@@ -116,7 +116,7 @@ export const Card: FC<ICardProps> = ({
         src={src}
         alt={item.description}
         objectFit='contain'
-        objectPosition='center center'
+        objectPosition='top center'
       />
     );
   };

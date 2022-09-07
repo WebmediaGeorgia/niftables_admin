@@ -19,7 +19,7 @@ export default function GlobalPreview () {
         alt='NFT'
         layout='fill'
         objectFit='contain'
-        objectPosition='center center'
+        objectPosition='top center'
       />
     </PreviewModal>
   )

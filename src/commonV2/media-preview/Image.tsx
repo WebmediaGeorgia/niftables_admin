@@ -20,7 +20,7 @@ export default function Image ({ preview, withoutFullView }) {
 			alt='NFT'
       layout='fill'
       objectFit='contain'
-      objectPosition='center center'
+      objectPosition='top center'
       onClick={openPreview}
 		/>
 	)

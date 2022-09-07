@@ -13,7 +13,7 @@ const HeroImage = ({ heroImage }) => {
         src={heroImage}
         alt='Hero Image'
         objectFit='contain'
-        objectPosition='center center'
+        objectPosition='top center'
       />
     </div>
   ) : (

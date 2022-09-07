@@ -57,16 +57,19 @@ export default function PacksBuyOptions () {
 					</Link>
 				</div>
         <BuyingContainer>
-          <Button
-            clickHandler={moveToBuyCard}
-          >
-            Buy with card
-          </Button>
-          <Button
-            clickHandler={moveToBuyCrypto}
-          >
-            Buy with crypto
-          </Button>
+          <BuyWith />
+          <div className='buttons'>
+            <Button
+              clickHandler={moveToBuyCard}
+            >
+              Card
+            </Button>
+            <Button
+              clickHandler={moveToBuyCrypto}
+            >
+              Crypto
+            </Button>
+          </div>
         </BuyingContainer>
 
 				<div className={styles.description}>
@@ -78,6 +81,17 @@ export default function PacksBuyOptions () {
 }
 
 const BuyingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 75%;
+
+  .buttons {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+
+    button {
+      flex: 1 1 auto;
+    }
+  }
 `

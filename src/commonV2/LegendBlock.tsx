@@ -21,11 +21,13 @@ const StyledWrapper = styled.fieldset`
   padding-block: 0 12px;
   padding-inline: 10px;
   min-inline-size: min-content;
-  color: ${({ theme }) => theme.text.primary};
-  background: transparent;
-  border: 1px solid ${({ theme }) => theme.text.primary};
+  color: ${({ theme }) => theme.text.white};
   border-radius: 25px;
   text-align: center;
+
+  background: rgba(7, 3, 31, 0.3);
+  border: none;
+
   .title {
     inset: 12px 0 auto;
     text-align: center;
@@ -36,16 +38,16 @@ const StyledWrapper = styled.fieldset`
     border-style: none;
     border-color: initial;
     border-image: initial;
-    color: ${({ theme }) => theme.text.primary};
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 25px;
-    text-align: center;
     text-transform: uppercase;
+    color: #FF66C4;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    border: none;
   }
   .description {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
   }
 `

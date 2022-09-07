@@ -19,7 +19,7 @@ export default function DetailInfo () {
       <div>
         <Title item={pack} />
         <User
-          label='Creator'
+          label='Owner'
           item={pack}
         />
         <Collection pack={pack} />

@@ -39,30 +39,33 @@
 }
 
 .title {
-  font-size: var(--buyPack-title-FontSize);
-  line-height: var(--buyPack-title-LineHeight);
-  font-weight: var(--buyPack-title-FontWeight);
   margin-top: 10px;
   word-break: break-all;
-  color: var(--card-title-ColorText);
+  color: white;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
 }
 
 .collection {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--buyPack-FontSize);
-  line-height: var(--buyPack-LineHeight);
-  font-weight: var(--buyPack-FontWeight);
   margin-bottom: 15px;
   color: var(--modal-label-ColorText);
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+
   &-title {
     color: var(--modal-label-text-ColorText);
   }
 
   .link {
     text-decoration: none;
-    color: var(--modal-link-ColorText);
+    color: #FF66C4;
     &:hover {
       text-decoration: underline;
     }
@@ -76,7 +79,7 @@
 .description {
   font-size: 12px;
   line-height: 18px;
-  margin: 45px auto 60px;
+  margin: 45px auto 0px;
   max-width: 596px;
   width: 100%;
   text-align: center;

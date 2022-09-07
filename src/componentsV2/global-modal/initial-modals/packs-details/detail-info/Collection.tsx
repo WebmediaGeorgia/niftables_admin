@@ -15,7 +15,7 @@ export default function Collection ({ className = '', pack }) {
   return (
     <StyledWrapper className={className}>
       <div className='collection'>
-        NFT from:&nbsp;
+        Collection:&nbsp;
         <Link href={`/collections/${pack.collection.id}`}>
           <a className='link'>
             {name}
@@ -34,9 +34,9 @@ const StyledWrapper = styled.div`
   margin-top: 10px;
   & .collection {
     display: flex;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
     .link {
       font-weight: 600;
       color: ${({ theme }) => theme.text.white};

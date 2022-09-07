@@ -28,8 +28,9 @@ export default function BadgesList ({ className = '', pack }) {
 
 const StyledWrapper = styled.div`
   .description {
-    font-size: 11px;
-    line-height: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
     color: ${({ theme }) => theme.text.white};
   }
   .badgs-wrapper {

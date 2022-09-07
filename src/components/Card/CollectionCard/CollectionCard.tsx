@@ -78,7 +78,7 @@ export const CollectionCard: FC<ICollectionCardProps> = ({
               src={isImgSrc}
               alt={item.description}
               objectFit='contain'
-              objectPosition='center center'
+              objectPosition='top center'
             />
           </div>
           <div className={styles.content}>

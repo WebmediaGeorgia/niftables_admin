@@ -57,7 +57,7 @@ export const PackCard: FC<IPackCardProps> = ({
         <div className={styles.title}>{item.name}</div>
         {item.collection && (
           <div className={styles.collection}>
-            <span>NFT from</span>{' '}
+            <span>Collection</span>{' '}
             <Link href={`/collections/${item.collection.id}`}>
               {item.collection.name}
             </Link>

@@ -5,10 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   width: 100%;
   @include respond-to(small) {
-    gap: 30px;
+    gap: 10px;
   }
 }
 

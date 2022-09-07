@@ -28,7 +28,7 @@ export const PackItemSubscribe: FC<IPacksSubScribe> = ({
             src={item.imageUrl}
             alt={item.description}
             objectFit='contain'
-            objectPosition='center center'
+            objectPosition='top center'
           />
         ) : (
           <div className={styles.placeholder}></div>

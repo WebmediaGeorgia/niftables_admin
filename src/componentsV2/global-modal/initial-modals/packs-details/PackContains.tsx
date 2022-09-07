@@ -49,6 +49,7 @@ export default function PackContains () {
       </div>
 
       <Button
+        className="open-collection-button"
         clickHandler={navigateToCollection}
       >
         Open Collection
@@ -71,6 +72,11 @@ const StyledWrapper = styled.div`
   backdrop-filter: blur(4px);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     gap: 20px;
@@ -81,23 +87,34 @@ const StyledWrapper = styled.div`
     font-size: 12px;
     line-height: 18px;
   }
+  .open-collection-button {
+    height: 37px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+  }
   .preview-wrapper {
     display: flex;
+    margin-right: auto;
+    margin-left: 20px;
+    align-items: center;
+
     .image {
       position: relative;
-      width: 20px;
-      height: 20px;
-      margin-right: 12px;
+      width: 30px;
+      height: 30px;
+      margin-right: 6px;
       background: #0D4B9E;
       border-radius: 2px;
       .icon {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
       }
     }
     .name {
-      font-size: 12px;
-      line-height: 18px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
     }
   }
 `
