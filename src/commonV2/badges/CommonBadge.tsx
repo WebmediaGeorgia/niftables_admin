@@ -14,7 +14,7 @@ const StyledWrapper = styled.div`
   background: ${({ theme }) => theme.badge.bg};
   font-size: 10px;
   line-height: 18px;
-  color: ${({ theme }) => theme.badge.white};
+  color: ${({ theme }) => theme.badge.color};
   font-weight: 500;
   white-space: nowrap;
   letter-spacing: 0.5px;

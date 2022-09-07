@@ -1,5 +1,9 @@
 @use '@styles/index.scss' as *;
 
+.viewNFTsButton {
+  width: 100%;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;

@@ -11,6 +11,8 @@ import useClearReservation from '@hooks/modal/useClearReservation'
 
 import Modal from '@commonV2/Modal'
 import NavButton from '@shared/NavButton'
+import classNames from "classnames";
+import btnStyles from "@shared/NavButton/NavButton.module.scss";
 
 export default function InstallWallet () {
   const moveToInitialPoint = useMoveToInitialPoint()
@@ -44,6 +46,12 @@ export default function InstallWallet () {
             size='m'
             color='blue'
             onClick={actionHandler}
+            fillStyle={false}
+            className={classNames(
+              btnStyles['link-login-primary'],
+              styles.button,
+              btnStyles['link-width-login']
+            )}
           >
             Install Metamask
           </NavButton>

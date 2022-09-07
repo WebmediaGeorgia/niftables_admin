@@ -10,7 +10,7 @@ const theme = {
     stroke: '#FF66C4'
   },
   badge: {
-    bg: 'black',
+    bg: '#E3ECF8',
     color: '#4F83C9',
     activatedBg: 'rgba(14, 185, 113, 0.15)'
   },

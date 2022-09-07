@@ -14,7 +14,7 @@ export default function ReservationBlock () {
 	const expiredAt = useTypedSelector(state => get(state, 'modal.options.reservation.expiredAt'))
 	const label = getEntityLabel(type)
 	return (
-		<StyledWrapper className='g-d-flex g-justify-center g-align-center g-mt-20'>
+		<StyledWrapper className='g-d-flex g-justify-center g-align-center g-mt-10'>
 			<div className='timer'>
 				{label} Reserved for:
 			</div>

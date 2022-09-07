@@ -63,7 +63,7 @@ export default function ReservedByAnother () {
 					Reserved!
 				</div>
 				<ReservationTimer
-					className='timer g-mt-20'
+					className='timer g-mt-5'
 					endDate={data.expiredAt}
 				/>
 				<div className={styles['text']}>

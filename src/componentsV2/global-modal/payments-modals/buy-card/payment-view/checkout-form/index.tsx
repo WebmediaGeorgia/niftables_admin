@@ -65,7 +65,6 @@ const StyledWrapper = styled.div`
   .payment-form {
     min-height: 258px;
     margin: 15px 0 0;
-    padding: 10px;
     background: transparent;
     border-radius: 8px;
   }

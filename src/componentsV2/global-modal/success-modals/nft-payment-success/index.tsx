@@ -9,10 +9,12 @@ import btnStyles from '@components/shared/Button/Button.module.scss'
 import { resetModal } from '@entities/modal/actions'
 
 import Modal from '@commonV2/Modal'
+import ButtonV2 from '@commonV2/Button'
 import Button from '@components/shared/Button'
 import HeadIcon from '../../common/HeadIcon'
 import classNames from "classnames";
 import NavButton from "@shared/NavButton";
+import classnames from "classnames";
 
 export default function PaymentSuccess () {
 	const dispatch = useDispatch()
@@ -27,6 +29,11 @@ export default function PaymentSuccess () {
     router.push('/my-profile/my-nfts')
     dispatch(resetModal())
 	}, [router])
+
+  const backToBrowse = React.useCallback(() => {
+    router.push('/buy')
+    dispatch(resetModal())
+  }, [router])
 
   return (
 		<Modal
@@ -47,10 +54,19 @@ export default function PaymentSuccess () {
 						size='l'
 						color='blue'
 						fullWidth
-						onClick={navigateToMyNfts}
+						onClick={backToBrowse}
 					>
-            Go to profile
+            Back to browse
 					</Button>
+
+          <ButtonV2
+            className={classnames('g-mt-20', styles.viewNFTsButton)}
+            disabled={false}
+            colorScheme='transparent'
+            clickHandler={navigateToMyNfts}
+          >
+            View your NFTS
+          </ButtonV2>
 				</div>
 			</div>
 		</Modal>

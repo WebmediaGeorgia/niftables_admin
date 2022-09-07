@@ -15,8 +15,8 @@ export default function Title () {
 
 const StyledWrapper = styled.div`
   margin-top: 30px;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 35px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
   text-align: center;
 `

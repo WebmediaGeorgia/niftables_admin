@@ -42,7 +42,7 @@ export default function ReservationBlocked () {
 					Blocked!
 				</div>
 				<ReservationTimer
-					className='timer g-mt-20'
+					className='timer'
 					endDate={data.blockedTo}
 				/>
 				<div className={styles['text']}>

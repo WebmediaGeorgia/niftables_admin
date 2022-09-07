@@ -38,7 +38,7 @@ export default function WithdrawConfirmation () {
 				<div className='description g-mt-15'>
           You are about to withdraw an NFT to the wallet
           <CommonBadge
-            className='g-ml-5'
+            className='black-badge g-ml-5'
             label={formatAddress(metamaskAddress)}
           />
 				</div>
@@ -80,6 +80,10 @@ const StyledWrapper = styled.div`
     font-size: 16px;
     line-height: 22px;
     color: ${({ theme }) => theme.text.white}
+  }
+  .black-badge {
+    background: black;
+    color: white;
   }
   .buttons-wrapper {
     display: flex;

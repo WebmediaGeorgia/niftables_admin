@@ -62,7 +62,7 @@ const StyledWrapper = styled.div`
   .price-left-col {
     display: flex;
     width: 50%;
-    padding-right: 60px;
+    padding-right: 85px;
     @media only screen and (max-width: 480px) {
       width: 100%;
       padding-right: 0;
@@ -77,7 +77,7 @@ const StyledWrapper = styled.div`
   .price-right-col {
     display: flex;
     width: 50%;
-    padding-left: 60px;
+    padding-left: 85px;
     @media only screen and (max-width: 480px) {
       width: 100%;
       padding-left: 0;
