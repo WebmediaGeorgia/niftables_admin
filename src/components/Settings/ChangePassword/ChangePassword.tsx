@@ -133,6 +133,7 @@ const ChangePassword = () => {
               labelText='Current password'
               placeholder='Enter your password'
               id='password'
+              size='m'
               customType='password'
               onFocus={() =>
                 clearError(
@@ -155,6 +156,7 @@ const ChangePassword = () => {
               labelText='New password'
               placeholder='Enter your password'
               id='newPassword'
+              size='m'
               error={errors?.password?.password && errors.password.password}
               customType='password'
               onFocus={() =>
@@ -168,6 +170,7 @@ const ChangePassword = () => {
               placeholder='Enter your password'
               id='confirmPassword'
               customType='password'
+              size='m'
               onFocus={() =>
                 clearError(
                   errors?.password?.confirmPassword,
@@ -181,8 +184,8 @@ const ChangePassword = () => {
               {...register(FIELD_LABELS.PASSWORD.CONFIRM_PASSWORD)}
             />
           </div>
-          <div className={classNames(styles.settingsColumn, 'mt-auto')}>
-            <TextHelper title='Password strength:'>
+          <div className={classNames('mt-auto')}>
+            <TextHelper className={styles.settingHelperText} title='Password strength:'>
               <p>{`Use at least 8 characters. Don't use a password from another site,
               or something too obvious like your pet's name. Your password can
               be any combination of letters, numbers, and symbols.`}</p>

@@ -98,6 +98,10 @@
   fill: var(--icon-eye-Fill);
   cursor: pointer;
   z-index: 2;
+
+  path {
+    fill: var(--icon-eye-Fill);
+  }
 }
 
 .input-errorMsg {

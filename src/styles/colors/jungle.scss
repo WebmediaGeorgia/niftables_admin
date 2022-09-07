@@ -867,7 +867,7 @@
   --input-Placeholder-ColorText: rgba(79, 131, 201, 0.6);
   --input-AutoFill-ColorText: #ffffff;
   --input-AutoFill-BgColor: #375547;
-  --input-Outline-ColorText: #ffffff;
+  --input-Outline-ColorText: #4F83C9;
 
   --input-FontSize: 18px;
   --input-LineHeight: 21px;
@@ -1286,25 +1286,21 @@
   --cardSettings-BorderLeft: 1px solid rgba(255, 255, 255, 0.5);
   --cardSettings-title-ColorText: black;
 
-  --settings-navButton-width: 210px;
+  --settings-navButton-width: 100%;
   --settings-navButton-Padding: 14px 16px;
   --settings-navWrapper-BorderBottom: 1px solid rgba(255, 255, 255, 0.1);
   --settings-navWrapper-Margin: 48px 0 0;
   --settings-userSettings-Margin: 91px 0 0;
 
-  --settings-heading-FontSize: 20px;
-  --settings-heading-FontWeight: 500;
-  --settings-heading-LineHeight: 23px;
-
-  --settings-heading-FontSize: 20px;
-  --settings-heading-FontWeight: 500;
-  --settings-heading-LineHeight: 23px;
+  --settings-heading-FontSize: 26px;
+  --settings-heading-FontWeight: 700;
+  --settings-heading-LineHeight: 36px;
 
   --settings-card-Padding: 20px;
   --settings-card-Padding-Large: 23px;
   --settings-card-title-FontSize: 16px;
-  --settings-card-title-FontWeight: 500;
-  --settings-card-title-LineHeight: 18px;
+  --settings-card-title-FontWeight: 600;
+  --settings-card-title-LineHeight: 22px;
 
   --settings-card-text-FontSize: 14px;
   --settings-card-text-FontWeight: 400;
@@ -1360,7 +1356,7 @@
   );
   --otp-input-Border: 1px solid #4F83C9;;
   --otp-input-placeholder-ColorText: rgba(79, 131, 201, 0.5);
-  --otp-input-outline-color: #FFFFFF;
+  --otp-input-outline-color: #4F83C9;
 
   --error-ColorText: #FD7465;
   --error-Border: 2px solid #FD7465;
@@ -1375,8 +1371,8 @@
   --nav-FontWeight: 500;
   --nav-LineHeight: 18px;
   --nav-ColorText: #ffffff;
-  --nav-active-ColorText: #fab72b;
-  --nav-active-Bg: #fab72b;
+  --nav-active-ColorText: #FF66C4;
+  --nav-active-Bg: #FF66C4;
   --nav-BorderColor: rgba(255, 255, 255, 0.1);
 
   --nav-column-FontSize: 20px;

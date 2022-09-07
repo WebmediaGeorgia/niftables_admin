@@ -12,6 +12,7 @@ const ProfileSettings = ({ errors, register }) => {
             labelText='Display name'
             placeholder='Enter name '
             id='displayName'
+            size="m"
             error={errors?.profile?.displayName && errors.profile.displayName}
             {...register(FIELD_LABELS.PROFILE.DISPLAY_NAME)}
           />
@@ -19,6 +20,7 @@ const ProfileSettings = ({ errors, register }) => {
             labelText='Username'
             placeholder='Enter name '
             id='username'
+            size="m"
             error={errors?.username && errors.username}
             {...register(FIELD_LABELS.USERNAME)}
           />
@@ -27,6 +29,7 @@ const ProfileSettings = ({ errors, register }) => {
             placeholder='Enter email'
             id='email'
             disabled
+            size="m"
             error={errors?.email && errors.email}
             {...register(FIELD_LABELS.EMAIL)}
             type={'email'}
@@ -35,6 +38,7 @@ const ProfileSettings = ({ errors, register }) => {
             labelText='Website'
             placeholder='www.example.com'
             id='website'
+            size="m"
             error={errors?.profile?.website && errors.profile?.website}
             {...register(FIELD_LABELS.PROFILE.WEBSITE)}
           />

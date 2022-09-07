@@ -6,6 +6,7 @@ import { IPack } from 'src/common/models/pack';
 import Link from 'next/link';
 import Button from '@components/shared/Button';
 import classNames from 'classnames';
+import CommonBadge from "@commonV2/badges/CommonBadge";
 
 export interface IPackCardProps {
   item: IPack | any;
@@ -78,7 +79,7 @@ export const PackCard: FC<IPackCardProps> = ({
           </Button>
         ) : (
           <div className={styles.price}>
-            {item.availableSupply ? `$${price}` : 'Sold Out'}
+            {item.availableSupply ? `$${price}` : <CommonBadge className={styles.soldOutBadge} label="Sold Out" />}
           </div>
         )}
       </div>
