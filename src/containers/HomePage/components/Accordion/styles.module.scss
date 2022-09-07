@@ -1,0 +1,86 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff;
+  font-family: "Oswald";
+  font-weight: 300;
+}
+
+.accordionItem {
+  width: 34.375vw;
+  margin: 0 0 0.938vw 0;
+  border-bottom: 0.052vw solid rgba(255, 255, 255, 0.15);
+  user-select: none;
+  overflow: hidden;
+  max-height: 3.646vw;
+  transition: 0.3s max-height, 0.3s border-color;
+  &:hover {
+    border-color: #ff4cbd;
+
+  }
+  &.show {
+    max-height: 15.625vw;
+  }
+}
+
+.accordionTitle {
+  font-size: 1.354vw;
+  line-height: calc(36 / 26);
+  padding: 0.365vw 0 0.625vw 2.344vw;
+  position: relative;
+  transition: 0.3s color;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 0.104vw);
+    left: 0.938vw;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    transition: 0.3s height, 0.3s background-color;
+  }
+  &:before {
+    width: 0.104vw;
+    height: 0.833vw;
+  }
+  &:after {
+    width: 0.833vw;
+    height: 0.104vw;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: #ff4cbd;
+    &::before{
+      background: #ff4cbd;
+    }
+    &:after{
+      background: #ff4cbd;
+    }
+  }
+  &.show {
+    color: #ff4cbd;
+    &:before,
+    &:after {
+      background-color: #ff4cbd;
+    }
+    &:before {
+      height: 0;
+    }
+  }
+}
+
+.accordionContent {
+  font-size: 1.146vw;
+  line-height: calc(32 / 22);
+  padding: 0.365vw 0 1.51vw 2.344vw;
+  opacity: 0.6;
+}
+
+.accordionWrap {
+  display: flex;
+  justify-content: space-between;
+  z-index: 6;
+}

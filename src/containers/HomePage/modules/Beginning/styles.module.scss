@@ -1,0 +1,149 @@
+@keyframes bubbles1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  100% {
+    top: -10%;
+    opacity: 0.4;
+  }
+}
+
+@keyframes top-arrow {
+  0% {
+    top: -12%;
+  }
+  50% {
+    top: -11%;
+  }
+  100% {
+    top: -12%;
+  }
+}
+
+
+@keyframes left-arrow {
+  0% {
+    left: -6%;
+  }
+  50% {
+    left: -5%;
+  }
+  100% {
+    left: -6%;
+  }
+}
+
+.beginning {
+  position: relative;
+  height: 156.25vw;
+  width: 100%;
+  z-index: 9;
+  // opacity: 0.5;
+  // transition: 1s opacity;
+  // &.active {
+  //   opacity: 1;
+  // }
+  .waterBlur {
+    z-index: 3;
+    position: absolute;
+    top: -4%;
+    left: 0;
+    width: 100%;
+  }
+
+  .beginningWrapper {
+    position: sticky;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+
+    .beginningContainer {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .beginningBackground {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        transition: 0.2s transform;
+      }
+    }
+  }
+
+  .bubbles1 {
+    position: absolute;
+    width: 2.552vw;
+    height: auto;
+    left: 8.65%;
+    top: 60%;
+    z-index: 2;
+    opacity: 0;
+
+    &.active {
+      animation: 1.5s bubbles1 linear;
+    }
+  }
+
+  .bubbles2 {
+    position: absolute;
+    opacity: 0;
+    width: 3.958vw;
+    height: auto;
+    left: 47%;
+    top: 60%;
+
+    &.active {
+      animation: 1.5s bubbles1 linear;
+    }
+  }
+
+  .bubbles3 {
+    position: absolute;
+    opacity: 0;
+    width: 2.344vw;
+    height: auto;
+    left: 76%;
+    top: 53%;
+
+    &.active {
+      animation: 1.5s bubbles1 linear;
+    }
+  }
+
+  .bubbles4 {
+    position: absolute;
+    opacity: 0;
+    width: 2.448vw;
+    height: auto;
+    left: 90%;
+    top: 70%;
+
+    &.active {
+      animation: 2s bubbles1 linear;
+    }
+  }
+
+  .beginning__container {
+    position: relative;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s opacity;
+
+    &.remove {
+      opacity: 0 !important;
+    }
+  }
+}

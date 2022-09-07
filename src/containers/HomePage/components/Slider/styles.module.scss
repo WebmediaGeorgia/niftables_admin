@@ -1,0 +1,279 @@
+.team {
+  position: relative;
+  height: 100vh;
+  // background-color: rgba(13, 75, 158, 1);
+  // background-color: #225cbf;
+  padding: 10.417vw 0 0 0;
+  overflow: hidden;
+
+  .teamBackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .slider {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 60%;
+    transform: translateY(-44%);
+    z-index: 2;
+
+    .sliderWrapper {
+      width: 100%;
+      height: 34.896vw;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      #c1 {
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        z-index: 10;
+        // background-color: #ff66c472;
+        touch-action: manipulation;
+        // &.touch{
+        //   touch-action: none
+        // }
+      }
+
+      .slide {
+        position: absolute;
+        width: 18.229vw;
+        height: auto;
+        z-index: 2;
+        left: 7%;
+        width: 0;
+        opacity: 0;
+        transition: all 1s;
+
+        &.active {
+          width: 18.229vw;
+          left: 68.1%;
+          opacity: 1;
+        }
+
+        &.center {
+          opacity: 0.8;
+          left: 35%;
+          width: 12.917vw;
+          right: auto;
+          filter: blur(0.156vw);
+        }
+
+        &.left {
+          opacity: 0.6;
+          left: 11%;
+          width: 8.021vw;
+          right: auto;
+          filter: blur(0.26vw);
+        }
+
+        &.none {
+          left: 83%;
+          // left: 50%;
+          transform: translateY(-180%);
+          width: 0vw;
+          opacity: 0;
+          filter: blur(0.26vw);
+        }
+
+        &.noneReverse {
+          left: 11%;
+          width: 0;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .capsule {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -39%);
+    width: 27.604vw;
+    height: 36.094vw;
+
+    video {
+      position: absolute;
+      left: 50%;
+      top: 48%;
+      transform: translate(-50%, -50%);
+      width: 13.958vw;
+      height: 30.208vw;
+    }
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 48%;
+      content: "";
+      width: 15.833vw;
+      height: 30.313vw;
+      transform: translate(-50%, -50%);
+      background-image: url(/assets/img/home-page/team/blur-video.png);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      content: "";
+      width: 27.604vw;
+      height: 36.094vw;
+      transform: translate(-48%, -50%);
+      background-image: url(/assets/img/home-page/team/capsule.png);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+  }
+
+  .teamContainer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+    .teamTitle {
+      font-family: "Wild World";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3.542vw;
+      line-height: 3.542vw;
+      color: #ffffff;
+    }
+
+    .rightBlock {
+      display: flex;
+      flex-direction: column;
+      margin: 1.563vw 0 0 0;
+      position: relative;
+      z-index: 3;
+
+      .buttonContainer {
+        display: flex;
+        align-items: center;
+        gap: 0.521vw;
+
+        .button {
+          width: 4.167vw;
+          height: 1.771vw;
+          border: 0.052vw solid #ffffff;
+          border-radius: 0.417vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: none;
+          transition: 0.3s background, .3s border, .3s opacity;
+          cursor: pointer;
+
+          &.active {
+            opacity: 0.2;
+            border: 0.052vw solid #ffffff;
+            cursor: auto;
+
+            &:not([disabled]):hover {
+              background: none;
+              border: 0.052vw solid #ffffff;
+              cursor: auto;
+            }
+          }
+
+          &:hover {
+            background: #ff66c4;
+            border: 0.052vw solid #ff66c4;
+          }
+
+          img {
+            width: 2.917vw;
+            height: auto;
+            transition: all 0.3s;
+          }
+
+          &:last-child {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      span {
+        margin: 7.813vw 0 0 0;
+        font-family: "Wild World";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.667vw;
+        line-height: 1.667vw;
+        color: #ffffff;
+      }
+
+      strong {
+        margin: 0.26vw 0 0 0;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.354vw;
+        line-height: 2.031vw;
+        color: #ff66c4;
+      }
+
+      p {
+        margin: 1.146vw 0 0 0;
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.146vw;
+        line-height: 1.667vw;
+        color: #ffffff;
+        opacity: 0.6;
+        width: 22.917vw;
+      }
+
+      .social {
+        margin: 1.823vw 0 0 0;
+        display: flex;
+        gap: 0.781vw;
+
+        a {
+          width: 2.396vw;
+          height: 2.396vw;
+          border-radius: 50%;
+          border-radius: 50%;
+
+          svg {
+            fill: white;
+            width: 100%;
+            height: auto;
+            transition: .3s fill;
+
+            path {
+              transition: .3s fill;
+            }
+          }
+
+          &:hover {
+            svg {
+              fill: #ff66c4;
+
+              path {
+                fill: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

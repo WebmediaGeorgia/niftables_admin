@@ -1,0 +1,169 @@
+.beginningSlider {
+  position: relative;
+  width: 29.01vw;
+  height: 29.01vw;
+  border-radius: 50%;
+  transform: translateY(7%);
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: -12%;
+    height: 0.26vw;
+    width: 0.26vw;
+    border-left: 0.104vw solid #ffffff;
+    border-bottom: 0.104vw solid #ffffff;
+    transform: translateX(-50%) rotate(315deg);
+    animation: 1.5s top-arrow linear infinite;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: -6%;
+    top: 75%;
+    height: 0.26vw;
+    width: 0.26vw;
+    border-left: 0.104vw solid #ffffff;
+    border-bottom: 0.104vw solid #ffffff;
+    transform: rotate(-136deg);
+    animation: 1.5s left-arrow linear infinite;
+  }
+
+  .circleBackground {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 29.01vw;
+    height: 29.01vw;
+    background-image: url(/assets/img/home-page/beginning/circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 29.01vw 29.01vw;
+    transition: all 0.4s;
+  }
+
+  .triangle {
+    width: 22.031vw;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+  }
+
+  .gif {
+    position: absolute;
+    width: 18.229vw;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .circle {
+    position: absolute;
+    width: 5.625vw;
+    height: 5.625vw;
+    border-radius: 50%;
+    background-image: url(/assets/img/home-page/beginning/clicable.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.042vw;
+    line-height: 1.563vw;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+
+    /* White */
+
+    color: #ffffff;
+
+    &:hover {
+      cursor: pointer;
+      background-image: url(/assets/img/home-page/beginning/clicable-hover.png);
+    }
+
+    &.active {
+      background-image: url(/assets/img/home-page/beginning/clicable-active.png);
+      top: 65.5%;
+      left: 85%;
+      cursor: auto;
+    }
+
+    &.top {
+      top: -9.5%;
+      left: 40.5%;
+    }
+
+    &.left {
+      top: 65.5%;
+      left: -4%;
+    }
+  }
+}
+
+.beginningRightBlock {
+  h2 {
+    font-family: "Wild World";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.542vw;
+    line-height: 4.583vw;
+    color: #ffffff;
+    display: flex;
+    gap: 4.896vw;
+
+    span {
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.25vw;
+      line-height: 1.875vw;
+      border-radius: 0.417vw;
+      border-left: 0.052vw solid #ff66c4;
+      border-right: 0.052vw solid #ff66c4;
+      width: 9.375vw;
+      height: 2.552vw;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s;
+    }
+  }
+
+  strong {
+    position: absolute;
+    top: 78%;
+    display: block;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.563vw;
+    line-height: 2.188vw;
+    color: #ffffff;
+    width: 33.854vw;
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.5s;
+
+    span {
+      display: block;
+      margin: 1.042vw 0 0 0;
+    }
+
+    &.active {
+      opacity: 1;
+      z-index: 4;
+    }
+  }
+}
+
