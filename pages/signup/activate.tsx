@@ -100,6 +100,7 @@ function SignUpSuccess(): JSX.Element {
               }
             />
             <ModalSubtitle
+              className={styles['subtitle-signUp-mail']}
               text={providedEmail ? providedEmail : 'example@gmail.com'}
               style='bold'
             />

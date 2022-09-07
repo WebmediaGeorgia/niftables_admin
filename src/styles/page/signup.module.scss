@@ -44,10 +44,16 @@
   margin-bottom: 27px;
 }
 .heading-signUp-active {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 .subtitle-signUp-active {
-  margin-bottom: 0;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.subtitle-signUp-mail {
+  font-weight: 600;
+  margin-top: 0 !important;
+  margin-bottom: 6px !important;
 }
 .signup-bottom {
   margin-top: 40px;
