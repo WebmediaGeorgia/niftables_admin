@@ -22,20 +22,6 @@
     margin: 0 0 20px;
   }
 
-  h1 {
-    margin: 0;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 1;
-    background: -webkit-linear-gradient(#0D4B9E, #0B4798);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: blur(10px);
-
-    @include respond-to('medium') {
-      font-size: 200px;
-    }
-  }
   .header {
     font-weight: 600;
     font-size: 28px;
@@ -51,5 +37,15 @@
     @include respond-to('medium') {
       min-width: var(--404-page-button-Width);
     }
+  }
+}
+
+.inner {
+  position: relative;
+
+  svg {
+    position: relative;
+    transform: translateY(40px);
+    z-index: -10;
   }
 }
