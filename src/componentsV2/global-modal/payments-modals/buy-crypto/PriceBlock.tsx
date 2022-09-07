@@ -48,11 +48,12 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 65px;
+  margin-top: 40px;
   @media only screen and (max-width: 480px) {
     flex-direction: column;
   }
   .separator {
+    opacity: 0.15;
     @media only screen and (max-width: 480px) {
       width: 100%;
       margin: 20px 0;

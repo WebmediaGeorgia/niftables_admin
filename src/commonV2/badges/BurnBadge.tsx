@@ -16,21 +16,16 @@ const StyledWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 16px;
-  line-height: 22px;
+  padding: 5px 10px;
   text-align: left;
   border-radius: 30px;
-  background: linear-gradient(
-    270deg,
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(255, 255, 255, 0.15) 100%
-  );
-  color: ${({ theme }) => theme.text.primary};
+  background: rgba(7, 3, 31, 0.3);
+  color: ${({ theme }) => theme.text.white};
+  font-weight: 400;
   font-size: 12px;
-  font-weight: 600;
-  line-height: 22px;
+  line-height: 18px;
   .icon {
-    fill: ${({ theme }) => theme.text.primary};
+    fill: ${({ theme }) => theme.text.white};
     border-radius: 50%;
   }
 `

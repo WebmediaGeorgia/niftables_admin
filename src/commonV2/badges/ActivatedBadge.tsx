@@ -26,8 +26,8 @@ const StyledWrapper = styled.div`
   white-space: nowrap;
   border-radius: 20px;
   background-color: ${({ theme }) => theme.badge.activatedBg};
-  color: ${({ theme }) => theme.text.primary};
+  color: #0EB971;
   svg {
-    fill: ${({ theme }) => theme.text.primary};
+    fill: #0EB971;
   }
 `

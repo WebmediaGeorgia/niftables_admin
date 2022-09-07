@@ -1,4 +1,5 @@
 import React from "react";
+/* eslint-disable */
 
 const NotFoundSVG = () => {
   return (<svg width="683" height="240" viewBox="0 0 683 240" fill="none" xmlns="http://www.w3.org/2000/svg">

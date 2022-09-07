@@ -48,18 +48,18 @@ const StyledWrapper = styled.div`
     font-size: 20px;
     font-weight: 500;
     line-height: 23px;
-    color: ${({ theme }) => theme.text.primary}
+    color: ${({ theme }) => theme.text.white}
   }
   .description {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    color: ${({ theme }) => theme.text.primary}
+    color: ${({ theme }) => theme.text.white}
   }
   .email {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
-    color: ${({ theme }) => theme.text.primary}
+    color: ${({ theme }) => theme.text.white}
   }
 `

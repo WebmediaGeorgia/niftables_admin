@@ -11,7 +11,7 @@ export default function Creator({ token }) {
   return (
     <div className={styles['owner-name']}>
       <div className={styles['owner-title']}>
-        Creator:
+        Owner:
       </div>
       <div className={styles.img}>
         <PersonSmall
@@ -19,8 +19,8 @@ export default function Creator({ token }) {
           width='18px'
           height='18px'
         />
+        <b className={styles['owner-value']}>{creatorName}</b>
       </div>
-      <b>{creatorName}</b>
       <ValidUser className={styles['icon-validUser']} />
     </div>
   )

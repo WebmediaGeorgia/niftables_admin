@@ -60,7 +60,7 @@ export default function RedeemCard ({ token }) {
             <Creator token={token} />
             <div className={styles.owner}>
               <Collection token={token} />
-              <BlockchainNetwork network={token.nft.collection?.network} />
+              <BlockchainNetwork className={styles['network']} network={token.nft.collection?.network} />
             </div>
           </div>
         </div>

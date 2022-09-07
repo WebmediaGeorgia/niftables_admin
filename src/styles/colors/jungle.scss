@@ -303,7 +303,7 @@
   --card-line-BorderTop: 1px solid #E3ECF8;
   --card-Border: 1px solid rgba(229, 229, 229, 0.5);
   --card-BorderRadius: 10px;
-  --card-coast-ColorText: #ffffff;
+  --card-coast-ColorText: #4F83C9;
   --card-coast-FontWeight: 400;
   --card-media-Bg: white;
   --card-media-BorderColor: transparent;
@@ -1138,10 +1138,10 @@
   --scrollbar-thumb-Primary: #ffffff;
   --scrollbar-thumb-Border-Primary: 2px solid rgba(255, 255, 255, 0.5);
 
-  --icon-person-Circle-Fill: rgba(255, 255, 255, 0.1);
-  --icon-person-Circle-Stroke: rgba(255, 255, 255, 0.5);
-  --icon-validUser-Fill: #ffffff;
-  --icon-rarityScore-Fill: #ffffff;
+  --icon-person-Circle-Fill: #FF66C4;
+  --icon-person-Circle-Stroke: #FF66C4;
+  --icon-validUser-Fill: #FF66C4;
+  --icon-rarityScore-Fill: #4F83C9;
   --icon-share-Fill: #ffffff;
   --icon-binance-Fill: #ffffff;
   --icon-eye-Fill: #0D4B9E;
@@ -1465,19 +1465,15 @@
   --toggleSwitch-slider-checked-Bg: rgba(255, 255, 255, 0.73);
 
   --redeemItem-ColorText: #ffffff;
-  --redeemItem-Bg: rgba(21, 50, 36, 0.72);
-  --redeemItem-Bg-Hover: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.075) 0%,
-    rgba(255, 255, 255, 0.075) 100%
-  );
+  --redeemItem-Bg: #EBF2F8;
+  --redeemItem-Bg-Hover: #EBF2F8;
   --redeemItem-filter: blur(24px);
   --redeemItem-line-BorderColor: #ffffff;
   --redeemItem-line-Border: 1px solid rgba(229, 229, 229, 0.5);
   --redeemItem-BoxShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
   --redeemButton-Padding: 10px 16px;
   --redeemButton-Width: 164px;
-  --redeemItem-text-ColorText: #ffffff;
+  --redeemItem-text-ColorText: #4F83C9;
   --redeemItem-moreAbout-ColorText: #80de65;
   --redeemItem-moreAbout-FontSize: 12px;
   --redeemItem-moreAbout-LineHeight: 14px;

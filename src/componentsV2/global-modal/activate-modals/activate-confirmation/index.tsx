@@ -65,14 +65,14 @@ const StyledWrapper = styled.div`
     height: 160px;
   }
   .title {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 35px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
   }
   .description {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
   }
   .button {
     min-width: 280px;

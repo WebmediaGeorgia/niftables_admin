@@ -10,9 +10,9 @@ const theme = {
     stroke: '#FF66C4'
   },
   badge: {
-    bg: '#E3ECF8',
+    bg: 'black',
     color: '#4F83C9',
-    activatedBg: '#80de65'
+    activatedBg: 'rgba(14, 185, 113, 0.15)'
   },
   common: {
     separatorColor: "white"
