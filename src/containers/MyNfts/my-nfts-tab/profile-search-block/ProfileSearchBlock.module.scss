@@ -84,6 +84,10 @@
       padding: var(--searchInput-input-Padding);
       border-radius: var(--searchInput-input-BorderRadius);
       left: var(--searchInput-search-icon-Left);
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.4)
+      }
     }
   }
 }

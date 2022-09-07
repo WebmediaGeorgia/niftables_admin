@@ -660,7 +660,7 @@
   --pageHeading-userSettings-Margin: 11px 0;
 
   --myProfile-section-Bg-odd: transparent;
-  --myProfile-section-Bg-even: transparent;
+  --myProfile-section-Bg-even: rgba(7, 3, 31, 0.1);
   --myProfile-empty-ColorText: #ffffff;
   --myProfile-empty-Border: none;
   --myProfile-section-PaddingBottom: 220px;
@@ -804,10 +804,10 @@
   --align-footer-contentCenter: center;
   --align-footer-contentRight: center;
 
-  --socialIcon-BgColor: #fab72b;
-  --socialIcon-BgColor-Hover: #fab72b;
+  --socialIcon-BgColor: #FF66C4;
+  --socialIcon-BgColor-Hover: #FF66C4;
 
-  --searchInput-Bg: var(--body-Bg);
+  --searchInput-Bg: #4F83C9;
   --searchInput-input-Bg: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.075) 0%,
@@ -815,7 +815,7 @@
   );
   --searchInput-input-Border: 2px solid rgba(255, 255, 255, 0.1);
   --searchInput-input-BorderRadius: 35px;
-  --searchInput-input-ouLine-Color: #fdc634;
+  --searchInput-input-ouLine-Color: #4F83C9;
 
   --searchInput-input-FontSize: 14px;
   --searchInput-input-LineHeight: 16px;
@@ -1409,8 +1409,8 @@
   --carousel-arrow-BorderLeft: 2px solid transparent;
   --carousel-arrow-BorderTop: 2px solid transparent;
   --carousel-arrow-BorderColor: transparent;
-  --carousel-arrow-Width-Large: 50px;
-  --carousel-arrow-Height-Large: 50px;
+  --carousel-arrow-Width-Large: 59px;
+  --carousel-arrow-Height-Large: 25px;
   --carousel-arrow-Width: 24px;
   --carousel-arrow-Height: 24px;
 
@@ -1419,8 +1419,8 @@
   --carousel-arrow-icon-Width-Large: 10px;
   --carousel-arrow-icon-Height-Large: 10px;
 
-  --carousel-scrollbar-Bg: rgba(255, 255, 255, 0.1);
-  --carousel-drag-Bg: rgba(255, 255, 255, 0.5);
+  --carousel-scrollbar-Bg: rgba(7, 3, 31, 0.2);
+  --carousel-drag-Bg: #FF66C4;
   --carouselScrollbar-Template-Columns: 58px 1fr;
   --carouselScrollbar-Template-Columns-Large: 110px 1fr;
   --carouselScrollbar-Gap: 20px;
@@ -1443,15 +1443,15 @@
   --hr-line-Buy-Margin: 30px 0 0;
   --hr-line-Collection-Margin: 30px 0 0;
 
-  --youHave-Bg: #fab72b;
+  --youHave-Bg: black;
   --youHave-ColorText: #ffffff;
 
-  --youHave-FontSize: 20px;
-  --youHave-LineHeight: 22px;
+  --youHave-FontSize: 42px;
+  --youHave-LineHeight: 52px;
   --youHave-FontWeight: 700;
 
-  --youHave-FontSize-Large: 28px;
-  --youHave-LineHeight-Large: 40px;
+  --youHave-FontSize-Large: 42px;
+  --youHave-LineHeight-Large: 52px;
 
   --toggleSwitch-Bg: #ffffff;
   --toggleSwitch-BorderColor: #ffffff;

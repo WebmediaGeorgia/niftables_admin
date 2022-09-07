@@ -48,12 +48,9 @@
 .arrow {
   font-size: 0;
   line-height: 0;
-  width: var(--carousel-arrow-Width);
-  height: var(--carousel-arrow-Height);
   border: var(--carousel-arrowWrapper-Border);
   background: var(--carousel-arrow-Bg);
   background-size: contain;
-  border-radius: 50%;
   overflow: hidden;
 
   cursor: pointer;
@@ -63,6 +60,10 @@
   color: var(--carousel-arrow-ColorText);
   margin: 0;
   padding: 0;
+
+  border-radius: 5px;
+  width: 59px;
+  height: 25px;
 
   z-index: 1;
   flex-shrink: 0;
