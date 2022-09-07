@@ -19,6 +19,7 @@ import DropDownNotification from '@components/DropDownNotification';
 import { toast } from 'react-toastify';
 import { isServer } from '@utils/common';
 import formatAddress from '@utils/metamask/formatAddress';
+import HeaderLogo from "@components/header/header.logo";
 
 const HeaderNavigation = () => {
   const { getMetamaskAddress, metamaskAccountChange } = useMetamask();
@@ -108,6 +109,7 @@ const HeaderNavigation = () => {
         <Navbar />
       </div>
       <div className={styles.login}>
+        <HeaderLogo />
         <Link href='/'>
           <a>Superlotl</a>
         </Link>

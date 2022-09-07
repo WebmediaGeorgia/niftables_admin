@@ -7,6 +7,7 @@
   font-size: var(--header-navLink-FontSize);
   line-height: var(--header-navLink-LineHeight);
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--colorText-base);
   padding: var(--header-navLink-Padding);
   @include respond-to('medium') {

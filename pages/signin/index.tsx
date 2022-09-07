@@ -46,6 +46,7 @@ function SignIp(): JSX.Element {
             className={styles.heading}
             text='Sign in with'
             highLightedText='Niftables'
+            withShadow
           />
 
           <ModalContentWrapper>
@@ -83,10 +84,6 @@ function SignIp(): JSX.Element {
             <TipsText linkText='What is Niftables?' linkTo='/about' />
           </ModalContentWrapper>
         </ModalWrapper>
-        <div className={styles['signin-bottom']}>
-          <PoweredBy className={styles.poweredBy} />
-          <Copyright />
-        </div>
       </Container>
     </MainLayoutStatic>
   );
