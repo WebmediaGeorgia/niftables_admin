@@ -1,0 +1,260 @@
+@import '../../styles/index.scss';
+
+@keyframes test {
+  0% {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  100% {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+}
+
+@keyframes bubbles-waterway {
+  0% {
+    margin: 0;
+  }
+  50% {
+    margin: -2.292vw 0 0 0;
+  }
+  100% {
+    margin: 0;
+  }
+}
+
+.wrapper {
+  ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  width: 100%;
+  height: auto;
+  // overflow: clip;
+  background-color: $index-bg;
+}
+
+.container {
+  width: 72.917vw;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  display: block;
+  font-size: 3.542vw;
+  line-height: calc(88 / 68);
+  font-family: "Wild World";
+  color: #fff;
+}
+
+.mainText {
+  display: block;
+  font-size: 1.563vw;
+  line-height: calc(42 / 30);
+  font-family: "Oswald";
+  font-weight: 400;
+  color: #fff;
+}
+
+.btn {
+  display: inline-flex;
+  font-size: 1.042vw;
+  line-height: calc(29.64 / 20);
+  letter-spacing: 0.15em;
+  font-family: "Oswald";
+  padding: 1.146vw 1.042vw;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fff;
+  color: #07031f;
+  position: relative;
+  border-radius: 0.417vw;
+  border: none;
+  overflow: hidden;
+  transition: 0.3s background-color, 0.3s color;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 3.411vw;
+    height: 1.146vw;
+    background-image: url(/assets/img/home-page/mint/btn-stripes.svg);
+    background-size: 3.411vw auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &:hover {
+    background-color: #ff4cbd;
+    color: #fff;
+
+    img {
+      filter: hue-rotate(100deg);
+    }
+  }
+}
+
+.fadeWrapper {
+  margin-top: -112.5vw;
+}
+
+.footerContainer {
+  position: relative;
+  overflow-x: hidden;
+  height: auto;
+  .footerBackground {
+    position: absolute;
+    left: 0;
+    bottom: 0vw;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+  .footerLight {
+    position: absolute;
+    left: 18.75vw;
+    top: -2.604vw;
+    width: 104.844vw;
+    object-fit: cover;
+    height: auto;
+  }
+
+  .faq {
+    // min-height: 100vh;
+    height: 54.688vw;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    // justify-content: center;
+    padding: 7.292vw 0 0 0;
+    .mainTitle {
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0 0 3.281vw 0;
+      z-index: 1;
+    }
+  }
+}
+
+.footer {
+  line-height: 1;
+  font-family: "Wild World";
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 7.813vw 0 4.583vw 0;
+  .joinTop,
+  .joinBot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .joinTop {
+    > span {
+      text-transform: uppercase;
+    }
+  }
+  .joinBot {
+    > span {
+      font-size: 7.292vw;
+      font-family: "Oswald";
+      line-height: calc(207 / 140);
+      color: #ff4cbd;
+      transform: translateY(-1.042vw);
+    }
+    > img {
+      margin: 0 0 0 10.677vw;
+    }
+  }
+  .fMainTitle {
+    font-size: 5.313vw;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.083vw;
+    margin: 1.563vw 0 4.167vw 0;
+    .btn {
+      width: 100%;
+      font-size: 1.458vw;
+      line-height: calc(41.5 / 28);
+      padding: 1.51vw 1.042vw;
+      margin: 0;
+      img {
+        display: block;
+        width: 1.563vw;
+        height: auto;
+        margin: 0 0.729vw;
+        transition: all 0.3s;
+      }
+      &:before {
+        left: -2.083vw;
+      }
+      &:after {
+        right: -2.083vw;
+      }
+      &:hover {
+        img {
+          filter: saturate(0) brightness(0) invert(1);
+        }
+      }
+    }
+  }
+  .terms {
+    display: flex;
+    justify-content: center;
+    gap: 2.083vw;
+    margin: 0 0 2.083vw 0;
+    a {
+      font-size: 0.833vw;
+      line-height: calc(24 / 16);
+      letter-spacing: 0.15em;
+      font-family: "Oswald";
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 0.6;
+      text-decoration: none;
+    }
+  }
+  .powered {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    a {
+      img {
+        width: 7.813vw;
+        height: auto;
+      }
+    }
+  }
+}
+
