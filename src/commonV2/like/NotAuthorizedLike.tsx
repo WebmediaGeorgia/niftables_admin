@@ -1,7 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import NotLiked from 'public/other/favorite_clear.svg'
+import classnames from "classnames";
+import Liked from "../../../public/other/favorite.svg";
 
 export default function NotAuthorizedLike ({ className, colorScheme }) {
   return (
@@ -9,8 +10,8 @@ export default function NotAuthorizedLike ({ className, colorScheme }) {
       className={className}
       colorScheme={colorScheme}
     >
-      <NotLiked
-        className='icon'
+      <Liked
+        className={classnames("icon", "not-liked")}
         onClick={(e) => e.stopPropagation()}
       />
       <div className='tooltip-wrapper'>

@@ -52,10 +52,14 @@ const StyledWrapper = styled.div`
     width: 6px;
   }
   &::-webkit-scrollbar-track {
+    margin-top: 2px;
+    margin-bottom: 2px;
     border-radius: 6px;
     background: #ebf2f8;
   }
   &::-webkit-scrollbar-thumb {
+    margin-top: 2px;
+    margin-bottom: 2px;
     border-radius: 6px;
     background: ${({ theme }) => theme.text.secondary};
   }

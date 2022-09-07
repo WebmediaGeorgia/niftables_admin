@@ -101,7 +101,7 @@ const StyledWrapper = styled.div`
       line-height: 22px;
     }
     .sort-by-drop-down {
-      width: 260px;
+      width: 200px;
       @media only screen and (max-width: 1024px) {
         width: 190px;
       }

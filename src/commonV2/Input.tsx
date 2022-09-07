@@ -49,6 +49,9 @@ const StyledWrapper = styled.div`
 			-webkit-text-fill-color: ${({ theme }) => theme.text.primary} !important;
 		}
 		::placeholder {
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
 			color: rgba(255, 255, 255, 0.5);
 		}
     :disabled {

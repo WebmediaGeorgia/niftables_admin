@@ -26,7 +26,7 @@ export default function DetailInfo () {
     <StyledWrapper>
       <div>
         <Title item={nft} />
-        <div className='g-d-flex g-justify-between g-align-center g-mt-10'>
+        <div className='g-d-flex g-justify-between g-align-center g-mt-5'>
           <User
             label='Owner'
             item={nft}
@@ -34,7 +34,7 @@ export default function DetailInfo () {
           <LikeHandler />
         </div>
         <Collection
-          className='g-mt-10'
+          className=''
           nft={nft}
         />
         <div className='g-h-separator g-mt-15' />
@@ -42,7 +42,7 @@ export default function DetailInfo () {
           className='g-mt-15'
           nft={nft}
         />
-        <div className='params g-mt-25'>
+        <div className='params g-mt-20'>
           <PriceCol item={nft} />
           <AvailableCol nft={nft} />
           <RarityScoreCol nft={nft} />
