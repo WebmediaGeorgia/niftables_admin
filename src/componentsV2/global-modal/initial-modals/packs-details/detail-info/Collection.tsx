@@ -31,14 +31,14 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 1px;
   & .collection {
     display: flex;
     font-weight: 300;
     font-size: 15px;
     line-height: 22px;
     .link {
-      font-weight: 600;
+      font-weight: 400;
       color: ${({ theme }) => theme.text.white};
       text-decoration: none;
       :hover {

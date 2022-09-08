@@ -13,7 +13,5 @@ export default function SoldOut ({ pack }) {
       </LegendBlock>
     )
   }
-  return (
-    <hr className='g-h-separator g-mt-15' />
-  )
+  return null;
 }

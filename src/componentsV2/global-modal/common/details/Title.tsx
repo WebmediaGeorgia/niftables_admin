@@ -12,7 +12,7 @@ export default function Title ({ item }) {
 }
 
 const StyledWrapper = styled.div`
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 35px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
 `

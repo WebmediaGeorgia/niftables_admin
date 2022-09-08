@@ -12,7 +12,7 @@ import PacksList from './packs-list'
 const filterConfig = [
 	{
 		value: ALL,
-		label: 'All'
+		label: 'All items'
 	},
 	{
 		value: AVAILABLE,

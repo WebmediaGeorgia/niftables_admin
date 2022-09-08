@@ -13,8 +13,8 @@ export default function User ({ className = '', label, item }) {
         {label}:
       </div>
       <IconPerson className='icon-person' />
-      <div className='text'>
-        <b>{name}</b>
+      <div className='owner-text'>
+        <div>{name}</div>
       </div>
     </StyledWrapper>
   )
@@ -28,6 +28,13 @@ const StyledWrapper = styled.div`
     font-size: 15px;
     line-height: 22px;
   }
+
+  & .owner-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
   & .icon-person {
     margin-left: 10px;
     margin-right: 5px;

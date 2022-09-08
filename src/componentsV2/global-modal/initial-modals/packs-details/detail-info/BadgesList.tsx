@@ -27,6 +27,7 @@ export default function BadgesList ({ className = '', pack }) {
 }
 
 const StyledWrapper = styled.div`
+  margin-top: 30px;
   .description {
     font-weight: 300;
     font-size: 15px;

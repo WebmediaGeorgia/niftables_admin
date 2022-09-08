@@ -17,6 +17,8 @@
   min-width: var(--button-available-large-Width);
   padding: var(--button-available-Padding);
 
+  border: 1px solid rgba(255, 102, 196, 0.4);
+
   @include respond-to(small) {
     min-width: var(--button-available-small-Width);
   }
