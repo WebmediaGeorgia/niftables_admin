@@ -48,7 +48,7 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 60px;
   @media only screen and (max-width: 480px) {
     flex-direction: column;
   }

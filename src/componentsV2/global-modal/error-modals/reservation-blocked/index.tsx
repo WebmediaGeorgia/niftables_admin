@@ -37,7 +37,7 @@ export default function ReservationBlocked () {
 			size='l'
 		>
 			<div className={styles['wrapper']}>
-				<HeadIcon type='cross' />
+				<HeadIcon type='lock' />
 				<div className={styles['title']}>
 					Blocked!
 				</div>

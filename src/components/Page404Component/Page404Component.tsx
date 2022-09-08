@@ -11,7 +11,7 @@ const Page404Component = () => {
       <div className={styles.inner}>
         <NotFoundSVG />
 
-        <div className={styles.header}>We are sorry...</div>
+        <div className={styles.header}>We are sorry :(</div>
         <p>The page is not found.</p>
 
         <NavButton
@@ -22,7 +22,7 @@ const Page404Component = () => {
           fillStyle={false}
           fullWidth={false}
         >
-          Go back to the home page
+          BACK TO HOME PAGE
         </NavButton>
       </div>
     </Container>

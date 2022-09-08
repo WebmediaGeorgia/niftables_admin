@@ -13,7 +13,7 @@ export default function Hint () {
 const StyledWrapper = styled.div`
   width: 100%;
   max-width: 375px;
-  margin: 30px 0 0 0;
+  margin: 20px 0 0 0;
   text-align: center;
   background: rgba(7, 3, 31, 0.3);
   border-radius: 100px;

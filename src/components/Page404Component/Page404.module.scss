@@ -20,17 +20,28 @@
 
   p {
     margin: 0 0 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .header {
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 44px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
     color: var(--404-page-title-ColorText);
     margin-bottom: 10px;
   }
   .button {
     margin-top: 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 
     display: inline-block;
     text-align: center;

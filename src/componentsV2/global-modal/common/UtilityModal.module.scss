@@ -14,7 +14,7 @@
 		padding: 0;
 	}
 	.title {
-		margin-top: 30px;
+		margin-top: 15px;
 		font-weight: var(--modal-title-FontWeight);
 		font-size: var(--modal-title-FontSize);
 		line-height: var(--modal-title-LineHeight);
@@ -27,7 +27,7 @@
 		color: var(--modal-title-ColorText);
 	}
   .text {
-		margin-top: 15px;
+		margin-top: 10px;
     font-weight: 300;
     font-weight: 300;
     font-size: var(--modal-text-secondary-FontSize);
@@ -36,6 +36,7 @@
 		max-width: 500px;
   }
 	.buttons-wrapper {
+    margin-top: 20px;
 		max-width: var(--card-paymentFailed-button-Width);
 		width: 100%;
 		.btn-go-profile {

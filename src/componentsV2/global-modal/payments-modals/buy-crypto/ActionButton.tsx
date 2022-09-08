@@ -28,5 +28,5 @@ export default function ActionButton () {
 const StyledButton = styled(Button)`
   width: 100%;
   max-width: 375px;
-  margin-top: 40px;
+  margin-top: 20px;
 `

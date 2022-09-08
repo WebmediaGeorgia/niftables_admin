@@ -23,9 +23,9 @@ export default function ItemSold () {
 			size='l'
 		>
 			<div className={styles.wrapper}>
-				<HeadIcon type='lock' />
+				<HeadIcon type='cross' />
 				<div className={styles['title']}>
-					Unsuccessfull!
+          Unsuccessful!
 				</div>
 				<div className={styles['text']}>
           This {label} has already been purchased by another user.
