@@ -33,7 +33,7 @@ export default function DetailInfo () {
         <div className={styles.title}>{pack.name}</div>
         <div className={styles.statistic}>
           <div className={styles.owner}>
-            <div>Creator:</div>
+            <div>Owner:</div>
             <div className={styles.img}>
               <PersonSmall
                 className={styles['icon-person']}
@@ -42,7 +42,6 @@ export default function DetailInfo () {
               />
             </div>
             <b>{pack.collection?.whitelabel.name || ''}</b>
-            <ValidUser className={styles['icon-validUser']} />
           </div>
         </div>
         {pack.collection && (
@@ -52,7 +51,7 @@ export default function DetailInfo () {
             <div
               className={cn(styles.owner, styles['owner-collection'])}
             >
-              <div>NFT from:</div>
+              <div>Collection:</div>
               <Link href={`/collections/${pack.collection.id}`}>
                 <a className={styles.link}>{pack.collection.name}</a>
               </Link>
@@ -60,9 +59,8 @@ export default function DetailInfo () {
             <BlockchainNetwork network={pack.collection.network} />
           </div>
         )}
-        <hr className={styles['line-modal']} />
         <div className={styles['badge-description']}>
-          In this pack chances to get NFT of rarities:
+          In this pack the chances to get an NFT of rarity:
         </div>
         <div className={styles['badge-list']}>
           {Object.keys(pack.contentRule)

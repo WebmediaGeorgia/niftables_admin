@@ -5,6 +5,7 @@ import { ExternalImage } from '@components/shared/ExternalImage';
 import { IPack } from 'src/common/models/pack';
 import Link from 'next/link';
 import Button from '@components/shared/Button';
+import ButtonV2 from '@commonV2/Button';
 import classNames from 'classnames';
 import CommonBadge from "@commonV2/badges/CommonBadge";
 
@@ -65,18 +66,16 @@ export const PackCard: FC<IPackCardProps> = ({
           </div>
         )}
         {item.opened == false ? (
-          <Button
-            className={styles['btn-pack']}
-            size={'s'}
-            color='transparent'
-            fillStyle
-            onClick={(e) => {
-              e.stopPropagation();
-              onButtonClick(item);
+          <ButtonV2
+            disabled={false}
+            colorScheme="link"
+            clickHandler={(e) => {
+               e.stopPropagation();
+               onButtonClick(item);
             }}
           >
             Open Now
-          </Button>
+          </ButtonV2>
         ) : (
           <div className={styles.price}>
             {item.availableSupply ? `$${price}` : <CommonBadge className={styles.soldOutBadge} label="Sold Out" />}

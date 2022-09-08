@@ -16,7 +16,6 @@ export default function User ({ className = '', label, item }) {
       <div className='text'>
         <b>{name}</b>
       </div>
-      <IconValidUser className='validated' />
     </StyledWrapper>
   )
 }

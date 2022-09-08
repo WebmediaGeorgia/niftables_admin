@@ -145,7 +145,7 @@ const NewPassword = ({ queryCode }) => {
                 {...register('password')}
               />
               <InputWithLabel
-                labelText='Confirm your password'
+                labelText='Confirm password'
                 placeholder='Confirm your password'
                 id='confirmPassword'
                 size='m'

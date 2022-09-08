@@ -118,10 +118,6 @@
   flex: 0 0 23px;
   cursor: pointer;
 
-  svg {
-    fill: var(--menubar-icon-filter-Fill);
-  }
-
   @include respond-to('medium') {
     display: none;
   }
@@ -132,7 +128,7 @@
   cursor: pointer;
 
   svg {
-    fill: var(--menubar-icon-filter-Fill);
+    fill: #4F83C9;
   }
 }
 
@@ -165,6 +161,12 @@
 
   @include respond-to('medium') {
     display: none;
+  }
+}
+
+.openIcon {
+  svg {
+    fill: white;
   }
 }
 
@@ -186,6 +188,12 @@
     opacity: 1;
     display: block;
     overflow-y: auto;
+
+    div {
+      svg {
+        fill: white;
+      }
+    }
 
     @include respond-to('medium') {
       overflow-y: unset;

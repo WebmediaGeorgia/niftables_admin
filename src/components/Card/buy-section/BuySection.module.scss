@@ -9,9 +9,10 @@
   font-size: 14px;
   line-height: 21px;
   .price {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+
     color: var(--card-price-ColorText);
   }
   .sold-price {
@@ -27,6 +28,14 @@
     line-height: 18px;
     color: var(--card-buy-value-ColorText);
     text-decoration: none;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
     .icon {
       margin-right: 8px;
     }

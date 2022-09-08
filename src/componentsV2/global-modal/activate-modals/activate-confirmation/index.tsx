@@ -58,7 +58,7 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
+  padding: 60px 0;
   .media-wrapper {
     position: relative;
     width: 160px;

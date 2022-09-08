@@ -88,7 +88,7 @@ const StyledWrapper = styled.div`
     border-radius: 8px;
     font-size: 18px;
     line-height: 27px;
-    color: ${({ theme }) => theme.text.primary};
+    color: ${({ theme }) => theme.text.white};
     cursor: pointer;
   }
   .option.active {

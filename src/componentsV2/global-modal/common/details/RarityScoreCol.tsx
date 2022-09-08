@@ -15,7 +15,7 @@ export default function RarityScoreCol ({ className = '', nft }) {
         Rarity Score:
       </div>
       <RarityScore
-        className='value'
+        className='value g-mt-5'
         rarityScore={nft.rarityScore}
       />
     </StyledWrapper>

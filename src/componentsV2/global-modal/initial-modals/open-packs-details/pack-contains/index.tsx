@@ -36,7 +36,7 @@ export default function PackContains () {
         ) : (
           <OptionDefault />
         )}
-        <div>{name}</div>
+        <div className={styles['collection-name']}>{name}</div>
       </div>
       <div className={styles['button-block']}>
         <Button

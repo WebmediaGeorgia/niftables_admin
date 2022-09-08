@@ -23,7 +23,8 @@ export default function PrevHandler ({ currentPage, setCurrentPage }) {
 const StyledWrapper = styled.div`
   border-color: #e5e5e5;
   ${({ disabled }) => disabled && 'pointer-events: none'};
+  ${({ disabled }) => disabled && 'opacity: 0.2'};
   svg {
-    fill: ${({ disabled, theme }) => disabled ? '#bfd3e4' : theme.text.primary};
+    fill: ${({ disabled, theme }) => theme.text.white};
   }
 `

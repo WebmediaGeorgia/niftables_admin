@@ -20,6 +20,14 @@ export default function Button ({
 
 const StyledWrapper = styled.button.attrs(({ colorScheme, theme }) => {
   const config = {
+    'link': css`
+      color: #FF66C4;
+      background-size: cover;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+      height: 18px;
+    `,
     'primary': css`
       color: white;
       background-size: cover;

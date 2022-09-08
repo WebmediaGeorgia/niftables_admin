@@ -56,8 +56,11 @@ export const MenuBar: FC<IMenuBar> = ({ children }) => {
           <div className={styles['icon-close']} onClick={onHideWrapper}>
             <ButtonClose role={'button'} />
           </div>
-          <div className={styles['icon-filter']} onClick={handleToggle}>
-            {isOpen ? <IconL role={'button'} /> : <IconR role={'button'} />}
+          <div className={classNames(styles['icon-filter'], { [styles.openIcon]: isOpen })} onClick={handleToggle}>
+            {isOpen
+              ? <IconL role={'button'} />
+              : <IconR role={'button'} />
+            }
           </div>
           <div
             className={classNames(

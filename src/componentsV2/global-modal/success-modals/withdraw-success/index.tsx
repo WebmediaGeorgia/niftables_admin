@@ -52,7 +52,7 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 0;
+  padding: 60px 0;
   .title {
     font-weight: 700;
     font-size: 26px;
