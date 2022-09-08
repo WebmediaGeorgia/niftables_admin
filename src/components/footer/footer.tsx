@@ -12,14 +12,10 @@ import { FC, useState } from 'react';
 import classNames from 'classnames';
 import { IFooterProps } from '@type/general';
 
-const restrictionPathnames = [
-];
-
 const Footer: FC<IFooterProps> = ({ className, isBottom }) => {
   const router = useRouter();
   const isHome = router.pathname === '/';
 
-  if (restrictionPathnames.includes(router.pathname)) return null;
   const [showModal, setShowModal] = useState<boolean>(false);
   const [type, setType] = useState<string>('terms');
 
