@@ -30,7 +30,7 @@ export default function AccordionDetails () {
 			const traitsData = Object.entries(traits).map(([key, value], index) => ({
 				id: renderTraitIndex(index),
 				title: <span className='text-bold'>{key}:</span>,
-				desc: renderDescription(handleTraitBooleanValue(value) + ''),
+        desc: <span className='text-blue'>{renderDescription(handleTraitBooleanValue(value) + '')}</span>,
 				other: '',
 			}));
 			list.push({

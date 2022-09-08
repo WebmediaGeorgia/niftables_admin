@@ -56,7 +56,7 @@ export default function RedeemCard ({ token }) {
             <Title token={token} />
             <ActionButton token={token} />
           </div>
-          <div className={cn(styles.statistic, 'g-mt-10')}>
+          <div className={cn(styles.statistic)}>
             <Creator token={token} />
             <div className={styles.owner}>
               <Collection token={token} />

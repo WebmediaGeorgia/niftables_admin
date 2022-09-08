@@ -58,6 +58,13 @@ export default function ActionButtons () {
 const StyledWrapper = styled.div`
   display: flex;
   gap: 15px;
+
+  button {
+    height: 45px;
+    width: 120px !important;
+    min-width: 120px !important;
+  }
+
   @media only screen and (max-width: 480px) {
     display: block;
   }

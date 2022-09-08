@@ -21,7 +21,6 @@ export default function Creator({ token }) {
         />
         <b className={styles['owner-value']}>{creatorName}</b>
       </div>
-      <ValidUser className={styles['icon-validUser']} />
     </div>
   )
 }

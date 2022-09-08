@@ -10,6 +10,7 @@ import { setModal } from '@entities/modal/actions'
 
 import ActivatedBadge from '@commonV2/badges/ActivatedBadge'
 import Button from '@commonV2/Button'
+import styled from "styled-components";
 
 const actionConfig = {
   [ACTIVATABLE]: {
@@ -57,10 +58,15 @@ export default function ActionButton ({ token }) {
   }
 
   return (
-    <Button
-      clickHandler={handleAction}
-    >
-      {buttonLabel}
-    </Button>
+      <StyledButton
+        clickHandler={handleAction}
+      >
+        {buttonLabel}
+      </StyledButton>
   )
 }
+
+const StyledButton = styled(Button)`
+  width: 150px;
+  height: 46px;
+`

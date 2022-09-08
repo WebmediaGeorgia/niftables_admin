@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import CheckActivated from 'public/other/check_activated.svg'
+import InfoIcon from 'public/other/info-icon.svg'
 
 import { ACTIVATED } from '@constants/tokens'
 
@@ -9,7 +10,7 @@ export default function ActivatedBadge ({ className = '', utilityStatus }) {
   if (utilityStatus !== ACTIVATED) return null
   return (
     <StyledWrapper className={className}>
-      <CheckActivated className='g-mr-5' />
+      <InfoIcon className='g-mr-5' />
       Activated
     </StyledWrapper>
   )
@@ -29,5 +30,8 @@ const StyledWrapper = styled.div`
   color: #0EB971;
   svg {
     fill: #0EB971;
+    path {
+      fill: #0EB971;
+    }
   }
 `
