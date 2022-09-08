@@ -10,11 +10,10 @@ import { MainLayout } from '@components/MainLayout';
 import { authorize } from '@utils/server';
 import sanitizeCollectionsRequest from '@utils/filters/sanitizeCollectionsRequest';
 import parseFilters from '@utils/filters/parseFilters';
-import Butterfly from '@components/ParrotAndButterfly/Butterfly';
 
 export default function CollectionsPage() {
   return (
-    <MainLayout isParrotAndButterfly={<Butterfly />}>
+    <MainLayout>
       <Collections />
     </MainLayout>
   );

@@ -2,8 +2,10 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useRouter } from 'next/router'
+import get from 'lodash/get'
 
 import { NFT } from '@constants/payments'
+import { OPENED_NFT_DETAILS } from '@constants/modals'
 
 import styles from './OpenedPack.module.scss'
 
@@ -19,7 +21,8 @@ import Button from '@shared/Button'
 export default function OpenedPack () {
 	const dispatch = useDispatch()
   const router = useRouter()
-	const nft = useTypedSelector(state => state.modal.options.revealedNft || {})
+	const token = useTypedSelector(state => get(state, 'modal.options.revealedNft', {}))
+	const nft = useTypedSelector(state => get(state, 'modal.options.revealedNft.nft', {}))
 
 	const closeHandler = React.useCallback(() => {
 		router.push(router.asPath, undefined, { scroll: false })
@@ -27,9 +30,17 @@ export default function OpenedPack () {
 	}, [router, dispatch])
 
 	const navigateToMyNfts = React.useCallback(() => {
-		router.push('/my-profile/my-nfts')
-		dispatch(resetModal())
-	}, [router, dispatch])
+    dispatch(setModal({
+      viewType: OPENED_NFT_DETAILS,
+      options: {
+        type: NFT,
+        initialPoint: OPENED_NFT_DETAILS,
+        actionPoint: OPENED_NFT_DETAILS,
+        token
+      },
+      data: nft
+    }))
+	}, [dispatch, token, nft])
 
 	return (
 		<Modal

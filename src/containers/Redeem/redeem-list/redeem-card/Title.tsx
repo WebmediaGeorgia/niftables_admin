@@ -1,13 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 import get from 'lodash/get'
-
-import styles from './RedeemCard.module.scss'
 
 export default function Title ({ token }) {
   const title = get(token, 'nft.name', '')
   return (
-    <div className={styles.infoTitle}>
+    <StyledWrapper>
       {title}
-    </div>
+    </StyledWrapper>
   )
 }
+
+const StyledWrapper = styled.div`
+  flex: auto;
+  margin: 5px 0 8px;
+  padding-right: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #000;
+`

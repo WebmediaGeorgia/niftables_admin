@@ -28,7 +28,7 @@ export default function ItemSold () {
           Unsuccessful!
 				</div>
 				<div className={styles['text']}>
-          This {label} has already been purchased by another user.
+					All available {label}s are already sold
 				</div>
 				<div className={styles['buttons-wrapper']}>
 					<BackToBrowse />

@@ -3,7 +3,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 
 import { ACTIVATABLE, REDEEMABLE, ACTIVATED } from '@constants/tokens'
-import { REDEEM_CONFIRMATION, ACTIVATE_CONFIRMATION } from '@constants/modals'
+import { REDEEM_DETAILS, REDEEM_CONFIRMATION, ACTIVATE_CONFIRMATION } from '@constants/modals'
 import { NFT } from '@constants/payments'
 
 import { setModal } from '@entities/modal/actions'
@@ -15,11 +15,13 @@ import styled from "styled-components";
 const actionConfig = {
   [ACTIVATABLE]: {
     label: 'Activate Now',
-    viewType: ACTIVATE_CONFIRMATION
+    initialPoint: REDEEM_DETAILS,
+    actionPoint: ACTIVATE_CONFIRMATION
   },
   [REDEEMABLE]: {
     label: 'Redeem Now',
-    viewType: REDEEM_CONFIRMATION
+    initialPoint: REDEEM_DETAILS,
+    actionPoint: REDEEM_CONFIRMATION
   }
 }
 
@@ -42,11 +44,11 @@ export default function ActionButton ({ token }) {
     }
     dispatch(setModal({
       isOpen: true,
-			viewType: config.viewType,
+			viewType: config.actionPoint,
       options: {
 				type: NFT,
-        initialPoint: config.viewType,
-        actionPoint: config.viewType,
+        initialPoint: config.initialPoint,
+        actionPoint: config.actionPoint,
         token
 			},
 			data: token.nft

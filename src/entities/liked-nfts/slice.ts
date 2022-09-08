@@ -1,7 +1,7 @@
 
 // @ts-nocheck
 import { createSlice } from '@reduxjs/toolkit'
-import { fetchLikedNfts } from './actions'
+import { fetchLikedNfts, removeLikedNftsListLike } from './actions'
 
 const initialState = {
 	totalCount: 0,
@@ -16,6 +16,13 @@ const slice = createSlice({
 		builder.addCase(fetchLikedNfts.fulfilled, (state, action) => {
       state.totalCount = action.payload.totalCount
       state.nfts = action.payload.list
+    })
+		builder.addCase(removeLikedNftsListLike, (state, action) => {
+      const newNfts = state.nfts.filter(({ id }) => id !== action.payload.id)
+      return {
+        ...state,
+        nfts: newNfts
+      }
     })
   },
 })

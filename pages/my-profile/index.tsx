@@ -1,20 +1,20 @@
-import React from 'react';
+import React from 'react'
 
-import { wrapper } from 'src/storage/configureStore';
-import { authorize } from '@utils/server';
+import { wrapper } from 'src/storage/configureStore'
+import { authorize } from '@utils/server'
 
-import { MyProfile } from '@containers/MyProfile';
+import { MainLayout } from '@components/MainLayout'
+import Butterfly from '@components/ParrotAndButterfly/Butterfly'
+import MyProfile from '@containers/MyProfile'
 
-import { getTokenFromCtx } from '@utils/token';
-import { MainLayout } from '@components/MainLayout';
-import Butterfly from '@components/ParrotAndButterfly/Butterfly';
+import { getTokenFromCtx } from '@utils/token'
 
 export default function MyProfilePage() {
   return (
-    <MainLayout>
+    <MainLayout snakeOnTop={true} isParrotAndButterfly={<Butterfly />}>
       <MyProfile />
     </MainLayout>
-  );
+  )
 }
 
 export const getServerSideProps = wrapper.getServerSideProps(
@@ -26,10 +26,10 @@ export const getServerSideProps = wrapper.getServerSideProps(
           destination: '/',
         },
         props: {},
-      };
+      }
     }
     return {
       props: {},
-    };
+    }
   })
-);
+)

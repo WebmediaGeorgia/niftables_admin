@@ -1,22 +1,17 @@
 // @ts-nocheck
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import cn from 'classnames'
-// import Link from 'next/link'
+import styled from 'styled-components'
 
 import { REDEEM_DETAILS } from '@constants/modals'
 import { NFT } from '@constants/payments'
 
-import styles from './RedeemCard.module.scss'
-
 import { setModal } from '@entities/modal/actions'
 
-import BlockchainNetwork from '@commonV2/BlockchainNetwork'
-import MediaPreview from '@commonV2/media-preview'
+import Preview from './Preview'
 import Title from './Title'
-import Creator from './Creator'
 import ActionButton from './ActionButton'
-import Collection from './Collection'
+import Statistic from './statistic'
 import BadgesList from './BadgesList'
 import Score from './Score'
 import UtilityInformation from './UtilityInformation'
@@ -39,44 +34,82 @@ export default function RedeemCard ({ token }) {
   }, [dispatch, token])
 
   return (
-    <div
-      className={styles.redeemItem}
-      onClick={openRedeemDetails}
-    >
-      <div className={styles.media}>
-        <MediaPreview
-          data={token.nft}
-          type={NFT}
-          withoutFullView
-        />
-      </div>
-      <div className={styles.wrapper}>
+    <StyledWrapper onClick={openRedeemDetails}>
+      <Preview nft={token.nft} />
+      <div className='details-wrapper'>
         <div>
-          <div className={styles['title-wrapper']}>
+          <div className='title-wrapper'>
             <Title token={token} />
             <ActionButton token={token} />
           </div>
-          <div className={cn(styles.statistic)}>
-            <Creator token={token} />
-            <div className={styles.owner}>
-              <Collection token={token} />
-              <BlockchainNetwork className={styles['network']} network={token.nft.collection?.network} />
-            </div>
-          </div>
+          <Statistic token={token} />
         </div>
-
-        <hr className={styles['line-modal']} />
-        <div className={styles.metaData}>
+        <hr className='separator' />
+        <div className='meta-data'>
           <BadgesList token={token} />
           <Score token={token} />
         </div>
         <UtilityInformation token={token} />
-        {/* <div className={styles.moreAbout}>
-          <Link href={'#'}>
-            <a className={styles['moreAbout-link']}>See more about NFT</a>
-          </Link>
-        </div> */}
       </div>
-    </div>
+    </StyledWrapper>
   )
 }
+
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 43px 51px 40px 51px;
+  background: #ebf2f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(24px);
+  cursor: pointer;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 43px 30px 40px 30px;
+  }
+  @media only screen and (max-width: 480px) {
+    padding: 43px 20px 45px 20px;
+  }
+  &:not(:first-child) {
+    margin: 30px 0 0;
+  }
+  .details-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    margin-left: 35px;
+    @media only screen and (max-width: 768px) {
+      margin: 30px auto 0;
+    }
+    .title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media only screen and (max-width: 480px) {
+        flex-direction: column;
+      }
+    }
+    .separator {
+      border: none;
+      border-top: 1px solid var(--redeemItem-line-BorderColor);
+      width: 100%;
+      margin: 19px 0 5px;
+      @media only screen and (max-width: 480px) {
+        margin: 30px 0;
+      }
+    }
+    .meta-data {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: nowrap;
+      margin-top: 10px;
+      @media only screen and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+`

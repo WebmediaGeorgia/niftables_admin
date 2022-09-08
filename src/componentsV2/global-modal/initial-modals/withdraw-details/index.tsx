@@ -2,22 +2,17 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import styled from 'styled-components'
-import get from 'lodash/get'
 
-import { NFT } from '@constants/payments'
-
-import { useTypedSelector } from '@hooks/useNewTypedSelector'
 import { resetModal } from '@entities/modal/actions'
 
 import Modal from '@commonV2/Modal'
-import MediaPreview from '@commonV2/media-preview'
+import Preview from './Preview'
 import DetailsInfo from './DetailInfo'
 import AccordionDetails from './AccordionDetails'
 import ActionButton from './ActionButton'
 
 export default function WithdrawDetails () {
 	const dispatch = useDispatch()
-	const nft = useTypedSelector(state => get(state, 'modal.data', {}))
 
 	const closeHandler = React.useCallback(() => {
 		dispatch(resetModal())
@@ -29,12 +24,7 @@ export default function WithdrawDetails () {
 			size='l'
 		>
 			<StyledWrapper>
-				<div className='media-wrapper'>
-					<MediaPreview
-             data={nft}
-             type={NFT}
-          />
-				</div>
+				<Preview />
         <div className='detail-wrapper'>
 				  <DetailsInfo />
           <ActionButton />
@@ -58,8 +48,6 @@ const StyledWrapper = styled.div`
     position: relative;
     width: 294px;
     height: 294px;
-    min-width: 294px;
-    min-height: 294px;
     flex-shrink: 0;
     @media only screen and (max-width: 480px) {
       width: 100%;

@@ -4,7 +4,6 @@ import { wrapper } from 'src/storage/configureStore'
 import { getPacksRequest } from '@entities/pack/redux/actions'
 
 import { MainLayout } from '@components/MainLayout'
-import Butterfly from '@components/ParrotAndButterfly/Butterfly'
 import Packs from '@containers/Packs'
 
 import { authorize } from '@utils/server'

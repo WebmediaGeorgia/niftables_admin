@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function RarityRank ({ rarityRank }) {
+export default function RarityRank ({ className = '', rarityRank }) {
   if (!rarityRank) return <div />
   return (
-    <StyledWrapper>
+    <StyledWrapper className={className}>
       No{rarityRank}
     </StyledWrapper>
   )

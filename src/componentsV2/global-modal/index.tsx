@@ -9,7 +9,8 @@ import {
 	PACKS_PAYMENT_SUCCESS, PACKS_OPENING_LOADING, OPENED_PACK, RATE_LIMIT, REDEEM_DETAILS,
   PRE_WITHDRAW, WITHDRAW_CONFIRMATION, WITHDRAW, FAILED_WITHDRAW, WITHDRAW_SUCCESS,
   REDEEM_CONFIRMATION, REDEEM, FAILED_REDEEM, ACTIVATE_CONFIRMATION, ACTIVATE, FAILED_ACTIVATE,
-  REDEEM_SUCCESS, WITHDRAW_DETAILS, OPEN_PACKS_DETAILS
+  REDEEM_SUCCESS, WITHDRAW_DETAILS, OPEN_PACKS_DETAILS, LIKED_NFT_DETAILS, OPEN_MM_BROWSER,
+  OPENED_NFT_DETAILS
 } from '@constants/modals'
 
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
@@ -19,6 +20,7 @@ import PacksDetails from './initial-modals/packs-details'
 import RedeemDetails from './initial-modals/redeem-details'
 import WithdrawDetails from './initial-modals/withdraw-details'
 import OpenPacksDetails from './initial-modals/open-packs-details'
+import LikedNftDetails from './initial-modals/liked-nft-details'
 
 import NftBuyOptions from './payments-modals/nft-buy-options'
 import PacksBuyOptions from './payments-modals/packs-buy-options'
@@ -34,6 +36,7 @@ import ChangeWallet from './mm-modals/change-wallet'
 import ChangeNetwork from './mm-modals/change-network'
 import AddNetwork from './mm-modals/add-network'
 
+import OpenMMBrowser from './error-modals/open-mm-browser'
 import ReservationBlocked from './error-modals/reservation-blocked'
 import ReservedByAnother from './error-modals/reserved-by-another'
 import ItemSold from './error-modals/item-sold'
@@ -47,6 +50,7 @@ import FailedActivate from './error-modals/failed-activate'
 
 import PacksOpeningLoading from './opening-pack-modals/packs-opening-loading'
 import OpenedPack from './opening-pack-modals/opened-pack'
+import OpenedNftDetails from './opening-pack-modals/opened-nft-details'
 
 import WithdrawConfirmation from './withdraw-modals/withdraw-confirmation'
 import PreWithdraw from './withdraw-modals/pre-withdraw'
@@ -103,7 +107,10 @@ const modalsConfig = {
   [FAILED_ACTIVATE]: FailedActivate,
   [REDEEM_SUCCESS]: RedeemSuccess,
   [WITHDRAW_DETAILS]: WithdrawDetails,
-  [OPEN_PACKS_DETAILS]: OpenPacksDetails
+  [OPEN_PACKS_DETAILS]: OpenPacksDetails,
+  [LIKED_NFT_DETAILS]: LikedNftDetails,
+  [OPEN_MM_BROWSER]: OpenMMBrowser,
+  [OPENED_NFT_DETAILS]: OpenedNftDetails
 }
 
 export default function GlobalModal () {

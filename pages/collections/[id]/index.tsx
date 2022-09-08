@@ -11,7 +11,6 @@ import { MainLayout } from '@components/MainLayout';
 import { authorize } from '@utils/server';
 import sanitizeCollectionNftsRequest from '@utils/filters/sanitizeCollectionNftsRequest';
 import parseFilters from '@utils/filters/parseFilters';
-import Butterfly from '@components/ParrotAndButterfly/Butterfly';
 
 export default function CollectionNftsPage() {
   return (

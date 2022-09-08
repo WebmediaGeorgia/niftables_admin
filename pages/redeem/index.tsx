@@ -6,7 +6,6 @@ import Redeem from '@containers/Redeem'
 import { filtersUpdate } from '@entities/filters/actions'
 
 import { MainLayout } from '@components/MainLayout'
-import Butterfly from '@components/ParrotAndButterfly/Butterfly'
 
 import { authorize } from '@utils/server'
 import { getTokenFromCtx } from '@utils/token'

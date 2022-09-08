@@ -1,1 +1,0 @@
-export { LikedNfts } from './LikedNfts'
