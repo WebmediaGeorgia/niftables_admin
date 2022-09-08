@@ -30,6 +30,7 @@ const ProfileSettings = ({ errors, register }) => {
             id='email'
             disabled
             size="m"
+            isValid={true}
             error={errors?.email && errors.email}
             {...register(FIELD_LABELS.EMAIL)}
             type={'email'}

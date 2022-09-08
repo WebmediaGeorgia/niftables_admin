@@ -9,8 +9,10 @@
   }
 }
 .textArea {
-  font-size: 14px;
-  line-height: 21px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
   font-family: var(--font-family-base);
   padding: var(--input-Padding);
   border: var(--input-Border);
@@ -19,6 +21,7 @@
   resize: vertical;
   background: var(--input-Bg);
   color: var(--input-ColorText);
+
 
   outline-color: var(--input-Outline-ColorText);
 
@@ -29,6 +32,7 @@
 
   &::placeholder {
     color: var(--input-Placeholder-ColorText);
+    opacity: 0.6;
   }
   &.textarea-large {
     height: 360px;

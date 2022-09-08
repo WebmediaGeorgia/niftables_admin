@@ -19,12 +19,32 @@
 
     input {
       color: black;
+      border: 1px solid #C0D2EA;
+
+      &::placeholder {
+        color: #0D4B9E;
+        opacity: 0.2;
+      }
+    }
+
+    input + svg {
+      fill: #0D4B9E;
+      opacity: 0.2;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     label > span {
       padding-left: 0;
     }
   }
+}
+
+.confirmButton {
+  padding: 12.5px 20px;
+  min-width: 220px;
 }
 
 .cardSettings {
@@ -141,18 +161,24 @@
 
 .title {
   padding-top: 20px;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 35px;
   text-align: center;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
 }
 
 .confirmText {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .confirmEmail {
+  font-size: 20px;
+  line-height: 30px;
   font-weight: bold;
   text-align: center;
 }

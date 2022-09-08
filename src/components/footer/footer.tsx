@@ -13,8 +13,6 @@ import classNames from 'classnames';
 import { IFooterProps } from '@type/general';
 
 const restrictionPathnames = [
-  '/maintenance-mode',
-  '/email-change-confirmation-sent',
 ];
 
 const Footer: FC<IFooterProps> = ({ className, isBottom }) => {

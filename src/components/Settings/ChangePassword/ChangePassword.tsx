@@ -192,7 +192,7 @@ const ChangePassword = () => {
             </TextHelper>
           </div>
         </div>
-        <Button size='l' color='blue' onClick={onChangePassword}>
+        <Button className={styles.saveButton} size='l' color='blue' onClick={onChangePassword}>
           Save new password
         </Button>
       </div>

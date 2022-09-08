@@ -61,7 +61,7 @@ export const ChangeEmailForm: FC<IChangeEmailForm> = ({
         />
       </div>
     </div>
-    <Button size='l' color='blue' onClick={onChangeEmail}>
+    <Button className={styles.confirmButton} size='l' color='blue' onClick={onChangeEmail}>
       Confirm
     </Button>
   </>

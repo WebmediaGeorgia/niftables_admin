@@ -69,11 +69,8 @@
   margin-top: 30px;
 
   button {
-    padding: var(--button-small-Padding);
+    padding: 12.5px;
     min-width: var(--settings-navButton-width);
-    @include respond-to('medium') {
-      padding: var(--settings-navButton-Padding);
-    }
   }
 }
 

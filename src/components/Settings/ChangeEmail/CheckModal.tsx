@@ -31,9 +31,5 @@ export const CheckModal: FC<ICheckModalProps> = ({ getNewEmail }) => (
         </div>
       </div>
     </ModalWrapper>
-    <div className={styles['signin-bottom']}>
-      <PoweredBy className={styles.poweredBy} />
-      <Copyright />
-    </div>
   </Container>
 );

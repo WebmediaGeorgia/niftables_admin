@@ -53,6 +53,12 @@
   .input + .input {
     margin-top: 26px;
   }
+
+  input + svg {
+    path {
+      fill: #4F83C9 !important;
+    }
+  }
 }
 
 .signin-bottom {

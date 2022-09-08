@@ -75,7 +75,7 @@
 .navItem {
   @include respond-to('small') {
     &:not(:first-child) {
-      padding: 0 0 0 6.45%;
+      padding: 0 0 0 50px;
     }
   }
 }
