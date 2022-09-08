@@ -75,6 +75,7 @@ const StyledWrapper = styled.button.attrs(({ colorScheme, theme }) => {
   }
   return { scheme: config[colorScheme] }
 })`
+  width: 170px;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 600;

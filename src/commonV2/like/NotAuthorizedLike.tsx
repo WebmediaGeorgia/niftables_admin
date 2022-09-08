@@ -50,11 +50,12 @@ const StyledWrapper = styled.div.attrs(({ colorScheme }) => {
   transition: all 0.2s;
   & .icon {
     path {
-      fill: #0D4B9E;
+      fill: #FFFFFF;
+      opacity: 0.12;
     }
   }
   & .not-liked {
-    opacity: 0.12;
+    fill: #FFFFFF;
   }
   & .tooltip-wrapper {
     position: absolute;

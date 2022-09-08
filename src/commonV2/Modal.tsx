@@ -68,13 +68,12 @@ const StyledWrapper = styled.div.attrs(({ size }) => {
 		margin: auto;
 		width: 100%;
 		max-width: ${({ maxWidth }) => maxWidth}px;
-		background-image: url(/assets/img/superlotls/nft-popup-bg.png);
+		background-image: url(/assets/img/superlotls/small-pop-up-bg.png);
 		background-position: 50% 0;
 		background-repeat: no-repeat;
     background-size: 100% 100%;
 		border-radius: 8px;
 		overflow: hidden;
-    mix-blend-mode: luminosity;
 
 		.close-modal {
 			position: absolute;

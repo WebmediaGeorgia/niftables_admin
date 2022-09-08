@@ -35,7 +35,7 @@ export default function WarningHint ({ className = '', collectionId }) {
     <StyledWrapper className={className}>
       <div className='warning-wrapper'>
         <InfoIcon className='icon' />
-        {abilityToBuy}
+        You can use this NFT one time only! Your NFT will be burned upon Redeem success.
       </div>
     </StyledWrapper>
   )
@@ -45,19 +45,17 @@ const StyledWrapper = styled.div`
   margin-top: 10px;
   .warning-wrapper {
     display: inline-flex;
-    align-items: center;
     padding: 7px 17px;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     color: ${({ theme }) => theme.text.primary};
-    border: 1px solid #dadada;
-    border-radius: 14px;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.075) 0%,
-      rgba(255, 255, 255, 0.075) 100%
-    );
+    background: rgba(7, 3, 31, 0.3);
+    border-radius: 100px;
+    border: none;
+    color: white;
+    align-items: center;
+
     .icon {
       flex-shrink: 0;
       margin-right: 5px;
