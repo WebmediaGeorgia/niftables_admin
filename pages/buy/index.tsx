@@ -10,7 +10,6 @@ import Buy from '@containers/Buy';
 import { authorize } from '@utils/server';
 import sanitizeBuyNFTsRequest from '@utils/filters/sanitizeBuyNFTsRequest';
 import parseFilters from '@utils/filters/parseFilters';
-import Butterfly from '@components/ParrotAndButterfly/Butterfly';
 
 export default function BuyPage() {
   return (

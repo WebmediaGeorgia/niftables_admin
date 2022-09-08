@@ -1,6 +1,7 @@
 // @ts-nocheck
 import React from 'react'
 import { useDispatch } from 'react-redux'
+import styled from 'styled-components'
 
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
 import { useNoInitialEffect } from '@hooks/useNoInitialEffect'
@@ -11,7 +12,7 @@ import QueryFilterListener from '@componentsV2/QueryFilterListener'
 import FiltersHeader from '@commonV2/FiltersHeader'
 import PaginationFilter from '@componentsV2/filters-block/pagination-filter'
 import CollectionsSearchBlock from './CollectionsSearchBlock'
-import CollectionsList from './collections-list'
+import CollectionsList from './CollectionsList'
 import CollectionsFilterBlock from './CollectionsFilterBlock'
 
 import sanitizeCollectionsRequest from '@utils/filters/sanitizeCollectionsRequest'
@@ -35,7 +36,7 @@ export default function Collections () {
 	return (
 		<>
 			<QueryFilterListener />
-			<div>
+			<StyledWrapper>
 				<FiltersHeader
 					title='Collections'
 					subTitile='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
@@ -55,7 +56,11 @@ export default function Collections () {
 						field='nftCollection'
 					/>
 				</div>
-			</div>
+			</StyledWrapper>
 		</>
 	)
 }
+
+const StyledWrapper = styled.div`
+  margin-top: 150px;
+`

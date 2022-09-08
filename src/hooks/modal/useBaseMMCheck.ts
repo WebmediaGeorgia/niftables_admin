@@ -3,11 +3,12 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 
 import {
-	INSTALL_WALLET, CONNECT_WALLET, CHANGE_WALLET, CHANGE_NETWORK
+	CONNECT_WALLET, CHANGE_WALLET, CHANGE_NETWORK
 } from '@constants/modals'
 
 import { _getStore } from 'src/storage/configureStore'
 import { setModal, setModalOptions } from '@entities/modal/actions'
+import useMoveToMMInstalation from '@hooks/modal/useMoveToMMInstalation'
 
 import checkMMInstalled from '@utils/metamask/checkMMInstalled'
 import checkMMConnected from '@utils/metamask/checkMMConnected'
@@ -15,11 +16,12 @@ import getMMNetwork from '@utils/metamask/getMMNetwork'
 
 export default function useBaseMMCheck (referrer) {
 	const dispatch = useDispatch()
+  const moveToMMInstalation = useMoveToMMInstalation()
 	return React.useCallback(async () => {
 		const isInstalled = checkMMInstalled() // check MM extension
 		if (!isInstalled) {
 			dispatch(setModalOptions({ referrer }))
-			dispatch(setModal({ viewType: INSTALL_WALLET }))
+			moveToMMInstalation()
 			return false
 		}
 		const MMAddress = await checkMMConnected() // check adding domain to MM
@@ -52,5 +54,5 @@ export default function useBaseMMCheck (referrer) {
 			return false
 		}
 		return true
-	}, [referrer, dispatch])
+	}, [referrer, dispatch, moveToMMInstalation])
 }

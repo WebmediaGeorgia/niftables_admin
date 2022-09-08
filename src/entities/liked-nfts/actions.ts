@@ -2,6 +2,8 @@ import { createAction, createAsyncThunk } from '@reduxjs/toolkit'
 
 import { $apiWithToken } from 'src/common/api'
 
+export const removeLikedNftsListLike = createAction('liked-nfts/removeNftsListLike')
+
 export const fetchLikedNfts = createAsyncThunk(
 	'liked-nfts/fetchLikedNfts',
 	async (params, thunkApi) => {

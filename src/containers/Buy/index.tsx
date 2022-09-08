@@ -1,6 +1,7 @@
 // @ts-nocheck
 import React from 'react'
 import { useDispatch } from 'react-redux'
+import styled from 'styled-components'
 
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
 import { useNoInitialEffect } from '@hooks/useNoInitialEffect'
@@ -11,9 +12,9 @@ import { getBuyNFTsRequest } from '@entities/nft/redux/actions'
 import QueryFilterListener from '@componentsV2/QueryFilterListener'
 import FiltersHeader from '@commonV2/FiltersHeader'
 import NftsSearchBlock from '@componentsV2/filters-block/NftsSearchBlock'
-import NftsList from '@componentsV2/NftsList'
 import PaginationFilter from '@componentsV2/filters-block/pagination-filter'
 import BuyFilterBlock from './BuyFilterBlock'
+import NftsList from './NftsList'
 
 import sanitizeBuyNFTsRequest from '@utils/filters/sanitizeBuyNFTsRequest'
 
@@ -49,7 +50,7 @@ export default function Buy () {
   return (
 		<>
 			<QueryFilterListener />
-			<div>
+			<StyledWrapper>
 				<FiltersHeader
 					title='Currently for sale'
 					subTitile='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
@@ -69,7 +70,11 @@ export default function Buy () {
 						field='nft'
 					/>
 				</div>
-			</div>
+			</StyledWrapper>
 		</>
   )
 }
+
+const StyledWrapper = styled.div`
+  margin-top: 150px;
+`

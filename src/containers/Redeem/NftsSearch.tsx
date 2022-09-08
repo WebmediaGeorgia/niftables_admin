@@ -1,8 +1,7 @@
 // @ts-nocheck
 import React from 'react'
 import { useDispatch } from 'react-redux';
-
-import styles from './Redeem.module.scss'
+import styled from 'styled-components'
 
 import { useTypedSelector } from '@hooks/useNewTypedSelector';
 import { filtersUpdate } from '@entities/filters/actions';
@@ -18,11 +17,14 @@ export default function NftsSearch () {
   },[dispatch]);
 
   return (
-    <SearchInput
-      className={styles.search}
+    <StyledSearchInput
       placeholder='Search via Token ID/Name'
       value={search}
       searchHandler={searchHandler}
     />
   )
 }
+
+const StyledSearchInput = styled(SearchInput)`
+  max-width: 480px;
+`

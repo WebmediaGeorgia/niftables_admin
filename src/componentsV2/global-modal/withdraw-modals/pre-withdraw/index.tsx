@@ -4,11 +4,12 @@ import { useDispatch } from 'react-redux'
 
 import {
 	REDEEM_DETAILS, PRE_WITHDRAW, WITHDRAW_CONFIRMATION,
-  INSTALL_WALLET, CONNECT_WALLET, CHANGE_WALLET
+  CONNECT_WALLET, CHANGE_WALLET
 } from '@constants/modals'
 
 import { _getStore } from 'src/storage/configureStore'
 import { setModal, setModalOptions } from '@entities/modal/actions'
+import useMoveToMMInstalation from '@hooks/modal/useMoveToMMInstalation'
 
 import ModalLoading from '../../modal-loading'
 
@@ -17,6 +18,7 @@ import checkMMConnected from '@utils/metamask/checkMMConnected'
 
 export default function PreWithdraw () {
 	const dispatch = useDispatch()
+  const moveToMMInstalation = useMoveToMMInstalation()
 
   const moveToInitialView = React.useCallback(() => {
     dispatch(setModal({ viewType: REDEEM_DETAILS }))
@@ -27,7 +29,7 @@ export default function PreWithdraw () {
 			const isInstalled = checkMMInstalled() // check MM extension
       if (!isInstalled) {
         dispatch(setModalOptions({ referrer: PRE_WITHDRAW }))
-        dispatch(setModal({ viewType: INSTALL_WALLET }))
+        moveToMMInstalation()
         return false
       }
       const MMAddress = await checkMMConnected() // check adding domain to MM

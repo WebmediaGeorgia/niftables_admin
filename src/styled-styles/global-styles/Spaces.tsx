@@ -20,6 +20,18 @@ const Spaces = createGlobalStyle`
   .g-mt-30 {
     margin-top: 30px;
   }
+  .g-mt-35 {
+    margin-top: 35px;
+  }
+  .g-mt-40 {
+    margin-top: 40px;
+  }
+  .g-mt-45 {
+    margin-top: 45px;
+  }
+  .g-mt-50 {
+    margin-top: 50px;
+  }
   // right
   .g-mr-5 {
     margin-right: 5px;

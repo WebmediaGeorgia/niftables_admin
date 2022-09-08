@@ -1,36 +1,23 @@
 import React from 'react'
 import get from 'lodash/get'
 
-import styles from './RedeemCard.module.scss'
-
-import Badge from '@shared/Badge'
+import CommonBadge from '@commonV2/badges/CommonBadge'
 
 export default function BadgesList ({ token }) {
   const rarity = get(token, 'nft.rarity', '')
   const utilityStatus = get(token, 'utilityStatus', '')
   return (
-    <div className={styles['badge-list']}>
+    <div className='g-d-flex g-wrap'>
       {rarity && (
-        <Badge
-          className={styles.sBadge}
-          rounded
-          uppercase
-          color='secondary'
-          size='m'
-        >
-          {rarity}
-        </Badge>
+        <CommonBadge
+          label={rarity}
+        />
       )}
       {utilityStatus && (
-        <Badge
-          className={styles.sBadge}
-          rounded
-          uppercase
-          color='secondary'
-          size='m'
-        >
-          {utilityStatus}
-        </Badge>
+        <CommonBadge
+          className='g-ml-10'
+          label={utilityStatus}
+        />
       )}
     </div>
   )

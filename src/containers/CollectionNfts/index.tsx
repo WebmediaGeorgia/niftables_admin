@@ -2,6 +2,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import { useDispatch } from 'react-redux'
+import styled from 'styled-components'
 
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
 import { useNoInitialEffect } from '@hooks/useNoInitialEffect'
@@ -9,11 +10,11 @@ import { setIsGlobalLoading } from '@entities/utils/actions'
 import { getCollectionNFTsRequest } from '@entities/nft/redux/actions'
 
 import QueryFilterListener from '@componentsV2/QueryFilterListener'
-import NftsList from '@componentsV2/NftsList'
 import NftsSearchBlock from '@componentsV2/filters-block/NftsSearchBlock'
 import PaginationFilter from '@componentsV2/filters-block/pagination-filter'
 import CollectionNftsHeader from './collection-nfts-header'
 import CollectionNftsFilterBlock from './CollectionNftsFilterBlock'
+import NftsList from './NftsList'
 
 import sanitizeCollectionNftsRequest from '@utils/filters/sanitizeCollectionNftsRequest'
 
@@ -46,7 +47,7 @@ export default function CollectionNfts () {
   return (
 		<>
 			<QueryFilterListener />
-			<div>
+			<StyledWrapper>
 				<CollectionNftsHeader />
 
 				<div className='g-container'>
@@ -63,7 +64,11 @@ export default function CollectionNfts () {
 						field='nft'
 					/>
 				</div>
-			</div>
+			</StyledWrapper>
 		</>
   )
 }
+
+const StyledWrapper = styled.div`
+  margin-top: 150px;
+`

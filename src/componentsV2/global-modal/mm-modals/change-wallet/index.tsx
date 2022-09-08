@@ -1,25 +1,34 @@
 // @ts-nocheck
 import React from 'react'
 import { toast } from 'react-toastify'
+import { useRouter } from 'next/router'
+import { useDispatch } from 'react-redux'
 import cn from 'classnames'
 
-import styles from './ChangeWallet.module.scss'
+import { REDEEM_DETAILS } from '@constants/modals'
 
-import { _getStore } from 'src/storage/configureStore';
+import styles from './ChangeWallet.module.scss'
+import btnStyles from '@components/shared/Button/Button.module.scss'
+
+import { _getStore } from 'src/storage/configureStore'
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
+import { resetModal } from '@entities/modal/actions'
 import useMoveToActionPoint from '@hooks/modal/useMoveToActionPoint'
 import useClearReservation from '@hooks/modal/useClearReservation'
 import useMoveToReferrer from '@hooks/modal/useMoveToReferrer'
 
 import Modal from '@commonV2/Modal'
-import Button from '@commonV2/Button'
+import Button from '@shared/Button'
 
 import formatAddress from '@utils/metamask/formatAddress'
 import checkMMConnected from '@utils/metamask/checkMMConnected'
 import updateUserWallet from '@utils/metamask/updateUserWallet'
 
 export default function ChangeWallet () {
+  const router = useRouter()
+  const dispatch = useDispatch()
 	const currentAddress = useTypedSelector(state => state.user.metamaskAddress)
+	const initialPoint = useTypedSelector(state => state.modal.options.initialPoint)
   const moveToActionPoint = useMoveToActionPoint()
 	const clearReservation = useClearReservation()
 	const moveToReferrer = useMoveToReferrer()
@@ -64,8 +73,13 @@ export default function ChangeWallet () {
 		const MMAddress = await checkMMConnected()
 		const isSuccess = await updateUserWallet({ address: MMAddress })
 		if (!isSuccess) return
+    if (initialPoint === REDEEM_DETAILS) {
+      router.push(router.asPath)
+      dispatch(resetModal())
+      return
+    }
 		moveToReferrer()
-	}, [moveToReferrer])
+	}, [initialPoint, router, dispatch, moveToReferrer])
 
 	return (
 		<Modal
@@ -83,10 +97,16 @@ export default function ChangeWallet () {
 					<div className={styles['text']}>
 						in MetaMask and press button below
 					</div>
-
-          <Button className="g-mt-20" clickHandler={checkAddressMatch}>
-            Try now
-          </Button>
+					<Button
+						className={styles['button']}
+						size='l'
+						color='blue'
+						fillStyle
+						fullWidth
+						onClick={checkAddressMatch}
+					>
+						Try now
+					</Button>
 				</div>
 				<div className={cn(styles['separator'], styles['text'])}>
 					<b>or</b>
@@ -98,10 +118,16 @@ export default function ChangeWallet () {
 					<div className={styles['text']}>
 						in our system
 					</div>
-
-          <Button className="g-mt-20" clickHandler={linkAddress}>
-            Link account
-          </Button>
+					<Button
+						className={cn(btnStyles['btn-login-primary'], styles['button'])}
+						size='l'
+						color='blue'
+						fillStyle
+						fullWidth
+						onClick={linkAddress}
+					>
+						Link account
+					</Button>
 				</div>
 			</div>
 		</Modal>

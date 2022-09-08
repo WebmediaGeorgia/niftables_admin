@@ -32,12 +32,16 @@ export default function ActionButtons () {
   return (
     <StyledWrapper>
       {utilityStatus === REDEEMABLE && (
-        <Button clickHandler={moveToRedeemConfirmation}>
+        <Button
+          className='button'
+          clickHandler={moveToRedeemConfirmation}
+        >
           Redeem
         </Button>
       )}
       {utilityStatus === ACTIVATABLE && (
         <Button
+          className='button'
           clickHandler={moveToActivateConfirmation}
         >
           Activate
@@ -45,6 +49,7 @@ export default function ActionButtons () {
       )}
       {!claimed && (
         <Button
+          className='button'
           colorScheme='transparent'
           clickHandler={moveToPreWithdraw}
         >
@@ -66,6 +71,11 @@ const StyledWrapper = styled.div`
   }
 
   @media only screen and (max-width: 480px) {
-    display: block;
+    flex-direction: row;
+  }
+  .button {
+    @media only screen and (max-width: 480px) {
+      width: 100%;
+    }
   }
 `

@@ -14,7 +14,7 @@ import { MainCarousel } from '@components/Carousels'
 import NavigationTabs from '@componentsV2/NavigationTabs'
 import MyProfileTab from './my-profile-tab'
 
-export function MyProfile () {
+export default function MyProfile () {
 	const dispatch = useDispatch()
   const filter = useTypedSelector((state) => state.filter)
 

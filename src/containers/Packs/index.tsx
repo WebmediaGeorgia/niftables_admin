@@ -1,13 +1,10 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import { ALL, AVAILABLE, SOLD_OUT } from '@constants/packs'
 
-import styles from './Packs.module.scss'
-
-import Container from '@components/shared/Container'
-import PageHeader from '@components/shared/PageHeader'
-import ButtonsFilter from './buttons-filter'
-import PacksList from './packs-list'
+import ButtonsFilter from './ButtonsFilter'
+import PacksList from './PacksList'
 
 const filterConfig = [
 	{
@@ -27,20 +24,30 @@ const filterConfig = [
 export default function Packs () {
 	const [filter, setFilter] = React.useState(ALL)
 	return (
-		<Container className={styles.wrapper}>
-			<PageHeader className={styles.header}>
+		<StyledWrapper>
+			<div className='page-title'>
 				Packs
-			</PageHeader>
-			<div className={styles.description}>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-				eiusmod tempor incididunt ut labore et dolore.
 			</div>
-			<ButtonsFilter
-				filterConfig={filterConfig}
-				filter={filter}
-				setFilter={setFilter}
-			/>
-			<PacksList filter={filter} />
-		</Container>
+      <div className='g-container g-mt-50'>
+        <ButtonsFilter
+          filterConfig={filterConfig}
+          filter={filter}
+          setFilter={setFilter}
+        />
+        <PacksList filter={filter} />
+      </div>
+		</StyledWrapper>
 	)
 }
+
+const StyledWrapper = styled.div`
+  margin-top: 150px;
+  .page-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    @media only screen and (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+`

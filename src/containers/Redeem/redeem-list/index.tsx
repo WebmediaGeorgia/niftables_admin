@@ -1,8 +1,6 @@
 // @ts-nocheck
 import React from 'react'
 
-import styles from './RedeemList.module.scss'
-
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
 
 import EmptyItems from '@commonV2/EmptyItems'
@@ -18,7 +16,7 @@ export default function RedeemList () {
   }
 
   return (
-    <div className={styles.list}>
+    <div className='g-mt-20'>
       {tokens.map(token => {
         return (
           <RedeemCard
