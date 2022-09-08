@@ -58,6 +58,8 @@ const StyledWrapper = styled.div`
     position: relative;
     width: 294px;
     height: 294px;
+    min-width: 294px;
+    min-height: 294px;
     flex-shrink: 0;
     @media only screen and (max-width: 480px) {
       width: 100%;
