@@ -26,7 +26,7 @@ export const Resend: FC<IResend> = ({ onResendButtonClick }) => {
           fullWidth={false}
           onClick={onResendButtonClick}
         >
-          Resend email
+          Resend e-mail
         </Button>
       ) : (
         <ResendMinuteTimer timerToggle={timerToggle} targetDate={dateTime} />

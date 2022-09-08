@@ -45,6 +45,11 @@
 }
 .heading-signUp-active {
   margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+
 }
 .subtitle-signUp-active {
   margin-top: 0 !important;
@@ -54,6 +59,12 @@
   font-weight: 600;
   margin-top: 0 !important;
   margin-bottom: 6px !important;
+}
+.subtitle-signUp-mail-description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
 }
 .signup-bottom {
   margin-top: 40px;

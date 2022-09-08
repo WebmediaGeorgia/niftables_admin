@@ -92,7 +92,7 @@ function SignUpSuccess(): JSX.Element {
           />
           <ModalContentWrapper>
             <ModalSubtitle
-              className={styles['subtitle-signUp-active']}
+              className={styles['subtitle-signUp-mail-description']}
               text={
                 error && error !== EmailVerificationError
                   ? error
@@ -113,7 +113,7 @@ function SignUpSuccess(): JSX.Element {
                 onClick={handleResend}
                 className={btnStyles['btn-login-secondary']}
               >
-                Resend email
+                Resend e-mail
               </Button>
             ) : (
               <ResendMinuteTimer
