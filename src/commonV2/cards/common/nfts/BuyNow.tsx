@@ -10,8 +10,11 @@ export default React.memo(function BuyNow () {
 })
 
 const StyledWrapper = styled.div`
-  font-size: 12px;
   font-weight: 600;
-  line-height: 22px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.text.secondary};
 `

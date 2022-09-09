@@ -13,8 +13,8 @@ export default React.memo(function NftPrice ({ price }) {
 })
 
 const StyledWrapper = styled.div`
-  font-size: 14px;
   font-weight: 400;
+  font-size: 15px;
   line-height: 22px;
   color: ${({ theme }) => theme.text.primary};
 `

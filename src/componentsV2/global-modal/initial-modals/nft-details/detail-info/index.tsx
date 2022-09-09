@@ -24,15 +24,14 @@ export default function DetailInfo () {
     <StyledWrapper>
       <div>
         <Title item={nft} />
-        <div className='g-d-flex g-justify-between g-align-center g-mt-10'>
+        <div className='g-d-flex g-justify-between g-align-center'>
           <User
-            label='Creator'
+            label='Owner'
             item={nft}
           />
           <LikeHandler />
         </div>
         <Collection
-          className='g-mt-10'
           nft={nft}
         />
         <div className='g-h-separator g-mt-15' />
