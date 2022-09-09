@@ -24,7 +24,7 @@ export default function DetailInfo () {
     <StyledWrapper>
       <div>
         <Title item={nft} />
-        <div className='g-d-flex g-justify-between g-align-center'>
+        <div className='g-d-flex g-justify-between g-align-center g-mt-5'>
           <User
             label='Owner'
             item={nft}
