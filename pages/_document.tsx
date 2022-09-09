@@ -25,6 +25,7 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           {this.props.styleTags}
+          <link href="/fonts/fonts.css" rel="stylesheet"/>
         </Head>
         <body>
           <Main />

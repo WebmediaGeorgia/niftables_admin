@@ -34,6 +34,15 @@ const StyledOpenSeaButton = styled(Button)`
   align-items: center;
   .icon {
     margin-right: 8px;
+    & :nth-child(1) {
+      fill: #0F4AE3 !important;
+    }
+    & :nth-child(2) {
+      fill: #fff !important;
+    }
+    & :nth-child(3) {
+      fill: #fff !important;
+    }
   }
 `
 

@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import get from 'lodash/get'
 
 import IconPerson from 'public/field-icons/person-small.svg'
-import IconValidUser from 'public/field-icons/valid-user.svg'
 
 export default function User ({ className = '', label, item }) {
   const name = get(item, 'collection.whitelabel.name', '')

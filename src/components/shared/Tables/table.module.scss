@@ -11,6 +11,7 @@
 
   tbody {
     tr {
+      counter-increment: row-num;
       @include respond-to('medium') {
         padding: 0;
         display: table-row;
@@ -29,11 +30,15 @@
       }
     }
   }
+  tr td:first-child::before {
+    content: counter(row-num) ".";
+    color: #0D4B9E;
+  }
 }
 .sTd {
   padding: 9px 40px 9px 0;
 
   &:first-child {
-    padding: 9px 10px 9px 0;
+    padding: 9px 15px 9px 0;
   }
 }

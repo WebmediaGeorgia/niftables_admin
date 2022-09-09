@@ -12,6 +12,10 @@ import { FC, useState } from 'react';
 import classNames from 'classnames';
 import { IFooterProps } from '@type/general';
 
+const restrictionPathnames = [
+  '/maintenance-mode',
+]
+
 const Footer: FC<IFooterProps> = ({ className, isBottom }) => {
   const router = useRouter();
   const isHome = router.pathname === '/';
@@ -23,6 +27,9 @@ const Footer: FC<IFooterProps> = ({ className, isBottom }) => {
     setType(type);
     setShowModal(!showModal);
   };
+
+  if (restrictionPathnames.includes(router.pathname)) return null;
+
   return (
     <>
       <footer className={classNames(styles.footer, styles[`${className}`])}>

@@ -31,9 +31,10 @@
 
   &:-webkit-autofill {
     font-size: var(--input-FontSize);
-    -webkit-box-shadow: 0 0 0px 1000px var(--input-AutoFill-BgColor) inset;
-    -moz-box-shadow: 0 0 0 100px var(--input-AutoFill-BgColor) inset;
-    box-shadow: 0 0 0 100px var(--input-AutoFill-BgColor) inset;
+    background: var(--input-Bg);
+    -webkit-box-shadow: 0 0 0px 1000px #215CA9 inset;
+    -moz-box-shadow: 0 0 0 100px #215CA9 inset;
+    box-shadow: 0 0 0 100px #215CA9 inset;
 
     -webkit-text-fill-color: var(--input-AutoFill-ColorText) !important;
   }

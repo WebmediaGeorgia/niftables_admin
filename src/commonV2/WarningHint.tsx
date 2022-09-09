@@ -35,7 +35,7 @@ export default function WarningHint ({ className = '', collectionId }) {
     <StyledWrapper className={className}>
       <div className='warning-wrapper'>
         <InfoIcon className='icon' />
-        You can use this NFT one time only! Your NFT will be burned upon Redeem success.
+        {abilityToBuy}
       </div>
     </StyledWrapper>
   )

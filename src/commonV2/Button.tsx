@@ -1,8 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import bg from 'public/assets/img/jungle/button_large_bg.webp'
-
 export default function Button ({
   className = '', colorScheme = 'primary', disabled, clickHandler, children
 }) {

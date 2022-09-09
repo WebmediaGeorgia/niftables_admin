@@ -43,9 +43,9 @@ const StyledWrapper = styled.div`
 		outline-color: rgba(255, 255, 255, 0.5);
 		:-webkit-autofill {
 			font-size: 18px;
-			-webkit-box-shadow: 0 0 0px 1000px #375547 inset;
-			-moz-box-shadow: 0 0 0 100px #375547 inset;
-			box-shadow: 0 0 0 100px #375547 inset;
+      -webkit-box-shadow: 0 0 0px 1000px #215CA9 inset;
+      -moz-box-shadow: 0 0 0 100px #215CA9 inset;
+      box-shadow: 0 0 0 100px #215CA9 inset;
 			-webkit-text-fill-color: ${({ theme }) => theme.text.primary} !important;
 		}
 		::placeholder {

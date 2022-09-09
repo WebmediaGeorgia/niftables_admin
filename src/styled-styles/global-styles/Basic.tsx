@@ -1,13 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
-import "@fontsource/oswald";
 
 const Basic = createGlobalStyle`
   * {
     font-family: 'Oswald', sans-serif;
-  }
-  @font-face {
-    font-family: 'Wild World';
-    src: url("/assets/fonts/wildworld/WILD_WORLD.ttf");
   }
   .g-container {
     width: 100%;

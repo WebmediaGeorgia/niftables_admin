@@ -10,6 +10,7 @@ import Preview from './Preview'
 import DetailsInfo from './DetailInfo'
 import AccordionDetails from './AccordionDetails'
 import ActionButton from './ActionButton'
+import RevealeDetails from './RevealeDetails'
 
 export default function WithdrawDetails () {
 	const dispatch = useDispatch()
@@ -28,6 +29,7 @@ export default function WithdrawDetails () {
         <div className='detail-wrapper'>
 				  <DetailsInfo />
           <ActionButton />
+          <RevealeDetails />
         </div>
 			</StyledWrapper>
 			<AccordionDetails />

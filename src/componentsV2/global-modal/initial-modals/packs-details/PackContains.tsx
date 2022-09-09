@@ -31,7 +31,7 @@ export default function PackContains () {
       </div>
 
       <div className='preview-wrapper'>
-        {!imageUrl ? (
+        {imageUrl ? (
           <div className='image'>
             <NextImage
               src={imageUrl}

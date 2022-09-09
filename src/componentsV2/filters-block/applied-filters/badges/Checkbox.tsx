@@ -29,6 +29,14 @@ export default function Checkbox ({ field, item, optionsConfig }) {
 			console.warn(`Option ${item} not exist in ${field} options`)
 			return null
 		}
+    const label = option.label
+    if (label === 'Yes' || label === 'No') {
+      return (
+        <span className='g-t-capitalize'>
+          {field}: {label}
+        </span>
+      )
+    }
 		return option.label
 	}, [optionsConfig, field, item])
 	return (

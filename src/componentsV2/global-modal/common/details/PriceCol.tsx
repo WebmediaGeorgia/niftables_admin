@@ -7,6 +7,7 @@ import parsePrice from '@utils/entities/parsePrice'
 
 export default function PriceCol ({ className = '', item }) {
   const price = get(item, 'price')
+  if (!price) return null
   return (
     <StyledWrapper className={className}>
       <div className='label'>
