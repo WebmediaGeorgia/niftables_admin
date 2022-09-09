@@ -11,10 +11,8 @@ import styles from './MyProfileTab.module.scss'
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
 import { setModal } from '@entities/modal/actions'
 
-import { Card } from '@components/Card'
+import MyNftCard from '@commonV2/cards/my-nft-card'
 import CardSection from './card-section'
-
-import { createCardItemFromNFTToken } from '@utils/nftUtils'
 
 export default function MergeableNfts () {
   const dispatch = useDispatch()
@@ -51,12 +49,10 @@ export default function MergeableNfts () {
       {tokens.map(token => {
         return (
           <SwiperSlide key={token.id}>
-            <Card
+            <MyNftCard
               className={styles.card}
-              item={createCardItemFromNFTToken(token)}
-              isNFTEntity
-              isOwned
-              onClick={() => openWithdrawDetails(token)}
+              token={token}
+              clickHandler={() => openWithdrawDetails(token)}
             />
           </SwiperSlide>
         )
