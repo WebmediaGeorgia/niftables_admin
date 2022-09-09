@@ -25,7 +25,6 @@ const StyledWrapper = styled.div`
     margin-top: 20px;
   }
   && .owner {
-    margin: 6px 0 0;
     display: flex;
     justify-content: space-between;
     font-size: 12px;

@@ -10,7 +10,7 @@ export default function Creator ({ token }) {
   return (
     <StyledWrapper className='g-d-flex g-mr-5'>
       <div className='g-mr-5'>
-        Creator:
+        Owner:
       </div>
       <div className='img'>
         <PersonSmall
@@ -19,13 +19,22 @@ export default function Creator ({ token }) {
           height='18px'
         />
       </div>
-      <b className='g-t-capitalize'>{creatorName}</b>
-      <ValidUser className='icon-user' />
+      <b className='g-t-capitalize creatorName'>{creatorName}</b>
     </StyledWrapper>
   )
 }
 
 const StyledWrapper = styled.div`
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+
+  .creatorName {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
   .img {
     width: 18px;
     height: 18px;

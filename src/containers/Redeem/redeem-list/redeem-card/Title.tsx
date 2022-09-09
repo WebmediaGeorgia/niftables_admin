@@ -15,8 +15,8 @@ const StyledWrapper = styled.div`
   flex: auto;
   margin: 5px 0 8px;
   padding-right: 10px;
-  font-size: 22px;
   font-weight: 700;
-  line-height: 35px;
+  font-size: 26px;
+  line-height: 36px;
   color: #000;
 `

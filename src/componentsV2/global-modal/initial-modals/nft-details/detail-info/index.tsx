@@ -39,7 +39,7 @@ export default function DetailInfo () {
           className='g-mt-15'
           nft={nft}
         />
-        <div className='params g-mt-25'>
+        <div className='params g-mt-15'>
           <PriceCol item={nft} />
           <AvailableCol nft={nft} />
           <RarityScoreCol nft={nft} />
