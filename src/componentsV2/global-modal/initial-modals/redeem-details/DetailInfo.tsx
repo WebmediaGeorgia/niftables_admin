@@ -29,7 +29,6 @@ export default function DetailInfo () {
           <ActivatedBadge utilityStatus={utilityStatus} />
         </div>
         <Collection
-          className='g-mt-10'
           nft={nft}
         />
         <div className='g-h-separator g-mt-15' />
