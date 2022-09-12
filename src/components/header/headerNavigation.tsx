@@ -9,6 +9,7 @@ import DropDownUser from '@components/DropDownUser';
 import Avatar from '@components/shared/Avatar';
 import { getMenuHeader } from 'configure';
 import ButtonClose from '/public/assets/img/icon-close.svg';
+import UserIcon from '/public/assets/img/jungle/icon_user.svg';
 
 import styles from './headerNavigation.module.scss';
 import useHeader from './useHeader';
@@ -20,6 +21,7 @@ import { toast } from 'react-toastify';
 import { isServer } from '@utils/common';
 import formatAddress from '@utils/metamask/formatAddress';
 import HeaderLogo from "@components/header/header.logo";
+import classnames from "classnames";
 
 const HeaderNavigation = () => {
   const { getMetamaskAddress, metamaskAccountChange } = useMetamask();
@@ -68,9 +70,13 @@ const HeaderNavigation = () => {
 
   const imgSrc = '/other/user.svg';
 
-  const user = (
-    <div className={styles['user-icon']}>
-      <span className={styles['user-avatar']}></span>
+  const user = ({ isOpen }) => (
+    <div
+      className={classnames(styles['user-icon'], {
+        [styles['user-icon--open']]: isOpen
+      })}
+    >
+      <UserIcon />
     </div>
   );
 
@@ -170,7 +176,7 @@ const HeaderNavigation = () => {
           <DropDownNotification />
           <DropDownUser
             right={true}
-            userText={user}
+            UserText={user}
             showSearch={true}
             options={getOptions(menuHeader)}
             logoutHandler={logoutHandler}

@@ -29,7 +29,7 @@ export interface ISocialIcon {
   linkTo: string;
   name: string;
 }
-export interface ISocialIconPlaceholder {  
+export interface ISocialIconPlaceholder {
   children: ReactNode | string;
   className?: string;
 }
@@ -114,7 +114,7 @@ export interface IDropDown {
   type?: string;
   usingValue?: boolean;
   isLoading?: boolean;
-  userText?: React.ReactElement | string;
+  UserText?: any;
   selectedOptions?: React.ReactElement | string;
   showSearch?: boolean;
   userId?: string;
@@ -317,7 +317,7 @@ export interface IMainLayout {
 	className?: string;
 }
 
-export interface IFooterProps {  
+export interface IFooterProps {
 	className?: string;
 	isBottom?: ReactElement;
 }

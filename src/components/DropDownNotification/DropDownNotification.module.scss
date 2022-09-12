@@ -169,18 +169,35 @@
 .unReadNotification {
   position: relative;
 
-  &::after {
-    position: absolute;
-    content: '';
-    width: 7px;
-    height: 7px;
-    background-color: var(--user-notification-BgColor);
-    border: 2px solid var(--user-notification-BorderColor);
-    border-radius: 50%;
-    right: 2px;
-    top: 2px;
+  &--close {
+    &::after {
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 7px;
+      background-color: var(--user-notification-BgColor);
+      border: 2px solid var(--user-notification-BorderColor);
+      border-radius: 50%;
+      right: 2px;
+      top: 2px;
+    }
+  }
+
+  &--show {
+    &::after {
+      position: absolute;
+      content: '';
+      width: 7px;
+      height: 7px;
+      background-color: black;
+      border: 2px solid black;
+      border-radius: 50%;
+      right: 2px;
+      top: 2px;
+    }
   }
 }
+
 
 .user {
   &-icon {
@@ -191,9 +208,14 @@
     border: 1.2px solid var(--user-icon-BorderColor);
     border-radius: var(--user-icon-BorderRadius);
     backdrop-filter: blur(4px);
+
     @include respond-to('medium') {
       width: var(--user-icon-Large-Width);
       height: var(--user-icon-Large-Height);
+    }
+
+    &--open {
+      background: #FF66C4;
     }
   }
   &-notification {
@@ -204,5 +226,27 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-image: var(--user-notification-backgroundImage);
+  }
+}
+
+.notificationBell {
+  position: relative;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  > svg {
+    position: relative;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--open {
+    > svg {
+      path {
+        fill: white;
+        stroke: white;
+      }
+    }
   }
 }

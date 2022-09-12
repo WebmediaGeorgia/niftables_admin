@@ -8,10 +8,13 @@ import {
   updateNotificationRequest,
 } from '@entities/notification/redux/actions';
 import { DEFAULT_NOTIFICATION_LIMIT } from '@utils/pagination';
+import NotificationBell from '/public/assets/img/jungle/icon_notificationBell.svg';
+
 import { useTypedSelector } from '@hooks/useNewTypedSelector';
 import { useDispatch } from 'react-redux';
 import { dateParse, dateParseToMinutesAgo } from '@utils/date-utils';
 import { INotificationData } from 'src/common/models/notification';
+
 import Avatar from '@components/shared/Avatar';
 import { useRouter } from 'next/router';
 
@@ -101,13 +104,14 @@ const DropDownNotification: FC = () => {
         className={classNames([styles.dropDownHeader, show && styles.show])}
         onClick={handleToggle}
       >
-        <div className={styles['user-icon']}>
-          <span
-            className={classNames(
-              isUnreadNotification && styles.unReadNotification,
-              styles['user-notification']
-            )}
-          ></span>
+        <div className={classNames(styles['user-icon'], show && styles['user-icon--open']) }>
+          <div className={classNames(styles.notificationBell,
+            isUnreadNotification && show && styles['unReadNotification--show'],
+            isUnreadNotification && !show && styles['unReadNotification--close'],
+            show && styles['notificationBell--open'],
+          )}>
+            <NotificationBell />
+          </div>
         </div>
       </div>
       <div

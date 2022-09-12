@@ -9,7 +9,7 @@ import NavItemWrapper from '@components/NavItemWrapper';
 export function NavigationLogin() {
   const imgSrc = '/other/user.svg';
 
-  const user = (
+  const user = () => (
     <Avatar imgSrc={imgSrc} width={48} height={48} size='s' color='primary' />
   );
   const getOptions = (options) =>
@@ -40,7 +40,7 @@ export function NavigationLogin() {
       </nav>
       <DropDownUser
         right={true}
-        userText={user}
+        UserText={user}
         showSearch={true}
         options={getOptions(menuHeader)}
         logoutHandler={logoutHandler}

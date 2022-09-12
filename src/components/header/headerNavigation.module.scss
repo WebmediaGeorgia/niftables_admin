@@ -188,6 +188,25 @@
       width: var(--user-icon-Large-Width);
       height: var(--user-icon-Large-Height);
     }
+
+    > svg {
+      margin: auto;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-image: var(--user-avatar-backgroundImage);
+    }
+
+    &--open {
+      background: #FF66C4;
+      svg {
+        path {
+          fill: white;
+          stroke: white;
+        }
+      }
+    }
   }
   &-avatar {
     margin: auto;

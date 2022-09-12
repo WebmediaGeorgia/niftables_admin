@@ -13,7 +13,7 @@ const DropDownUser: FC<IDropDown> = ({
   options,
   right,
   icon,
-  userText,
+  UserText,
   isLoading,
   logoutHandler,
 }) => {
@@ -21,14 +21,14 @@ const DropDownUser: FC<IDropDown> = ({
 
   const handleToggle = () => switchShow(!show);
 
-  const defaultText = <div>{userText || 'Example...'}</div>;
+
   return (
     <div className={styles.dropDownWrapper}>
       <div
         className={classNames([styles.dropDownHeader, show && styles.show])}
         onClick={handleToggle}
       >
-        {defaultText}
+        <UserText isOpen={show} />
 
         {icon && <Icon className={styles['icon-arrow']} />}
       </div>
