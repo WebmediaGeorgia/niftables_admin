@@ -5,6 +5,7 @@ module.exports = {
     domains: [
       'niftables-dev-collection-bucket.s3.eu-central-1.amazonaws.com',
       'niftables-qa-collection-bucket.s3.eu-central-1.amazonaws.com',
+      'niftables-prod-collection-bucket.s3.eu-central-1.amazonaws.com',
     ],
   },
   webpack(config) {
