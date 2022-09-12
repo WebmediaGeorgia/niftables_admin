@@ -134,9 +134,11 @@
 
   padding: 0 10px 0 30px;
 
-  font-size: 14px;
-  line-height: 21px;
-  color: black;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #07031F;
+
   text-decoration: none;
   cursor: pointer;
   & + & {
@@ -144,17 +146,16 @@
   }
 
   svg {
-    fill: var(--dropDownList-icon-Fill);
+    fill: #4F83C9;
   }
   .icon-arrow {
     margin-left: auto;
-    fill: var(--dropDownList-icon-Fill);
+    fill: #FF66C4;
   }
 
   &.isActive {
-    font-weight: 600;
     svg {
-      fill: var(--dropDownList-icon-Fill);
+      fill: #FF66C4;
     }
   }
 }
@@ -171,7 +172,7 @@
 }
 
 .isSubmenu {
-  border-bottom: 1px solid var(--dropDown-isSubmenu-BorderColor);
+  border-bottom: 1px solid #E3ECF8;
   margin: 0 10px 0 30px;
   padding: 8px 0;
 
@@ -180,6 +181,10 @@
       max-height: max-content;
       visibility: visible;
       overflow: visible;
+
+      > .link {
+        color: #4F83C9;
+      }
     }
     > .link {
       font-weight: 600;
@@ -187,7 +192,7 @@
     }
     .link {
       svg:not(.icon-arrow) {
-        fill: var(--dropDownList-icon-Fill);
+        fill: #FF66C4;
       }
       .icon-arrow {
         transform: rotate(180deg);

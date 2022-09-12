@@ -108,6 +108,10 @@
   padding: 5px 10px 5px 14px;
   cursor: pointer;
   &.isActive {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
     background: var(--dropDown-item-Bg);
     cursor: default;
   }
@@ -120,10 +124,11 @@
   flex: 1 1 auto;
 
   padding: 0 10px 0 30px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #07031F;
 
-  font-size: 14px;
-  line-height: 21px;
-  color: black;
   text-decoration: none;
   cursor: pointer;
   &:not(:first-child) {
@@ -131,7 +136,7 @@
   }
 
   svg {
-    fill: var(--dropDownList-icon-Fill);
+    fill: #4F83C9;
   }
   .icon-arrow {
     margin-left: auto;
@@ -139,7 +144,9 @@
   }
 
   &.isActive {
-    font-weight: 600;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 27px;
     svg {
       fill: var(--dropDownList-icon-Fill);
     }
@@ -196,7 +203,6 @@
   // transition: 0.1s ease max-height;
 
   .link {
-    line-height: 30px;
     display: block;
     margin: 0;
     padding: 0 0 0 30px;
