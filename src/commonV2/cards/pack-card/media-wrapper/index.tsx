@@ -7,11 +7,10 @@ import { PACKS } from '@constants/payments'
 import MediaPreview from '@commonV2/media-preview'
 import ActionButton from './ActionButton'
 
-export default React.memo(function MediaWrapper ({ pack, availableSupply, clickHandler }) {
+export default React.memo(function MediaWrapper ({ className, pack, availableSupply, clickHandler }) {
   return (
-    <StyledWrapper>
+    <StyledWrapper className={className}>
       <MediaPreview
-        className='media'
         data={pack}
         type={PACKS}
         withoutFullView

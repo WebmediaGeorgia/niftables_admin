@@ -10,7 +10,7 @@ export default function Collection ({ token }) {
   return (
     <StyledWrapper className='g-d-flex g-mr-5'>
       <div className='g-mr-5'>Collection: </div>
-      <b className='g-t-capitalize'>{collectionName}</b>
+      <b className='g-t-capitalize collection'>{collectionName}</b>
     </StyledWrapper>
   )
 }
@@ -19,4 +19,10 @@ const StyledWrapper = styled.div`
   font-weight: 300;
   font-size: 15px;
   line-height: 22px;
+
+  .collection {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+  }
 `

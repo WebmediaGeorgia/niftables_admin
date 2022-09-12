@@ -19,6 +19,7 @@ export default function PackCard ({ className = '', pack, clickHandler }) {
       onClick={clickHandler}
     >
       <MediaWrapper
+        className='media'
         pack={pack}
         availableSupply={availableSupply}
         clickHandler={clickHandler}
@@ -52,5 +53,19 @@ const StyledWrapper = styled.div`
   .action-button {
     opacity: 0;
     transition: opacity 0.4s;
+  }
+
+  .media {
+    & .image {
+      transition: transform 0.25s ease-out;
+    }
+  }
+
+  &:hover {
+    .media {
+      & .image {
+        transform: scale(1.1);
+      }
+    }
   }
 `

@@ -77,6 +77,9 @@ const StyledBuyButton = styled.div`
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.text.secondary};
 `
 

@@ -72,6 +72,10 @@ const StyledWrapper = styled.div`
   @media only screen and (max-width: 480px) {
     padding: 43px 20px 45px 20px;
   }
+  transition: background 0.25s ease-out;
+  &:hover {
+    background: white;
+  }
   &:not(:first-child) {
     margin: 30px 0 0;
   }
@@ -94,7 +98,7 @@ const StyledWrapper = styled.div`
     }
     .separator {
       border: none;
-      border-top: 1px solid var(--redeemItem-line-BorderColor);
+      border-top: 1px solid #C0D2EA;
       width: 100%;
       margin: 19px 0 5px;
       @media only screen and (max-width: 480px) {

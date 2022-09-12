@@ -18,7 +18,7 @@ export default function CollectionCard ({ className = '', collection, clickHandl
       className={className}
       onClick={clickHandler}
     >
-      <MediaWrapper collection={collection} />
+      <MediaWrapper className='media' collection={collection} />
       <div className='details-wrapper'>
         <Title name={name} />
         <DistributionType distribution={distribution} />
@@ -39,5 +39,19 @@ const StyledWrapper = styled.div`
   cursor: pointer;
   .details-wrapper {
     padding: 10px 15px 25px;
+  }
+
+  .media {
+    & .image {
+      transition: transform 0.25s ease-out;
+    }
+  }
+
+  &:hover {
+    .media {
+      & .image {
+        transform: scale(1.1);
+      }
+    }
   }
 `

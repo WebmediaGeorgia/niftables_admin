@@ -50,8 +50,12 @@ function SoldOut () {
 }
 
 const StyledSoldOut = styled.div`
+  font-weight: 600;
   font-size: 12px;
   line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.text.secondary};
 `
 
@@ -77,6 +81,7 @@ const StyledBuyButton = styled.div`
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
+  text-align: right;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: ${({ theme }) => theme.text.secondary};

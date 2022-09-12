@@ -12,6 +12,7 @@ import NftBadges from '../common/nfts/NftBadges'
 import NftSupply from '../common/nfts/NftSupply'
 import NftPrice from '../common/nfts/NftPrice'
 import ActionButton from './ActionButton'
+import HoverableActionButton from "@commonV2/cards/common/nfts/HoverableActionButton";
 
 export default React.memo(function CollectionNftCard ({ className = '', nft, clickHandler }) {
   const price = get(nft, 'price')
@@ -46,13 +47,15 @@ export default React.memo(function CollectionNftCard ({ className = '', nft, cli
         />
       </div>
       <Separator />
-      <div className='footer'>
+      <div className='footer footer__without-spacing'>
         <NftPrice price={price} />
-        <ActionButton
-          availableSupply={availableSupply}
-          openSeaLink={openSeaLink}
-          distribution={distribution}
-        />
+        <HoverableActionButton>
+          <ActionButton
+            availableSupply={availableSupply}
+            openSeaLink={openSeaLink}
+            distribution={distribution}
+          />
+        </HoverableActionButton>
       </div>
     </NftWrapper>
   )

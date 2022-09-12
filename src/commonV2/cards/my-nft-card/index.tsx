@@ -10,6 +10,7 @@ import MediaWrapper from './media-wrapper'
 import NftTitle from '../common/nfts/NftTitle'
 import NftBadges from '../common/nfts/NftBadges'
 import NftSupply from '../common/nfts/NftSupply'
+import styled from "styled-components";
 
 export default React.memo(function MyNftCard ({ className = '', token, clickHandler }) {
   const rarityRank = get(token, 'nft.rarityRank')
@@ -18,14 +19,14 @@ export default React.memo(function MyNftCard ({ className = '', token, clickHand
   const rarity = get(token, 'nft.rarity')
   const utilityType = get(token, 'nft.utilityType')
   return (
-    <NftWrapper
+    <MyNftWrapper
       className={className}
       onClick={clickHandler}
     >
       <div className='body'>
         <div className='header' />
-        <MediaWrapper nft={token.nft} />
-        <NftTitle name={name} />
+        <MediaWrapper className='media' nft={token.nft} />
+        <NftTitle className='title' name={name} />
         <NftBadges
           rarity={rarity}
           utilityType={utilityType}
@@ -37,6 +38,17 @@ export default React.memo(function MyNftCard ({ className = '', token, clickHand
         <RarityRank rarityRank={rarityRank} />
         <RarityScore rarityScore={rarityScore} />
       </div>
-    </NftWrapper>
+    </MyNftWrapper>
   )
 })
+
+const MyNftWrapper = styled(NftWrapper)`
+  .title {
+    transition: color 0.25s ease-out;
+  }
+  &:hover {
+    & .title {
+      color: #4F83C9
+    }
+  }
+`

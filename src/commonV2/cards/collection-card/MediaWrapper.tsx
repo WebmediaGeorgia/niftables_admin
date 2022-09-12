@@ -6,11 +6,11 @@ import { PACKS } from '@constants/payments'
 
 import MediaPreview from '@commonV2/media-preview'
 
-export default React.memo(function MediaWrapper ({ collection }) {
+export default React.memo(function MediaWrapper ({ className, collection }) {
   return (
     <StyledWrapper>
       <MediaPreview
-        className='media'
+        className={className}
         data={collection}
         type={PACKS}
         withoutFullView

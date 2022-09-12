@@ -51,6 +51,8 @@ const StyledWrapper = styled.div`
   height: 100%;
 	width: 100%;
   border-radius: 8px;
+  overflow: hidden;
+
   & .placeholder {
     width: 94px;
     height: 94px;

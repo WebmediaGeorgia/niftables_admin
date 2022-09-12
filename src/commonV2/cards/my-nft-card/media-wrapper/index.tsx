@@ -7,9 +7,9 @@ import { NFT } from '@constants/payments'
 
 import MediaPreview from '@commonV2/media-preview'
 
-export default React.memo(function MediaWrapper ({ nft }) {
+export default React.memo(function MediaWrapper ({ className, nft }) {
   return (
-    <StyledWrapper>
+    <StyledWrapper className={className}>
       <MediaPreview
         data={nft}
         type={NFT}

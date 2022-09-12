@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { BuyNowWrapper } from "@commonV2/cards/common/nfts/HoverableActionButton";
 
 const StyledWrapper = styled.div`
   position: relative;
@@ -26,9 +27,36 @@ const StyledWrapper = styled.div`
   }
   .footer {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    min-height: 40px;
+    height: 40px;
     padding: 9px 28px;
+
+    &__without-spacing {
+      padding: 0;
+    }
+  }
+
+  .media {
+    & .image {
+      transition: transform 0.25s ease-out;
+    }
+  }
+
+  &:hover {
+    .media {
+      & .image {
+        transform: scale(1.1);
+      }
+    }
+
+    ${BuyNowWrapper} {
+      background-position: right bottom;
+
+      div, span {
+        color: white;
+      }
+    }
   }
 `
 export default StyledWrapper

@@ -89,7 +89,7 @@ const StyledWrapper = styled.button.attrs(({ colorScheme, theme }) => {
   border: none;
   border-radius: 8px;
   box-shadow: none;
-  transition: all 0.2s;
+  transition: all 0.2s ease-out;
 
   :active:not([disabled]) {
     background: #FFFFFF;

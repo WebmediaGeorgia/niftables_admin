@@ -16,7 +16,4 @@ const StyledWrapper = styled.div`
   color: ${({ theme }) => theme.text.secondary};
   text-align: center;
   text-transform: uppercase;
-  :hover {
-    text-decoration: underline;
-  }
 `

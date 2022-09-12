@@ -2,9 +2,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default React.memo(function NftTitle ({ name }) {
+export default React.memo(function NftTitle ({ className, name }) {
   return (
-    <StyledWrapper>
+    <StyledWrapper className={className}>
       {name}
     </StyledWrapper>
   )

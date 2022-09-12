@@ -12,6 +12,8 @@ import NftBadges from '../common/nfts/NftBadges'
 import NftSupply from '../common/nfts/NftSupply'
 import NftPrice from '../common/nfts/NftPrice'
 import ActionButton from './ActionButton'
+import BuyNow from "@commonV2/cards/common/nfts/BuyNow";
+import HoverableActionButton from "@commonV2/cards/common/nfts/HoverableActionButton";
 
 export default React.memo(function LikedNftCard ({ className = '', nft, clickHandler }) {
   const price = get(nft, 'price')
@@ -34,7 +36,7 @@ export default React.memo(function LikedNftCard ({ className = '', nft, clickHan
           <RarityRank rarityRank={rarityRank} />
           <RarityScore rarityScore={rarityScore} />
         </div>
-        <MediaWrapper nft={nft} />
+        <MediaWrapper className='media' nft={nft} />
         <NftTitle name={name} />
         <NftBadges
           rarity={rarity}
@@ -46,13 +48,15 @@ export default React.memo(function LikedNftCard ({ className = '', nft, clickHan
         />
       </div>
       <Separator />
-      <div className='footer'>
+      <div className='footer footer__without-spacing'>
         <NftPrice price={price} />
-        <ActionButton
-          availableSupply={availableSupply}
-          openSeaLink={openSeaLink}
-          distribution={distribution}
-        />
+        <HoverableActionButton>
+          <ActionButton
+            availableSupply={availableSupply}
+            openSeaLink={openSeaLink}
+            distribution={distribution}
+          />
+        </HoverableActionButton>
       </div>
     </NftWrapper>
   )

@@ -8,11 +8,11 @@ import { NFT } from '@constants/payments'
 import MediaPreview from '@commonV2/media-preview'
 import LikeHandler from './LikeHandler'
 
-export default React.memo(function MediaWrapper ({ nft }) {
+export default React.memo(function MediaWrapper ({ className, nft }) {
   const id = get(nft, 'id')
   const liked = get(nft, 'liked')
   return (
-    <StyledWrapper>
+    <StyledWrapper className={className}>
       <MediaPreview
         data={nft}
         type={NFT}

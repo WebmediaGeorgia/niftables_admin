@@ -28,6 +28,7 @@ const StyledWrapper = styled.div`
   font-weight: 300;
   font-size: 15px;
   line-height: 22px;
+  align-items: center;
 
   .creatorName {
     font-weight: 400;
