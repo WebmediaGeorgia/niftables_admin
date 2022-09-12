@@ -22,6 +22,7 @@ export default function PlateGrid ({ className = '', children }) {
 export const StyledWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(${({ isLarge, isOpen }) => (4 - (isLarge ? 1 : 0) - (isOpen ? 1 : 0 ))}, 1fr);
+  grid-template-rows: min-content;
   grid-gap: 30px;
   align-items: flex-start;
   width: 100%;
