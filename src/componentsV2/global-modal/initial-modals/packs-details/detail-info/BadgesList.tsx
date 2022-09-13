@@ -7,6 +7,7 @@ import CommonBadge from '@commonV2/badges/CommonBadge'
 
 export default function BadgesList ({ className = '', pack }) {
   const contentRule = get(pack, 'contentRule', {})
+  console.log(contentRule);
   return (
     <StyledWrapper className={className}>
       <div className='description'>
@@ -14,6 +15,7 @@ export default function BadgesList ({ className = '', pack }) {
       </div>
       <div className='badgs-wrapper'>
         {Object.keys(contentRule)
+          .filter(rule => rule !== 'None')
           .filter((rule) => contentRule[rule] !== 0)
           .map((rule, index) => (
             <CommonBadge
