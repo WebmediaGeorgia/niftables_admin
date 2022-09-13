@@ -23,8 +23,7 @@ function OpenSeaLink ({ className = '', openSeaLink }) {
       className={className}
       clickHandler={navigateToOpenSea}
     >
-      <OpenSeaIcon className='icon' />
-      Buy now
+      BUY ON OPENSEA
     </StyledOpenSeaButton>
   )
 }
@@ -32,18 +31,13 @@ function OpenSeaLink ({ className = '', openSeaLink }) {
 const StyledOpenSeaButton = styled(Button)`
   display: flex;
   align-items: center;
-  .icon {
-    margin-right: 8px;
-    & :nth-child(1) {
-      fill: #0F4AE3 !important;
-    }
-    & :nth-child(2) {
-      fill: #fff !important;
-    }
-    & :nth-child(3) {
-      fill: #fff !important;
-    }
-  }
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 12px 26px 14px;
 `
 
 function SoldOut ({ className }) {

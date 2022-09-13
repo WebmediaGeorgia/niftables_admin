@@ -53,7 +53,7 @@ const StyledWrapper = styled.div`
     ${BuyNowWrapper} {
       background-position: right bottom;
 
-      div, span {
+      > * {
         color: white;
       }
     }

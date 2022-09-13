@@ -1,8 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import NotLiked from 'public/other/favorite_clear.svg'
-import Liked from 'public/other/favorite.svg'
+import LikeIcon from 'public/other/favorite.svg'
 import classnames from 'classnames'
 
 export default function AuthorizedLike ({ className, isLiked, toggleLike, colorScheme }) {
@@ -13,7 +12,7 @@ export default function AuthorizedLike ({ className, isLiked, toggleLike, colorS
 
   const parsedIcon = React.useMemo(() => {
     return (
-      <Liked
+      <LikeIcon
         className={classnames("icon",  { 'not-liked': !isLiked })}
         onClick={handleToggle}
       />
@@ -34,7 +33,7 @@ const StyledWrapper = styled.div.attrs(({ colorScheme }) => {
   const config = {
     'primary': css`
       border-radius: 50%;
-      > .icon {
+      & .icon {
         path {
           fill: #0D4B9E;
         }
@@ -60,7 +59,9 @@ const StyledWrapper = styled.div.attrs(({ colorScheme }) => {
   align-items: center;
   width: 28px;
   height: 28px;
-  transition: all 0.2s;
+  & .icon {
+    transition: all 0.2s ease-out;
+  }
   cursor: pointer;
   & .not-liked {
     opacity: 0.12;

@@ -14,6 +14,8 @@ import NftPrice from '../common/nfts/NftPrice'
 import ActionButton from './ActionButton'
 import BuyNow from "@commonV2/cards/common/nfts/BuyNow";
 import HoverableActionButton from "@commonV2/cards/common/nfts/HoverableActionButton";
+import OpenSeaIcon from "../../../../public/other/open-sea-icon.svg";
+import styled from "styled-components";
 
 export default React.memo(function LikedNftCard ({ className = '', nft, clickHandler }) {
   const price = get(nft, 'price')
@@ -42,10 +44,14 @@ export default React.memo(function LikedNftCard ({ className = '', nft, clickHan
           rarity={rarity}
           utilityType={utilityType}
         />
-        <NftSupply
-          availableSupply={availableSupply}
-          supply={supply}
-        />
+
+        <SupplyContainer>
+          <NftSupply
+            availableSupply={availableSupply}
+            supply={supply}
+          />
+          <OpenSeaIcon className='icon' />
+        </SupplyContainer>
       </div>
       <Separator />
       <div className='footer footer__without-spacing'>
@@ -61,3 +67,21 @@ export default React.memo(function LikedNftCard ({ className = '', nft, clickHan
     </NftWrapper>
   )
 })
+
+const SupplyContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .icon {
+    & :nth-child(1) {
+      fill: #0D4B9E !important;
+    }
+    & :nth-child(2) {
+      fill: #fff !important;
+    }
+    & :nth-child(3) {
+      fill: #fff !important;
+    }
+  }
+`

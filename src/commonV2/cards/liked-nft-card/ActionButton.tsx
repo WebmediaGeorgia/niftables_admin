@@ -13,18 +13,18 @@ function OpenSeaLink ({ openSeaLink }) {
       rel='noopener noreferrer'
       target='_blank'
     >
-      <OpenSeaIcon className='icon' />
       Buy now
     </StyledOpenSeaLink>
   )
 }
 
 const StyledOpenSeaLink = styled.a`
-  display: flex;
-  align-items: center;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   color: ${({ theme }) => theme.text.secondary};
   text-decoration: none;
   .icon {
