@@ -76,5 +76,4 @@ export default function Buy () {
 }
 
 const StyledWrapper = styled.div`
-  margin-top: 150px;
 `

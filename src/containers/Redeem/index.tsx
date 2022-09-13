@@ -55,7 +55,7 @@ export default function RedeemPage () {
 }
 
 const StyledWrapper = styled.div`
-  margin-top: 150px;
+  margin-top: 50px;
   .page-title {
     font-size: 48px;
     font-weight: 700;

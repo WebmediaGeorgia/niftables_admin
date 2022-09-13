@@ -70,5 +70,5 @@ export default function CollectionNfts () {
 }
 
 const StyledWrapper = styled.div`
-  margin-top: 150px;
+  margin-top: 50px;
 `
