@@ -50,7 +50,7 @@ export default React.memo(function LikedNftCard ({ className = '', nft, clickHan
             availableSupply={availableSupply}
             supply={supply}
           />
-          <OpenSeaIcon className='icon' />
+          {openSeaLink && <OpenSeaIcon className='icon' />}
         </SupplyContainer>
       </div>
       <Separator />

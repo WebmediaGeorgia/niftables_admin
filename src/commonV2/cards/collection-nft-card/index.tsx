@@ -48,7 +48,7 @@ export default React.memo(function CollectionNftCard ({ className = '', nft, cli
             availableSupply={availableSupply}
             supply={supply}
           />
-          <OpenSeaIcon className='icon' />
+          {openSeaLink && <OpenSeaIcon className='icon' />}
         </CollectionSupply>
       </div>
       <Separator />
