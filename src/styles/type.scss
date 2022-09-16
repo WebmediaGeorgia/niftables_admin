@@ -51,10 +51,15 @@ h6,
     text-align: center;
   }
   &-bold {
-    font-weight: bold;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
   }
   &-blue {
     color: #0D4B9E;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
   }
   &-fz-14 {
     font-size: 14px;

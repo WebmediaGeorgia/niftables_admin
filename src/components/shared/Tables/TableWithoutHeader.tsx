@@ -11,7 +11,7 @@ export const TableWithoutHeader = ({ rowsTable }) => {
         {rowsTable.map((item) => {
           return (
             <tr key={item.id}>
-              <td className={cn(styles.sTd, styles.num)}></td>
+              <td className={cn(styles.sTd, styles.num)}>{item.id}</td>
               {tableData(item).map(({ headerValue, rowValue }, i) => {
                 return (
                   <td className={styles.sTd} key={`${item.id}_${i}`}>
