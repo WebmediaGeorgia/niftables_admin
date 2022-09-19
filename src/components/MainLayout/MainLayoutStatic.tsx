@@ -10,6 +10,7 @@ export const MainLayoutStatic: FC<IMainLayout> = ({
   children,
   isHero,
   className,
+  hasNoFooterPadding,
 }) => {
   return (
     <>
@@ -21,7 +22,7 @@ export const MainLayoutStatic: FC<IMainLayout> = ({
           {children}
         </div>
       </main>
-      <Footer />
+      <Footer containerClass={classNames({ [styles["maintenance-mode"]]: hasNoFooterPadding })} />
     </>
   );
 };

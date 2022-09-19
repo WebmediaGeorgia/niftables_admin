@@ -1,15 +1,16 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 
-import { filtersUpdate } from '@entities/filters/actions'
+import {filtersReset, filtersUpdate} from '@entities/filters/actions'
 
 import Badge from '@components/shared/Badge'
 
 export default function Collection ({ field, collection }) {
 	const dispatch = useDispatch()
 	const clearCollection = React.useCallback(() => {
-		dispatch(filtersUpdate({ [field]: null }))
-	}, [dispatch, field])
+		dispatch(filtersReset())
+	}, [dispatch]);
+
 	return (
 		<Badge
 			size='l'

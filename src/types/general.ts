@@ -315,9 +315,11 @@ export interface IMainLayout {
 	snakeOnTop?: boolean;
 	isHome?: string;
 	className?: string;
+  hasNoFooterPadding?: boolean;
 }
 
 export interface IFooterProps {
 	className?: string;
+  containerClass?: string;
 	isBottom?: ReactElement;
 }

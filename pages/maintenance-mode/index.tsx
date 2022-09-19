@@ -5,7 +5,7 @@ import { MainLayoutStatic } from '@components/MainLayout';
 
 export default function MaintenanceMode() {
   return (
-    <MainLayoutStatic>
+    <MainLayoutStatic hasNoFooterPadding >
       <MaintenanceModePage />
     </MainLayoutStatic>
   );

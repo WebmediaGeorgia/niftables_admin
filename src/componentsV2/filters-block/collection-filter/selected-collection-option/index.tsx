@@ -9,15 +9,15 @@ import ImagePlaceholder from '/public/icon-options/option_a.svg'
 
 import styles from './SelectedCollectionOption.module.scss'
 
-import { filtersUpdate } from '@entities/filters/actions'
+import {filtersReset, filtersUpdate} from '@entities/filters/actions'
 
 export default function SelectedCollectionOption ({ collection }) {
 	const { id, imageUrl, name } = collection
 	const dispatch = useDispatch()
 
 	const handleUnselect = React.useCallback(() => {
-		dispatch(filtersUpdate({ collectionId: null, page: 1 }))
-	}, [dispatch, id])
+		dispatch(filtersReset())
+	}, [dispatch])
 
 	const image = React.useMemo(() => {
 		if (!imageUrl) return <ImagePlaceholder className={styles['icon-option']} />

@@ -16,7 +16,7 @@ const restrictionPathnames = [
   '/maintenance-mode',
 ]
 
-const Footer: FC<IFooterProps> = ({ className, isBottom }) => {
+const Footer: FC<IFooterProps> = ({ className, containerClass = "", isBottom }) => {
   const router = useRouter();
   const isHome = router.pathname === '/';
 
@@ -28,7 +28,7 @@ const Footer: FC<IFooterProps> = ({ className, isBottom }) => {
     setShowModal(!showModal);
   };
 
-  if (restrictionPathnames.includes(router.pathname)) return null;
+  // if (restrictionPathnames.includes(router.pathname)) return null;
 
   return (
     <>
@@ -36,7 +36,8 @@ const Footer: FC<IFooterProps> = ({ className, isBottom }) => {
         <Container
           className={classNames(
             styles.container,
-            isHome && styles['footer-home']
+            isHome && styles['footer-home'],
+            containerClass
           )}
         >
           <div className={styles.inner}>
