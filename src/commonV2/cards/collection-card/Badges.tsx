@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import CommonBadge from '@commonV2/badges/CommonBadge'
-import { toLower } from 'lodash';
+import toLower from 'lodash/toLower';
 
 export default function Badges ({ generative, status }) {
   return (
