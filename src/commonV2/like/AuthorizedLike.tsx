@@ -45,9 +45,15 @@ const StyledWrapper = styled.div.attrs(({ colorScheme }) => {
       }
     `,
     'secondary': css`
-      > .icon {
+      & .icon {
         path {
           fill: white;
+        }
+      }
+
+      &:hover {
+        > .icon {
+          opacity: 0.52;
         }
       }
     `

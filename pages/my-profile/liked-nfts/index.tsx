@@ -14,7 +14,7 @@ import Butterfly from '@components/ParrotAndButterfly/Butterfly'
 
 export default function LikedNftsPage() {
   return (
-    <MainLayout snakeOnTop={true} isParrotAndButterfly={<Butterfly />}>
+    <MainLayout snakeOnTop={true}>
       <LikedNfts />
     </MainLayout>
   )
