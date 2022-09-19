@@ -10,7 +10,7 @@ export default function Creator ({ token }) {
   return (
     <StyledWrapper className='g-d-flex g-mr-5'>
       <div className='g-mr-5'>
-        Owner:
+        Creator:
       </div>
       <div className='img'>
         <PersonSmall

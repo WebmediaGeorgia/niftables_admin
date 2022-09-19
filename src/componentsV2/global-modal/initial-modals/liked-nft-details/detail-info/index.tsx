@@ -26,7 +26,7 @@ export default function DetailInfo () {
         <Title item={nft} />
         <div className='g-d-flex g-justify-between g-align-center g-mt-5'>
           <User
-            label='Owner'
+            label='Creator'
             item={nft}
           />
           <LikeHandler />
