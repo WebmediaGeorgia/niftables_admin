@@ -21,10 +21,11 @@ const StyledWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 10px 0;
-  font-size: 14px;
   font-weight: 600;
-  line-height: 21px;
-  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.5;
   cursor: pointer;
   @media only screen and (max-width: 768px) {
     justify-content: center;

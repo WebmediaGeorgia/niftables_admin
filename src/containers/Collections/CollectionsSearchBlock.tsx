@@ -63,7 +63,7 @@ const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0 35px;
+  margin: 10px 0 20px;
   @media only screen and (max-width: 768px) {
     flex-wrap: wrap;
     margin-bottom: 0;
