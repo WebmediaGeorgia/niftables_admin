@@ -240,7 +240,7 @@ const NotFoundSVG = () => {
         <path d="M467.877 182.007H558.659V187.879H620.771V182.007H646.155V170.402H467.877V182.007Z" fill="url(#paint233_linear_11246_28816)"/>
       </g>
       <defs>
-        <filter id="filter0_f_11246_28816" x="0" y="0" width="682.367" height="239.789" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <filter id="filter0_f_11246_28816" x="0" y="0" width="682.367" height="239.789" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
           <feFlood floodOpacity="0" result="BackgroundImageFix"/>
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
           <feGaussianBlur stdDeviation="5" result="effect1_foregroundBlur_11246_28816"/>

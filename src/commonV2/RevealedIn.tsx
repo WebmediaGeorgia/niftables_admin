@@ -20,35 +20,52 @@ export default function RevealedIn ({
   if (!endDate) return null
 
   return (
-    <StyledLegendBlock
+    <StyledContainer
       className={className}
-      label={label}
     >
-      <img
-        className='icon'
-        src={icon.src}
-      />
-      <div className='counter'>
-        {parsedValue}
+      <div className='label'>{label}</div>
+      <div className='description'>
+        <img
+          className='icon'
+          src={icon.src}
+        />
+        <div className='counter'>
+          {parsedValue}
+        </div>
       </div>
-    </StyledLegendBlock>
+    </StyledContainer>
   )
 }
 
-const StyledLegendBlock = styled(LegendBlock)`
-  margin: 0;
+const StyledContainer = styled.div`
+  background: rgba(7,3,31,0.3);
+  border-radius: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 5px;
+
+  .label {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+
   .description {
     display: flex;
     align-items: center;
-    justify-content: center;
-    .icon {
-      display: block;
-      width: 28px;
-      height: 28px;
-    }
-    .counter {
-      font-size: 20px;
-      font-weight: 700;
-    }
+  }
+
+  .counter {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
   }
 `

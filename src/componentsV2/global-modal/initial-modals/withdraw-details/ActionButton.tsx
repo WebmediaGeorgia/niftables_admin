@@ -19,18 +19,18 @@ export default function ActionButton () {
     dispatch(setModal({ viewType: PRE_WITHDRAW }))
   }, [dispatch])
 
+  if(claimed) return null;
+
   return (
     <StyledWrapper>
-      {!claimed && (
         <Button
           className='button'
+          colorScheme="transparent"
           clickHandler={moveToPreWithdraw}
         >
           Withdraw
         </Button>
-      )}
-    </StyledWrapper>
-  )
+    </StyledWrapper>)
 }
 
 const StyledWrapper = styled.div`

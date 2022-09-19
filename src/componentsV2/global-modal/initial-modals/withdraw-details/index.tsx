@@ -28,8 +28,10 @@ export default function WithdrawDetails () {
 				<Preview />
         <div className='detail-wrapper'>
 				  <DetailsInfo />
-          <ActionButton />
-          <RevealeDetails />
+          <div className='nft-action-details'>
+            <ActionButton />
+            <RevealeDetails />
+          </div>
         </div>
 			</StyledWrapper>
 			<AccordionDetails />
@@ -66,6 +68,14 @@ const StyledWrapper = styled.div`
       width: 100%;
       padding: 0;
       margin-top: 10px;
+    }
+  }
+
+  .nft-action-details {
+    display: flex;
+
+    div + div {
+      margin-left: 15px;
     }
   }
 `

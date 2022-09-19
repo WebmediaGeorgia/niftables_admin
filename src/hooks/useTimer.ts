@@ -6,7 +6,7 @@ const UNITS = ['s', 'm', 'h', 'd']
 
 function getInitialCountDown (endDate) {
 	const end = +(new Date(endDate))
-	if (!isValid(end)) return 0
+  if (!isValid(end)) return 0
 	const start = +(new Date())
 	const diff = end - start
 	return diff
@@ -16,7 +16,7 @@ export default function useTimer (endDate) {
   const intervalRef = React.useRef()
 	const [countDown, setCountDown] = React.useState(getInitialCountDown(endDate))
 
-	React.useEffect(() => {
+  React.useEffect(() => {
 		intervalRef.current = setInterval(() => setCountDown(current => current - 1000), 1000);
     return () => clearInterval(intervalRef.current);
 	}, [])
