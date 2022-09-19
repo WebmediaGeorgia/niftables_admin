@@ -53,7 +53,7 @@ export default function IntegerComponent ({ trait: { label, min, max } }) {
 					iconClose
 					onCloseIconClick={clearMaxInteger}
 				>
-					{label} max: {min}
+					{label} max: {max}
 				</Badge>
 			)}
 		</>

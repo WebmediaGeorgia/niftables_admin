@@ -18,10 +18,15 @@
   border-radius: var(--input-BorderRadius);
   width: 100%;
   border: 1px solid #4F83C9;
+  transition: border 0.3s ease-out;
 
   backdrop-filter: blur(4px);
 
   outline-color: var(--input-Placeholder-ColorText);
+
+  &:hover {
+    border: 1px solid #fff;
+  }
 
   @include respond-to('medium') {
     height: var(--input-Height-large);

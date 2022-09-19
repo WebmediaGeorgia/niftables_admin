@@ -21,6 +21,10 @@
       color: black;
       border: 1px solid #C0D2EA;
 
+      &:hover {
+        border: 1px solid #FF66C4;
+      }
+
       &::placeholder {
         color: #0D4B9E;
         opacity: 0.2;
