@@ -30,8 +30,10 @@ export default function ButtonsSection ({ nft }) {
 const StyledWrapper = styled.div`
   display: flex;
   align-items: flex-end;
+  justify-self: flex-end;
   gap: 20px;
-  margin-top: auto;
+  margin-top: 30px;
+
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     margin-top: 20px;
