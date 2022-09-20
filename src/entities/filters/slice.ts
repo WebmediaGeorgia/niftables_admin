@@ -74,7 +74,6 @@ const slice = createSlice({
 			return newState
 		});
     builder.addCase(filtersReset, (state) => {
-      console.log(state);
       return initialState
     });
   },

@@ -22,7 +22,7 @@ export default function Utilities ({ field, value, collection }) {
 			},
 			{
 				value: 'none',
-				label: 'None'
+				label: 'Utility: None'
 			}
 		]
 	}

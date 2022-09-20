@@ -17,6 +17,15 @@ export default function RarityFilter ({ collection }) {
 			label: rarity
 		}
 	})
+
+  if(collection.generative)  {
+    rarityOptions.push({
+      type: OPTION,
+      value: 'None',
+      label: 'None'
+    });
+  }
+
 	return (
 		<AccordionItem
 			defaultOpen

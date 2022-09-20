@@ -16,7 +16,7 @@ export default function Option ({ option: { value, label }, field }) {
 	const isSelected = useTypedSelector(state => get(state, `filter.${field}`, []).includes(value))
 	const handleToggle = React.useCallback(() => {
 		const property = get(_getStore().getState(), `filter.${field}`, [])
-		let newProperty
+    let newProperty
 		if (property.includes(value)) {
 			newProperty = property.filter(item => item !== value)
 		} else {
