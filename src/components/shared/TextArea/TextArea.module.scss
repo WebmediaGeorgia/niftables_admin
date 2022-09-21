@@ -22,6 +22,10 @@
   background: var(--input-Bg);
   color: var(--input-ColorText);
 
+  transition: border 0.3s ease-out;
+  &:hover {
+    border: 1px solid #fff;
+  }
 
   outline-color: var(--input-Outline-ColorText);
 
