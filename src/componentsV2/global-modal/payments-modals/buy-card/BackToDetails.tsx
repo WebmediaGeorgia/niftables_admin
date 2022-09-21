@@ -33,9 +33,12 @@ const StyledButton = styled(Button)`
   margin-top: 15px;
   font-size: 16px;
   font-weight: 400;
+  height: 48px;
+
   .icon {
     margin-right: 10px;
     path {
+      transition: fill 0.2s ease-out;
       fill: ${({ theme }) => theme.text.white};
     }
   }

@@ -33,13 +33,18 @@ const StyledWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 10px;
   width: 100%;
   @media only screen and (max-width: 480px) {
     flex-direction: column;
     gap: 20px;
   }
   .button {
+    text-transform: capitalize;
+    height: 40px;
+    width: 175px;
+    letter-spacing: inherit;
+
     @media only screen and (max-width: 480px) {
       width: 100%;
     }

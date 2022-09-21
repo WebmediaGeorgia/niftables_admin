@@ -50,7 +50,7 @@ export default function PacksList ({ filter }) {
   }
 
 	return (
-		<PlateGrid className='g-mt-30'>
+		<PlateGrid className='g-mt-50'>
 			{parsedPacks.map((pack) => (
 				<PackCard
 					key={pack.id}

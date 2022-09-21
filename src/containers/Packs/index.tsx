@@ -28,7 +28,7 @@ export default function Packs () {
 			<div className='page-title'>
 				Packs
 			</div>
-      <div className='g-container g-mt-50'>
+      <div className='g-container g-mt-40'>
         <ButtonsFilter
           filterConfig={filterConfig}
           filter={filter}

@@ -2,7 +2,7 @@ import { NFT, PACKS } from '@constants/payments'
 
 const config = {
 	[NFT]: 'NFT',
-	[PACKS]: 'PACK'
+	[PACKS]: 'Pack'
 }
 
 export default function getEntityLabel (type) {

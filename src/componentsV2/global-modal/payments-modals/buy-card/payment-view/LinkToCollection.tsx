@@ -42,11 +42,12 @@ export default function LinkToCollection () {
 
 const StyledWrapper = styled.div`
   margin-top: 10px;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 14px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+
   .link {
-    color: ${({ theme }) => theme.text.primary};
+    color: ${({ theme }) => theme.text.secondary};
     text-decoration: none;
     &:hover {
       text-decoration: underline;

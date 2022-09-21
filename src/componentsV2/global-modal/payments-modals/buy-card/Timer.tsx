@@ -16,7 +16,7 @@ export default function Timer () {
 	return (
 		<StyledWrapper>
 			<div className='g-mr-5'>
-				{label} reserved for:
+				{label} Reserved for:
 			</div>
 			<ReservationTimer endDate={expiredAt} />
 		</StyledWrapper>
@@ -26,4 +26,10 @@ export default function Timer () {
 const StyledWrapper = styled.div`
   display: flex;
   margin: 20px 0;
+
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.6;
 `
