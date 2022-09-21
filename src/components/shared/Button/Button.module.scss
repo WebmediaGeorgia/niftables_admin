@@ -220,6 +220,9 @@
   }
 
   &-login-secondary {
+    height: inherit;
+    padding: 7px;
+    margin-top: 20px;
     box-shadow: none;
     font-weight: var(--button-login-FontWeight);
     border: 1px solid var(--button-login-secondary-BorderColor);

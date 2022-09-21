@@ -46,25 +46,25 @@ function SignUpSuccess(): JSX.Element {
   const TWO_MIN_IN_MS = 2 * 60 * 1000;
   const dateTime = new Date().getTime() + TWO_MIN_IN_MS;
 
-  useEffect(() => {
-    showActivateNotification && dispatch(toggleShowActivateNotification());
-  }, []);
-
-  useLayoutEffect(() => {
-    if (userType === 'authorized') router.replace('/');
-  }, [userType]);
-
-  useLayoutEffect(() => {
-    if (isReady && !providedEmail) {
-      router.replace('/');
-    }
-  }, [providedEmail]);
-
-  useEffect(() => {
-    if (!code) return;
-    if (typeof code === 'object') return;
-    dispatch(activateEmailRequest({ code }));
-  }, [code]);
+  // useEffect(() => {
+  //   showActivateNotification && dispatch(toggleShowActivateNotification());
+  // }, []);
+  //
+  // useLayoutEffect(() => {
+  //   if (userType === 'authorized') router.replace('/');
+  // }, [userType]);
+  //
+  // useLayoutEffect(() => {
+  //   if (isReady && !providedEmail) {
+  //     router.replace('/');
+  //   }
+  // }, [providedEmail]);
+  //
+  // useEffect(() => {
+  //   if (!code) return;
+  //   if (typeof code === 'object') return;
+  //   dispatch(activateEmailRequest({ code }));
+  // }, [code]);
 
   const handleResend = () => {
     if (error === EmailVerificationError || !error) {
@@ -88,7 +88,7 @@ function SignUpSuccess(): JSX.Element {
           </ModalIconPlaceholder>
           <ModalTitle
             className={styles['heading-signUp-active']}
-            text='Check your mail'
+            text='Check your e-mail'
           />
           <ModalContentWrapper>
             <ModalSubtitle
