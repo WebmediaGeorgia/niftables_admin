@@ -1,6 +1,7 @@
 @use '@styles/index.scss' as *;
 
 .checkbox {
+
   &-wrapper {
     display: flex;
     align-items: center;
@@ -25,6 +26,8 @@
       align-items: center;
       justify-content: center;
     }
+
+
 
     input {
       &:before {
@@ -113,10 +116,27 @@
     position: relative;
     height: fit-content;
 
+
+    &:hover {
+      & label {
+        color: #FF66C4 !important;
+      }
+
+      & input[type='checkbox'] {
+        border: 2px solid #FF66C4;
+      }
+    }
+
+    & label {
+      cursor: pointer;
+      transition: color 0.15s ease-out;
+    }
+
     input[type='checkbox'] {
       appearance: none;
       background-color: var(--radioBox-Bg);
       margin: 0;
+      transition: border 0.15s ease-out;
 
       font: inherit;
       color: var(--checkbox-ColorText);
@@ -124,7 +144,7 @@
       height: 20px;
       max-width: 20px;
       flex: 1 0 20px;
-      border: var(--radioBox-Border);
+      border: 2px solid #C0D2EA;
       border-radius: 50%;
 
       display: flex;
