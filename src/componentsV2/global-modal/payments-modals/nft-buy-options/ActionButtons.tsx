@@ -45,8 +45,13 @@ export default function ActionButtons () {
 const StyledWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
   margin-top: 30px;
+
+  .button {
+    width: 292px;
+  }
+
   @media only screen and (max-width: 480px) {
     flex-direction: column;
     gap: 20px;
