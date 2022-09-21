@@ -51,14 +51,14 @@ function TwoFa(): JSX.Element {
   const [error, setError] = useState<string>('');
   const [otp, setOtp] = useState<string>('');
 
-  function otpHandler(newOtp: string): void {
+  function handleChangeOTP(newOtp: string): void {
     if (newOtp !== otp) {
       setError('');
       setOtp(newOtp);
     }
   }
 
-  function btnClickHandler() {
+  function handleSubmit2FA() {
     dispatch(twoFASignInRequest({ otp }));
   }
 
@@ -69,8 +69,8 @@ function TwoFa(): JSX.Element {
           <OTPBlock
             user={user}
             error={error}
-            otpHandler={otpHandler}
-            btnClickHandler={btnClickHandler}
+            onChangeOTP={handleChangeOTP}
+            onSubmit={handleSubmit2FA}
           />
         </div>
       </Container>

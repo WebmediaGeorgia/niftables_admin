@@ -34,7 +34,7 @@ function enable2Fa(): JSX.Element {
       <OTPBlock
         blockTitle='Disable 2FA'
         error={error}
-        otpHandler={otpHandler}
+        onChangeOTP={otpHandler}
         btnClickHandler={btnClickHandler}
         user={user}
       />

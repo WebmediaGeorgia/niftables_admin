@@ -13,8 +13,8 @@ import classNames from 'classnames';
 
 interface IOTPBlockProps {
   error: string;
-  otpHandler: (otp: string) => void;
-  btnClickHandler: () => void;
+  onChangeOTP: (otp: string) => void;
+  onSubmit: () => void;
   blockTitle?: string;
   user?: IUser;
 }
@@ -22,8 +22,8 @@ interface IOTPBlockProps {
 export default function OTPBlock({
   user,
   error,
-  otpHandler,
-  btnClickHandler,
+  onChangeOTP,
+  onSubmit,
 }: IOTPBlockProps) {
   return (
     <>
@@ -46,7 +46,7 @@ export default function OTPBlock({
           <OTPInput
             length={6}
             autoFocus
-            onChangeOTP={otpHandler}
+            onChangeOTP={onChangeOTP}
             error={error}
           />
           <Button
@@ -54,7 +54,7 @@ export default function OTPBlock({
             color={'blue'}
             fillStyle={false}
             fullWidth={false}
-            onClick={btnClickHandler}
+            onClick={onSubmit}
             className={classNames(
               styles.button,
               btnStyles['btn-login-primary']
