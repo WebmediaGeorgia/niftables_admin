@@ -19,7 +19,7 @@ function enable2Fa(): JSX.Element {
     setOtp(otp);
   }
 
-  function btnClickHandler() {
+  function handleSubmit() {
     dispatch(twoFADisableRequest({ otp }));
   }
 
@@ -35,7 +35,7 @@ function enable2Fa(): JSX.Element {
         blockTitle='Disable 2FA'
         error={error}
         onChangeOTP={otpHandler}
-        btnClickHandler={btnClickHandler}
+        onSubmit={handleSubmit}
         user={user}
       />
     </>
