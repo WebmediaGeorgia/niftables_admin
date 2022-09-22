@@ -11,6 +11,7 @@ import { setModal } from '@entities/modal/actions'
 import PlateGrid from '@commonV2/grids/PlateGrid'
 import EmptyView from '@components/shared/EmptyView'
 import MyPackCard from '@commonV2/cards/my-pack-card'
+import {GRID_SMALL} from "@constants/view-types";
 
 export default function UserPacksList () {
 	const dispatch = useDispatch()
@@ -44,7 +45,7 @@ export default function UserPacksList () {
 	}
 
   return (
-    <PlateGrid>
+    <PlateGrid viewType={GRID_SMALL}>
       {packs.map((token) => (
         <MyPackCard
           key={token.id}

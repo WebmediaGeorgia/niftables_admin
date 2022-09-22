@@ -12,6 +12,7 @@ import { setModal } from '@entities/modal/actions'
 import PlateGrid from '@commonV2/grids/PlateGrid'
 import EmptyItems from '@commonV2/EmptyItems'
 import PackCard from '@commonV2/cards/pack-card'
+import {GRID_SMALL} from "@constants/view-types";
 
 const config = {
 	[ALL]: () => true,
@@ -50,7 +51,7 @@ export default function PacksList ({ filter }) {
   }
 
 	return (
-		<PlateGrid className='g-mt-50'>
+		<PlateGrid viewType={GRID_SMALL} className='g-mt-50'>
 			{parsedPacks.map((pack) => (
 				<PackCard
 					key={pack.id}
