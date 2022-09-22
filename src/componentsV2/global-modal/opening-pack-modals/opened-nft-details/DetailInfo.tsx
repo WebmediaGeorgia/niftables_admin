@@ -20,12 +20,12 @@ export default function DetailInfo () {
       <Title item={nft} />
       <div className='g-d-flex g-justify-between g-align-center g-mt-5'>
         <User
-          label='Creator'
+          label='Owner'
           item={nft}
         />
       </div>
       <Collection
-        className='g-mt-10'
+        className='g-mt-5'
         nft={nft}
       />
       <div className='g-h-separator g-mt-15' />
