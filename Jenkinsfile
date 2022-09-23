@@ -7,7 +7,7 @@ pipeline {
     gitParameter branchFilter: 'origin/(.*)', defaultValue: 'develop', name: 'BRANCH', type: 'PT_BRANCH_'
   }
   environment {
-      ECR_REPO = "576236855336.dkr.ecr.eu-central-1.amazonaws.com/service/frontend-wl-superlotl"
+      ECR_REPO = "576236855336.dkr.ecr.eu-central-1.amazonaws.com/service/frontend-wl-superlotl/${ENV}"
       AWS_DEFAULT_REGION = "eu-central-1"
       ENV = "${env.ENV}"
   }
