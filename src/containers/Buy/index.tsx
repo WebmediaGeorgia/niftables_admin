@@ -21,7 +21,6 @@ import sanitizeBuyNFTsRequest from '@utils/filters/sanitizeBuyNFTsRequest'
 export default function Buy () {
   const dispatch = useDispatch()
   const filter = useTypedSelector((state) => state.filter)
-
   const scrollRef = React.useRef(null)
 
 	React.useEffect(() => {
