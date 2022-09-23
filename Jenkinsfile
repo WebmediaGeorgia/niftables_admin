@@ -45,7 +45,7 @@ pipeline {
       steps {
         container('kustomize') {
         dir('k8s') {}
-        sh "cd frontend-wl-superlotl/kustomize/overlays/$ENV && /app/kustomize edit set image service/frontend-wl-superlotl=${ECR_REPO}:${commit_hash}"
+        sh "cd frontend-wl-superlotl/kustomize/overlays/$ENV && /app/kustomize edit set image service/frontend-wl-superlotl/${ENV}=${ECR_REPO}:${commit_hash}"
         }
       }
     }
