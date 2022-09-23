@@ -5,7 +5,11 @@
     "clear:next": "find . -depth -type d -name '.next*' -exec rm -rf '{}' \\;",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "debug:qa": "env-cmd -f .env.qa next",
+    "build:qa": "env-cmd -f .env.qa npm run-script build",
+    "build:prod": "env-cmd -f .env.prod npm run-script build",
+    "build:dev": "env-cmd -f .env.dev npm run-script build"
   },
   "devDependencies": {
     "@babel/core": "^7.17.2",
