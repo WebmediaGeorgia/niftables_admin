@@ -7,7 +7,6 @@ import { useTypedSelector } from '@hooks/useNewTypedSelector'
 import useMoveToBuyOptions from '@hooks/modal/useMoveToBuyOptions'
 import { AbilityToBuyValues } from '@type/restriction'
 
-import WarningHint from '@commonV2/WarningHint'
 import BuyOrSignin from '@commonV2/BuyOrSignin'
 import Button from '@commonV2/Button'
 import PriceCol from '../../../common/details/PriceCol'
@@ -18,8 +17,7 @@ export default function BuyButton () {
     return state.nftCollection.abilityToBuy === AbilityToBuyValues.SUCCESS
   })
 	const moveToBuyOptions = useMoveToBuyOptions()
-	const { availableSupply, packsNft, price } = pack
-	const collectionId= pack?.collection?.id
+	const { availableSupply, packsNft } = pack
 
   if (availableSupply === 0) return null
   if (packsNft) return null
@@ -40,13 +38,17 @@ export default function BuyButton () {
           item={pack}
         />
       </div>
-      <WarningHint collectionId={collectionId} />
     </StyledWrapper>
   )
 }
 
 const StyledWrapper = styled.div`
-  margin: 20px 0 32px;
+  margin-top: auto;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
+
   .button-wrapper {
     display: flex;
     align-items: center;

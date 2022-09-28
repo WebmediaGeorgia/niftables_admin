@@ -14,12 +14,13 @@ import BuyButton from './BuyButton'
 
 export default function DetailInfo () {
 	const pack = useTypedSelector(state => get(state, 'modal.data', {}))
+
   return (
     <StyledWrapper>
       <div>
         <Title item={pack} />
         <User
-          label='Creator'g
+          label='Creator'
           item={pack}
         />
         <Collection pack={pack} />
@@ -32,11 +33,11 @@ export default function DetailInfo () {
 }
 
 const StyledWrapper = styled.div`
+  grid-area: description;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 	flex-grow: 1;
-	padding-left: 30px;
 	width: 100%;
 	@media only screen and (max-width: 768px) {
 		padding: 0;

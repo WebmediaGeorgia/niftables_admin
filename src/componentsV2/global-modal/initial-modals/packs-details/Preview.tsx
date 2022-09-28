@@ -21,6 +21,8 @@ export default function Preview () {
 }
 
 const StyledWrapper = styled.div`
+  grid-area: image;
+  justify-self: center;
   position: relative;
   width: 294px;
   height: 344px;

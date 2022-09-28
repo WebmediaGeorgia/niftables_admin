@@ -5,7 +5,6 @@ import get from 'lodash/get'
 
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
 
-import WarningHint from '@commonV2/WarningHint'
 import Title from '../../../common/details/Title'
 import User from '../../../common/details/User'
 import Collection from '../../../common/details/Collection'
@@ -19,7 +18,6 @@ import LikeHandler from './LikeHandler'
 
 export default function DetailInfo () {
 	const nft = useTypedSelector(state => get(state, 'modal.data', {}))
-	const collectionId = useTypedSelector(state => get(state, 'modal.data.collection.id'))
   return (
     <StyledWrapper>
       <div>
@@ -47,9 +45,6 @@ export default function DetailInfo () {
         </div>
       </div>
       <ButtonsSection nft={nft} />
-      {!nft.openSeaLink && (
-        <WarningHint collectionId={collectionId} />
-      )}
     </StyledWrapper>
   )
 }
