@@ -12,16 +12,17 @@ import Description from './Description'
 
 export default function CollectionNftsHeader() {
   const revealed = useTypedSelector((state) => get(state, 'collection.collection.revealed'))
-  const revealDate = useTypedSelector((state) => get(state, 'collection.collection.delayedReveal.revealDate'))
+  const revealDate = '2022-09-28T16:31:10.578Z' // useTypedSelector((state) => get(state, 'collection.collection.delayedReveal.revealDate'))
   return (
     <StyledWrapper>
       <div className='wrapper g-container'>
         <BackToCollections />
         <PageHeader />
         <Description />
-        {!revealed && (
+        {!!revealed && (
           <div className='reveal-wrapper g-mt-20'>
             <RevealedIn
+              className='reveal-date'
               label='NFTs will reveal in'
               revealedText='NFTs are revealed! Please reload the page'
               endDate={revealDate}
@@ -43,6 +44,9 @@ const StyledWrapper = styled.div`
     .reveal-wrapper {
       display: flex;
       justify-content: center;
+    }
+    .reveal-date {
+      max-width: 190px;
     }
   }
 `

@@ -10,7 +10,7 @@ export default function BackToCollections () {
     <StyledWrapper onClick={() => router.push('/collections')}>
       <ArrowRight className='icon' />
       <div>
-        Back to collections
+        Back to All Collections
       </div>
     </StyledWrapper>
   )
