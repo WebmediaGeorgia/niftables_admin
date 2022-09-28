@@ -8,8 +8,10 @@ import { resetModal } from '@entities/modal/actions'
 
 import Modal from '@commonV2/Modal'
 import HeadIcon from '../../common/HeadIcon'
+import {useTypedSelector} from "@hooks/useNewTypedSelector";
 
 export default function RedeemSuccess () {
+  const { user } = useTypedSelector((state) => state.user);
   const dispatch = useDispatch()
   const router = useRouter()
 
@@ -32,7 +34,7 @@ export default function RedeemSuccess () {
           We have sent a confirmation email to
 				</div>
         <div className='email'>
-          Jon_smith123@gmail.com
+          {user.email}
         </div>
 			</StyledWrapper>
 		</Modal>
