@@ -74,7 +74,7 @@ const StyledWrapper = styled.div`
   .nft-action-details {
     display: flex;
 
-    div + div {
+    > div + div {
       margin-left: 15px;
     }
   }
