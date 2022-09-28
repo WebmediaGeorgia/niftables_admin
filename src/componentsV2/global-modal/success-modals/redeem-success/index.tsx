@@ -47,21 +47,21 @@ const StyledWrapper = styled.div`
   align-items: center;
   padding: 60px 0;
   .title {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 36px;
     color: ${({ theme }) => theme.text.white}
   }
   .description {
+    font-weight: 300;
     font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
     color: ${({ theme }) => theme.text.white}
   }
   .email {
     font-size: 20px;
+    line-height: 30px;
     font-weight: 700;
-    line-height: 24px;
     color: ${({ theme }) => theme.text.white}
   }
 `
