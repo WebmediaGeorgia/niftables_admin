@@ -12,6 +12,7 @@ import TotalCounter from '@commonV2/TotalCounter'
 import SearchInput from '@commonV2/SearchInput'
 import DropDown from '@commonV2/drop-down'
 import CellsViewSwitcher from '@commonV2/CellsViewSwitcher'
+import {COLLECTIONS_PAGE} from "@constants/view-types";
 
 export default function CollectionsSearchBlock () {
   const dispatch = useDispatch()
@@ -52,7 +53,7 @@ export default function CollectionsSearchBlock () {
           changeHandler={dropDownChangeHandler}
         />
       </div>
-      <CellsViewSwitcher className='switcher' />
+      <CellsViewSwitcher page={COLLECTIONS_PAGE} className='switcher' />
     </StyledWrapper>
   )
 }

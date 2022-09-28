@@ -22,17 +22,18 @@ const buttonGroup = [
   },
 ]
 
-export default function CellsViewSwitcher ({ className = '' }) {
+export default function CellsViewSwitcher ({ page, className = '' }) {
   const viewType = useTypedSelector((state) => state.utils.viewType)
   const dispatch = useDispatch()
+
   return (
     <StyledWrapper className={className}>
       {buttonGroup.map(({ type, Icon }) => {
         return (
           <StyledButton
             key={type}
-            isActive={type === viewType}
-            onClick={() => dispatch(setViewType(type))}
+            isActive={type === viewType[page]}
+            onClick={() => dispatch(setViewType({ page, type }))}
           >
             <Icon />
           </StyledButton>

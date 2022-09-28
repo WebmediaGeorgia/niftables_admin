@@ -12,6 +12,7 @@ import TotalCounter from '@commonV2/TotalCounter'
 import SearchInput from '@commonV2/SearchInput'
 import DropDown from '@commonV2/drop-down'
 import CellsViewSwitcher from '@commonV2/CellsViewSwitcher'
+import {NFT_PAGE} from "@constants/view-types";
 
 export default function NftsSearchBlock () {
   const dispatch = useDispatch()
@@ -49,7 +50,7 @@ export default function NftsSearchBlock () {
           changeHandler={dropDownChangeHandler}
         />
       </div>
-      <CellsViewSwitcher className='switcher' />
+      <CellsViewSwitcher page={NFT_PAGE} className='switcher' />
     </StyledWrapper>
   )
 }
