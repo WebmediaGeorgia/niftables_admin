@@ -5,10 +5,10 @@ import { GRID_BIG } from '@constants/view-types'
 
 import { useTypedSelector } from '@hooks/useNewTypedSelector'
 
-export default function PlateGrid ({ viewType, className = '', children }) {
+export default function PlateGrid ({ page, viewType, className = '', children }) {
   const isLarge = useTypedSelector((state) => viewType
     ? viewType === GRID_BIG
-    : state.utils.viewType === GRID_BIG
+    : state.utils.viewType[page] === GRID_BIG
   )
   const isOpen = useTypedSelector((state) => state.utils.isFilterOpen)
   return (

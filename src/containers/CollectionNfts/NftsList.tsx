@@ -11,6 +11,7 @@ import { setModal } from '@entities/modal/actions'
 import PlateGrid from '@commonV2/grids/PlateGrid'
 import CollectionNftCard from '@commonV2/cards/collection-nft-card'
 import EmptyItems from '@commonV2/EmptyItems'
+import {COLLECTION_NFTS_PAGE, COLLECTIONS_PAGE} from "@constants/view-types";
 
 export default function NftsList () {
 	const dispatch = useDispatch()
@@ -34,7 +35,7 @@ export default function NftsList () {
   }
 
   return (
-    <PlateGrid>
+    <PlateGrid page={COLLECTION_NFTS_PAGE}>
       {list.map((nft) => {
         return (
           <CollectionNftCard

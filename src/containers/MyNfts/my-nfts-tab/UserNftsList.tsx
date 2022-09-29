@@ -11,7 +11,7 @@ import { setModal } from '@entities/modal/actions'
 import PlateGrid from '@commonV2/grids/PlateGrid'
 import EmptyView from '@components/shared/EmptyView'
 import MyNftCard from '@commonV2/cards/my-nft-card'
-import {GRID_SMALL} from "@constants/view-types";
+import {GRID_SMALL, USER_NFT_PAGE} from "@constants/view-types";
 
 export default function UserNftsList () {
   const dispatch = useDispatch()
@@ -45,7 +45,7 @@ export default function UserNftsList () {
   }
 
   return (
-    <PlateGrid viewType={GRID_SMALL}>
+    <PlateGrid page={USER_NFT_PAGE} viewType={GRID_SMALL}>
       {tokens.map((token) => {
         return (
           <MyNftCard

@@ -7,6 +7,7 @@ import { useTypedSelector } from '@hooks/useNewTypedSelector'
 import PlateGrid from '@commonV2/grids/PlateGrid'
 import CollectionCard from '@commonV2/cards/collection-card'
 import EmptyItems from '@commonV2/EmptyItems'
+import {COLLECTIONS_PAGE} from "@constants/view-types";
 
 export default function CollectionsList() {
   const router = useRouter();
@@ -21,7 +22,7 @@ export default function CollectionsList() {
   }
 
   return (
-    <PlateGrid>
+    <PlateGrid page={COLLECTIONS_PAGE}>
       {list.map((collection) => {
         return (
           <CollectionCard
