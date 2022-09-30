@@ -32,6 +32,7 @@ export default function CryptoCheckout () {
 			if (!isReady) return
 			const type = _getStore().getState().modal.options.type
 			const id = _getStore().getState().modal.data.id
+			const collectionId = _getStore().getState().modal.data.collection?.id
 			const purchaseData = await fetchCryptoPurchaseData({ type, id })
 			if (!purchaseData) {
 				moveToBuyOptions()
@@ -62,7 +63,12 @@ export default function CryptoCheckout () {
 				moveToBuyOptions()
 				return
 			}
-			const isSuccess = await completeCryptoPurchase({ type, itemId, transactionHash })
+			const isSuccess = await completeCryptoPurchase({
+        type,
+        itemId,
+        transactionHash,
+        collectionId
+      })
 			if (!isSuccess) {
 				moveToBuyOptions()
 				return
