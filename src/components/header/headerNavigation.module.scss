@@ -78,12 +78,31 @@
 .navButtonContainer {
   margin-left: 10px;
   width: 145px;
+  height: 44px;
   position: relative;
   display: flex;
   align-items: center;
 
+  &:hover {
+    > a {
+      background: #ff66c4;
+      border-radius: 30px;
+      color: #ffffff;
+    }
+
+    > div {
+      opacity: 0;
+    }
+  }
+
   a {
+    transition: border-radius 0.2s ease-out, color 0.2s ease-out;
     width: 100%;
+  }
+
+  > div {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
   }
 
   div:last-child {

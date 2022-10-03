@@ -3,16 +3,14 @@
 .navLink {
   position: relative;
   display: block;
-  font-weight: var(--header-navLink-FontWeight);
-  font-size: var(--header-navLink-FontSize);
-  line-height: var(--header-navLink-LineHeight);
   text-decoration: none;
   text-transform: uppercase;
   color: var(--colorText-base);
-  padding: var(--header-navLink-Padding);
-  @include respond-to('medium') {
-    padding: var(--header-navLink-Padding-Large);
-  }
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15em;
 
   cursor: pointer;
 
@@ -21,14 +19,13 @@
     height: 2px;
 
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    bottom: 0px;
     border-radius: 5px;
-    left: 50%;
+    left: 49%;
     width: 0;
     transform: translate(-50%, 0);
     background-color: #FF66C4;
-    @include animate(width);
+    transition: width 0.150s ease-in-out;
   }
 
   &:focus,
@@ -42,6 +39,11 @@
     }
   }
 }
+
+.navListItem {
+  padding: var(--header-navLink-Padding-Large);
+}
+
 .isActive {
   .navLink {
     color: var(--header-colorText-active);

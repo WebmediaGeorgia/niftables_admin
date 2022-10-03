@@ -7,6 +7,7 @@ import NavItemWrapper from '@components/NavItemWrapper';
 import styles from './NavItem.module.scss';
 import Link from 'next/link';
 import { needHideNavItem } from '@utils/navigation';
+import classNames from "classnames";
 
 interface INavItem {
   item: INavigationItem;
@@ -25,7 +26,7 @@ export const NavItem: FC<INavItem> = ({
   if (needHideNavItem(navigationConfig, restrictId)) return null;
 
   return (
-    <NavItemWrapper className={isActiveItem}>
+    <NavItemWrapper className={classNames(styles.navListItem,isActiveItem)}>
       <Link href={linkTo}>
         <a className={styles.navLink}>{name}</a>
       </Link>
