@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { FC, useCallback } from 'react';
 import Navigation from '../navigation';
 import Navbar from '@components/shared/Navbar';
 import { useDispatch } from 'react-redux';
@@ -20,10 +20,14 @@ import DropDownNotification from '@components/DropDownNotification';
 import { toast } from 'react-toastify';
 import { isServer } from '@utils/common';
 import formatAddress from '@utils/metamask/formatAddress';
-import HeaderLogo from "@components/header/header.logo";
-import classnames from "classnames";
+import HeaderLogo from '@components/header/header.logo';
+import classnames from 'classnames';
 
-const HeaderNavigation = () => {
+type Props = {
+  isHomePage: boolean
+}
+
+const HeaderNavigation: FC<Props> = ({ isHomePage }) => {
   const { getMetamaskAddress, metamaskAccountChange } = useMetamask();
   const { userType, twoFactorAuthEnabled, twoFactorPassed } = useTypedSelector(
     (state) => state.auth
@@ -43,7 +47,7 @@ const HeaderNavigation = () => {
       linkTo: item.linkTo,
       name: (
         <>
-          <item.icon width='18' height='18' />
+          <item.icon width="18" height="18"/>
           {item.name}
         </>
       ),
@@ -76,7 +80,7 @@ const HeaderNavigation = () => {
         [styles['user-icon--open']]: isOpen
       })}
     >
-      <UserIcon />
+      <UserIcon/>
     </div>
   );
 
@@ -110,13 +114,13 @@ const HeaderNavigation = () => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={classnames(styles.container, { [styles.homeContainer]: isHomePage })}>
       <div onClick={handleToggle}>
-        <Navbar />
+        <Navbar isHomePage />
       </div>
-      <div className={styles.login}>
-        <HeaderLogo />
-        <Link href='/'>
+      <div className={classnames(styles.login, { [styles.homeLogin]: isHomePage })}>
+        <HeaderLogo/>
+        <Link href="/">
           <a>Superlotl</a>
         </Link>
       </div>
@@ -129,17 +133,18 @@ const HeaderNavigation = () => {
       <div
         className={classNames(
           styles['header-navigation'],
-          show ? styles.isActive : ''
+          show ? styles.isActive : '',
+          { [styles['home-header-navigation']]: isHomePage }
         )}
         ref={ref}
       >
         <div className={styles.header}>
           <button className={styles['navbar-close']} onClick={handleToggle}>
-            <ButtonClose className={styles['navbar-close-icon']} />
+            <ButtonClose className={styles['navbar-close-icon']}/>
           </button>
         </div>
         <div className={styles['navigation-wrapper']}>
-          <Navigation onClickNavigation={handleToggle} />
+          <Navigation onClickNavigation={handleToggle} isHomePage/>
         </div>
       </div>
       {(userType === 'prospect' ||
@@ -147,33 +152,33 @@ const HeaderNavigation = () => {
         (userType === 'authorized' &&
           twoFactorAuthEnabled &&
           !twoFactorPassed)) && (
-        <div className={styles.navButtonContainer}>
-          <div className={styles.navButtonLineContainer} >
-            <div className={styles.navButtonLine} />
-            <div className={styles.navButtonLine} />
-            <div className={styles.navButtonLine} />
+        <div className={classNames(styles.navButtonContainer, { [styles.homeNavButtonContainer]: isHomePage })}>
+          <div className={styles.navButtonLineContainer}>
+            <div className={styles.navButtonLine}/>
+            <div className={styles.navButtonLine}/>
+            <div className={styles.navButtonLine}/>
           </div>
           <NavButton
-            className={styles.navButton}
-            size='m'
-            color='blue'
+            className={classNames(styles.navButton)}
+            size="m"
+            color="blue"
             fillStyle={false}
             fullWidth={false}
-            to='/signin'
+            to="/signin"
           >
             Sign In
           </NavButton>
-          <div className={styles.navButtonLineContainer} >
-            <div className={styles.navButtonLine} />
-            <div className={styles.navButtonLine} />
-            <div className={styles.navButtonLine} />
+          <div className={styles.navButtonLineContainer}>
+            <div className={styles.navButtonLine}/>
+            <div className={styles.navButtonLine}/>
+            <div className={styles.navButtonLine}/>
           </div>
         </div>
       )}
 
       {_checkUserLoggedIn() && (
         <div className={styles.userDropdownWrapper}>
-          <DropDownNotification />
+          <DropDownNotification/>
           <DropDownUser
             right={true}
             UserText={user}

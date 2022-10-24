@@ -49,3 +49,10 @@
     color: var(--header-colorText-active);
   }
 }
+
+.homeNavLink {
+  &:before{
+    height: 0.104vw;
+    border-radius: 0.260vw;
+  }
+}

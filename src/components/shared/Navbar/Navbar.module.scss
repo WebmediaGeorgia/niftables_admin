@@ -1,4 +1,5 @@
 @use '@styles/index.scss' as *;
+
 .navbar-toggler {
   padding: 0.25rem 0.5rem;
   font-size: 1.25rem;
@@ -20,7 +21,37 @@
     background-size: 100%;
     background-image: var(--navbar-toggler-icon);
   }
+
   @include respond-to('medium') {
     display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .home-navbar-toggler {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width: 5.208vw;
+    height: 5.208vw;
+
+    .navbar-toggler-icon {
+      width: 2.604vw;
+      height: 2.604vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-navbar-toggler {
+    width: 10.667vw;
+    height: 10.667vw;
+
+    .navbar-toggler-icon {
+      width: 5.333vw;
+      height: 5.333vw;
+    }
   }
 }

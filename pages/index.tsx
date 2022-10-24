@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <>
-      <Header/>
+      <Header isHomePage />
       <HomePage/>
     </>
   );

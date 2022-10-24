@@ -250,7 +250,6 @@
           width: 2.396vw;
           height: 2.396vw;
           border-radius: 50%;
-          border-radius: 50%;
 
           svg {
             fill: white;
@@ -271,6 +270,336 @@
                 fill: white;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .team {
+    padding: 0;
+    .teamBackground {
+      left: -6.641vw;
+      top: -4.492vw;
+      width: 112%;
+      height: 112%;
+    }
+    .slider {
+      .sliderWrapper {
+        height: 43.945vw;
+        #c1 {
+          height: 70%;
+        }
+        .slide {
+          width: 34.18vw;
+          &.active {
+            width: 28.027vw;
+            left: 59.4%;
+          }
+          &.center {
+            width: 19.824vw;
+            left: 9%;
+          }
+          &.left {
+            opacity: 0;
+            left: 9%;
+            width: 0;
+          }
+        }
+      }
+    }
+    .capsule {
+      width: 42.442vw;
+      height: 55.5vw;
+      video {
+        width: 21.462vw;
+        height: 46.45vw;
+      }
+      &::before {
+        width: 24.265vw;
+        height: 43.247vw;
+      }
+      &::after {
+        width: 42.442vw;
+        height: 55.5vw;
+      }
+    }
+    .teamContainer {
+      top: 16%;
+      .teamTitle {
+        font-size: 4.688vw;
+        line-height: 6.641vw;
+      }
+      .rightBlock {
+        margin: 6.738vw 0 0 0;
+        .buttonContainer {
+          gap: 0.977vw;
+          .button {
+            width: 6.445vw;
+            height: 2.734vw;
+            border: 1px solid #ffffff;
+            border-radius: 0.641vw;
+            &.active {
+              border: 1px solid #ffffff;
+            }
+            &:hover {
+              border: 1px solid #ff66c4;
+            }
+            img {
+              width: 4.512vw;
+            }
+          }
+        }
+        span {
+          margin: 8.398vw 0 0 0;
+          font-size: 2.539vw;
+          line-height: 2.93vw;
+        }
+        strong {
+          margin: 0.488vw 0 0 0;
+          font-size: 2.148vw;
+          line-height: 3.223vw;
+          letter-spacing: -0.03em;
+        }
+        p {
+          margin: 1.563vw 0 0 0;
+          font-size: 1.758vw;
+          line-height: 2.734vw;
+          width: 28.125vw;
+        }
+        .social {
+          margin: 2.734vw 0 0 0;
+          gap: 1.172vw;
+          a {
+            width: 3.906vw;
+            height: 3.906vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:860px) {
+  .team {
+    padding: 0;
+    .teamBackground {
+      left: -6.902vw;
+      top: -4.557vw;
+    }
+    .slider {
+      width: 50%;
+      .sliderWrapper {
+        height: 58.593vw;
+        .slide {
+          width: 45.573vw;
+          top: 11.589vw;
+          &.active {
+            width: 37.369vw;
+            left: 28.4%;
+          }
+          &.center {
+            opacity: 0;
+            width: 0;
+            left: -50%;
+            top: 50%;
+          }
+          &.none {
+            transform: translateY(-110%);
+            left: 65%;
+          }
+        }
+      }
+    }
+    .capsule {
+      width: 56.589vw;
+      height: 74vw;
+      transform: translate(-79%, -38%);
+      video {
+        width: 28.616vw;
+        height: 61.933vw;
+      }
+      &::before {
+        width: 32.353vw;
+        height: 57.663vw;
+      }
+      &::after {
+        width: 56.589vw;
+        height: 74vw;
+      }
+    }
+    .teamContainer {
+      top: 14%;
+      .teamTitle {
+        font-size: 6.251vw;
+        line-height: 8.855vw;
+      }
+      .rightBlock {
+        margin: 16.536vw 0 0 0;
+        .buttonContainer {
+          gap: 1.303vw;
+          .button {
+            width: 8.593vw;
+            height: 3.645vw;
+            border: 0.131vw solid #ffffff;
+            border-radius: 0.855vw;
+            &.active {
+              border: 1px solid #ffffff;
+            }
+            &:hover {
+              border: 1px solid #ff66c4;
+            }
+            img {
+              width: 6.016vw;
+            }
+          }
+        }
+        span {
+          margin: 11.197vw 0 0 0;
+          font-size: 3.385vw;
+          line-height: 3.907vw;
+        }
+        strong {
+          margin: 0.651vw 0 0 0;
+          font-size: 2.864vw;
+          line-height: 4.297vw;
+          letter-spacing: -0.03em;
+        }
+        p {
+          margin: 2.084vw 0 0 0;
+          font-size: 2.344vw;
+          line-height: 3.645vw;
+          width: 37.5vw;
+        }
+        .social {
+          margin: 3.645vw 0 0 0;
+          gap: 1.563vw;
+          a {
+            width: 5.208vw;
+            height: 5.208vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .team {
+    padding: 0;
+    height: 177.6vw;
+    .teamBackground {
+      left: -7.468vw;
+      top: -18.133vw;
+    }
+    .slider {
+      width: 46%;
+      .sliderWrapper {
+        height: 77.333vw;
+        align-items: flex-start;
+        width: 100%;
+
+        #c1 {
+          width: 100%;
+          height: 103%;
+        }
+        .slide {
+          width: 52.016vw;
+          top: 12.533vw;
+          &.active {
+            width: 52.016vw;
+            left: 1%;
+          }
+          &.center {
+            opacity: 0;
+            width: 0;
+            left: -50%;
+            top: 50%;
+          }
+          &.none {
+            transform: translateY(-60%);
+            left: 55%;
+          }
+        }
+      }
+    }
+    .capsule {
+      width: 78.768vw;
+      height: 103.003vw;
+      transform: translate(-79%, -39%);
+      video {
+        width: 39.829vw;
+        height: 86.208vw;
+      }
+      &::before {
+        width: 45.032vw;
+        height: 80.261vw;
+      }
+      &::after {
+        width: 78.768vw;
+        height: 103.003vw;
+      }
+    }
+    .teamContainer {
+      top: 17.2%;
+      justify-content: end;
+      .teamTitle {
+        position: absolute;
+        left: 0;
+        top: -11.2vw;
+        font-size: 10.133vw;
+        line-height: 15.467vw;
+        width: 100%;
+      }
+      .rightBlock {
+        flex-direction: column;
+        margin: 8.533vw 0 0 0;
+        align-items: flex-end;
+        .buttonContainer {
+          gap: 2.668vw;
+          transform: translateX(-9.067vw);
+          .button {
+            width: 17.599vw;
+            height: 7.466vw;
+            border: 1px solid #ffffff;
+            border-radius: 1.75vw;
+            &.active {
+              border: 1px solid #ffffff;
+            }
+            &:hover {
+              border: 1px solid #ff66c4;
+            }
+            img {
+              width: 12.321vw;
+            }
+          }
+        }
+        span {
+          margin: 18.399vw 0 0 0;
+          transform: translateX(-2.667vw);
+          font-size: 6.4vw;
+          line-height: 9.067vw;
+        }
+        strong {
+          margin: 0 14.133vw 0 0;
+          font-size: 5.333vw;
+          line-height: 8vw;
+          letter-spacing: -0.03em;
+        }
+        p {
+          margin: 3.467vw 0 0 0;
+          font-size: 4.267vw;
+          line-height: 6.4vw;
+          width: 47.2vw;
+        }
+        .social {
+          margin: 6.932vw 22.667vw 0vw 0;
+          gap: 3.2vw;
+          a {
+            width: 10.666vw;
+            height: 10.666vw;
           }
         }
       }

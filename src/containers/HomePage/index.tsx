@@ -8,6 +8,7 @@ import Accordion from '@containers/HomePage/components/Accordion';
 import HomePageMain from '@containers/HomePage/modules/Main';
 import BeginningHomePage from '@containers/HomePage/modules/Beginning';
 import MintWaterway from '@containers/HomePage/modules/MintWaterway';
+import { useWindowSize } from '@hooks/useWindowSize';
 
 
 const HomePage: FC = () => {
@@ -17,6 +18,7 @@ const HomePage: FC = () => {
     const [beginningScroll, setBeginningScroll] = useState(0);
     const [mintTranslate, setMintTranslate] = useState(0);
     const [beginningOpacity, setBeginningOpacity] = useState(0);
+    const windowSize = useWindowSize();
 
     const handleExecuteScroll = () => {
       beginningSection?.current?.scrollIntoView(
@@ -25,6 +27,7 @@ const HomePage: FC = () => {
     };
 
     useEffect(() => {
+      if (windowSize.width && windowSize.width < 600) return;
       const onScroll = () => {
         if (!beginningSection.current || !mintWaterwaySection.current) return;
         const mintScroll = (-1 * mintWaterwaySection.current.getBoundingClientRect().y / (mintWaterwaySection.current.clientHeight / 100));
@@ -64,7 +67,7 @@ const HomePage: FC = () => {
       };
       window.addEventListener('scroll', onScroll, { passive: true });
       return () => window.removeEventListener('scroll', onScroll);
-    }, []);
+    }, [windowSize.width]);
 
     return (
       <div className={styles.wrapper}>
@@ -102,14 +105,14 @@ const HomePage: FC = () => {
 
                 <div className={styles.socials}>
                   <a href="#" className={styles.btn}
-                  >join <img src="/assets/img/home-page/footer/twitter-logo.svg" alt=""/> twitter</a
+                  ><span>join</span><img src="/assets/img/home-page/footer/twitter-logo.svg" alt=""/><span>twitter</span></a
                   >
                   <a href="#" className={styles.btn}
-                  >join
-                    <img src="/assets/img/home-page/footer/instagram-logo.svg" alt=""/> instagram</a
+                  ><span>join</span>
+                    <img src="/assets/img/home-page/footer/instagram-logo.svg" alt=""/><span>instagram</span></a
                   >
                   <a href="#" className={styles.btn}
-                  >join <img src="/assets/img/home-page/footer/discord-logo.svg" alt=""/> discord</a
+                  ><span>join</span><img src="/assets/img/home-page/footer/discord-logo.svg" alt=""/><span>discord</span></a
                   >
                 </div>
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import classNames from 'classnames';
 
@@ -7,7 +7,11 @@ import HeaderNavigation from './headerNavigation';
 
 const restrictionPathnames = ['/maintenance-mode'];
 
-export default function Header() {
+type Props = {
+  isHomePage: boolean
+}
+
+const Header: FC<Props> = ({ isHomePage }) => {
   const router = useRouter();
   const [headerClassName, setHeaderClassName] = useState<boolean>(false);
   const HEADER_SCROLL_SWITCH_VIEW = 100;
@@ -30,10 +34,13 @@ export default function Header() {
     <header
       className={classNames(
         styles.header,
-        headerClassName && styles.headerScroll
+        headerClassName && styles.headerScroll,
+        { [styles.homeHeader]: isHomePage }
       )}
     >
-      <HeaderNavigation />
+      <HeaderNavigation isHomePage={isHomePage}/>
     </header>
   );
-}
+};
+
+export default Header;
