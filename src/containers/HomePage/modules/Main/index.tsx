@@ -41,7 +41,7 @@ const HomePageMain: FC<Props> = ({ onExecuteScroll }) => {
           >Diving from Web2 to Web3 & taking ownership and impactful utility
             to a deeper level.</strong
           >
-          <a className={styles.mainButton} onClick={onExecuteScroll}>
+          <a className={cn(styles.mainButton, styles.smoothScroll)} onClick={onExecuteScroll}>
             <span>let&apos;s swim</span>
             <img src="/assets/img/home-page/arrow-button.svg" alt=""/>
           </a>

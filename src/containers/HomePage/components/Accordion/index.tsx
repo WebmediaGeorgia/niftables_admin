@@ -29,7 +29,8 @@ const Accordion: FC<Props> = ({ accordionItems }) => {
         {item.map(({ title, content }, index2) => <div key={(index1 * 7) + index2}
                                                        onClick={() => handleShowText((index1 * 7) + index2)}
                                                        className={cn(styles.accordionItem, { [styles.show]: showText === (index1 * 7) + index2 })}>
-          <div className={styles.accordionTitle}>{title}</div>
+          <div
+            className={cn(styles.accordionTitle, { [styles.show]: showText === (index1 * 7) + index2 })}>{title}</div>
           <div className={styles.accordionContent}>
             {content}
           </div>

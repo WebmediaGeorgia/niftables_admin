@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import cn from 'classnames';
 import gif from 'public/assets/img/home-page/beginning/gif.png';
+import { useWindowSize } from '@hooks/useWindowSize';
 import styles from './styles.module.scss';
+
 
 const TriangleSlider = () => {
   const [activeSlide, setActiveSlide] = useState(1);
   const [rotate, setRotate] = useState(0);
+  const windowSize = useWindowSize();
+  const isMobile = windowSize.width && windowSize.width < 600
 
   const handleActiveSlide = (slideIndex: number, newRotate: number) => {
     setActiveSlide(slideIndex);
@@ -28,8 +32,8 @@ const TriangleSlider = () => {
         />
         <div
           onClick={() => {
-            if (activeSlide === 1) handleActiveSlide(2, rotate + 120);
-            if (activeSlide === 3) handleActiveSlide(2, rotate - 120);
+            if (activeSlide === 1) handleActiveSlide(2, isMobile ? rotate - 120 : rotate + 120);
+            if (activeSlide === 3) handleActiveSlide(2, isMobile ? rotate + 120 : rotate - 120);
           }}
           className={cn(styles.circle,
             {
@@ -42,8 +46,8 @@ const TriangleSlider = () => {
           02
         </div>
         <div onClick={() => {
-          if (activeSlide === 3) handleActiveSlide(1, rotate + 120);
-          if (activeSlide === 2) handleActiveSlide(1, rotate - 120);
+          if (activeSlide === 3) handleActiveSlide(1, isMobile ? rotate - 120 : rotate + 120);
+          if (activeSlide === 2) handleActiveSlide(1, isMobile ? rotate + 120 : rotate - 120);
         }}
              className={cn(styles.circle,
                {
@@ -55,8 +59,8 @@ const TriangleSlider = () => {
           01
         </div>
         <div onClick={() => {
-          if (activeSlide === 2) handleActiveSlide(3, rotate + 120);
-          if (activeSlide === 1) handleActiveSlide(3, rotate - 120);
+          if (activeSlide === 2) handleActiveSlide(3, isMobile ? rotate - 120 : rotate + 120);
+          if (activeSlide === 1) handleActiveSlide(3, isMobile ? rotate + 120 : rotate - 120);
         }}
              className={cn(styles.circle,
                {

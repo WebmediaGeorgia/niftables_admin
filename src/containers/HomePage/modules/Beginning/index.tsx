@@ -9,6 +9,7 @@ import bubbles2 from 'public/assets/img/home-page/bubbles2.png';
 import bubbles3 from 'public/assets/img/home-page/bubbles3.png';
 import bubbles4 from 'public/assets/img/home-page/bubbles4.png';
 import TriangleSlider from '@containers/HomePage/components/TriangleSlider';
+import { useWindowSize } from '@hooks/useWindowSize';
 
 
 type Props = {
@@ -27,6 +28,7 @@ const BUBBLES = [
 
 const BeginningHomePage: FC<Props> = ({ beginningSectionRef, beginningOpacity, beginningScroll }) => {
   const [activeBubble, setActiveBubble] = useState(0);
+  const windowSize = useWindowSize();
 
   useEffect(() => {
     const bubbleInterval = setInterval(() => {
@@ -41,7 +43,7 @@ const BeginningHomePage: FC<Props> = ({ beginningSectionRef, beginningOpacity, b
   return (
     <section
       className={styles.beginning} ref={beginningSectionRef}
-      style={{ zIndex: beginningOpacity > 0 ? 9 : -1, opacity: beginningOpacity }}
+      style={windowSize.width && windowSize.width < 600 ? {} : { zIndex: beginningOpacity > 0 ? 9 : -1, opacity: beginningOpacity }}
     >
       <img src={waterBlur.src} alt="" className={styles.waterBlur}/>
       <div className={styles.beginningWrapper}>

@@ -22,3 +22,31 @@
   border: 1px solid var(--headerScroll-BorderColor);
   transition: background 0.4s;
 }
+
+.homeHeader {
+  position: absolute;
+  max-height: none;
+  margin: 1.823vw 0 0 0;
+  padding: 0 2.604vw;
+  background: none;
+}
+@media only screen and (max-width: 1280px) {
+  .homeHeader {
+    margin: 2.930vw 0 0 0;
+    padding: 0 3.906vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .homeHeader {
+    margin: 3.906vw 0 0 0;
+    padding: 0 5.208vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .homeHeader {
+    margin: 5.208vw 0 0 0;
+    padding: 0 5.208vw;
+  }
+}

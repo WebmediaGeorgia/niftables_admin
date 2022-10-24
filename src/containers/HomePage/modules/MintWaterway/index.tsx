@@ -100,6 +100,9 @@ const MintWaterway: FC<Props> = (
                 </a>
               </div>
               <div ref={waterwayText} className={styles.waterwayTexts}>
+                <span className={cn(styles.hiddenTitle)}>
+                  <span className={cn(styles.waterwayMaintitle)}>Waterway</span>
+                  Season 1</span>
                 <div ref={activeWaterwayTab === 1 ? currWaterwayText : null} className={styles.waterwayText1}>
                   <h4 className={styles.waterwayTitle}>
                     <span className={styles.textAccent}>2,500</span> Superlotls<br/>
@@ -128,6 +131,9 @@ const MintWaterway: FC<Props> = (
                   </ul>
                 </div>
                 <div ref={activeWaterwayTab === 2 ? currWaterwayText : null} className={styles.waterwayText2}>
+                <span className={cn(styles.hiddenTitle)}>
+                  <span className={cn(styles.waterwayMaintitle)}>Waterway</span>
+                  Season 2</span>
                   <h4 className={styles.waterwayTitle}>
                     <span className={styles.textAccent}>2,500 more</span><br/>
                     Superlotls hatched
@@ -156,6 +162,9 @@ const MintWaterway: FC<Props> = (
                   </ul>
                 </div>
                 <div ref={activeWaterwayTab === 3 ? currWaterwayText : null} className={styles.waterwayText3}>
+                  <span className={cn(styles.hiddenTitle)}>
+                  <span className={cn(styles.waterwayMaintitle)}>Waterway</span>
+                  Season 3</span>
                   <h4 className={styles.waterwayTitle}>
                   <span className={styles.textAccent}>Another 2,500</span
                   ><br/>Superlotls hatching<br/>
@@ -183,6 +192,9 @@ const MintWaterway: FC<Props> = (
                   </ul>
                 </div>
                 <div ref={activeWaterwayTab === 4 ? currWaterwayText : null} className={styles.waterwayText4}>
+                 <span className={cn(styles.hiddenTitle)}>
+                  <span className={cn(styles.waterwayMaintitle)}>Waterway</span>
+                  Season 4</span>
                   <h4 className={styles.waterwayTitle}>
                   <span className={styles.textAccent}>final 2,500</span
                   ><br/>Superlotls available<br/>
@@ -210,7 +222,8 @@ const MintWaterway: FC<Props> = (
         </div>
       </div>
     </section>
-  );
+  )
+    ;
 };
 
 export default MintWaterway;

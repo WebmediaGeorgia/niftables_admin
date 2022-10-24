@@ -7,15 +7,16 @@ import NavItemWrapper from '@components/NavItemWrapper';
 import styles from './NavItem.module.scss';
 import Link from 'next/link';
 import { needHideNavItem } from '@utils/navigation';
-import classNames from "classnames";
+import classnames from 'classnames';
 
 interface INavItem {
   item: INavigationItem;
+  isHomePage?: boolean;
 }
 
 export const NavItem: FC<INavItem> = ({
   item: { name, linkTo, restrictId },
-}) => {
+}, isHomePage) => {
   const router = useRouter();
   const navigationConfig = useTypedSelector(
     (state) => state.configuration.navigationConfig
@@ -26,9 +27,9 @@ export const NavItem: FC<INavItem> = ({
   if (needHideNavItem(navigationConfig, restrictId)) return null;
 
   return (
-    <NavItemWrapper className={classNames(styles.navListItem,isActiveItem)}>
+    <NavItemWrapper className={classnames(styles.navListItem, isActiveItem)}>
       <Link href={linkTo}>
-        <a className={styles.navLink}>{name}</a>
+        <a className={classnames(styles.navLink, {[styles.homeNavLink]: isHomePage})}>{name}</a>
       </Link>
     </NavItemWrapper>
   );

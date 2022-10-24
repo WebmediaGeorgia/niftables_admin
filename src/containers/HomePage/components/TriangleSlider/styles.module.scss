@@ -1,3 +1,29 @@
+@keyframes top-arrow {
+  0% {
+    top: -12%;
+  }
+  50% {
+    top: -11%;
+  }
+  100% {
+    top: -12%;
+  }
+}
+
+
+@keyframes left-arrow {
+  0% {
+    left: -6%;
+  }
+  50% {
+    left: -5%;
+  }
+  100% {
+    left: -6%;
+  }
+}
+
+
 .beginningSlider {
   position: relative;
   width: 29.01vw;
@@ -167,3 +193,283 @@
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .beginningSlider {
+    width: 42.773vw;
+    height: 42.773vw;
+
+    &::before {
+      height: 0.781vw;
+      width: 0.781vw;
+      left: 50.7%;
+      border-left: 0.195vw solid #ffffff;
+      border-bottom: 0.195vw solid #ffffff;
+    }
+
+    &::after {
+      height: 0.781vw;
+      width: 0.781vw;
+      border-left: 0.195vw solid #ffffff;
+      border-bottom: 0.195vw solid #ffffff;
+      top: 74.8%;
+    }
+
+    .circleBackground {
+      width: 42.773vw;
+      height: 42.773vw;
+      background-size: 42.773vw 42.773vw;
+    }
+
+    .triangle {
+      width: 32.422vw;
+    }
+
+    .gif {
+      width: 26.953vw;
+    }
+
+    .circle {
+      width: 8.496vw;
+      height: 8.496vw;
+      font-size: 1.538vw;
+      line-height: 2.246vw;
+    }
+  }
+
+  .beginningRightBlock {
+    h2 {
+      font-size: 4.688vw;
+      line-height: 6.641vw;
+      gap: 1.465vw;
+      transform: translateY(-1.758vw);
+
+      span {
+        margin: 1.758vw 0 0 0;
+        padding: 0 1.27vw;
+        font-size: 1.953vw;
+        line-height: 2.93vw;
+        border-radius: 0.781vw;
+        width: auto;
+        height: 3.906vw;
+      }
+    }
+
+    strong {
+      top: 76%;
+      font-size: 2.344vw;
+      line-height: 3.32vw;
+      width: 44.238vw;
+      letter-spacing: 0.025em;
+
+      span {
+        margin: 0.782vw 0 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .beginningSlider {
+    width: 57.031vw;
+    height: 57.031vw;
+
+    &::before {
+      height: 1.041vw;
+      width: 1.041vw;
+      border-left: 0.26vw solid #ffffff;
+      border-bottom: 0.26vw solid #ffffff;
+    }
+
+    &::after {
+      height: 1.041vw;
+      width: 1.041vw;
+      border-left: 0.26vw solid #ffffff;
+      border-bottom: 0.26vw solid #ffffff;
+    }
+
+    .circleBackground {
+      width: 57.031vw;
+      height: 57.031vw;
+      background-size: 57.031vw 57.031vw;
+    }
+
+    .triangle {
+      width: 43.229vw;
+    }
+
+    .gif {
+      width: 35.937vw;
+    }
+
+    .circle {
+      width: 11.328vw;
+      height: 11.328vw;
+      font-size: 2.051vw;
+      line-height: 2.995vw;
+    }
+  }
+
+  .beginningRightBlock {
+    position: absolute;
+    right: 4.167vw;
+    top: 0.651vw;
+
+    h2 {
+      position: relative;
+      font-size: 6.251vw;
+      line-height: 8.855vw;
+      gap: 1.953vw;
+
+      span {
+        position: absolute;
+        right: -4.167vw;
+        top: 0;
+        margin: 2.344vw 0 0 0;
+        padding: 0 1.693vw;
+        font-size: 2.604vw;
+        line-height: 3.907vw;
+        border-radius: 1.041vw;
+        width: auto;
+        height: 5.208vw;
+      }
+    }
+
+    strong {
+      top: 150%;
+      margin: 0 0 0 4.948vw;
+      font-size: 3.125vw;
+      line-height: 4.427vw;
+      width: 37.37vw;
+      letter-spacing: 0.025em;
+
+      span {
+        margin: 1.043vw 0 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  @keyframes arrow375 {
+    0% {
+      margin-bottom: 1%;
+    }
+    50% {
+      margin-bottom: 0%;
+    }
+    100% {
+      margin-bottom: 1%;
+    }
+  }
+
+  .beginningSlider {
+    width: 89.867vw;
+    height: 89.867vw;
+    transform: rotate(180deg) translateY(-98.133vw);
+
+    &::before {
+      right: 4vw;
+      left: auto;
+      top: auto;
+      bottom: 10.133vw;
+      height: 2.133vw;
+      width: 2.133vw;
+      border-left: 0.533vw solid #ffffff;
+      border-bottom: 0.533vw solid #ffffff;
+      transform: rotate(135deg);
+      animation: 1.5s arrow375 linear infinite;
+    }
+
+    &::after {
+      left: 4vw;
+      right: auto;
+      top: auto;
+      bottom: 10.133vw;
+      transform: rotate(135deg);
+      height: 2.133vw;
+      width: 2.133vw;
+      border-left: 0.533vw solid #ffffff;
+      border-bottom: 0.533vw solid #ffffff;
+      animation: 1.5s arrow375 linear infinite;
+    }
+
+    .circleBackground {
+      width: 89.867vw;
+      height: 89.867vw;
+      background-size: 89.867vw 89.867vw;
+    }
+
+    .triangle {
+      width: 66.667vw;
+    }
+
+    .gif {
+      width: 65.333vw;
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+
+    .circle {
+      width: 17.067vw;
+      height: 17.067vw;
+      font-size: 3.229vw;
+      line-height: 4.8vw;
+      transform: rotate(180deg);
+
+      &.top {
+        top: 65.5%;
+        left: 85%;
+      }
+
+      &.active {
+        top: -9.5%;
+        left: 40.5%;
+      }
+
+      &.left {
+        top: 65.5%;
+        left: -4%;
+      }
+    }
+  }
+
+  .beginningRightBlock {
+    position: absolute;
+    right: auto;
+    left: 0;
+    top: 54.133vw;
+    width: 100%;
+
+    h2 {
+      position: relative;
+      font-size: 10.133vw;
+      line-height: 15.467vw;
+      gap: 4.001vw;
+
+      span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 4.533vw 0 0 0;
+        padding: 0 3.2vw;
+        font-size: 4.267vw;
+        line-height: 6.4vw;
+        border-radius: 2.133vw;
+        width: auto;
+        height: 9.333vw;
+      }
+    }
+
+    strong {
+      top: 240%;
+      margin: 0;
+      font-size: 5.333vw;
+      line-height: 8vw;
+      width: 100%;
+      letter-spacing: 0.025em;
+
+      span {
+        margin: 2.135vw 0 0 0;
+      }
+    }
+  }
+}
